@@ -1,28 +1,34 @@
-<ion-toolbar>
-  <ion-buttons slot="secondary">
-    <ion-button fill="solid" (click)="navigate('route_newsfeed')" >
-      <ion-icon slot="start" name="contact"></ion-icon>
-      Newsfeed click()
-    </ion-button>
-  </ion-buttons>
-  <ion-buttons slot="secondary">
-    <ion-button fill="solid" [navPush]="route_newsfeed" >
-      <ion-icon slot="start" name="contact"></ion-icon>
-      Newsfeed navPush
-    </ion-button>
-  </ion-buttons>
-  <ion-buttons slot="secondary">
-    <ion-button fill="solid">
-      <ion-icon slot="start" name="contact"></ion-icon>
-      Contact
-    </ion-button>
-  </ion-buttons>
-  <ion-title>Solid Buttons</ion-title>
-  <ion-buttons slot="primary">
-    <ion-button fill="solid" color="secondary">
-      Help
-      <ion-icon slot="end" name="help-circle"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-</ion-toolbar>
-<p>newsfeed page</p>
+
+<ion-content >
+
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button fill="solid" (click)="navigate('newsfeed')" >
+        <ion-icon slot="start" name="contact"></ion-icon>
+        Newsfeed click()
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button fill="solid">
+        <ion-icon slot="start" name="contact"></ion-icon>
+        Contact
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Solid Buttons</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button fill="solid" color="secondary">
+        Help
+        <ion-icon slot="end" name="help-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-card>
+    <h1>Aaa</h1>
+    <ion-card-content>
+      <p>Abba?</p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+

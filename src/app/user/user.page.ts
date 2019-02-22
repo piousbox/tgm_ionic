@@ -21,6 +21,10 @@ export class UserPage implements OnInit {
     private router: Router
   ) { }
 
+  navigate(where) {
+    this.router.navigate([where]);
+  }
+  
   async ngOnInit() {
     const loading = await this.loadingController.create({
       message: 'Please wait...'
