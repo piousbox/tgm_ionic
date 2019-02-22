@@ -89,7 +89,11 @@
         <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.287149765762-3biddikajgthdj8h05j4gtjqttn70o76" />
         <variable name="WEB_APPLICATION_CLIENT_ID" value="287149765762-3biddikajgthdj8h05j4gtjqttn70o76.apps.googleusercontent.com" />
     </plugin>
-    <allow-navigation href="http://192.168.0.101:8100" sessionid="102603de" />
+    <plugin name="cordova-plugin-facebook4" spec="4.2.1">
+        <variable name="APP_ID" value="123014244977505" />
+        <variable name="APP_NAME" value="tgm local" />
+    </plugin>
+    <allow-navigation href="http://192.168.0.101:8100" sessionid="43579cf5" />
     <engine name="ios" spec="4.5.5" />
     <engine name="android" spec="7.1.4" />
     <engine name="browser" spec="5.0.4" />
