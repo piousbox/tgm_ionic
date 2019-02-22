@@ -5,6 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
+
+
 import { NewsfeedPage } from './newsfeed.page';
 
 const routes: Routes = [
@@ -20,6 +22,8 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
+  ],
+  exports: [
   ],
   declarations: [NewsfeedPage]
 })

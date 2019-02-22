@@ -26,17 +26,31 @@ export class LoginPage {
     public loadingController: LoadingController,
     public alertController: AlertController,
     public httpClient: HttpClient, 
-  ) {}
+  ) {
+    
+  }
 
   async doFacebookLogin () {
+    FB.init({
+      appId: '123014244977505',
+      status: true, xfbml: true, version: 'v2.7',
+    })
+
     this.fb.login(['public_profile', 'user_friends', 'email']
       ).then((res: FacebookLoginResponse) => {
-        console.log('+++ Logged into Facebook!', res)
-        // this.router.navigate(["/user"])
+        const r = res.authResponse
+        console.log('+++ Logged into Facebook!', r)
+        this.nativeStorage.setItem('facebook_user', {
+          accessToken: r.accessToken,
+          signedRequest: r.signedRequest,
+          userID: r.userID,
+        }).then(() => {
+          this.router.navigate(['/user'])
+        }, (error) => {
+          console.log('+++ error:', error)
+        })
       }).catch(e => console.log('Error logging into Facebook', e));
-
-    this.fb.logEvent(this.fb.EVENTS.EVENT_NAME_ADDED_TO_CART);
-  }
+ }
 
   async doGoogleLogin(){
     const loading = await this.loadingController.create({
@@ -49,11 +63,6 @@ export class LoginPage {
       'offline': true, // Optional, but requires the webClientId - if set to true the plugin will also return a serverAuthCode, which can be used to grant offline access to a non-Google server
       }).then(user => {
         console.log('+++ user is:', user);
-        /*  const  = this.httpClient.get('http://localhost:3000/api');
-        this.films.subscribe(data => {
-          console.log('+++ my data: ', data);
-        }); */
-
 
         //save user data on the native storage
         this.nativeStorage.setItem('google_user', {
@@ -63,8 +72,7 @@ export class LoginPage {
           accessToken: user.accessToken,
           idToken: user.idToken,
           userId: user.userId,
-        })
-        .then(() => {
+        }).then(() => {
            this.router.navigate(["/user"]);
         }, (error) => {
           console.log(error);

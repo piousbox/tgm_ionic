@@ -23,12 +23,18 @@
     </ion-buttons>
   </ion-toolbar>
 
-  <ion-card>
-    <h1>Aaa</h1>
-    <ion-card-content>
-      <p>Abba?</p>
-    </ion-card-content>
-  </ion-card>
+  <ion-list>
+    <ion-item *ngFor="let g of galleries">
+      <ion-card>
+        <p>{{ g.name }}</p>
+        <ion-list>
+          <ion-item *ngFor="let ph of g.photos">
+            <ion-img [src]="ph.small_url"></ion-img>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
 
