@@ -3,6 +3,7 @@
     "version": "0.0.0",
     "author": "Piousbox",
     "homepage": "https://travel-guide.mobi/",
+    "description": "An Ionic 4 project to show how to add Google Login to an Ionic 4 app",
     "private": true,
     "dependencies": {
         "@angular/common": "~7.0.0",
@@ -59,7 +60,6 @@
         "tslint": "~5.11.0",
         "typescript": "~3.1.6"
     },
-    "description": "An Ionic 4 project to show how to add Google Login to an Ionic 4 app",
     "cordova": {
         "plugins": {
             "cordova-plugin-googleplus": {
@@ -82,7 +82,10 @@
             "browser"
         ]
     },
-        "scripts": {
+    "config": {
+        "ionic_webpack": "./webpack.config.js"
+    },
+    "scripts": {
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",

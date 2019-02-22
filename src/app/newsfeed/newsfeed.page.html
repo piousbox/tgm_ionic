@@ -1,4 +1,3 @@
-
 <ion-toolbar>
   <ion-buttons slot="secondary">
     <ion-button fill="solid" (click)="navigate('route_newsfeed')" >
@@ -7,7 +6,7 @@
     </ion-button>
   </ion-buttons>
   <ion-buttons slot="secondary">
-    <ion-button fill="solid" [routerLink]="route_newsfeed" >
+    <ion-button fill="solid" [navPush]="route_newsfeed" >
       <ion-icon slot="start" name="contact"></ion-icon>
       Newsfeed navPush
     </ion-button>
@@ -26,20 +25,4 @@
     </ion-button>
   </ion-buttons>
 </ion-toolbar>
-
-
-<ion-content *ngIf='userReady'>
-  <ion-card>
-    <div class="half-width" >
-      <p>Aaa</p>
-      <ion-img [src]="user.picture"></ion-img>
-    </div>
-    <ion-card-header>
-      <ion-card-title>{{user.name}}</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p>{{user.email}}</p>
-    </ion-card-content>
-    <ion-button expand="block" (click)="doGoogleLogout()">Log Out</ion-button>
-  </ion-card>
-</ion-content>
+<p>newsfeed page</p>

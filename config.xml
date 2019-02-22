@@ -3,7 +3,7 @@
     <name>com.piousbox.tgm-ionic</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.0.101:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -89,6 +89,7 @@
         <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.287149765762-3biddikajgthdj8h05j4gtjqttn70o76" />
         <variable name="WEB_APPLICATION_CLIENT_ID" value="287149765762-3biddikajgthdj8h05j4gtjqttn70o76.apps.googleusercontent.com" />
     </plugin>
+    <allow-navigation href="http://192.168.0.101:8100" sessionid="102603de" />
     <engine name="ios" spec="4.5.5" />
     <engine name="android" spec="7.1.4" />
     <engine name="browser" spec="5.0.4" />
