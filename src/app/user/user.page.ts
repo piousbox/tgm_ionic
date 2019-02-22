@@ -17,8 +17,8 @@ export class UserPage implements OnInit {
   constructor(
     private googlePlus: GooglePlus,
     private nativeStorage: NativeStorage,
+    private router: Router,
     public loadingController: LoadingController,
-    private router: Router
   ) { }
 
   navigate(where) {
@@ -29,9 +29,8 @@ export class UserPage implements OnInit {
     const loading = await this.loadingController.create({
       message: 'Please wait...'
     });
-     await loading.present();
-     this.nativeStorage.getItem('google_user')
-    .then(data => {
+    await loading.present();
+    this.nativeStorage.getItem('google_user').then(data => {
       this.user = {
         name: data.name,
         email: data.email,
@@ -46,8 +45,7 @@ export class UserPage implements OnInit {
   }
 
   doGoogleLogout(){
-    this.googlePlus.logout()
-    .then(res => {
+    this.googlePlus.logout().then(res => {
       //user logged out so we will remove him from the NativeStorage
       this.nativeStorage.remove('google_user');
       this.router.navigate(["/login"]);

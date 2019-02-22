@@ -15,10 +15,10 @@ export class LoginPage {
   constructor(
     private googlePlus: GooglePlus,
     private nativeStorage: NativeStorage,
-    public loadingController: LoadingController,
     private router: Router,
     private platform: Platform,
-    public alertController: AlertController
+    public loadingController: LoadingController,
+    public alertController: AlertController,
   ) { }
 
   async doGoogleLogin(){
@@ -30,8 +30,9 @@ export class LoginPage {
       'scopes': '', // optional - space-separated list of scopes, If not included or empty, defaults to `profile` and `email`.
       'webClientId': environment.googleWebClientId, // optional - clientId of your Web application from Credentials settings of your project - On Android, this MUST be included to get an idToken. On iOS, it is not required.
       'offline': true, // Optional, but requires the webClientId - if set to true the plugin will also return a serverAuthCode, which can be used to grant offline access to a non-Google server
-      })
-      .then(user => {
+      }).then(user => {
+        console.log('+++ user is:', user);
+        
         //save user data on the native storage
         this.nativeStorage.setItem('google_user', {
           name: user.displayName,
