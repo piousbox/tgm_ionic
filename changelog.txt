@@ -1,4 +1,4 @@
 0.0.0 - lets compile
 0.0.1 - the 0.0.0 wouldnt let me login, lets try a different base now.
         20190221 lets wire some nagivation.
-
+        20190222 I can privately show galleries.

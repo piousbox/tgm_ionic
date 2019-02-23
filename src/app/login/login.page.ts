@@ -26,30 +26,33 @@ export class LoginPage {
     public loadingController: LoadingController,
     public alertController: AlertController,
     public httpClient: HttpClient, 
-  ) {
-    
-  }
+  ) {}
 
   async doFacebookLogin () {
-    FB.init({
-      appId: '123014244977505',
-      status: true, xfbml: true, version: 'v2.7',
-    })
+    console.log('+++ platfor:', this.platform)
+    console.log('+++ FB:', this.fb)
+
+    if (this.platform.is('cordova')) { 
+      FB.init({
+        appId: '123014244977505',
+        status: true, xfbml: true, version: 'v2.7',
+      })
+    }
 
     this.fb.login(['public_profile', 'user_friends', 'email']
-      ).then((res: FacebookLoginResponse) => {
-        const r = res.authResponse
-        console.log('+++ Logged into Facebook!', r)
-        this.nativeStorage.setItem('facebook_user', {
-          accessToken: r.accessToken,
-          signedRequest: r.signedRequest,
-          userID: r.userID,
-        }).then(() => {
-          this.router.navigate(['/user'])
-        }, (error) => {
-          console.log('+++ error:', error)
-        })
-      }).catch(e => console.log('Error logging into Facebook', e));
+    ).then((res: any) => { // res: FacebookLoginResponse
+      const r = res.authResponse
+      console.log('+++ Logged into Facebook!', r)
+      this.nativeStorage.setItem('facebook_user', {
+        accessToken: r.accessToken,
+        signedRequest: r.signedRequest,
+        userID: r.userID,
+      }).then(() => {
+        this.router.navigate(['/user'])
+      }, (error) => {
+        console.log('+++ error:', error)
+      })
+    }).catch(e => console.log('Error logging into Facebook', e));
  }
 
   async doGoogleLogin(){
@@ -61,30 +64,30 @@ export class LoginPage {
       'scopes': '', // optional - space-separated list of scopes, If not included or empty, defaults to `profile` and `email`.
       'webClientId': environment.googleWebClientId, // optional - clientId of your Web application from Credentials settings of your project - On Android, this MUST be included to get an idToken. On iOS, it is not required.
       'offline': true, // Optional, but requires the webClientId - if set to true the plugin will also return a serverAuthCode, which can be used to grant offline access to a non-Google server
-      }).then(user => {
-        console.log('+++ user is:', user);
+    }).then(user => {
+      console.log('+++ user is:', user);
 
-        //save user data on the native storage
-        this.nativeStorage.setItem('google_user', {
-          name: user.displayName,
-          email: user.email,
-          picture: user.imageUrl,
-          accessToken: user.accessToken,
-          idToken: user.idToken,
-          userId: user.userId,
-        }).then(() => {
-           this.router.navigate(["/user"]);
-        }, (error) => {
-          console.log(error);
-        })
-        loading.dismiss();
-      }, err => {
-        console.log(err);
-        if(!this.platform.is('cordova')){
-          this.presentAlert();
-        }
-        loading.dismiss();
+      //save user data on the native storage
+      this.nativeStorage.setItem('google_user', {
+        name: user.displayName,
+        email: user.email,
+        picture: user.imageUrl,
+        accessToken: user.accessToken,
+        idToken: user.idToken,
+        userId: user.userId,
+      }).then(() => {
+         this.router.navigate(["/user"]);
+      }, (error) => {
+        console.log(error);
       })
+      loading.dismiss();
+    }, err => {
+      console.log(err);
+      if(!this.platform.is('cordova')){
+        this.presentAlert();
+      }
+      loading.dismiss();
+    })
   }
 
   async presentAlert() {

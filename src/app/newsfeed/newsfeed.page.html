@@ -21,8 +21,10 @@
         <ion-icon slot="end" name="help-circle"></ion-icon>
       </ion-button>
     </ion-buttons>
+    <ion-button expand="block" (click)="doFacebookLogout()">Log Out</ion-button>
   </ion-toolbar>
 
+  <h1>Galleries ({{ galleries.length}})</h1>
   <ion-list>
     <ion-item *ngFor="let g of galleries">
       <ion-card>
