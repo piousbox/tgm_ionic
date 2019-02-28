@@ -29,15 +29,8 @@ export class LoginPage {
   ) {}
 
   async doFacebookLogin () {
-    console.log('+++ platfor:', this.platform)
-    console.log('+++ FB:', this.fb)
 
-    if (this.platform.is('cordova')) { 
-      FB.init({
-        appId: '123014244977505',
-        status: true, xfbml: true, version: 'v2.7',
-      })
-    }
+    // FB.init({ appId: '123014244977505', status: true, xfbml: true, version: 'v2.7' })
 
     this.fb.login(['public_profile', 'user_friends', 'email']
     ).then((res: any) => { // res: FacebookLoginResponse

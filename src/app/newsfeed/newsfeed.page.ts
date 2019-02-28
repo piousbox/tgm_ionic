@@ -24,7 +24,7 @@ export class NewsfeedPage {
       console.log('+++ have this data:', data)
 
       const params = new HttpParams().set('accessToken', data.accessToken).append('key', 'value')
-      const galleries = this.httpClient.get('http://localhost:3000/api/galleries', { params: params, })
+      const galleries = this.httpClient.get('https://manager.piousbox.com/api/galleries', { params: params, })
       galleries.subscribe((data: any) => {
         console.log('+++ my m3 data: ', data);
         this.galleries = data
