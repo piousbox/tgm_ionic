@@ -1,6 +1,6 @@
 {
     "name": "com.piousbox.tgm-ionic",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "author": "Piousbox",
     "homepage": "https://travel-guide.mobi/",
     "description": "An Ionic 4 project to show how to add Google Login to an Ionic 4 app",
@@ -66,8 +66,8 @@
     "cordova": {
         "plugins": {
             "cordova-plugin-googleplus": {
-                "REVERSED_CLIENT_ID": "com.googleusercontent.apps.287149765762-3biddikajgthdj8h05j4gtjqttn70o76",
-                "WEB_APPLICATION_CLIENT_ID": "287149765762-3biddikajgthdj8h05j4gtjqttn70o76.apps.googleusercontent.com"
+                "REVERSED_CLIENT_ID": "com.googleusercontent.apps.287149765762-g8mt60dm4ab5a11pmf068nu710aannpr",
+                "WEB_APPLICATION_CLIENT_ID": "287149765762-g8mt60dm4ab5a11pmf068nu710aannpr.apps.googleusercontent.com"
             },
             "cordova-plugin-whitelist": {},
             "cordova-plugin-statusbar": {},

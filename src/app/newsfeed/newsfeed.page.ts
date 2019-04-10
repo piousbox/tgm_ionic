@@ -12,7 +12,7 @@ import { Facebook, } from '@ionic-native/facebook/ngx';
   styleUrls: ['./newsfeed.page.scss'],
 })
 export class NewsfeedPage {
-  galleries: any
+  newsitems: any
 
   constructor( 
     private router: Router,
@@ -20,7 +20,7 @@ export class NewsfeedPage {
     private fb: Facebook,
     public httpClient: HttpClient, 
   ) {
-    this.nativeStorage.getItem('facebook_user').then( data => {
+    /* this.nativeStorage.getItem('facebook_user').then( data => {
       console.log('+++ have this data:', data)
 
       const params = new HttpParams().set('accessToken', data.accessToken).append('key', 'value')
@@ -28,6 +28,21 @@ export class NewsfeedPage {
       galleries.subscribe((data: any) => {
         console.log('+++ my m3 data: ', data);
         this.galleries = data
+      }, error => {
+        console.log('+++ error from m3:', error)
+      })
+    }, error => {
+      console.log('+++ error 1:', error)
+    }) */
+
+    this.nativeStorage.getItem('google_user').then( data => {
+      console.log('+++ have this google data:', data)
+
+      const params = new HttpParams().set('idToken', data.idToken)
+      const answer = this.httpClient.get('http://localhost.com/api/my/newsfeed', { params: params, })
+      answer.subscribe((data: any) => {
+        console.log('+++ my newsitems data: ', data);
+        this.newsitems = data
       }, error => {
         console.log('+++ error from m3:', error)
       })

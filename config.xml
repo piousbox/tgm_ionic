@@ -3,7 +3,7 @@
     <name>com.piousbox.tgm_ionic</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://localhost.com:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -77,10 +77,6 @@
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
     </platform>
     <plugin name="cordova-plugin-device" spec="^2.0.2" />
-    <plugin name="cordova-plugin-googleplus" spec="^5.3.2">
-        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.287149765762-3biddikajgthdj8h05j4gtjqttn70o76" />
-        <variable name="WEB_APPLICATION_CLIENT_ID" value="287149765762-3biddikajgthdj8h05j4gtjqttn70o76.apps.googleusercontent.com" />
-    </plugin>
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.1.3" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.2.5">
         <variable name="ANDROID_SUPPORT_ANNOTATIONS_VERSION" value="27.+" />
@@ -93,6 +89,11 @@
         <variable name="APP_ID" value="123014244977505" />
         <variable name="APP_NAME" value="tgm local" />
     </plugin>
+    <plugin name="cordova-plugin-googleplus" spec="^5.3.2">
+        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.287149765762-g8mt60dm4ab5a11pmf068nu710aannpr" />
+        <variable name="WEB_APPLICATION_CLIENT_ID" value="287149765762-g8mt60dm4ab5a11pmf068nu710aannpr.apps.googleusercontent.com" />
+    </plugin>
+    <allow-navigation href="http://localhost.com:8100" sessionid="f9b79a27" />
     <engine name="browser" spec="5.0.4" />
     <engine name="android" spec="^7.1.4" />
     <engine name="ios" spec="^4.5.5" />

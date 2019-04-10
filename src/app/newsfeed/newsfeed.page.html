@@ -24,11 +24,11 @@
     <ion-button expand="block" (click)="doFacebookLogout()">Log Out</ion-button>
   </ion-toolbar>
 
-  <h1>Galleries ({{ galleries.length}})</h1>
+  <h1>Newsitems ({{ (newsitems||[]).length}})</h1>
   <ion-list>
-    <ion-item *ngFor="let g of galleries">
+    <ion-item *ngFor="let n of newsitems">
       <ion-card>
-        <p>{{ g.name }}</p>
+        <p>{{ n.name }}</p>
         <ion-list>
           <ion-item *ngFor="let ph of g.photos">
             <ion-img [src]="ph.small_url"></ion-img>

@@ -17,6 +17,7 @@ export class UserPage implements OnInit {
 
   user: any;
   userReady: boolean = false;
+  newsitems: any;
 
   constructor(
     private googlePlus: GooglePlus,
@@ -47,10 +48,11 @@ export class UserPage implements OnInit {
       this.userReady = true;
       loading.dismiss();
 
-      const params = new HttpParams().set('accessToken', data.accessToken).append('key', 'value')
-      const answer = this.httpClient.get('http://localhost:3000/api/test', { params: params })
+      const params = new HttpParams().set('accessToken', data.accessToken).append('idToken', data.idToken)
+      const answer = this.httpClient.get('http://localhost:3000/api/my/newsitems', { params: params })
       answer.subscribe(data => {
         console.log('+++ from m3: ', data);
+        this.newsitems = data.newsitems;
       }, error => {
         console.log('+++ error from m3:', error)
       })

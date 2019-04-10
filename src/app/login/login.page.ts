@@ -29,6 +29,7 @@ export class LoginPage {
   ) {}
 
   async doFacebookLogin () {
+    console.log('+++ doFacebookLogin()')
 
     // FB.init({ appId: '123014244977505', status: true, xfbml: true, version: 'v2.7' })
 
@@ -49,6 +50,8 @@ export class LoginPage {
  }
 
   async doGoogleLogin(){
+    console.log('+++ doGoogleLogin()', environment.googleWebClientId)
+
     const loading = await this.loadingController.create({
       message: 'Please wait...'
     });

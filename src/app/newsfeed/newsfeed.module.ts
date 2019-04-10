@@ -5,8 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-
-
 import { NewsfeedPage } from './newsfeed.page';
 
 const routes: Routes = [
