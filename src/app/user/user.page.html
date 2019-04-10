@@ -1,49 +1,25 @@
 
 <ion-toolbar>
+  <ion-img class="thumb" [src]="user.picture"></ion-img>
   <ion-buttons slot="secondary">
     <ion-button fill="solid" (click)="navigate('newsfeed')" >
       <ion-icon slot="start" name="contact"></ion-icon>
-      Newsfeed click()
+      Newsfeed
     </ion-button>
   </ion-buttons>
-  <ion-buttons slot="secondary">
-    <ion-button fill="solid">
-      <ion-icon slot="start" name="contact"></ion-icon>
-      Contact
-    </ion-button>
-  </ion-buttons>
-  <ion-title>Solid Buttons</ion-title>
   <ion-buttons slot="primary">
-    <ion-button fill="solid" color="secondary">
-      Help
-      <ion-icon slot="end" name="help-circle"></ion-icon>
-    </ion-button>
+    <ion-button expand="block" (click)="doGoogleLogout()">x</ion-button>
   </ion-buttons>
 </ion-toolbar>
 
 
-<ion-content *ngIf='userReady'>
-  <ion-card>
-    <div class="half-width" >
-      <ion-img [src]="user.picture"></ion-img>
-    </div>
-    <ion-card-header>
-      <ion-card-title>{{user.name}}</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <p>{{user.email}}</p>
-    </ion-card-content>
-    <ion-button expand="block" (click)="doGoogleLogout()">Log Out</ion-button>
-  </ion-card>
-</ion-content>
-
-<ion-content *ngIf='newsitems'>
-  <h1>Newsitems ({{ (newsitems||[]).length}})</h1>
-  <ion-list>
-    <ion-item *ngFor="let n of newsitems">
-      <ion-card>
-        <p>{{ n.name }}</p>
-        <ion-list>
+<ion-content *ngIf='newsitems' class='block-container' >
+  <ion-list  >
+    <ion-item  *ngFor="let n of newsitems">
+      <ion-card >
+        <h5>{{ n.name }}</h5>
+        <p>{{ n.created_at }}</p>
+        <ion-list class='flex-rightscroll' >
           <ion-item *ngFor="let ph of n.photos">
             <ion-img [src]="ph.small_url"></ion-img>
           </ion-item>
