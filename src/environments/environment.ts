@@ -4,7 +4,8 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 export const environment = {
   production: false,
-  googleWebClientId: "287149765762-et09dr4cgie1fisfp7ii664hqi90635i.apps.googleusercontent.com"
+  googleWebClientId: "287149765762-et09dr4cgie1fisfp7ii664hqi90635i.apps.googleusercontent.com",
+  newsitemsPath: 'http://localhost:3000/api/my/newsitems'
 };
 
 /*

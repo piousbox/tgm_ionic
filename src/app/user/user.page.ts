@@ -8,6 +8,8 @@ import { GooglePlus } from '@ionic-native/google-plus/ngx';
 import { LoadingController } from '@ionic/angular';
 import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 
+import { environment } from '../../environments/environment';
+
 @Component({
   selector: 'app-user',
   templateUrl: './user.page.html',
@@ -49,7 +51,7 @@ export class UserPage implements OnInit {
       loading.dismiss();
 
       const params = new HttpParams().set('accessToken', data.accessToken).append('idToken', data.idToken)
-      const answer = this.httpClient.get('http://localhost:3000/api/my/newsitems', { params: params })
+      const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
       answer.subscribe(data => {
         console.log('+++ from m3: ', data);
         if (data.newsitems) {
