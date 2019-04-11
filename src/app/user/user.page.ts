@@ -19,7 +19,7 @@ export class UserPage implements OnInit {
 
   user: any;
   userReady: boolean = false;
-  newsitems: any;
+  newsitems: any = [];
 
   constructor(
     private googlePlus: GooglePlus,
@@ -54,8 +54,8 @@ export class UserPage implements OnInit {
       const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
       answer.subscribe(data => {
         console.log('+++ from m3: ', data);
-        if (data.newsitems) {
-          this.newsitems = data.newsitems;
+        if (data['newsitems']) {
+          this.newsitems = data['newsitems'];
         }
       }, error => {
         console.log('+++ error from m3:', error)

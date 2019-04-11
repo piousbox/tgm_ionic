@@ -27,6 +27,7 @@ client secret: 0yxT-gCswPYWJT8AhDtcc6qT
  ionic cordova platform add android
  ionic cordova prepare android
  ionic cordova run android
-
+ adb logcat
+ 
  ionic cordova run ios
 
