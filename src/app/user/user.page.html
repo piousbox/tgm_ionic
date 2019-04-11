@@ -14,19 +14,27 @@
 
 
 <ion-content *ngIf='newsitems' class='block-container' >
-  <ion-list  >
-    <ion-item  *ngFor="let n of newsitems">
-      <ion-card >
-        <h5>{{ n.name }}</h5>
-        <p>{{ n.created_at }}</p>
-        <ion-list class='flex-rightscroll' >
-          <ion-item *ngFor="let ph of n.photos">
-            <ion-img [src]="ph.small_url"></ion-img>
-          </ion-item>
-        </ion-list>
-      </ion-card>
-    </ion-item>
-  </ion-list>
+  <ion-content >
+    <ion-list >
+      <ion-item  *ngFor="let n of newsitems">
+
+        <ion-card class='flex-scroll-container' >
+          <h5>{{ n.name }} ({{ n.photos.length }})</h5>
+          <p>{{ n.created_at }}</p>
+          <ion-list class='flex-scroll' >
+            <ion-item *ngFor="let ph of n.photos">
+
+              <div class='medium-photo'>
+                <img [src]="ph.small_url" />
+              </div>
+
+            </ion-item>
+          </ion-list>
+        </ion-card>
+
+      </ion-item>
+    </ion-list>
+  </ion-content>
 </ion-content>
 
 

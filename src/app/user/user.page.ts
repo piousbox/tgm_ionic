@@ -52,7 +52,9 @@ export class UserPage implements OnInit {
       const answer = this.httpClient.get('http://localhost:3000/api/my/newsitems', { params: params })
       answer.subscribe(data => {
         console.log('+++ from m3: ', data);
-        this.newsitems = data.newsitems;
+        if (data.newsitems) {
+          this.newsitems = data.newsitems;
+        }
       }, error => {
         console.log('+++ error from m3:', error)
       })

@@ -93,7 +93,7 @@
         <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.287149765762-g8mt60dm4ab5a11pmf068nu710aannpr" />
         <variable name="WEB_APPLICATION_CLIENT_ID" value="287149765762-g8mt60dm4ab5a11pmf068nu710aannpr.apps.googleusercontent.com" />
     </plugin>
-    <allow-navigation href="http://localhost.com:8100" sessionid="f9b79a27" />
+    <allow-navigation href="http://localhost.com:8100" sessionid="60f59f4b" />
     <engine name="browser" spec="5.0.4" />
     <engine name="android" spec="^7.1.4" />
     <engine name="ios" spec="^4.5.5" />
