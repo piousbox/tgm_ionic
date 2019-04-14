@@ -1,6 +1,9 @@
 
 <ion-toolbar>
   <ion-img class="thumb" [src]="user.picture"></ion-img>
+
+  <div *ngIf='user.facebook' >{{ user.facebook.userID }}</div>
+
   <ion-buttons slot="secondary">
     <ion-button fill="solid" (click)="navigate('newsfeed')" >
       <ion-icon slot="start" name="contact"></ion-icon>

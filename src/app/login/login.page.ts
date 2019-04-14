@@ -50,7 +50,7 @@ export class LoginPage {
  }
 
   async doGoogleLogin(){
-    console.log('+++ doGoogleLogin() 3.1', environment.googleWebClientId)
+    console.log('+++ doGoogleLogin() 3.4', environment.googleWebClientId)
 
     const loading = await this.loadingController.create({
       message: 'Please wait...'

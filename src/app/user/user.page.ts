@@ -39,14 +39,22 @@ export class UserPage implements OnInit {
       message: 'Please wait...'
     });
     await loading.present();
+
+    this.user = {};
+
+    this.nativeStorage.getItem('facebook_user').then(data => {
+      this.user.facebook = {
+        userID: data['userID']
+      };
+    });
+
     this.nativeStorage.getItem('google_user').then(data => {
       console.log('+++ user has data:', data)
 
-      this.user = {
-        name: data.name,
-        email: data.email,
-        picture: data.picture,
-      };
+      this.user.name = data.name;
+      this.user.email = data.email;
+      this.user.picture = data.picture;
+      
       this.userReady = true;
       loading.dismiss();
 
