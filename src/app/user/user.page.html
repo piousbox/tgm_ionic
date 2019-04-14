@@ -2,7 +2,7 @@
 <ion-toolbar>
   <ion-img class="thumb" [src]="user.picture"></ion-img>
 
-  <div *ngIf='user.facebook' >{{ user.facebook.userID }}</div>
+  <div *ngIf='user.facebook' (click)="doFacebookLogout()" >{{ user.facebook.userID }}</div>
 
   <ion-buttons slot="secondary">
     <ion-button fill="solid" (click)="navigate('newsfeed')" >
