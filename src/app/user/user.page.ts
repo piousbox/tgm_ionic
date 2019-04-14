@@ -86,9 +86,7 @@ export class UserPage implements OnInit {
   }
 
   doFacebookLogout () {
-    this.fb.getLoginStatus(() => {
-      this.fb.logout(handleSessionResponse);
-    });
+    this.fb.logout();
   }
 
 }
