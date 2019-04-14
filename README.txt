@@ -1,22 +1,5 @@
 
-== Develop ==
-
-Wiring navigation
-
-From: https://stackoverflow.com/questions/40245847how-to-go-to-another-page-with-a-button-click-with-ionic/45305605
-
-First of all, the command: ionic plugin add doesn't work any further, I had to use: ionic cordova plugin add and follow the prompt.
-
-=== Auth ===
-
-I'm using OAuth 2.0 client IDs
-
 == Run ==
-
-client id:     287149765762-3biddikajgthdj8h05j4gtjqttn70o76.apps.googleusercontent.com
-client secret: 0yxT-gCswPYWJT8AhDtcc6qT
-
- ionic cordova plugin add cordova-plugin-googleplus --variable REVERSED_CLIENT_ID=com.googleusercontent.apps.287149765762-g8mt60dm4ab5a11pmf068nu710aannpr --variable WEB_APPLICATION_CLIENT_ID=287149765762-g8mt60dm4ab5a11pmf068nu710aannpr.apps.googleusercontent.com
 
  ionic cordova run browser --livereload --address localhost.com
  ionic cordova platform rm browser
@@ -26,8 +9,9 @@ client secret: 0yxT-gCswPYWJT8AhDtcc6qT
  ionic cordova platform rm android
  ionic cordova platform add android
  ionic cordova prepare android
- ionic cordova run android
+ ionic cordova run android --debug
  adb logcat
+ ionic cordova build --debug android 
+ ionic cordova build --release android 
  
  ionic cordova run ios
-
