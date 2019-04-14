@@ -50,7 +50,7 @@ export class LoginPage {
  }
 
   async doGoogleLogin(){
-    console.log('+++ doGoogleLogin()', environment.googleWebClientId)
+    console.log('+++ doGoogleLogin() 3.1', environment.googleWebClientId)
 
     const loading = await this.loadingController.create({
       message: 'Please wait...'
@@ -78,7 +78,7 @@ export class LoginPage {
       })
       loading.dismiss();
     }, err => {
-      console.log(err);
+      console.log("+++ google login error:", err);
       if(!this.platform.is('cordova')){
         this.presentAlert();
       }

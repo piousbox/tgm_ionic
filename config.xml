@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.piousbox.tgm_ionic" version="0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>com.piousbox.tgm_ionic</name>
+<widget id="com.tgm_ionic" version="0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>com.tgm_ionic</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
     <content src="index.html" />
@@ -89,10 +89,12 @@
         <variable name="APP_ID" value="123014244977505" />
         <variable name="APP_NAME" value="tgm local" />
     </plugin>
-    <allow-navigation href="http://localhost.com:8100" sessionid="99f1ff9a" />
-    <engine name="android" spec="7.1.4" />
-    <plugin name="cordova-plugin-googleplus" spec="^5.3.2">
-        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.287149765762-ifnium31igm6gfp5cvgpgmvk2ron1p97" />
-        <variable name="WEB_APPLICATION_CLIENT_ID" value="287149765762-ifnium31igm6gfp5cvgpgmvk2ron1p97.apps.googleusercontent.com" />
+    <plugin name="cordova-plugin-googleplus" spec="7.0.1">
+        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.287149765762-o6jb2tlv93qejrpo5km8ihe2n7rrtuc7" />
+        <variable name="WEB_APPLICATION_CLIENT_ID" value="287149765762-o6jb2tlv93qejrpo5km8ihe2n7rrtuc7.apps.googleusercontent.com" />
+        <variable name="PLAY_SERVICES_VERSION" value="11.8.0" />
     </plugin>
+    <engine name="browser" spec="5.0.4" />
+    <engine name="ios" spec="^4.5.5" />
+    <engine name="android" spec="7.1.4" />
 </widget>
