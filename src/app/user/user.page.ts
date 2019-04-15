@@ -17,9 +17,10 @@ import { environment } from '../../environments/environment';
 })
 export class UserPage implements OnInit {
 
-  user: any;
+  user: any = {};
   userReady: boolean = false;
   newsitems: any = [];
+  env: any = {};
 
   constructor(
     private googlePlus: GooglePlus,
@@ -34,21 +35,32 @@ export class UserPage implements OnInit {
     this.router.navigate([where]);
   }
   
-  async ngOnInit() {
+  async ngOnInit() {    
     const loading = await this.loadingController.create({
       message: 'Please wait...'
     });
     await loading.present();
 
-    this.user = {};
+    this.env = environment;
 
     this.nativeStorage.getItem('facebook_user').then(data => {
-      this.user.facebook = {
-        userID: data['userID']
-      };
+      console.log('+++ fb local data:', data);
+      loading.dismiss();
+
+      const params = new HttpParams().set('accessToken', data.accessToken)
+      const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
+      answer.subscribe(data => {
+        console.log('+++ from m3: ', data);
+        
+        if (data['newsitems']) {
+          this.newsitems = data['newsitems'];
+        }
+      }, error => {
+        console.log('+++ error from m3:', error)
+      })
     });
 
-    this.nativeStorage.getItem('google_user').then(data => {
+    /* this.nativeStorage.getItem('google_user').then(data => {
       console.log('+++ user has data:', data)
 
       this.user.name = data.name;
@@ -72,7 +84,7 @@ export class UserPage implements OnInit {
     }, error =>{
       console.log(error);
       loading.dismiss();
-    });
+    }); */
   }
 
   doGoogleLogout(){
@@ -86,7 +98,30 @@ export class UserPage implements OnInit {
   }
 
   doFacebookLogout () {
+    console.log('+++ logging out facebook...');
+
+    this.nativeStorage.remove('facebook_user');
+    this.nativeStorage.remove('google_user');
+    this.nativeStorage.clear();
+
     this.fb.logout();
+  }
+
+  doFacebookLogin () {
+    this.fb.login(['public_profile', 'user_friends', 'email']
+    ).then((res: any) => { // res: FacebookLoginResponse
+      const r = res.authResponse
+      console.log('+++ Logged into Facebook!', r)
+      this.nativeStorage.setItem('facebook_user', {
+        accessToken: r.accessToken,
+        signedRequest: r.signedRequest,
+        userID: r.userID,
+      }).then(() => {
+        this.router.navigate(['/user'])
+      }, (error) => {
+        console.log('+++ error:', error)
+      })
+    }).catch(e => console.log('Error logging into Facebook', e));
   }
 
 }

@@ -15,6 +15,5 @@
  # ic run android -l -c -s --debug
  adb logcat
  chrome://inspect/#devices
- ionic cordova build --debug android 
  
  ionic cordova run ios

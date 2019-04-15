@@ -35,6 +35,8 @@ export class NewsfeedPage {
       console.log('+++ error 1:', error)
     }) */
 
+    console.log('+++ here, newsfeed!')
+    
     this.nativeStorage.getItem('google_user').then( data => {
       console.log('+++ have this google data:', data)
 
@@ -52,8 +54,8 @@ export class NewsfeedPage {
   }
 
   doFacebookLogout(){
-    this.nativeStorage.remove('facebook_user')
-    this.router.navigate(["/login"])
+    this.nativeStorage.clear();
+    // this.router.navigate(["/login"])
 
     /* this.fb.logout().then(res => {
       console.log('+++ ok', res)  

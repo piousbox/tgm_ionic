@@ -94,6 +94,7 @@
         <variable name="APP_ID" value="123014244977505" />
         <variable name="APP_NAME" value="tgm local" />
     </plugin>
+    <allow-navigation href="http://localhost.com:8100" sessionid="238e3fbf" />
     <engine name="browser" spec="5.0.4" />
     <engine name="ios" spec="^4.5.5" />
     <engine name="android" spec="7.1.4" />

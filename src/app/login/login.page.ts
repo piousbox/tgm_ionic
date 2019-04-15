@@ -26,7 +26,9 @@ export class LoginPage {
     public loadingController: LoadingController,
     public alertController: AlertController,
     public httpClient: HttpClient, 
-  ) {}
+  ) {
+    console.log('+++ login constructor?');
+  }
 
   async doFacebookLogin () {
     console.log('+++ doFacebookLogin()')

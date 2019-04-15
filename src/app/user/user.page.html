@@ -1,17 +1,17 @@
 
 <ion-toolbar>
-  <ion-img class="thumb" [src]="user.picture"></ion-img>
+  <ion-img *ngIf='user && user.picture' class="thumb" [src]="user.picture"></ion-img>
 
-  <div *ngIf='user.facebook' (click)="doFacebookLogout()" >{{ user.facebook.userID }}</div>
+  <div *ngIf='user && user.facebook' (click)="doFacebookLogout()" >{{ user.facebook.userID }}</div>
 
   <ion-buttons slot="secondary">
-    <ion-button fill="solid" (click)="navigate('newsfeed')" >
+    <!-- <ion-button fill="solid" (click)="navigate('newsfeed')" >
       <ion-icon slot="start" name="contact"></ion-icon>
       Newsfeed
     </ion-button>
-  </ion-buttons>
-  <ion-buttons slot="primary">
-    <ion-button expand="block" (click)="doGoogleLogout()">x</ion-button>
+    <ion-button (click)="doGoogleLogout()">Gx</ion-button> -->
+    <ion-button (click)="doFacebookLogout()">Fbx</ion-button>
+    <ion-button (click)="doFacebookLogin()">Fbin</ion-button>
   </ion-buttons>
 </ion-toolbar>
 
@@ -37,4 +37,10 @@
       </ion-item>
     </ion-list>
   </ion-content>
+</ion-content>
+
+<ion-content class='block-container'>
+  <ul>
+    <li>NewsitemsPath: {{ env.newsitemsPath }}</li>
+  </ul>
 </ion-content>
