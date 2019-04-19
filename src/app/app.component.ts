@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
-
-import { Platform } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { Router } from '@angular/router';
+
+import { MenuController } from '@ionic/angular';
+import { Platform } from '@ionic/angular';
+
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
@@ -16,9 +18,14 @@ export class AppComponent {
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
     private nativeStorage: NativeStorage,
-    private router: Router
+    private router: Router,
+    private menu: MenuController,
   ) {
     this.initializeApp();
+  }
+
+  navigate(where) {
+    this.router.navigate([where]);
   }
 
   initializeApp() {

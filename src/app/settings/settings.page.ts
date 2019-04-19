@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-settings',
@@ -8,7 +9,14 @@ import { MenuController } from '@ionic/angular';
 })
 export class SettingsPage implements OnInit {
 
-  constructor(private menu: MenuController) { }
+  constructor(
+    private menu: MenuController,
+    private router: Router,
+  ) { }
+
+  navigate(where) {
+    this.router.navigate([where]);
+  }
 
   ngOnInit() {
   }

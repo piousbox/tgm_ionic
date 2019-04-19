@@ -2,62 +2,28 @@
 <ion-router-outlet main></ion-router-outlet>
 
 <ion-content padding>
-  and<br />
-  the<br />
-  other<br />
-  one<br />
-  <ion-button class="z-100" (click)="openFirst()" >Open first</ion-button>
-  <ion-button class="z-100" (click)="openCustom()" >Open custom</ion-button>
-  <ion-button class="z-100" (click)="openEnd()" >Open end</ion-button>
+  <ion-button (click)="openFirst()" >
+    <ion-icon slot="start" name="menu"></ion-icon>
+    Menu</ion-button>
 </ion-content>
 
 <ion-menu side="start" menuId="first">
   <ion-header>
     <ion-toolbar color="primary">
-      <ion-title>Settings</ion-title>
+      <ion-title>Travel Guide Mobi</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-content padding>
     <ion-list>
-      <ion-item>1st Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
-
-<ion-menu side="start" menuId="custom" class="my-custom-menu">
-  <ion-header>
-    <ion-toolbar color="tertiary">
-      <ion-title>Custom Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>custom Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-    </ion-list>
-  </ion-content>
-</ion-menu>
-
-<ion-menu side="end" type="push">
-  <ion-header>
-    <ion-toolbar color="danger">
-      <ion-title>End Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content>
-    <ion-list>
-      <ion-item>end Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
-      <ion-item>Menu Item</ion-item>
+      <ion-item>
+        <div (click)="navigate('newsfeed')">Newsfeed</div>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="navigate('account')">Account</ion-button>
+      </ion-item>
+      <ion-item>
+        <ion-button (click)="doFacebookLogout()">Logout</ion-button>
+      </ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
