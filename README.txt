@@ -1,4 +1,9 @@
 
+== Develop ==
+
+== Test ==
+ npm run test
+ 
 == Run ==
 
  ic platform rm browser

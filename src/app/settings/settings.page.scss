@@ -1,0 +1,15 @@
+
+.my-custom-menu {
+  --width: 500px;
+}
+
+.main-menu {
+  width: 200px;
+  height: 200px;
+  background: yellow;
+  z-index: 10;
+}
+
+.z-100 {
+  z-index: 100;
+}
