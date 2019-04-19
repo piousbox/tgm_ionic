@@ -9,7 +9,8 @@
       <ion-icon slot="start" name="contact"></ion-icon>
       Newsfeed
     </ion-button>
-    <ion-button (click)="doGoogleLogout()">Gx</ion-button> -->
+    <ion-button (click)="doGoogleLogout()">Googx</ion-button> -->
+    <ion-button (click)="navigate('/settings')">Settings</ion-button>
     <ion-button (click)="doFacebookLogout()">Fbx</ion-button>
     <ion-button (click)="doFacebookLogin()">Fbin</ion-button>
   </ion-buttons>
@@ -42,5 +43,6 @@
 <ion-content class='block-container'>
   <ul>
     <li>NewsitemsPath: {{ env.newsitemsPath }}</li>
+    <li (click)="navigate('user')">/user</li>
   </ul>
 </ion-content>

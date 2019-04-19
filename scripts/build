@@ -3,7 +3,7 @@
 set -e
 
 # ionic cordova build android --debug
-ionic cordova build android --debug --prod
+ionic cordova build android --debug --env=staging
 cp /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/build/outputs/apk/debug/app-debug.apk ~/Downloads
 # cp /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk ~/Downloads
 echo 'build tgm_ionic android ok'
