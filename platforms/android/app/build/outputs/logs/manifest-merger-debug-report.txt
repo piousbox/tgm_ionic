@@ -3,49 +3,41 @@ manifest
 ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
-MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/dfb1e66b125f43d1110d40d5fa2a8247/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-login:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/2e1ab76d999ab485a82409a519644c9e/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/267d9a2a8402a80cd0b6839ac2d12504/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:21:1-37:12
-MERGED from [com.facebook.android:facebook-places:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/9e512b7d993d6e6f485ae40daf0e3aaa/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-applinks:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/a282f998945e29091bf3964efc8cc10f/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/5a1dab4880fd0fab082c1e96f6423ff9/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/2cdbd7b49e5529c79924a2bdc8d3f69f/AndroidManifest.xml:21:1-35:12
-MERGED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:21:1-53:12
-MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/238fd8029e96a5ef470e89614a7f24ef/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:17:1-39:12
-MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/4a5dd84ac1841089adf9ae5cc8d2f00b/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/c8d814269917f6aa56c4acffc900ab86/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/ddaa7827204129837c6fd2f0d6283c2d/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.firebase:firebase-core:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/2f47af8be70bd406498314feec4e5457/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:17:1-34:12
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:17:1-55:12
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:17:1-65:12
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/29774aaefd583f19e572619a18cebb3f/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/4f4839c8aae175a4532b4f492bc0677a/AndroidManifest.xml:2:1-16:12
-MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/9445668ad09f0fe9f0d36d20b9d7392b/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/42f0c887031e28350a3ebda8310e7b7d/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/d30cf2e060dddcbc3d93e32726f91307/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/927ecf62cc29514f5e21ccb71a593a63/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/e41aedf027d18d164ce4c5d22dbd6a7f/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/c6f656a58076d8c881defe07e47a1d5d/AndroidManifest.xml:17:1-28:12
-MERGED from [com.android.support:support-v4:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/a6515dc86cb9785d589f9fdb76509518/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/653ee379d4f405408ee60667469293b3/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/0f03bc271783792384da1c2c81eb5748/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a44b25f104479b81d239cbfa9c150844/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customtabs:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/e45336cdabed852f6fabdffc0b978ea7/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/e1f03c8e4bdf4fde5f6626db3526994c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/7a19144f4e35112032aa191b72892d27/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/c946d1b6b2f155e4cecd891ebc749faa/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/737a353f4a038d333b86702c9a7bcf0a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/9a737f98e6a027acbd7fae7af36acf97/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/374a171baa6e065e5c484d7c1d6cef92/AndroidManifest.xml:21:1-31:12
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/1ab8d55d5c72ef935ec40c31a837fedd/AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.android:facebook-login:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/4e0a415a6e145f17de44833f4a76fd97/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/f0cc16c47fed46ae9dad052322cd22e4/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:21:1-37:12
+MERGED from [com.facebook.android:facebook-places:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/9db5922481e73169f08f579a4f77a583/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/ebf45d0cd3f6aa341bc02b971d110ea0/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/fc056be722f525d47a77252c038ae6c2/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/8b16085cd59a327c7f9cd059d07b8125/AndroidManifest.xml:21:1-35:12
+MERGED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:21:1-53:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/47be80878ca80ec127e18aa607c50c25/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/d2def65463e82c4afa402e145e4b56b2/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/72ff38080dd4af8e1032089d15da6cf7/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/85fd04a330a38670285bab019c5548a3/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/7291f57bd1c0237aced2025e1f458bd0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/c87eb8d9b1fa7da1519961b49e8321d5/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/eced0febf4497f584b35772481ffc2af/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/c8060fccdf4431d121a37e9bb3a7c799/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/0406438df4ad6bf2a33c889cbb6654fa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/577ae9b4690ba55f1b9d3f1de0fb68be/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/c4ffc48c65a80b78c2ecd1f085f376f3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/3da145f32f735e10a5ace2a43c7771b3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/194706c54bbe8152d6a2ac6ecf268c49/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/80f4dd1a7f3c59956a348d7551689673/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/b071ee417b1f54506045c4c7f57b0a85/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/2366f6df4806322bebc9f5182623458d/AndroidManifest.xml:17:1-22:12
 MERGED from [:CordovaLib] /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
-MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-11.8.0.aar/b2815c0e9a68eb1d30cab9268428cd1e/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/e399d451e2f86955cbd069fdbd41dea1/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/2f678a99107775d717b60e08c394e4f6/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/fa7283287c88cb69cf35399c31d206ea/AndroidManifest.xml:17:1-24:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/9fc18807b893f2c482c89cba8715b0d8/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-11.8.0.aar/182eb4c20b0c5981f4cc5000a7c63efa/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/32708c507448f3661281ebf0dac49a6e/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/4b4264ac4572aa666019a08882be1741/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/7f11ac069f6980f8a4199e3de70a0416/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/4bb7ab80a19bdcd11ae8fdbea9df9062/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/9384c952864d2b5e24c3d14e271c5f26/AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/874445b25694c647400d56202735099f/AndroidManifest.xml:17:1-24:12
 INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
 	package
@@ -78,74 +70,50 @@ ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:3:23-48
 uses-permission#android.permission.INTERNET
 ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:4:5-67
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:22:5-67
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:23:5-67
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
 ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:5:5-15:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/dfb1e66b125f43d1110d40d5fa2a8247/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/dfb1e66b125f43d1110d40d5fa2a8247/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/2e1ab76d999ab485a82409a519644c9e/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/2e1ab76d999ab485a82409a519644c9e/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/267d9a2a8402a80cd0b6839ac2d12504/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/267d9a2a8402a80cd0b6839ac2d12504/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:28:5-35:19
-MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:28:5-35:19
-MERGED from [com.facebook.android:facebook-places:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/9e512b7d993d6e6f485ae40daf0e3aaa/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/9e512b7d993d6e6f485ae40daf0e3aaa/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/a282f998945e29091bf3964efc8cc10f/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/a282f998945e29091bf3964efc8cc10f/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/5a1dab4880fd0fab082c1e96f6423ff9/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/5a1dab4880fd0fab082c1e96f6423ff9/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/2cdbd7b49e5529c79924a2bdc8d3f69f/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/2cdbd7b49e5529c79924a2bdc8d3f69f/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:28:5-51:19
-MERGED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:28:5-51:19
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/4a5dd84ac1841089adf9ae5cc8d2f00b/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/4a5dd84ac1841089adf9ae5cc8d2f00b/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-core:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/2f47af8be70bd406498314feec4e5457/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-core:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/2f47af8be70bd406498314feec4e5457/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:26:5-32:19
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:26:5-32:19
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:28:5-53:19
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:28:5-38:19
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:28:5-38:19
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:34:5-63:19
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:34:5-63:19
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/29774aaefd583f19e572619a18cebb3f/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/29774aaefd583f19e572619a18cebb3f/AndroidManifest.xml:7:5-20
-MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/4f4839c8aae175a4532b4f492bc0677a/AndroidManifest.xml:8:5-14:19
-MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/4f4839c8aae175a4532b4f492bc0677a/AndroidManifest.xml:8:5-14:19
-MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/9445668ad09f0fe9f0d36d20b9d7392b/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/9445668ad09f0fe9f0d36d20b9d7392b/AndroidManifest.xml:22:5-23:19
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/42f0c887031e28350a3ebda8310e7b7d/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/42f0c887031e28350a3ebda8310e7b7d/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/d30cf2e060dddcbc3d93e32726f91307/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/d30cf2e060dddcbc3d93e32726f91307/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/927ecf62cc29514f5e21ccb71a593a63/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/927ecf62cc29514f5e21ccb71a593a63/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/e41aedf027d18d164ce4c5d22dbd6a7f/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/e41aedf027d18d164ce4c5d22dbd6a7f/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/c6f656a58076d8c881defe07e47a1d5d/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/c6f656a58076d8c881defe07e47a1d5d/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-11.8.0.aar/b2815c0e9a68eb1d30cab9268428cd1e/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-11.8.0.aar/b2815c0e9a68eb1d30cab9268428cd1e/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/e399d451e2f86955cbd069fdbd41dea1/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/e399d451e2f86955cbd069fdbd41dea1/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/2f678a99107775d717b60e08c394e4f6/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/2f678a99107775d717b60e08c394e4f6/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/fa7283287c88cb69cf35399c31d206ea/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/fa7283287c88cb69cf35399c31d206ea/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/374a171baa6e065e5c484d7c1d6cef92/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/374a171baa6e065e5c484d7c1d6cef92/AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/1ab8d55d5c72ef935ec40c31a837fedd/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/1ab8d55d5c72ef935ec40c31a837fedd/AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-login:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/4e0a415a6e145f17de44833f4a76fd97/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/4e0a415a6e145f17de44833f4a76fd97/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/f0cc16c47fed46ae9dad052322cd22e4/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/f0cc16c47fed46ae9dad052322cd22e4/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-places:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/9db5922481e73169f08f579a4f77a583/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/9db5922481e73169f08f579a4f77a583/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/ebf45d0cd3f6aa341bc02b971d110ea0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/ebf45d0cd3f6aa341bc02b971d110ea0/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/fc056be722f525d47a77252c038ae6c2/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/fc056be722f525d47a77252c038ae6c2/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/8b16085cd59a327c7f9cd059d07b8125/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/8b16085cd59a327c7f9cd059d07b8125/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:28:5-51:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/85fd04a330a38670285bab019c5548a3/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/85fd04a330a38670285bab019c5548a3/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/7291f57bd1c0237aced2025e1f458bd0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/7291f57bd1c0237aced2025e1f458bd0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/c87eb8d9b1fa7da1519961b49e8321d5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/c87eb8d9b1fa7da1519961b49e8321d5/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-11.8.0.aar/182eb4c20b0c5981f4cc5000a7c63efa/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-11.8.0.aar/182eb4c20b0c5981f4cc5000a7c63efa/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/32708c507448f3661281ebf0dac49a6e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/32708c507448f3661281ebf0dac49a6e/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/4b4264ac4572aa666019a08882be1741/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/4b4264ac4572aa666019a08882be1741/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/7f11ac069f6980f8a4199e3de70a0416/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/7f11ac069f6980f8a4199e3de70a0416/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/4bb7ab80a19bdcd11ae8fdbea9df9062/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/4bb7ab80a19bdcd11ae8fdbea9df9062/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/9384c952864d2b5e24c3d14e271c5f26/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/9384c952864d2b5e24c3d14e271c5f26/AndroidManifest.xml:5:5-20
 	android:supportsRtl
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
 	android:label
@@ -194,105 +162,89 @@ ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:13:20-67
 activity#com.facebook.FacebookActivity
 ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:14:9-186
-MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:29:9-32:66
-MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:29:9-32:66
+MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:29:9-32:66
 	android:label
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:14:103-138
 	android:configChanges
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:14:19-102
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:32:13-63
 	android:name
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:14:139-183
 uses-sdk
 ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:5-74
 INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:5-74
-MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/dfb1e66b125f43d1110d40d5fa2a8247/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/dfb1e66b125f43d1110d40d5fa2a8247/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/2e1ab76d999ab485a82409a519644c9e/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/2e1ab76d999ab485a82409a519644c9e/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/267d9a2a8402a80cd0b6839ac2d12504/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/267d9a2a8402a80cd0b6839ac2d12504/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/9e512b7d993d6e6f485ae40daf0e3aaa/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/9e512b7d993d6e6f485ae40daf0e3aaa/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/a282f998945e29091bf3964efc8cc10f/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/a282f998945e29091bf3964efc8cc10f/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/5a1dab4880fd0fab082c1e96f6423ff9/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/5a1dab4880fd0fab082c1e96f6423ff9/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/2cdbd7b49e5529c79924a2bdc8d3f69f/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/2cdbd7b49e5529c79924a2bdc8d3f69f/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/238fd8029e96a5ef470e89614a7f24ef/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/238fd8029e96a5ef470e89614a7f24ef/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/4a5dd84ac1841089adf9ae5cc8d2f00b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/4a5dd84ac1841089adf9ae5cc8d2f00b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/c8d814269917f6aa56c4acffc900ab86/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/c8d814269917f6aa56c4acffc900ab86/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/ddaa7827204129837c6fd2f0d6283c2d/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/ddaa7827204129837c6fd2f0d6283c2d/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-core:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/2f47af8be70bd406498314feec4e5457/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-core:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/2f47af8be70bd406498314feec4e5457/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/29774aaefd583f19e572619a18cebb3f/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/29774aaefd583f19e572619a18cebb3f/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/4f4839c8aae175a4532b4f492bc0677a/AndroidManifest.xml:5:5-6:37
-MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/4f4839c8aae175a4532b4f492bc0677a/AndroidManifest.xml:5:5-6:37
-MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/9445668ad09f0fe9f0d36d20b9d7392b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/9445668ad09f0fe9f0d36d20b9d7392b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/42f0c887031e28350a3ebda8310e7b7d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/42f0c887031e28350a3ebda8310e7b7d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/d30cf2e060dddcbc3d93e32726f91307/AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/d30cf2e060dddcbc3d93e32726f91307/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/927ecf62cc29514f5e21ccb71a593a63/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/927ecf62cc29514f5e21ccb71a593a63/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/e41aedf027d18d164ce4c5d22dbd6a7f/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/e41aedf027d18d164ce4c5d22dbd6a7f/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/c6f656a58076d8c881defe07e47a1d5d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/c6f656a58076d8c881defe07e47a1d5d/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/a6515dc86cb9785d589f9fdb76509518/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/a6515dc86cb9785d589f9fdb76509518/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/653ee379d4f405408ee60667469293b3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/653ee379d4f405408ee60667469293b3/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/0f03bc271783792384da1c2c81eb5748/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/0f03bc271783792384da1c2c81eb5748/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a44b25f104479b81d239cbfa9c150844/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a44b25f104479b81d239cbfa9c150844/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/e45336cdabed852f6fabdffc0b978ea7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/e45336cdabed852f6fabdffc0b978ea7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/e1f03c8e4bdf4fde5f6626db3526994c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/e1f03c8e4bdf4fde5f6626db3526994c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/7a19144f4e35112032aa191b72892d27/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/7a19144f4e35112032aa191b72892d27/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/c946d1b6b2f155e4cecd891ebc749faa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/c946d1b6b2f155e4cecd891ebc749faa/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/737a353f4a038d333b86702c9a7bcf0a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/737a353f4a038d333b86702c9a7bcf0a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/9a737f98e6a027acbd7fae7af36acf97/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/9a737f98e6a027acbd7fae7af36acf97/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/374a171baa6e065e5c484d7c1d6cef92/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/374a171baa6e065e5c484d7c1d6cef92/AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/1ab8d55d5c72ef935ec40c31a837fedd/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/1ab8d55d5c72ef935ec40c31a837fedd/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-login:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/4e0a415a6e145f17de44833f4a76fd97/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-login-4.40.0.aar/4e0a415a6e145f17de44833f4a76fd97/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/f0cc16c47fed46ae9dad052322cd22e4/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-share-4.40.0.aar/f0cc16c47fed46ae9dad052322cd22e4/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/9db5922481e73169f08f579a4f77a583/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-places-4.40.0.aar/9db5922481e73169f08f579a4f77a583/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/ebf45d0cd3f6aa341bc02b971d110ea0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.40.0.aar/ebf45d0cd3f6aa341bc02b971d110ea0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/fc056be722f525d47a77252c038ae6c2/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.40.0.aar/fc056be722f525d47a77252c038ae6c2/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/8b16085cd59a327c7f9cd059d07b8125/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/8b16085cd59a327c7f9cd059d07b8125/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/47be80878ca80ec127e18aa607c50c25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/47be80878ca80ec127e18aa607c50c25/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/d2def65463e82c4afa402e145e4b56b2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-11.8.0.aar/d2def65463e82c4afa402e145e4b56b2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/72ff38080dd4af8e1032089d15da6cf7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-11.8.0.aar/72ff38080dd4af8e1032089d15da6cf7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/85fd04a330a38670285bab019c5548a3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/85fd04a330a38670285bab019c5548a3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/7291f57bd1c0237aced2025e1f458bd0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.8.0.aar/7291f57bd1c0237aced2025e1f458bd0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/c87eb8d9b1fa7da1519961b49e8321d5/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/c87eb8d9b1fa7da1519961b49e8321d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/eced0febf4497f584b35772481ffc2af/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/eced0febf4497f584b35772481ffc2af/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/c8060fccdf4431d121a37e9bb3a7c799/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/c8060fccdf4431d121a37e9bb3a7c799/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/0406438df4ad6bf2a33c889cbb6654fa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/0406438df4ad6bf2a33c889cbb6654fa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/577ae9b4690ba55f1b9d3f1de0fb68be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/577ae9b4690ba55f1b9d3f1de0fb68be/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/c4ffc48c65a80b78c2ecd1f085f376f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/c4ffc48c65a80b78c2ecd1f085f376f3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/3da145f32f735e10a5ace2a43c7771b3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/3da145f32f735e10a5ace2a43c7771b3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/194706c54bbe8152d6a2ac6ecf268c49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/194706c54bbe8152d6a2ac6ecf268c49/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/80f4dd1a7f3c59956a348d7551689673/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/80f4dd1a7f3c59956a348d7551689673/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/b071ee417b1f54506045c4c7f57b0a85/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/b071ee417b1f54506045c4c7f57b0a85/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/2366f6df4806322bebc9f5182623458d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/2366f6df4806322bebc9f5182623458d/AndroidManifest.xml:20:5-44
 MERGED from [:CordovaLib] /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
-MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-11.8.0.aar/b2815c0e9a68eb1d30cab9268428cd1e/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-11.8.0.aar/b2815c0e9a68eb1d30cab9268428cd1e/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/e399d451e2f86955cbd069fdbd41dea1/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/e399d451e2f86955cbd069fdbd41dea1/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/2f678a99107775d717b60e08c394e4f6/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/2f678a99107775d717b60e08c394e4f6/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/fa7283287c88cb69cf35399c31d206ea/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/fa7283287c88cb69cf35399c31d206ea/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/9fc18807b893f2c482c89cba8715b0d8/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/9fc18807b893f2c482c89cba8715b0d8/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-11.8.0.aar/182eb4c20b0c5981f4cc5000a7c63efa/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-identity-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-license-11.8.0.aar/182eb4c20b0c5981f4cc5000a7c63efa/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/32708c507448f3661281ebf0dac49a6e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-api-phone-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-license-11.8.0.aar/32708c507448f3661281ebf0dac49a6e/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/4b4264ac4572aa666019a08882be1741/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-auth-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-license-11.8.0.aar/4b4264ac4572aa666019a08882be1741/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/7f11ac069f6980f8a4199e3de70a0416/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-license-11.8.0.aar/7f11ac069f6980f8a4199e3de70a0416/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/4bb7ab80a19bdcd11ae8fdbea9df9062/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/4bb7ab80a19bdcd11ae8fdbea9df9062/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/9384c952864d2b5e24c3d14e271c5f26/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/9384c952864d2b5e24c3d14e271c5f26/AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/874445b25694c647400d56202735099f/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/874445b25694c647400d56202735099f/AndroidManifest.xml:20:5-22:41
 INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:5-74
 	android:targetSdkVersion
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:42-71
@@ -308,231 +260,71 @@ uses-permission#android.permission.USE_CREDENTIALS
 ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:18:5-74
 	android:name
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:18:22-71
-activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:33:9-71
-	android:name
-		ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:33:19-68
-activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:34:9-67
-	android:name
-		ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/6ce5f8bb5171a7f57e9ba420629ce059/AndroidManifest.xml:34:19-64
-provider#com.facebook.marketing.internal.MarketingInitProvider
-ADDED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/2cdbd7b49e5529c79924a2bdc8d3f69f/AndroidManifest.xml:29:9-32:40
-	android:authorities
-		ADDED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/2cdbd7b49e5529c79924a2bdc8d3f69f/AndroidManifest.xml:31:13-73
-	android:exported
-		ADDED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/2cdbd7b49e5529c79924a2bdc8d3f69f/AndroidManifest.xml:32:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/2cdbd7b49e5529c79924a2bdc8d3f69f/AndroidManifest.xml:30:13-81
-provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:39:9-42:40
-	android:authorities
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:41:13-72
-	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:42:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:40:13-70
-receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:44:9-50:20
-	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:46:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:45:13-86
-intent-filter#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:47:13-49:29
-action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:48:17-95
-	android:name
-		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/704d50b231313827d5e21a4a1789768f/AndroidManifest.xml:48:25-92
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:23:9-27:75
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:25:13-46
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:25:13-46
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:26:13-37
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:27:13-72
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:24:13-93
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:24:13-93
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:33:9-36:110
+ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:33:9-36:110
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:35:13-36
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:35:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:36:13-107
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:36:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/ff1cfdeffa0b490ed62abfa4b50c73d8/AndroidManifest.xml:34:13-89
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:23:5-79
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:24:5-79
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:22:5-79
+		ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:34:13-89
+activity#com.facebook.CustomTabMainActivity
+ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:23:22-76
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:24:5-68
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:25:5-68
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:24:5-68
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:24:5-68
+		ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:33:19-68
+activity#com.facebook.CustomTabActivity
+ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:34:9-67
 	android:name
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:24:22-65
-service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:27:9-31:19
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:35:9-39:19
-MERGED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:35:9-39:19
-	android:name
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:27:18-89
-meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
-ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:28:13-30:85
-	android:value
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:30:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/22f12629795b029107c7f657954ff88b/AndroidManifest.xml:29:17-139
-uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:26:5-110
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:26:5-110
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:26:5-110
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:26:22-107
-receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:29:9-33:20
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:31:13-35
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:32:13-37
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:30:13-85
-receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
-ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:34:9-42:20
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:29:9-37:20
-MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/a475f21a3990c210aec6e03251c9d3a2/AndroidManifest.xml:29:9-37:20
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:36:13-35
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:37:13-36
-	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:38:13-69
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:35:13-100
-intent-filter#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:39:13-41:29
-action#com.android.vending.INSTALL_REFERRER
-ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:40:17-79
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:40:25-76
-service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:44:9-47:40
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:46:13-35
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:47:13-37
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:45:13-84
-service#com.google.android.gms.measurement.AppMeasurementJobService
-ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:48:9-52:72
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:50:13-35
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:51:13-37
-	android:permission
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:52:13-69
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/11e2819b294e323ddcde179eb2d1fbd2/AndroidManifest.xml:49:13-87
-uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:26:5-82
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:26:22-79
-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:28:5-30:47
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:30:9-44
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:29:9-63
-permission#com.tgm_ionic.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:28:5-30:47
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:30:9-44
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:29:9-63
-uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:32:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:32:22-76
-uses-permission#com.tgm_ionic.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:32:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:32:22-76
-meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:36:13-38:85
-	android:value
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:38:17-82
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:37:17-96
-receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:41:9-50:20
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:43:13-36
-	android:permission
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:44:13-73
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:42:13-78
-intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:45:13-49:29
-intent-filter#com.google.android.c2dm.intent.RECEIVE+com.tgm_ionic
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:45:13-49:29
-action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:46:17-81
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:46:25-78
-category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:48:17-61
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:48:27-58
-category#com.tgm_ionic
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:48:17-61
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:48:27-58
-service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:56:9-62:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:58:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:57:13-77
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:59:13-61:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:59:28-51
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:60:17-80
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/af3e4cd8f25a2f819439d32258eed05f/AndroidManifest.xml:60:25-77
-provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/4f4839c8aae175a4532b4f492bc0677a/AndroidManifest.xml:9:9-13:39
+		ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:34:19-64
+provider#com.facebook.marketing.internal.MarketingInitProvider
+ADDED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/8b16085cd59a327c7f9cd059d07b8125/AndroidManifest.xml:29:9-32:40
 	android:authorities
-		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/4f4839c8aae175a4532b4f492bc0677a/AndroidManifest.xml:11:13-72
+		ADDED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/8b16085cd59a327c7f9cd059d07b8125/AndroidManifest.xml:31:13-73
 	android:exported
-		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/4f4839c8aae175a4532b4f492bc0677a/AndroidManifest.xml:12:13-37
-	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/4f4839c8aae175a4532b4f492bc0677a/AndroidManifest.xml:13:13-36
+		ADDED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/8b16085cd59a327c7f9cd059d07b8125/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/4f4839c8aae175a4532b4f492bc0677a/AndroidManifest.xml:10:13-77
+		ADDED from [com.facebook.android:facebook-marketing:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.40.0.aar/8b16085cd59a327c7f9cd059d07b8125/AndroidManifest.xml:30:13-81
+provider#com.facebook.internal.FacebookInitProvider
+ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:39:9-42:40
+	android:authorities
+		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:41:13-72
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:42:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:40:13-70
+receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
+ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:44:9-50:20
+	android:exported
+		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:46:13-37
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:45:13-86
+intent-filter#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:47:13-49:29
+action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
+ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:48:17-95
+	android:name
+		ADDED from [com.facebook.android:facebook-core:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-core-4.40.0.aar/14a0b5b9a9e36157fb1de5979a2d6bfe/AndroidManifest.xml:48:25-92
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/927ecf62cc29514f5e21ccb71a593a63/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/85fd04a330a38670285bab019c5548a3/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/927ecf62cc29514f5e21ccb71a593a63/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/85fd04a330a38670285bab019c5548a3/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/927ecf62cc29514f5e21ccb71a593a63/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/85fd04a330a38670285bab019c5548a3/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/927ecf62cc29514f5e21ccb71a593a63/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-base-11.8.0.aar/85fd04a330a38670285bab019c5548a3/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/c6f656a58076d8c881defe07e47a1d5d/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/c87eb8d9b1fa7da1519961b49e8321d5/AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/c6f656a58076d8c881defe07e47a1d5d/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/c87eb8d9b1fa7da1519961b49e8321d5/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/c6f656a58076d8c881defe07e47a1d5d/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.8.0.aar/c87eb8d9b1fa7da1519961b49e8321d5/AndroidManifest.xml:24:13-58

@@ -266,11 +266,10 @@ dependencies {
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
     compile "com.facebook.android:facebook-android-sdk:4.40.0"
-    compile "com.android.support:support-annotations:27.+"
     compile "com.google.android.gms:play-services-auth:11.8.0"
     compile "com.google.android.gms:play-services-identity:11.8.0"
+    compile "com.android.support:support-annotations:27.+"
     // SUB-PROJECT DEPENDENCIES END
-    implementation 'com.google.firebase:firebase-core:16.0.1'
 }
 
 def promptForReleaseKeyPassword() {
@@ -332,7 +331,3 @@ for (def func : cdvPluginPostBuildExtras) {
 if (hasProperty('postBuildExtras')) {
     postBuildExtras()
 }
-
-apply plugin: 'com.google.gms.google-services'
-
-
