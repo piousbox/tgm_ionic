@@ -43,57 +43,72 @@
 </ion-app>
 -->
 
-<ion-app>
-  <ion-menu>
-    <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
 
-    <ion-content>
-      <ion-list>
-        <ion-menu-toggle auto-hide="false">
-          <ion-item button (click)="navigate('newsfeed')" >
-            <ion-icon slot="start" name='paper'></ion-icon>
-            <ion-label>
-              Newsfeed
-            </ion-label>
-          </ion-item>
-          <ion-item button (click)="navigate('settings')">
-            <ion-icon slot="start" name='person'></ion-icon>
-            <ion-label>
-              Account
-            </ion-label>
-          </ion-item>
-          <ion-item button>
-            <ion-icon slot="start" name='power'></ion-icon>
-            <ion-label>
-              Logout
-            </ion-label>
-          </ion-item>
-        </ion-menu-toggle>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
+<ion-app >
+  <div *ngIf="!currentUser" >
+    <div>aaa? {{ env.newsitemsPath }}</div>
+    <div>bbb? {{ currentUser }}</div>
+    <ion-router-outlet></ion-router-outlet>
+  </div>
 
-  <ion-content class="ion-page" main>
-    <ion-header>
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-menu-toggle>
-            <ion-button>
-              <ion-icon slot="icon-only" name="menu"></ion-icon>
-            </ion-button>
+  <div *ngIf="currentUser" >
+    <ion-menu>
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false">
+            <ion-item button (click)="navigate('newsfeed')" >
+              <ion-icon slot="start" name='paper'></ion-icon>
+              <ion-label>
+                Newsfeed
+              </ion-label>
+            </ion-item>
+            <ion-item button (click)="navigate('account')">
+              <ion-icon slot="start" name='person'></ion-icon>
+              <ion-label>
+                Account
+              </ion-label>
+            </ion-item>
+            <ion-item button (click)="doFacebookLogin()">
+              <ion-icon slot="start" name='power'></ion-icon>
+              <ion-label>
+                Login
+              </ion-label>
+            </ion-item>
+            <ion-item button (click)="doFacebookLogout()">
+              <ion-icon slot="start" name='power'></ion-icon>
+              <ion-label>
+                Logout
+              </ion-label>
+            </ion-item>
           </ion-menu-toggle>
-        </ion-buttons>
-        <ion-title>Header</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content padding>
-      <ion-router-outlet></ion-router-outlet>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+
+    <ion-content class="ion-page" main>
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-toggle>
+              <ion-button>
+                <ion-icon slot="icon-only" name="menu"></ion-icon>
+              </ion-button>
+            </ion-menu-toggle>
+          </ion-buttons>
+          <ion-title>Header</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content padding>
+        <ion-router-outlet></ion-router-outlet>
+      </ion-content>
     </ion-content>
-  </ion-content>
+  </div>
 </ion-app>
 
 <!-- <ion-menu-controller></ion-menu-controller> -->

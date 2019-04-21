@@ -9,6 +9,8 @@ import { LoadingController, AlertController, Platform } from '@ionic/angular';
 import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 
 import { environment } from '../../environments/environment';
+import { AppRoutingModule } from '../app-routing.module';
+import { AppRouter } from '../app-router';
 
 @Component({
   selector: 'app-login',
@@ -38,13 +40,13 @@ export class LoginPage {
     this.fb.login(['public_profile', 'user_friends', 'email']
     ).then((res: any) => { // res: FacebookLoginResponse
       const r = res.authResponse
-      console.log('+++ Logged into Facebook!', r)
-      this.nativeStorage.setItem('facebook_user', {
+      // console.log('+++ Logged into Facebook!', r)
+      this.nativeStorage.setItem('current_user', {
         accessToken: r.accessToken,
         signedRequest: r.signedRequest,
         userID: r.userID,
       }).then(() => {
-        this.router.navigate(['/user'])
+        this.router.navigate([ AppRouter.rootPath ])
       }, (error) => {
         console.log('+++ error:', error)
       })
@@ -55,7 +57,7 @@ export class LoginPage {
     console.log('+++ doGoogleLogin() 3.4', environment.googleWebClientId)
 
     const loading = await this.loadingController.create({
-      message: 'Please wait...'
+      message: 'Please wait 3...'
     });
     this.presentLoading(loading);
     this.googlePlus.login({
@@ -74,7 +76,7 @@ export class LoginPage {
         idToken: user.idToken,
         userId: user.userId,
       }).then(() => {
-         this.router.navigate(["/user"]);
+         this.router.navigate(["/user"]); // doGoogleLogin()
       }, (error) => {
         console.log(error);
       })
@@ -96,7 +98,6 @@ export class LoginPage {
 
     await alert.present();
   }
-
 
   async presentLoading(loading) {
     return await loading.present();
