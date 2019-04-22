@@ -73,6 +73,14 @@ module.exports = [
     "clobbers": [
       "window.StatusBar"
     ]
+  },
+  {
+    "id": "com.moust.cordova.videoplayer.VideoPlayer",
+    "file": "plugins/com.moust.cordova.videoplayer/www/videoplayer.js",
+    "pluginId": "com.moust.cordova.videoplayer",
+    "clobbers": [
+      "VideoPlayer"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -86,7 +94,8 @@ module.exports.metadata =
   "cordova-plugin-nativestorage": "2.3.2",
   "cordova-plugin-splashscreen": "5.0.2",
   "cordova-plugin-statusbar": "2.4.2",
-  "cordova-plugin-whitelist": "1.3.3"
+  "cordova-plugin-whitelist": "1.3.3",
+  "com.moust.cordova.videoplayer": "1.0.1"
 };
 // BOTTOM OF METADATA
 });

@@ -6,8 +6,8 @@ if [[ -z "${NODE_ENV}" ]]; then
 fi
 env="${NODE_ENV}"
 
-$origin="manager.piousbox.com"
-$protocol="https"
+origin="manager.piousbox.com"
+protocol="https"
 
 set -e
 
