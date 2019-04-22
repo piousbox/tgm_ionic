@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Platform } from '@ionic/angular';
+
+import { AppServiceService } from '../app-service.service';
+
 @Component({
   selector: 'app-account',
   templateUrl: './account.page.html',
@@ -7,9 +11,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccountPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private appService: AppServiceService,
+    private platform: Platform,
+  ) {
+    console.log('+++ account constructor');
+    this.platform.ready().then(() => {
+      this.appService.setTitle('Account');
+    });
+  }
 
   ngOnInit() {
+    console.log('+++ account ngOnInit');
+    this.platform.ready().then(() => {
+      this.appService.setTitle('Account');
+    });
   }
 
 }

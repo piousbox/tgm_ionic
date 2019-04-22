@@ -1,10 +1,12 @@
 
+<div *ngIf="!newsitems" >No newsitems</div>
+
 <ion-content padding *ngIf='newsitems' >
   <ion-content >
     <h1>Newsfeed</h1>
 
     <ion-list >
-      <ion-item  *ngFor="let n of newsitems">
+      <ion-item *ngFor="let n of newsitems">
 
         <ion-card class='flex-scroll-container' >
           <h5>{{ n.name }} ({{ n.photos.length }})</h5>

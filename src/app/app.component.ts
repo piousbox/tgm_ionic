@@ -14,6 +14,8 @@ import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppRouter } from './app-router';
+import { AppServiceService } from './app-service.service'
+
 
 @Component({
   selector: 'app-root',
@@ -22,11 +24,9 @@ import { AppRouter } from './app-router';
 })
 export class AppComponent implements OnInit {
 
-  user: any = {};
-  userReady: boolean = false;
-  newsitems: any = [];
   env: any = {};
   currentUser: any = null;
+  mainTitle: string = '';
 
   constructor(
     private platform: Platform,
@@ -36,46 +36,25 @@ export class AppComponent implements OnInit {
     private router: Router,
     private menu: MenuController,
     private fb: Facebook,
+    private appService: AppServiceService,
     public loadingController: LoadingController,
     public httpClient: HttpClient, 
 
   ) {
     this.initializeApp();
     this.env = environment;
+    this.mainTitle = this.appService.title;
 
+  }
 
+  ionViewDidLoad () {
+    console.log('+++ app.component ionViewDidLoad');
+
+    this.mainTitle = this.appService.title;
   }
 
   navigate(where) {
     this.router.navigate([where]);
-  }
-
-  async ngOnInit() {    
-    /* const loading = await this.loadingController.create({
-      message: 'Please wait 2...'
-    });
-    await loading.present(); */
-
-    this.platform.ready().then(() => {
-      this.nativeStorage.getItem('current_user').then(data => {
-        this.currentUser = data;
-        console.log('+++ got current user!', data);
-
-        if ('facebook' == data.type) {
-          const params = new HttpParams().set('accessToken', data.accessToken)
-          const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
-          answer.subscribe(data => {
-            console.log('+++ from m3: ', data);
-            
-            if (data['newsitems']) {
-              this.newsitems = data['newsitems'];
-            }
-          }, error => {
-            console.log('+++ error from m3:', error)
-          })
-        }
-      });
-    });
   }
 
   doFacebookLogout () {
@@ -88,6 +67,8 @@ export class AppComponent implements OnInit {
 
     this.fb.logout();
   }
+
+  ngOnInit () {}
 
   doFacebookLogin () {
     this.fb.login(['public_profile', 'user_friends', 'email']

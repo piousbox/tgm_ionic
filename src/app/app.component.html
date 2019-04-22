@@ -46,8 +46,6 @@
 
 <ion-app >
   <div *ngIf="!currentUser" >
-    <div>aaa? {{ env.newsitemsPath }}</div>
-    <div>bbb? {{ currentUser }}</div>
     <ion-router-outlet></ion-router-outlet>
   </div>
 
@@ -101,7 +99,7 @@
               </ion-button>
             </ion-menu-toggle>
           </ion-buttons>
-          <ion-title>Header</ion-title>
+          <ion-title>{{ mainTitle }}</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content padding>

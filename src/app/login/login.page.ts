@@ -45,6 +45,7 @@ export class LoginPage {
         accessToken: r.accessToken,
         signedRequest: r.signedRequest,
         userID: r.userID,
+        type: 'facebook',
       }).then(() => {
         this.router.navigate([ AppRouter.rootPath ])
       }, (error) => {
