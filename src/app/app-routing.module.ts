@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'navigator/:extra', loadChildren: './main-navigator/main-navigator.module#MainNavigatorModule' },
   { path: 'page1', loadChildren: './main-navigator/page1/page1.module#Page1PageModule' },
   { path: 'page3', loadChildren: './main-navigator/page3/page3.module#Page3PageModule' },
+  { path: 'video-sample', loadChildren: './video-sample/video-sample.module#VideoSamplePageModule' },
 ];
 
 @NgModule({

@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
 MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/374a171baa6e065e5c484d7c1d6cef92/AndroidManifest.xml:21:1-31:12
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.android.gms:play-services-identity:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-identity-11.8.0.aar/1ab8d55d5c72ef935ec40c31a837fedd/AndroidManifest.xml:17:1-24:12
@@ -38,8 +38,8 @@ MERGED from [com.google.android.gms:play-services-base-license:11.8.0] /Users/pi
 MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-basement-license-11.8.0.aar/4bb7ab80a19bdcd11ae8fdbea9df9062/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/9384c952864d2b5e24c3d14e271c5f26/AndroidManifest.xml:2:1-6:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/874445b25694c647400d56202735099f/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
-INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-19:12
+INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:1-21:12
 	package
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:2:98-121
 		INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml
@@ -73,7 +73,7 @@ ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/
 	android:name
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:5:5-15:19
+ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:5:5-17:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/374a171baa6e065e5c484d7c1d6cef92/AndroidManifest.xml:28:5-29:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/374a171baa6e065e5c484d7c1d6cef92/AndroidManifest.xml:28:5-29:19
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:22:5-37:19
@@ -172,9 +172,25 @@ MERGED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradl
 		ADDED from [com.facebook.android:facebook-common:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-common-4.40.0.aar/cdd591ae5ebc6e698f09c12b49e23fcb/AndroidManifest.xml:32:13-63
 	android:name
 		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:14:139-183
+activity#com.hutchind.cordova.plugins.streamingmedia.SimpleAudioStream
+ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:15:9-181
+	android:label
+		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:15:66-101
+	android:configChanges
+		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:15:19-65
+	android:name
+		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:15:102-178
+activity#com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream
+ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:9-181
+	android:label
+		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:66-101
+	android:configChanges
+		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:19-65
+	android:name
+		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:102-178
 uses-sdk
-ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:5-74
-INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:5-74
+ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:18:5-74
+INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:18:5-74
 MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/374a171baa6e065e5c484d7c1d6cef92/AndroidManifest.xml:24:5-26:41
 MERGED from [com.facebook.android:facebook-android-sdk:4.40.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.40.0.aar/374a171baa6e065e5c484d7c1d6cef92/AndroidManifest.xml:24:5-26:41
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:20:5-44
@@ -245,21 +261,21 @@ MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/p
 MERGED from [com.google.android.gms:play-services-tasks-license:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-tasks-license-11.8.0.aar/9384c952864d2b5e24c3d14e271c5f26/AndroidManifest.xml:4:5-43
 MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/874445b25694c647400d56202735099f/AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/874445b25694c647400d56202735099f/AndroidManifest.xml:20:5-22:41
-INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:5-74
+INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:18:5-74
 	android:targetSdkVersion
-		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:42-71
+		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:18:42-71
 	android:minSdkVersion
-		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:16:15-41
+		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:18:15-41
 		INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:17:5-71
+ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:19:5-71
 	android:name
-		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:17:22-68
+		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:19:22-68
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:18:5-74
+ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:20:5-74
 	android:name
-		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:18:22-71
+		ADDED from /Users/piousbox/projects/node.js/tgm_ionic/platforms/android/app/src/main/AndroidManifest.xml:20:22-71
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:11.8.0] /Users/piousbox/.gradle/caches/transforms-1/files-1.1/play-services-auth-11.8.0.aar/72887b037d48886e5909ba6d5792303e/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents

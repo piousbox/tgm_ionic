@@ -99,6 +99,14 @@ module.exports = [
         "clobbers": [
             "VideoPlayer"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-streaming-media/www/StreamingMedia.js",
+        "id": "cordova-plugin-streaming-media.StreamingMedia",
+        "pluginId": "cordova-plugin-streaming-media",
+        "clobbers": [
+            "streamingMedia"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -113,7 +121,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-whitelist": "1.3.3",
-    "com.moust.cordova.videoplayer": "1.0.1"
+    "com.moust.cordova.videoplayer": "1.0.1",
+    "cordova-plugin-streaming-media": "2.2.0"
 }
 // BOTTOM OF METADATA
 });
