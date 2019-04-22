@@ -7,6 +7,9 @@ const routes: Routes = [
   { path: 'settings', loadChildren: './settings/settings.module#SettingsPageModule' },
   { path: 'newsfeed', loadChildren: './newsfeed/newsfeed.module#NewsfeedPageModule' },
   { path: 'account', loadChildren: './account/account.module#AccountPageModule' },
+  { path: 'faq', loadChildren: './pages/faq/faq.module#FaqPageModule' },
+  { path: 'contact', loadChildren: './pages/contact/contact.module#ContactPageModule' },
+  { path: 'legal', loadChildren: './pages/legal/legal.module#LegalPageModule' },
 ];
 
 @NgModule({
