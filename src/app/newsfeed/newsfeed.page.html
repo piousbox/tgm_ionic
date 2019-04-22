@@ -1,13 +1,8 @@
 
 <div *ngIf="!newsitems" >No newsitems</div>
 
-<ion-content padding *ngIf='newsitems' >
-  <ion-content >
-    <h1>
-      Newsfeed
-      <ion-button (click)="navigate('account')" >Account</ion-button>
-    </h1>
-
+<ion-content *ngIf='newsitems' >
+  
     <ion-list >
       <ion-item *ngFor="let n of newsitems">
 
@@ -27,5 +22,5 @@
 
       </ion-item>
     </ion-list>
-  </ion-content>
+  
 </ion-content>

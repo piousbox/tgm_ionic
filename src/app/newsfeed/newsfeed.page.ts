@@ -14,6 +14,7 @@ import { environment } from '../../environments/environment';
 export class NewsfeedPage {
   currentUser: any = null;
   newsitems: any = [];
+  mainTitle: string = '';
 
   constructor(
     private nativeStorage: NativeStorage,
@@ -21,7 +22,8 @@ export class NewsfeedPage {
     public httpClient: HttpClient, 
   ) {
     console.log('+++ newsfeed constructor');
-    // appService.setTitle('Newsfeed');
+    appService.setTitle('Newsfeed');
+    this.mainTitle = this.appService.title;
 
     this.nativeStorage.getItem('current_user').then(data => {
       this.currentUser = data;

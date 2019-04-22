@@ -46,10 +46,7 @@
 
 <ion-app >
   <div *ngIf="!currentUser" >
-    <ion-title>no current user</ion-title>
-
     <ion-router-outlet></ion-router-outlet>
-    
   </div>
 
   <div *ngIf="currentUser" >
@@ -102,10 +99,10 @@
               </ion-button>
             </ion-menu-toggle>
           </ion-buttons>
-          <ion-title>{{ mainTitle }}</ion-title>
+          <ion-title>{{ appService.title }}</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content padding>
+      <ion-content>
         <ion-router-outlet></ion-router-outlet>
       </ion-content>
     </ion-content>

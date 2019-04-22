@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
       this.nativeStorage.getItem('current_user').then(data => {
         this.currentUser = data;
 
-        if ('facebook' == data.type) {
+        /* if ('facebook' == data.type) {
           const params = new HttpParams().set('accessToken', data.accessToken)
           const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
           answer.subscribe(data => {
@@ -61,12 +61,13 @@ export class AppComponent implements OnInit {
           }, error => {
             console.log('+++ error from m3:', error)
           });
-        }
+        } */
+
       }, error => {
         console.log('+++ newsfeed doesnt have current_user:', error);
       });
-    });
-    
+    }); 
+
   }
 
   ionViewDidLoad () {
@@ -115,10 +116,10 @@ export class AppComponent implements OnInit {
   initializeApp() {
     this.platform.ready().then(() => {
       this.nativeStorage.getItem('current_user').then( data => {
-        // this.router.navigate([ AppRouter.rootPath ]);
+        this.router.navigate([ AppRouter.rootPath ]);
         this.splashScreen.hide();
       }, err => {
-        // this.router.navigate([ AppRouter.loginPath ]);
+        this.router.navigate([ AppRouter.loginPath ]);
         this.splashScreen.hide();
       })
       this.statusBar.styleDefault();
