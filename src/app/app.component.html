@@ -46,7 +46,10 @@
 
 <ion-app >
   <div *ngIf="!currentUser" >
+    <ion-title>no current user</ion-title>
+
     <ion-router-outlet></ion-router-outlet>
+    
   </div>
 
   <div *ngIf="currentUser" >

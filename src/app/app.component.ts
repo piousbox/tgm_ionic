@@ -41,10 +41,32 @@ export class AppComponent implements OnInit {
     public httpClient: HttpClient, 
 
   ) {
+    console.log('+++ app.component constructor');
+
     this.initializeApp();
     this.env = environment;
     this.mainTitle = this.appService.title;
 
+    this.platform.ready().then(() => {
+      this.nativeStorage.getItem('current_user').then(data => {
+        this.currentUser = data;
+
+        if ('facebook' == data.type) {
+          const params = new HttpParams().set('accessToken', data.accessToken)
+          const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
+          answer.subscribe(data => {
+            if (data['newsitems']) {
+              this.newsitems = data['newsitems'];
+            }
+          }, error => {
+            console.log('+++ error from m3:', error)
+          });
+        }
+      }, error => {
+        console.log('+++ newsfeed doesnt have current_user:', error);
+      });
+    });
+    
   }
 
   ionViewDidLoad () {
@@ -75,6 +97,8 @@ export class AppComponent implements OnInit {
     ).then((res: any) => { // res: FacebookLoginResponse      
       const r = res.authResponse
       console.log('+++ Logged into Facebook!', r)
+
+      this.currentUser = r;
       this.nativeStorage.setItem('current_user', {
         accessToken: r.accessToken,
         signedRequest: r.signedRequest,
@@ -91,10 +115,10 @@ export class AppComponent implements OnInit {
   initializeApp() {
     this.platform.ready().then(() => {
       this.nativeStorage.getItem('current_user').then( data => {
-        this.router.navigate([ AppRouter.rootPath ]);
+        // this.router.navigate([ AppRouter.rootPath ]);
         this.splashScreen.hide();
       }, err => {
-        this.router.navigate([ AppRouter.loginPath ]);
+        // this.router.navigate([ AppRouter.loginPath ]);
         this.splashScreen.hide();
       })
       this.statusBar.styleDefault();
