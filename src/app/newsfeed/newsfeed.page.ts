@@ -13,18 +13,12 @@ export class NewsfeedPage {
   constructor(
     private nativeStorage: NativeStorage,
   ) {
-    console.log('+++ newsfeed constructor');
-
     this.nativeStorage.getItem('current_user').then(data => {
       this.currentUser = data;
-      console.log('+++ newsfeed:', data);
-
       if ('facebook' == data.type) {
         const params = new HttpParams().set('accessToken', data.accessToken)
         const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
         answer.subscribe(data => {
-          console.log('+++ from m3: ', data);
-          
           if (data['newsitems']) {
             this.newsitems = data['newsitems'];
           }
@@ -40,7 +34,7 @@ export class NewsfeedPage {
   ionViewDidLoad () {
     console.log('+++ newsfeed ionViewDidLoad');
 
-    this.nativeStorage.getItem('current_user').then(data => {
+    /* this.nativeStorage.getItem('current_user').then(data => {
       this.currentUser = data;
       console.log('+++ newsfeed:', data);
 
@@ -59,7 +53,7 @@ export class NewsfeedPage {
       }
     }, error => {
       console.log('+++ newsfeed doesnt have current_user:', error);
-    });
+    }); */
   }
 
 }
