@@ -3,7 +3,7 @@
     <name>com.tgm_ionic</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://localhost.com:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -96,7 +96,10 @@
     </plugin>
     <allow-navigation href="http://localhost.com:8100" sessionid="e5258234" />
     <plugin name="com.moust.cordova.videoplayer" spec="https://github.com/moust/cordova-plugin-videoplayer.git" />
+    <allow-navigation href="https://dist.bambuser.net/*" />
+    <allow-navigation href="https://static.bambuser.com/*" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
     <engine name="ios" spec="^4.5.5" />
-    <engine name="android" spec="7.1.4" />
     <engine name="browser" spec="5.0.4" />
+    <engine name="android" spec="7.1.4" />
 </widget>

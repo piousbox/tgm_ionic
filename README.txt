@@ -1,6 +1,9 @@
 
 == Develop ==
 
+ https://s3.amazonaws.com/tgm-videos/MVI_0061_out.webm
+
+
 == Test ==
  npm run test
  
@@ -26,3 +29,4 @@
  chrome://inspect/#devices
  
  ionic cordova run ios
+
