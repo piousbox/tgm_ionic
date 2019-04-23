@@ -6,12 +6,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { AccountPage } from './account.page';
+import { Account2Page } from './account2.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: AccountPage
-  }
+  { path: '',     component: AccountPage,  },
+  { path: 'acc2', component: Account2Page, },
 ];
 
 @NgModule({
@@ -21,6 +20,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [AccountPage]
+  declarations: [AccountPage, Account2Page]
 })
 export class AccountPageModule {}

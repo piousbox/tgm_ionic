@@ -1,4 +1,4 @@
 export class AppRouter {
-  static loginPath = 'login';
-  static rootPath = 'newsfeed';
+  // static loginPath = 'login';
+  static rootPath = 'pages/faq';
 }

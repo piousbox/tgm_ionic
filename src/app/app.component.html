@@ -1,55 +1,11 @@
 
-<!--
-<ion-app>
-  <ion-header>
-    <ion-toolbar>
-      <ion-button (click)="openFirst()" >
-        <ion-icon slot="start" name="menu"></ion-icon>
-        Menu
-      </ion-button>
-    </ion-toolbar>
-  </ion-header>
-  <div class="main-menu">Menu</div>  
-  <ion-router-outlet></ion-router-outlet>
-  <ion-footer>
-    <ion-toolbar>
-      <ion-title>Footer</ion-title>
-    </ion-toolbar>
-  </ion-footer>
-</ion-app>
--->
-
-<!--
-<ion-app>
-  <ion-tabs>
-    <ion-tab tab="home">
-      <h1>Home Content</h1>
-    </ion-tab>
-    <ion-tab tab="settings">
-      <h1>Settings Content</h1>
-    </ion-tab>
-
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="home">
-        <ion-label>Home</ion-label>
-        <ion-icon name="home"></ion-icon>
-      </ion-tab-button>
-      <ion-tab-button tab="settings">
-        <ion-label>Settings</ion-label>
-        <ion-icon name="settings"></ion-icon>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
-</ion-app>
--->
-
-
 <ion-app >
+
   <div *ngIf="!currentUser" >
-    <ion-router-outlet></ion-router-outlet>
+    <div>no current_user</div>
   </div>
 
-  <div *ngIf="currentUser" >
+  <div >
     <ion-menu>
       <ion-header>
         <ion-toolbar color="primary">
@@ -66,10 +22,22 @@
                 Newsfeed
               </ion-label>
             </ion-item>
+            <ion-item button (click)="navigate('newsfeed2')" >
+              <ion-icon slot="start" name='paper'></ion-icon>
+              <ion-label>
+                Newsfeed 2
+              </ion-label>
+            </ion-item>
             <ion-item button (click)="navigate('account')">
               <ion-icon slot="start" name='person'></ion-icon>
               <ion-label>
                 Account
+              </ion-label>
+            </ion-item>
+            <ion-item button (click)="navigate('account/acc2')">
+              <ion-icon slot="start" name='person'></ion-icon>
+              <ion-label>
+                Account 2
               </ion-label>
             </ion-item>
             <ion-item button (click)="navigate('video-sample')" >
@@ -102,7 +70,7 @@
               </ion-button>
             </ion-menu-toggle>
           </ion-buttons>
-          <ion-title>{{ appService.title }}</ion-title>
+          <ion-title>{{ mainTitle }}</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content>
@@ -110,6 +78,59 @@
       </ion-content>
     </ion-content>
   </div>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ul>
+        <li>version: 0.0.0</li>
+        <li>mainTitle: {{ mainTitle }}</li>
+        <li>current_user: {{ currentUserStr }}</li>
+      </ul>
+    </ion-toolbar>
+  </ion-footer>
+
 </ion-app>
 
 <!-- <ion-menu-controller></ion-menu-controller> -->
+<!--
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-button (click)="openFirst()" >
+        <ion-icon slot="start" name="menu"></ion-icon>
+        Menu
+      </ion-button>
+    </ion-toolbar>
+  </ion-header>
+  <div class="main-menu">Menu</div>  
+  <ion-router-outlet></ion-router-outlet>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>Footer</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+</ion-app>
+-->
+<!--
+<ion-app>
+  <ion-tabs>
+    <ion-tab tab="home">
+      <h1>Home Content</h1>
+    </ion-tab>
+    <ion-tab tab="settings">
+      <h1>Settings Content</h1>
+    </ion-tab>
+
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-label>Home</ion-label>
+        <ion-icon name="home"></ion-icon>
+      </ion-tab-button>
+      <ion-tab-button tab="settings">
+        <ion-label>Settings</ion-label>
+        <ion-icon name="settings"></ion-icon>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-app>
+-->

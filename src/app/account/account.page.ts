@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Platform } from '@ionic/angular';
 
-import { AppServiceService } from '../app-service.service';
+import { AppService } from '../app-service';
 
 @Component({
   selector: 'app-account',
@@ -12,7 +12,7 @@ import { AppServiceService } from '../app-service.service';
 export class AccountPage implements OnInit {
 
   constructor(
-    private appService: AppServiceService,
+    private appService: AppService,
     private platform: Platform,
   ) {
     console.log('+++ account constructor');
@@ -28,4 +28,8 @@ export class AccountPage implements OnInit {
     });
   }
 
+  ionViewDidLoad () {
+    console.log('+++ ionViewDidLoad of account');
+  }
+  
 }

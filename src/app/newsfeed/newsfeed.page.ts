@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
-import { AppServiceService } from '../app-service.service';
+import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 
 @Component({
@@ -11,14 +11,14 @@ import { environment } from '../../environments/environment';
   templateUrl: './newsfeed.page.html',
   styleUrls: ['./newsfeed.page.scss'],
 })
-export class NewsfeedPage {
+export class NewsfeedPage implements OnInit {
   currentUser: any = null;
   newsitems: any = [];
   mainTitle: string = '';
 
   constructor(
     private nativeStorage: NativeStorage,
-    private appService: AppServiceService,
+    private appService: AppService,
     public httpClient: HttpClient, 
   ) {
     console.log('+++ newsfeed constructor');
@@ -43,6 +43,13 @@ export class NewsfeedPage {
     }, error => {
       console.log('+++ newsfeed doesnt have current_user:', error);
     });
+  }
+
+  ngOnInit() {
+    console.log('+++ newsfeed ngOnInit');
+    /* this.platform.ready().then(() => {
+      this.appService.setTitle('Account');
+    }); */
   }
 
   ionViewDidLoad () {
