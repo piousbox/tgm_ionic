@@ -121,8 +121,10 @@ export class AppComponent implements OnInit {
 
   doFacebookLogout () {
     console.log('+++ logging out facebook...');
-    this.nativeStorage.remove('facebook_user');
+    // this.nativeStorage.remove('facebook_user');
     this.nativeStorage.remove('current_user');
+    // this.currentUser = null;
+    // this.currentUserStr = null;
     this.render();
     // this.nativeStorage.clear();
     // this.fb.logout();
@@ -135,7 +137,10 @@ export class AppComponent implements OnInit {
     this.nativeStorage.getItem('current_user').then( data => {
       this.currentUser    = data;
       this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
-    }, err => { console.log('+++ but current_user is cleared') }).catch( e => console.log('+++ render error:', e));
+    }, err => { 
+      this.currentUser    = null;
+      this.currentUserStr = null;
+    }).catch( e => console.log('+++ render error:', e));
   }
 
   ionViewDidLoad () {
