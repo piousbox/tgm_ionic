@@ -6,8 +6,8 @@
     <ion-list >
       <ion-item *ngFor="let n of newsitems">
 
-        <ion-card class='flex-scroll-container' *ngIf="n.photos" >
-          <h5>{{ n.name }} ({{ n.photos.length }})</h5>
+        <ion-card padding class='flex-scroll-container' *ngIf="n.photos" >
+          <p><ion-icon slot="start" name='camera'></ion-icon> &nbsp; {{ n.name }} ({{ n.photos.length }})</p>
           <p>{{ n.created_at }}</p>
           <ion-list class='flex-scroll' >
             <ion-item *ngFor="let ph of n.photos">
@@ -20,12 +20,15 @@
           </ion-list>
         </ion-card>
 
-        <ion-card *ngIf="n.item_type=='video'" >
-          <p>video</p>
+        <ion-card padding *ngIf="n.item_type=='video'" >
+          <p><ion-icon slot="start" name='videocam'></ion-icon> &nbsp; {{ n.name }}</p>
+          <p>{{ n.created_at }}</p>
           <video src="{{ n.url }}" width="100%" controls ></video>
         </ion-card>
 
       </ion-item>
     </ion-list>
+
+    <br /><br /><br /><br /><br /><br />
   
 </ion-content>
