@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpParams, } from '@angular/common/http';
+import { Router, NavigationEnd } from '@angular/router';
 
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
@@ -19,6 +20,7 @@ export class NewsfeedPage implements OnInit {
   constructor(
     private nativeStorage: NativeStorage,
     private appService: AppService,
+    private router: Router,
     public httpClient: HttpClient, 
   ) {
     console.log('+++ newsfeed constructor');
@@ -42,6 +44,17 @@ export class NewsfeedPage implements OnInit {
       }
     }, error => {
       console.log('+++ newsfeed doesnt have current_user:', error);
+    });
+
+    router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.ngOnInit();
+      }
+      // Instance of should be: 
+      // NavigationEnd
+      // NavigationCancel
+      // NavigationError
+      // RoutesRecognized
     });
   }
 

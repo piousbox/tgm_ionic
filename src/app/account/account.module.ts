@@ -22,4 +22,5 @@ const routes: Routes = [
   ],
   declarations: [AccountPage, Account2Page]
 })
-export class AccountPageModule {}
+export class AccountPageModule {
+}

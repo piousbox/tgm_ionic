@@ -22,26 +22,11 @@
                 Newsfeed
               </ion-label>
             </ion-item>
-            <ion-item button (click)="navigate('newsfeed2')" >
-              <ion-icon slot="start" name='paper'></ion-icon>
-              <ion-label>
-                Newsfeed 2
-              </ion-label>
-            </ion-item>
             <ion-item button (click)="navigate('account')">
               <ion-icon slot="start" name='person'></ion-icon>
               <ion-label>
                 Account
               </ion-label>
-            </ion-item>
-            <ion-item button (click)="navigate('account/acc2')">
-              <ion-icon slot="start" name='person'></ion-icon>
-              <ion-label>
-                Account 2
-              </ion-label>
-            </ion-item>
-            <ion-item button (click)="navigate('video-sample')" >
-              <ion-icon slot="start" name='paper'></ion-icon><ion-label>Video Sample</ion-label>
             </ion-item>
             <ion-item button (click)="doFacebookLogin()">
               <ion-icon slot="start" name='power'></ion-icon>
@@ -81,7 +66,7 @@
 
   <ion-footer>
     <ion-toolbar>
-      0.0.4 :: {{ currentUser }}
+      0.0.4.a :: {{ currentUser }}
     </ion-toolbar>
   </ion-footer>
 
