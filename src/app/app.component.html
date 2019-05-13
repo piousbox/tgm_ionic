@@ -64,11 +64,35 @@
     </ion-content>
   </div>
 
-  <ion-footer>
-    <ion-toolbar>
-      0.0.4.a :: {{ currentUser }}
-    </ion-toolbar>
-  </ion-footer>
+  <div id="mainFooterWrapper" [class]="mainFooterVisible" >
+    <div id='bugBtn' (click)="toggleMainFooter()" >
+      <img src="assets/icons/bug.png" />
+    </div>
+    <div id="mainFooterContent" >
+      <ul>
+        <li>0.0.4.a :: {{ currentUser }}</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+        <li><b>a</b>: b</li>
+      </ul>
+      the end!
+    </div>
+  </div>
 
 </ion-app>
 

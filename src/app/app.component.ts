@@ -28,6 +28,7 @@ export class AppComponent implements OnInit {
   currentUser: any = null;
   currentUserStr: string = '<none>';
   mainTitle: string = '';
+  mainFooterVisible: string = '';
 
   constructor(
     private appService: AppService,
@@ -153,6 +154,11 @@ export class AppComponent implements OnInit {
 
   ionViewDidEnter () {
     console.log('+++ app.component ionViewDidEnter');
+  }
+
+  toggleMainFooter () {
+    console.log('+++ toggle main footer');
+    this.mainFooterVisible = this.mainFooterVisible == '' ? 'main-footer-visible' : '';
   }
 
 }
