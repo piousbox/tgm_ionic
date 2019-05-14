@@ -25,11 +25,11 @@ export class NewsfeedPage implements OnInit {
   ) {
     console.log('+++ newsfeed constructor');
     appService.setTitle('Newsfeed');
-    this.mainTitle = this.appService.title;
+    this.mainTitle = 'Newsfeed';
 
     this.nativeStorage.getItem('current_user').then(data => {
       this.currentUser = data;
-      console.log('+++ newsfeed currentUser:', data);
+      // console.log('+++ newsfeed currentUser:', data);
 
       if ('facebook' == data.type) {
         const params = new HttpParams().set('accessToken', data.accessToken)
@@ -59,14 +59,15 @@ export class NewsfeedPage implements OnInit {
   }
 
   ngOnInit() {
-    console.log('+++ newsfeed ngOnInit');
+    // console.log('+++ newsfeed ngOnInit');
+
     /* this.platform.ready().then(() => {
       this.appService.setTitle('Account');
     }); */
   }
 
   ionViewDidLoad () {
-    console.log('+++ newsfeed ionViewDidLoad');
+    //console.log('+++ newsfeed ionViewDidLoad');
 
     /* this.nativeStorage.getItem('current_user').then(data => {
       this.currentUser = data;

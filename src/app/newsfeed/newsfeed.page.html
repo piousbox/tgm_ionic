@@ -2,33 +2,37 @@
 <div *ngIf="!newsitems" >No newsitems</div>
 
 <ion-content *ngIf='newsitems' >
-  
-    <ion-list >
-      <ion-item *ngFor="let n of newsitems">
+    <ion-list lines="none" >
+      <ion-item class='item-borderless' *ngFor="let n of newsitems">
 
-        <ion-card padding class='flex-scroll-container' *ngIf="n.photos" >
-          <p><ion-icon slot="start" name='camera'></ion-icon> &nbsp; {{ n.name }} ({{ n.photos.length }})</p>
-          <p>{{ n.created_at }}</p>
-          <ion-list class='flex-scroll' >
-            <ion-item *ngFor="let ph of n.photos">
+        <div padding class='flex-scroll-container' *ngIf="n.photos" >
+          <ion-list lines="none" class='flex-scroll' >
+            <ion-card padding class='medium-cover'>
+              <p><ion-icon slot="start" name='camera'></ion-icon> &nbsp; {{ n.name }} ({{ n.photos.length }})</p>
+              <p>{{ n.created_at }}</p>
+            </ion-card>
+            <ion-item class='flex-scroll-inner' *ngFor="let ph of n.photos">
 
-              <div class='medium-photo'>
+              <ion-card class='medium-video' padding class='medium-photo'>
                 <img [src]="ph.small_url" />
-              </div>
+              </ion-card>
 
             </ion-item>
           </ion-list>
-        </ion-card>
+        </div>
 
-        <ion-card padding *ngIf="n.item_type=='video'" >
-          <p><ion-icon slot="start" name='videocam'></ion-icon> &nbsp; {{ n.name }}</p>
-          <p>{{ n.created_at }}</p>
-          <video src="{{ n.url }}" width="100%" controls ></video>
-        </ion-card>
+        <div padding class='flex-scroll-container' *ngIf="n.item_type=='video'" >
+          <ion-list lines="none" class='flex-scroll' >
+            <ion-card padding class='medium-cover'>
+              <p><ion-icon slot="start" name='videocam'></ion-icon> &nbsp; {{ n.name }}</p>
+              <p>{{ n.created_at }}</p>
+            </ion-card>
+            <ion-card padding class='medium-video'>
+              <video src="{{ n.url }}" width="100%" controls ></video>
+            </ion-card>
+          </ion-list>
+        </div>
 
       </ion-item>
-    </ion-list>
-
-    <br /><br /><br /><br /><br /><br />
-  
+    </ion-list>  
 </ion-content>
