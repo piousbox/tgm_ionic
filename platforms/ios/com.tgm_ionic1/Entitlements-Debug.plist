@@ -4,7 +4,7 @@
   <dict>
     <key>keychain-access-groups</key>
     <array>
-      <string>$(AppIdentifierPrefix)com.tgm_ionic</string>
+      <string>$(AppIdentifierPrefix)co.wasya.tgm_ionic1</string>
     </array>
   </dict>
 </plist>

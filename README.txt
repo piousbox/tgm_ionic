@@ -30,5 +30,7 @@
  chrome://inspect/#devices
  
  ionic cordova run ios
+ ionic serve
 
  ionic cordova build ios -- --buildFlag="-UseModernBuildSystem=0"
+ 

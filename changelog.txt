@@ -5,4 +5,4 @@
 0.0.2 - navigation and auth for klau
 0.0.3 - video player with controls
 0.0.4 - better onInit
-
+0.1.0 - 20190929 let's go

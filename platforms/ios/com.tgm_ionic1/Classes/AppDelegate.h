@@ -16,11 +16,18 @@
  specific language governing permissions and limitations
  under the License.
  */
+
 //
-// Prefix header for all source files of the 'com.tgm_ionic' target in the 'com.tgm_ionic' project
+//  AppDelegate.h
+//  com.tgm_ionic1
+//
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
 //
 
-#ifdef __OBJC__
-    #import <Foundation/Foundation.h>
-    #import <UIKit/UIKit.h>
-#endif
+#import <Cordova/CDVViewController.h>
+#import <Cordova/CDVAppDelegate.h>
+
+@interface AppDelegate : CDVAppDelegate {}
+
+@end

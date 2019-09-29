@@ -134,7 +134,7 @@ export class AppComponent implements OnInit {
   ngOnInit () {}
 
   render () {
-    console.log('+++ app.component render()');
+    // console.log('+++ app.component render()');
     this.nativeStorage.getItem('current_user').then( data => {
       this.currentUser    = data;
       this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
@@ -157,7 +157,7 @@ export class AppComponent implements OnInit {
   }
 
   toggleMainFooter () {
-    console.log('+++ toggle main footer');
+    // console.log('+++ toggle main footer');
     this.mainFooterVisible = this.mainFooterVisible == '' ? 'main-footer-visible' : '';
   }
 

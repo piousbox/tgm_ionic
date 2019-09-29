@@ -1,9 +1,9 @@
 {
-    "name": "com.tgm_ionic",
-    "version": "0.0.1",
+    "name": "com.piousbox.tgm",
+    "version": "0.1.0",
     "author": "Piousbox",
-    "homepage": "https://travel-guide.mobi/",
-    "description": "An Ionic 4 project to show how to add Google Login to an Ionic 4 app",
+    "homepage": "https://piousbox.com/",
+    "description": "",
     "private": true,
     "dependencies": {
         "@angular/common": "~7.0.0",
@@ -24,7 +24,7 @@
         "com.moust.cordova.videoplayer": "https://github.com/moust/cordova-plugin-videoplayer.git",
         "cordova-android": "7.1.4",
         "cordova-browser": "5.0.4",
-        "cordova-ios": "4.5.5",
+        "cordova-ios": "^4.5.5",
         "cordova-plugin-device": "^2.0.2",
         "cordova-plugin-facebook4": "4.2.1",
         "cordova-plugin-googleplus": "7.0.1",
@@ -90,9 +90,9 @@
             "com.moust.cordova.videoplayer": {}
         },
         "platforms": [
-            "ios",
             "browser",
-            "android"
+            "android",
+            "ios"
         ]
     },
     "config": {
