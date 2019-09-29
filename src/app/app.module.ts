@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { GooglePlus } from '@ionic-native/google-plus/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
+import { Facebook } from '@ionic-native/facebook/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +24,7 @@ import { NativeStorage } from '@ionic-native/native-storage/ngx';
     HttpClientModule,
   ],
   providers: [
+    Facebook,
     StatusBar,
     SplashScreen,
     GooglePlus,
