@@ -14,7 +14,7 @@
         "@angular/platform-browser-dynamic": "~7.0.0",
         "@angular/router": "~7.0.0",
         "@ionic-native/core": "5.0.0-beta.21",
-        "@ionic-native/facebook": "^5.2.0",
+        "@ionic-native/facebook": "^5.14.0",
         "@ionic-native/google-plus": "^5.0.0-beta.21",
         "@ionic-native/native-storage": "^5.0.0-beta.21",
         "@ionic-native/splash-screen": "5.0.0-beta.21",
@@ -78,8 +78,8 @@
             "cordova-plugin-ionic-keyboard": {},
             "cordova-plugin-nativestorage": {},
             "cordova-plugin-facebook4": {
-                "APP_ID": "123014244977505",
-                "APP_NAME": "tgm local"
+                "APP_ID": "3016949928380365",
+                "APP_NAME": "tgm.piousbox.com"
             },
             "cordova-plugin-googleplus": {
                 "REVERSED_CLIENT_ID": "com.googleusercontent.apps.287149765762-o6jb2tlv93qejrpo5km8ihe2n7rrtuc7",

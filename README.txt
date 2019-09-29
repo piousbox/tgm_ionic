@@ -32,10 +32,12 @@
  ionic cordova run ios
  ionic cordova build ios -- --buildFlag="-UseModernBuildSystem=0"
  ionic cordova run browser
- ionic cordova build browser –prod –release
+ ionic cordova build browser
 
 == Deploy browser ==
 From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
 
  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
  
+ ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="tgm.piousbox.com"
+ ionic cordova build browser

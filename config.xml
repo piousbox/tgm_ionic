@@ -90,12 +90,12 @@
         <variable name="WEB_APPLICATION_CLIENT_ID" value="287149765762-o6jb2tlv93qejrpo5km8ihe2n7rrtuc7.apps.googleusercontent.com" />
         <variable name="PLAY_SERVICES_VERSION" value="11.8.0" />
     </plugin>
-    <plugin name="cordova-plugin-facebook4" spec="4.2.1">
-        <variable name="APP_ID" value="123014244977505" />
-        <variable name="APP_NAME" value="tgm local" />
-    </plugin>
     <allow-navigation href="http://localhost.com:8100" sessionid="e5258234" />
     <plugin name="com.moust.cordova.videoplayer" spec="https://github.com/moust/cordova-plugin-videoplayer.git" />
+    <plugin name="cordova-plugin-facebook4" spec="4.2.1">
+        <variable name="APP_ID" value="3016949928380365" />
+        <variable name="APP_NAME" value="tgm.piousbox.com" />
+    </plugin>
     <engine name="browser" spec="5.0.4" />
     <engine name="android" spec="7.1.4" />
     <engine name="ios" spec="^4.5.5" />
