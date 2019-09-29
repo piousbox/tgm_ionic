@@ -31,3 +31,4 @@
  
  ionic cordova run ios
 
+ ionic cordova build ios -- --buildFlag="-UseModernBuildSystem=0"
