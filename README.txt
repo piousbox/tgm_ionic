@@ -33,3 +33,9 @@
  ionic cordova build ios -- --buildFlag="-UseModernBuildSystem=0"
  ionic cordova run browser
  ionic cordova build browser –prod –release
+
+== Deploy browser ==
+From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
+
+ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
+ 
