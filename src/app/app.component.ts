@@ -43,8 +43,8 @@ export class AppComponent implements OnInit {
     public httpClient: HttpClient,
     public loadingController: LoadingController,
   ) {
-    console.log('+++ app.component constructor');
-    this.render = this.render.bind( this );
+    // console.log('+++ app.component constructor');
+    // this.render = this.render.bind( this );
 
     this.initializeApp();
     this.env = environment;
@@ -99,25 +99,32 @@ export class AppComponent implements OnInit {
   }
 
   doFacebookLogin () {
-    this.fb.login(['public_profile', 'user_friends', 'email']
-    ).then((res: any) => { // res: FacebookLoginResponse      
-      const data = res.authResponse
-      console.log('+++ Logged into Facebook 2', data)
+    if (this.platform.is('cordova')) {
+      this.fb.login(['public_profile', 'email']).then((res: any) => { // res: FacebookLoginResponse      
+        const data = res.authResponse
+        console.log('+++ Logged into Facebook 2', data)
 
-      this.currentUser = data;
-      this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
+        this.currentUser = data;
+        this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
 
-      this.nativeStorage.setItem('current_user', {
-        accessToken: data.accessToken,
-        signedRequest: data.signedRequest,
-        userID: data.userID,
-        type: 'facebook',
-      }).then(() => {
-        this.router.navigate([ AppRouter.rootPath ])
-      }, (error) => {
-        console.log('+++ error:', error)
+        this.nativeStorage.setItem('current_user', {
+          accessToken: data.accessToken,
+          signedRequest: data.signedRequest,
+          userID: data.userID,
+          type: 'facebook',
+        }).then(() => {
+          this.router.navigate([ AppRouter.rootPath ])
+        }, (error) => {
+          console.log('+++ error:', error)
+        })
+      }).then(this.render).catch(e => console.log('Error logging into Facebook', e));
+    } else {
+      console.log('+++ cordova not available, falling back on nothing!')
+      this.fb.login(['public_profile', 'email']).then((res: any) => { 
+        const data = res.authResponse
+        console.log('+++ Logged into Facebook 2', data)
       })
-    }).then(this.render).catch(e => console.log('Error logging into Facebook', e));
+    }
   }
 
   doFacebookLogout () {

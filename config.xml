@@ -98,5 +98,5 @@
     <plugin name="com.moust.cordova.videoplayer" spec="https://github.com/moust/cordova-plugin-videoplayer.git" />
     <engine name="browser" spec="5.0.4" />
     <engine name="android" spec="7.1.4" />
-    <engine name="ios" spec="~4.5.5" />
+    <engine name="ios" spec="^4.5.5" />
 </widget>
