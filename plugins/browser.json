@@ -1,0 +1,50 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.tgm_ionic"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "123014244977505",
+      "APP_NAME": "tgm local",
+      "FACEBOOK_HYBRID_APP_EVENTS": "false",
+      "FACEBOOK_ANDROID_SDK_VERSION": "4.40.0",
+      "PACKAGE_NAME": "com.tgm_ionic"
+    },
+    "cordova-plugin-googleplus": {
+      "WEB_APPLICATION_CLIENT_ID": "287149765762-o6jb2tlv93qejrpo5km8ihe2n7rrtuc7.apps.googleusercontent.com",
+      "PACKAGE_NAME": "com.tgm_ionic"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.tgm_ionic"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.tgm_ionic"
+    },
+    "cordova-plugin-nativestorage": {
+      "PACKAGE_NAME": "com.tgm_ionic"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.tgm_ionic"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.tgm_ionic"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.tgm_ionic"
+    },
+    "com.moust.cordova.videoplayer": {
+      "PACKAGE_NAME": "com.tgm_ionic"
+    },
+    "cordova-plugin-streaming-media": {
+      "PACKAGE_NAME": "com.tgm_ionic"
+    }
+  },
+  "dependent_plugins": {}
+}
