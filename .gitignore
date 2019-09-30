@@ -29,6 +29,4 @@ $RECYCLE.BIN/
 Thumbs.db
 UserInterfaceState.xcuserstate
 platforms/android/app/build/intermediates
-platforms/android/app/build/generated
 platforms/android/CordovaLib/build/intermediates
-platforms/android/.gradle

@@ -1,6 +1,6 @@
 {
-  "name": "com.tgm_ionic",
-  "short_name": "com.tgm_ionic",
+  "name": "com.piousbox.tgm",
+  "short_name": "com.piousbox.tgm",
   "description": "Description of your app from template",
   "start_url": "index.html",
   "scope": "index.html",

@@ -1,6 +1,14 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
+        "file": "plugins/com.moust.cordova.videoplayer/www/videoplayer.js",
+        "id": "com.moust.cordova.videoplayer.VideoPlayer",
+        "pluginId": "com.moust.cordova.videoplayer",
+        "clobbers": [
+            "VideoPlayer"
+        ]
+    },
+    {
         "file": "plugins/cordova-plugin-device/www/device.js",
         "id": "cordova-plugin-device.device",
         "pluginId": "cordova-plugin-device",
@@ -93,14 +101,6 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/com.moust.cordova.videoplayer/www/videoplayer.js",
-        "id": "com.moust.cordova.videoplayer.VideoPlayer",
-        "pluginId": "com.moust.cordova.videoplayer",
-        "clobbers": [
-            "VideoPlayer"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-streaming-media/www/StreamingMedia.js",
         "id": "cordova-plugin-streaming-media.StreamingMedia",
         "pluginId": "cordova-plugin-streaming-media",
@@ -112,6 +112,7 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
+    "com.moust.cordova.videoplayer": "1.0.1",
     "cordova-plugin-device": "2.0.2",
     "cordova-plugin-facebook4": "4.2.1",
     "cordova-plugin-googleplus": "7.0.1",
@@ -120,9 +121,8 @@ module.exports.metadata =
     "cordova-plugin-nativestorage": "2.3.2",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
-    "cordova-plugin-whitelist": "1.3.3",
-    "com.moust.cordova.videoplayer": "1.0.1",
-    "cordova-plugin-streaming-media": "2.2.0"
+    "cordova-plugin-streaming-media": "2.2.0",
+    "cordova-plugin-whitelist": "1.3.3"
 }
 // BOTTOM OF METADATA
 });

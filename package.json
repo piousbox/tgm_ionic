@@ -90,9 +90,9 @@
             "com.moust.cordova.videoplayer": {}
         },
         "platforms": [
-            "browser",
             "android",
-            "ios"
+            "ios",
+            "browser"
         ]
     },
     "config": {
