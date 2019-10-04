@@ -55,6 +55,10 @@ export class AccountPage implements OnInit {
     });
   }
 
+  navigate(where) {
+    this.router.navigate([where]);
+  }
+
   ngOnInit() {
     console.log('+++ account ngOnInit');
     this.platform.ready().then(() => {

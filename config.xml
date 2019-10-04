@@ -3,7 +3,7 @@
     <name>com.piousbox.tgm</name>
     <description>Piousbox travel guide and social network</description>
     <author email="piousbox@gmail.com" href="https://piousbox.com/">Piousbox</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://192.168.0.103:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -96,6 +96,7 @@
         <variable name="APP_ID" value="3016949928380365" />
         <variable name="APP_NAME" value="tgm.piousbox.com" />
     </plugin>
+    <allow-navigation href="http://192.168.0.103:8100" sessionid="d2167eb2" />
     <engine name="android" spec="7.1.4" />
     <engine name="ios" spec="^4.5.5" />
     <engine name="browser" spec="5.0.4" />

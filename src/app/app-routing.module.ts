@@ -20,10 +20,12 @@ const routes: Routes = [
   { path: 'page3', loadChildren: './main-navigator/page3/page3.module#Page3PageModule' },
 
   { path: 'video-sample', loadChildren: './video-sample/video-sample.module#VideoSamplePageModule' },
+
+  { path: 'en/cities', loadChildren: './CitiesComponent/cities.module#CitiesModule' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

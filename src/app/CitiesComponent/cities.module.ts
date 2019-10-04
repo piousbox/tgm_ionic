@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
-
 import { IonicModule } from '@ionic/angular';
 
-import { AccountPage } from './account.page';
+import { CitiesIndexPage } from './CitiesIndex.page';
+import { CitiesShowPage } from './CitiesShow.page';
+
 
 const routes: Routes = [
-  { path: '',     component: AccountPage,  },
+  { path: '', component: CitiesIndexPage, },
+  { path: 'travel-to/:city_name',     component: CitiesShowPage,  },
 ];
 
 @NgModule({
@@ -18,7 +20,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ AccountPage ]
+  declarations: [ CitiesIndexPage, CitiesShowPage ]
 })
-export class AccountPageModule {
-}
+export class CitiesModule {}

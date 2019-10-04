@@ -29,10 +29,12 @@
  adb logcat
  chrome://inspect/#devices
  
- ionic cordova run ios
+ ic run ios
+ ic run browser --livereload
+
+== Build iOS ==
+
  ionic cordova build ios -- --buildFlag="-UseModernBuildSystem=0"
- ionic cordova run browser
- ionic cordova build browser
 
 == Deploy browser ==
 From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
@@ -42,7 +44,9 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
  ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="tgm.piousbox.com"
  ionic cordova build browser
 
- ic platform rm browser ; ic platform add browser ; ic build browser
+ ic platform rm browser 
+ ic platform add browser
+ ic build browser
 
 
 
