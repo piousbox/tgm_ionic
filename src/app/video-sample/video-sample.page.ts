@@ -11,7 +11,7 @@ export class VideoSamplePage implements OnInit {
   constructor(
     private streamingMedia: StreamingMedia,
   ) {
-    console.log('+++ video-sample constructor');
+    // console.log('+++ video-sample constructor');
     
     let options: StreamingVideoOptions = {
       successCallback: () => { console.log('Video played') },

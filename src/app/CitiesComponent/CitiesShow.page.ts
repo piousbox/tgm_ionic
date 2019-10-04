@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpParams, } from '@angular/common/http';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
@@ -15,9 +15,14 @@ export class CitiesShowPage implements OnInit {
   constructor(
     private nativeStorage: NativeStorage,
     private appService: AppService,
+    private route: ActivatedRoute
     private router: Router,
     public httpClient: HttpClient, 
-  ) {}
+  ) {
+    
+  }
   
-  ngOnInit() {}
+  ngOnInit() {
+    this.cityName = this.route.snapshot.paramMap.get('city_name');
+  }
 }
