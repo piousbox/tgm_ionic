@@ -12,7 +12,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-navigation href="http://localhost.com:8100" sessionid="e5258234" />
-    <allow-navigation href="http://192.168.0.103:8100" sessionid="d2167eb2" />
+    <allow-navigation href="http://192.168.0.103:8100" sessionid="fedc897d" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="BackupWebStorage" value="none" />

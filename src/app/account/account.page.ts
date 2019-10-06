@@ -30,6 +30,8 @@ export class AccountPage implements OnInit {
     });
 
     this.nativeStorage.getItem('current_user').then(data => {
+      console.log('+++ 1 data:', data)
+
       if ('facebook' == data.type) {
         const params = new HttpParams().set('accessToken', data.accessToken)
         const answer = this.httpClient.get(environment.accountPath, { params: params })
@@ -43,7 +45,8 @@ export class AccountPage implements OnInit {
       }
     })
 
-    router.events.subscribe(event => {
+    // This craps out in Jasmine
+    /* router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.ngOnInit();
       }
@@ -52,7 +55,7 @@ export class AccountPage implements OnInit {
       // NavigationCancel
       // NavigationError
       // RoutesRecognized
-    });
+    }); */
   }
 
   navigate(where) {

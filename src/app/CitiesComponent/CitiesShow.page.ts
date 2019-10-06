@@ -15,7 +15,7 @@ export class CitiesShowPage implements OnInit {
   constructor(
     private nativeStorage: NativeStorage,
     private appService: AppService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
     private router: Router,
     public httpClient: HttpClient, 
   ) {
@@ -23,6 +23,6 @@ export class CitiesShowPage implements OnInit {
   }
   
   ngOnInit() {
-    this.cityName = this.route.snapshot.paramMap.get('city_name');
+    // this.cityName = this.route.snapshot.paramMap.get('city_name');
   }
 }

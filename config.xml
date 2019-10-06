@@ -96,7 +96,7 @@
         <variable name="APP_ID" value="3016949928380365" />
         <variable name="APP_NAME" value="tgm.piousbox.com" />
     </plugin>
-    <allow-navigation href="http://192.168.0.103:8100" sessionid="d2167eb2" />
+    <allow-navigation href="http://192.168.0.103:8100" sessionid="fedc897d" />
     <engine name="android" spec="7.1.4" />
     <engine name="ios" spec="^4.5.5" />
     <engine name="browser" spec="5.0.4" />

@@ -49,11 +49,13 @@
         "@angular/compiler": "~7.0.0",
         "@angular/compiler-cli": "~7.0.0",
         "@angular/language-service": "~7.0.0",
+        "@ionic-native-mocks/native-storage": "^2.0.12",
         "@ionic/angular-toolkit": "~1.2.0",
-        "@types/node": "~10.12.0",
         "@types/jasmine": "~2.8.8",
         "@types/jasminewd2": "~2.0.3",
+        "@types/node": "~10.12.0",
         "codelyzer": "~4.5.0",
+        "ionic-native-mocks": "^2.0.12",
         "jasmine-core": "~2.99.1",
         "jasmine-spec-reporter": "~4.2.1",
         "karma": "~3.0.0",
@@ -103,6 +105,7 @@
         "start": "ng serve",
         "build": "ng build",
         "test": "ng test",
+        "test_temp": "ng test --help",
         "lint": "ng lint",
         "e2e": "ng e2e"
     }
