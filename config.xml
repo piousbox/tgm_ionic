@@ -3,7 +3,7 @@
     <name>com.piousbox.tgm</name>
     <description>Piousbox travel guide and social network</description>
     <author email="piousbox@gmail.com" href="https://piousbox.com/">Piousbox</author>
-    <content original-src="index.html" src="http://192.168.0.103:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -85,17 +85,8 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-    <plugin name="cordova-plugin-googleplus" spec="7.0.1">
-        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.287149765762-o6jb2tlv93qejrpo5km8ihe2n7rrtuc7" />
-        <variable name="WEB_APPLICATION_CLIENT_ID" value="287149765762-o6jb2tlv93qejrpo5km8ihe2n7rrtuc7.apps.googleusercontent.com" />
-        <variable name="PLAY_SERVICES_VERSION" value="11.8.0" />
-    </plugin>
     <allow-navigation href="http://localhost.com:8100" sessionid="e5258234" />
     <plugin name="com.moust.cordova.videoplayer" spec="https://github.com/moust/cordova-plugin-videoplayer.git" />
-    <plugin name="cordova-plugin-facebook4" spec="4.2.1">
-        <variable name="APP_ID" value="3016949928380365" />
-        <variable name="APP_NAME" value="tgm.piousbox.com" />
-    </plugin>
     <allow-navigation href="http://192.168.0.103:8100" sessionid="fedc897d" />
     <engine name="android" spec="7.1.4" />
     <engine name="ios" spec="^4.5.5" />

@@ -41,7 +41,11 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
 
  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
  
+ ic plugin remove cordova-plugin-facebook4 --save
  ionic cordova plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="tgm.piousbox.com"
+ 
+ ic plugin remove cordova-plugin-googleplus --save
+ 
  ionic cordova build browser
 
  ic platform rm browser 

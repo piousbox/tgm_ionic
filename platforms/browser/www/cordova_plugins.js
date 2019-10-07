@@ -23,30 +23,6 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/cordova-plugin-facebook4/www/facebook-browser.js",
-        "id": "cordova-plugin-facebook4.FacebookConnectPluginBrowser",
-        "pluginId": "cordova-plugin-facebook4",
-        "clobbers": [
-            "facebookConnectPlugin"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-googleplus/www/GooglePlus.js",
-        "id": "cordova-plugin-googleplus.GooglePlus",
-        "pluginId": "cordova-plugin-googleplus",
-        "clobbers": [
-            "window.plugins.googleplus"
-        ]
-    },
-    {
-        "file": "plugins/cordova-plugin-googleplus/src/browser/GooglePlusProxy.js",
-        "id": "cordova-plugin-googleplus.GooglePlusProxy",
-        "pluginId": "cordova-plugin-googleplus",
-        "clobbers": [
-            "GooglePlus"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
         "id": "cordova-plugin-ionic-webview.IonicWebView",
         "pluginId": "cordova-plugin-ionic-webview",
@@ -114,8 +90,6 @@ module.exports.metadata =
 {
     "com.moust.cordova.videoplayer": "1.0.1",
     "cordova-plugin-device": "2.0.2",
-    "cordova-plugin-facebook4": "4.2.1",
-    "cordova-plugin-googleplus": "7.0.1",
     "cordova-plugin-ionic-keyboard": "2.1.3",
     "cordova-plugin-ionic-webview": "2.3.3",
     "cordova-plugin-nativestorage": "2.3.2",

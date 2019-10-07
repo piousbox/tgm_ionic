@@ -57,28 +57,6 @@
     "is_top_level": true,
     "variables": {}
   },
-  "cordova-plugin-facebook4": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-facebook4@4.2.1"
-    },
-    "is_top_level": true,
-    "variables": {
-      "APP_ID": "3016949928380365",
-      "APP_NAME": "tgm.piousbox.com"
-    }
-  },
-  "cordova-plugin-googleplus": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-googleplus"
-    },
-    "is_top_level": true,
-    "variables": {
-      "REVERSED_CLIENT_ID": "com.googleusercontent.apps.287149765762-o6jb2tlv93qejrpo5km8ihe2n7rrtuc7",
-      "WEB_APPLICATION_CLIENT_ID": "287149765762-o6jb2tlv93qejrpo5km8ihe2n7rrtuc7.apps.googleusercontent.com"
-    }
-  },
   "com.moust.cordova.videoplayer": {
     "source": {
       "type": "registry",
