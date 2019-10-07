@@ -76,6 +76,10 @@
         <splash height="480" src="resources/ios/splash/Default~iphone.png" width="320" />
         <splash height="2732" src="resources/ios/splash/Default@2x~universal~anyany.png" width="2732" />
     </platform>
+    <allow-navigation href="http://localhost.com:8100" sessionid="e5258234" />
+    <engine name="android" spec="7.1.4" />
+    <engine name="ios" spec="^4.5.5" />
+    <engine name="browser" spec="5.0.4" />
     <plugin name="cordova-plugin-device" spec="^2.0.2" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.1.3" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.2.5">
@@ -85,10 +89,10 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-    <allow-navigation href="http://localhost.com:8100" sessionid="e5258234" />
-    <plugin name="com.moust.cordova.videoplayer" spec="https://github.com/moust/cordova-plugin-videoplayer.git" />
-    <allow-navigation href="http://192.168.0.103:8100" sessionid="fedc897d" />
-    <engine name="android" spec="7.1.4" />
-    <engine name="ios" spec="^4.5.5" />
-    <engine name="browser" spec="5.0.4" />
+    <plugin name="com.moust.cordova.videoplayer" spec="~1.0.1" />
+    <plugin name="cordova-plugin-streaming-media" spec="~2.2.0" />
+    <plugin name="cordova-plugin-facebook4" spec="~6.1.0">
+        <variable name="APP_ID" value="3016949928380365" />
+        <variable name="APP_NAME" value="tgm.piousbox.com" />
+    </plugin>
 </widget>

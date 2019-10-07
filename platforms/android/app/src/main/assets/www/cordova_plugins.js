@@ -9,43 +9,11 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-bambuser.broadcaster",
-    "file": "plugins/cordova-plugin-bambuser/www/broadcaster.js",
-    "pluginId": "cordova-plugin-bambuser",
-    "clobbers": [
-      "bambuser.broadcaster"
-    ]
-  },
-  {
-    "id": "cordova-plugin-bambuser.player",
-    "file": "plugins/cordova-plugin-bambuser/www/player.js",
-    "pluginId": "cordova-plugin-bambuser",
-    "clobbers": [
-      "bambuser.player"
-    ]
-  },
-  {
     "id": "cordova-plugin-device.device",
     "file": "plugins/cordova-plugin-device/www/device.js",
     "pluginId": "cordova-plugin-device",
     "clobbers": [
       "device"
-    ]
-  },
-  {
-    "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
-    "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
-    "pluginId": "cordova-plugin-facebook4",
-    "clobbers": [
-      "facebookConnectPlugin"
-    ]
-  },
-  {
-    "id": "cordova-plugin-googleplus.GooglePlus",
-    "file": "plugins/cordova-plugin-googleplus/www/GooglePlus.js",
-    "pluginId": "cordova-plugin-googleplus",
-    "clobbers": [
-      "window.plugins.googleplus"
     ]
   },
   {
@@ -105,23 +73,29 @@ module.exports = [
     "clobbers": [
       "streamingMedia"
     ]
+  },
+  {
+    "id": "cordova-plugin-facebook4.FacebookConnectPlugin",
+    "file": "plugins/cordova-plugin-facebook4/www/facebook-native.js",
+    "pluginId": "cordova-plugin-facebook4",
+    "clobbers": [
+      "facebookConnectPlugin"
+    ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
   "com.moust.cordova.videoplayer": "1.0.1",
-  "cordova-plugin-bambuser": "0.9.5",
   "cordova-plugin-device": "2.0.2",
-  "cordova-plugin-facebook4": "4.2.1",
-  "cordova-plugin-googleplus": "7.0.1",
   "cordova-plugin-ionic-keyboard": "2.1.3",
   "cordova-plugin-ionic-webview": "2.3.3",
   "cordova-plugin-nativestorage": "2.3.2",
   "cordova-plugin-splashscreen": "5.0.2",
   "cordova-plugin-statusbar": "2.4.2",
   "cordova-plugin-streaming-media": "2.2.0",
-  "cordova-plugin-whitelist": "1.3.3"
+  "cordova-plugin-whitelist": "1.3.3",
+  "cordova-plugin-facebook4": "6.1.0"
 };
 // BOTTOM OF METADATA
 });

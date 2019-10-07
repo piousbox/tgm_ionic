@@ -33,6 +33,13 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "co.wasya.tgm_ionic1"
+    },
+    "cordova-plugin-facebook4": {
+      "APP_ID": "3016949928380365",
+      "APP_NAME": "tgm.piousbox.com",
+      "FACEBOOK_HYBRID_APP_EVENTS": "false",
+      "FACEBOOK_ANDROID_SDK_VERSION": "5.5.1",
+      "PACKAGE_NAME": "com.piousbox.tgm"
     }
   },
   "dependent_plugins": {}

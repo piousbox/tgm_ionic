@@ -42,6 +42,7 @@
 		DF99A9164C1140E5A95E7056 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CF82CF19A4FC1814BB5E0 /* GCDWebServerErrorResponse.m */; };
 		E0E2085C0BC24A16AD325926 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1978B03D667D482BAB973D33 /* GCDWebServerDataResponse.m */; };
 		E8F604A5B47345D1B738BB2C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A830FC6247429C89673255 /* libz.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
+		02D66190FA0B445183A95FB4 /* FacebookConnectPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 73267A0D3D2B4CCB87A43E36 /* FacebookConnectPlugin.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,8 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = com.tgm_ionic1/config.xml; sourceTree = "<group>"; };
 		FBF2AA1086C44865BD56D774 /* CDVWKWebViewEngine.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKWebViewEngine.m; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.m"; sourceTree = "<group>"; };
 		FCBAED3C07E64FD9A02A3AC5 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFunctions.m; path = "cordova-plugin-ionic-webview/GCDWebServerFunctions.m"; sourceTree = "<group>"; };
+		73267A0D3D2B4CCB87A43E36 /* FacebookConnectPlugin.m */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.m"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2C0F48519CB946E881A29461 /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; name = "FacebookConnectPlugin.h"; path = "cordova-plugin-facebook4/FacebookConnectPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,6 +313,8 @@
 				68E3616FB33F4C6B8DA0D328 /* StreamingMedia.h */,
 				C125A984603D4941ABED0895 /* LandscapeVideo.h */,
 				8F566FBD73CB4EF3A60CC3F8 /* PortraitVideo.h */,
+				73267A0D3D2B4CCB87A43E36 /* FacebookConnectPlugin.m */,
+				2C0F48519CB946E881A29461 /* FacebookConnectPlugin.h */,
 			);
 			name = Plugins;
 			path = com.tgm_ionic1/Plugins;
@@ -465,6 +470,7 @@
 				17374C745F604BB5A81CFAFF /* StreamingMedia.m in Sources */,
 				1F28E3A383654F669A2CD506 /* LandscapeVideo.m in Sources */,
 				0C2CB6729E464703954D00FF /* PortraitVideo.m in Sources */,
+				02D66190FA0B445183A95FB4 /* FacebookConnectPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
