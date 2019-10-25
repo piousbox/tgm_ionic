@@ -5,6 +5,11 @@
 
  router - update version? 7.2.14
 
+== Todo ==
+
+* lets deploy on iOS
+* lets wire *all* photos to a gallery
+
 == Test ==
  npm run test
  
