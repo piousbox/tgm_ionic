@@ -7,5 +7,5 @@
   "description": "Piousbox travel guide and social network",
   "author": "Piousbox",
   "icons": [],
-  "start_url": "http://localhost.com:8100"
+  "start_url": "index.html"
 }

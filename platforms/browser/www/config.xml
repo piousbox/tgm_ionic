@@ -3,7 +3,7 @@
     <name>com.piousbox.tgm</name>
     <description>Piousbox travel guide and social network</description>
     <author email="piousbox@gmail.com" href="https://piousbox.com/">Piousbox</author>
-    <content original-src="index.html" src="http://localhost.com:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
