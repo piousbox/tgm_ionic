@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.tgm_ionic;
+package com.piousbox.tgm;
 
 public final class R {
   public static final class anim {
@@ -509,38 +509,21 @@ public final class R {
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>icon_only</td><td>2</td><td></td></tr>
-     * <tr><td>standard</td><td>0</td><td></td></tr>
-     * <tr><td>wide</td><td>1</td><td></td></tr>
-     * </table>
      */
-    public static final int buttonSize=0x7f02003f;
+    public static final int buttonStyle=0x7f02003f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int buttonStyle=0x7f020040;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     */
-    public static final int buttonStyleSmall=0x7f020041;
+    public static final int buttonStyleSmall=0x7f020040;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int buttonTint=0x7f020042;
+    public static final int buttonTint=0x7f020041;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -556,13 +539,13 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int buttonTintMode=0x7f020043;
+    public static final int buttonTintMode=0x7f020042;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int cardBackgroundColor=0x7f020044;
+    public static final int cardBackgroundColor=0x7f020043;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -570,7 +553,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cardCornerRadius=0x7f020045;
+    public static final int cardCornerRadius=0x7f020044;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -578,7 +561,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cardElevation=0x7f020046;
+    public static final int cardElevation=0x7f020045;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -586,104 +569,99 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int cardMaxElevation=0x7f020047;
+    public static final int cardMaxElevation=0x7f020046;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int cardPreventCornerOverlap=0x7f020048;
+    public static final int cardPreventCornerOverlap=0x7f020047;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int cardUseCompatPadding=0x7f020049;
+    public static final int cardUseCompatPadding=0x7f020048;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkboxStyle=0x7f02004a;
+    public static final int checkboxStyle=0x7f020049;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int checkedTextViewStyle=0x7f02004b;
-    /**
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     */
-    public static final int circleCrop=0x7f02004c;
+    public static final int checkedTextViewStyle=0x7f02004a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeIcon=0x7f02004d;
+    public static final int closeIcon=0x7f02004b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int closeItemLayout=0x7f02004e;
+    public static final int closeItemLayout=0x7f02004c;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int collapseContentDescription=0x7f02004f;
+    public static final int collapseContentDescription=0x7f02004d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int collapseIcon=0x7f020050;
+    public static final int collapseIcon=0x7f02004e;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int color=0x7f020051;
+    public static final int color=0x7f02004f;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorAccent=0x7f020052;
+    public static final int colorAccent=0x7f020050;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorBackgroundFloating=0x7f020053;
+    public static final int colorBackgroundFloating=0x7f020051;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorButtonNormal=0x7f020054;
+    public static final int colorButtonNormal=0x7f020052;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlActivated=0x7f020055;
+    public static final int colorControlActivated=0x7f020053;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlHighlight=0x7f020056;
+    public static final int colorControlHighlight=0x7f020054;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorControlNormal=0x7f020057;
+    public static final int colorControlNormal=0x7f020055;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -693,42 +671,25 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorError=0x7f020058;
+    public static final int colorError=0x7f020056;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimary=0x7f020059;
+    public static final int colorPrimary=0x7f020057;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorPrimaryDark=0x7f02005a;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>2</td><td></td></tr>
-     * <tr><td>dark</td><td>0</td><td></td></tr>
-     * <tr><td>light</td><td>1</td><td></td></tr>
-     * </table>
-     */
-    public static final int colorScheme=0x7f02005b;
+    public static final int colorPrimaryDark=0x7f020058;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int colorSwitchThumbNormal=0x7f02005c;
+    public static final int colorSwitchThumbNormal=0x7f020059;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -741,18 +702,18 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int com_facebook_auxiliary_view_position=0x7f02005d;
+    public static final int com_facebook_auxiliary_view_position=0x7f02005a;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int com_facebook_confirm_logout=0x7f02005e;
+    public static final int com_facebook_confirm_logout=0x7f02005b;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int com_facebook_foreground_color=0x7f02005f;
+    public static final int com_facebook_foreground_color=0x7f02005c;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -765,27 +726,27 @@ public final class R {
      * <tr><td>right</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int com_facebook_horizontal_alignment=0x7f020060;
+    public static final int com_facebook_horizontal_alignment=0x7f02005d;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int com_facebook_is_cropped=0x7f020061;
+    public static final int com_facebook_is_cropped=0x7f02005e;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int com_facebook_login_text=0x7f020062;
+    public static final int com_facebook_login_text=0x7f02005f;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int com_facebook_logout_text=0x7f020063;
+    public static final int com_facebook_logout_text=0x7f020060;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int com_facebook_object_id=0x7f020064;
+    public static final int com_facebook_object_id=0x7f020061;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -798,7 +759,7 @@ public final class R {
      * <tr><td>unknown</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int com_facebook_object_type=0x7f020065;
+    public static final int com_facebook_object_type=0x7f020062;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -811,7 +772,7 @@ public final class R {
      * <tr><td>small</td><td>fffffffe</td><td></td></tr>
      * </table>
      */
-    public static final int com_facebook_preset_size=0x7f020066;
+    public static final int com_facebook_preset_size=0x7f020063;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -824,7 +785,7 @@ public final class R {
      * <tr><td>standard</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int com_facebook_style=0x7f020067;
+    public static final int com_facebook_style=0x7f020064;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -837,19 +798,19 @@ public final class R {
      * <tr><td>never_display</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int com_facebook_tooltip_mode=0x7f020068;
+    public static final int com_facebook_tooltip_mode=0x7f020065;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int commitIcon=0x7f020069;
+    public static final int commitIcon=0x7f020066;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int contentDescription=0x7f02006a;
+    public static final int contentDescription=0x7f020067;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -857,7 +818,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEnd=0x7f02006b;
+    public static final int contentInsetEnd=0x7f020068;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -865,7 +826,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetEndWithActions=0x7f02006c;
+    public static final int contentInsetEndWithActions=0x7f020069;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -873,7 +834,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetLeft=0x7f02006d;
+    public static final int contentInsetLeft=0x7f02006a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -881,7 +842,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetRight=0x7f02006e;
+    public static final int contentInsetRight=0x7f02006b;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -889,7 +850,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStart=0x7f02006f;
+    public static final int contentInsetStart=0x7f02006c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -897,7 +858,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentInsetStartWithNavigation=0x7f020070;
+    public static final int contentInsetStartWithNavigation=0x7f02006d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -905,7 +866,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPadding=0x7f020071;
+    public static final int contentPadding=0x7f02006e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -913,7 +874,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingBottom=0x7f020072;
+    public static final int contentPaddingBottom=0x7f02006f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -921,7 +882,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingLeft=0x7f020073;
+    public static final int contentPaddingLeft=0x7f020070;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -929,7 +890,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingRight=0x7f020074;
+    public static final int contentPaddingRight=0x7f020071;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -937,26 +898,26 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int contentPaddingTop=0x7f020075;
+    public static final int contentPaddingTop=0x7f020072;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int controlBackground=0x7f020076;
+    public static final int controlBackground=0x7f020073;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int customNavigationLayout=0x7f020077;
+    public static final int customNavigationLayout=0x7f020074;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int defaultQueryHint=0x7f020078;
+    public static final int defaultQueryHint=0x7f020075;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -964,14 +925,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dialogPreferredPadding=0x7f020079;
+    public static final int dialogPreferredPadding=0x7f020076;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dialogTheme=0x7f02007a;
+    public static final int dialogTheme=0x7f020077;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -988,21 +949,21 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      */
-    public static final int displayOptions=0x7f02007b;
+    public static final int displayOptions=0x7f020078;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int divider=0x7f02007c;
+    public static final int divider=0x7f020079;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerHorizontal=0x7f02007d;
+    public static final int dividerHorizontal=0x7f02007a;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1010,14 +971,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dividerPadding=0x7f02007e;
+    public static final int dividerPadding=0x7f02007b;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dividerVertical=0x7f02007f;
+    public static final int dividerVertical=0x7f02007c;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1025,21 +986,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int drawableSize=0x7f020080;
+    public static final int drawableSize=0x7f02007d;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int drawerArrowStyle=0x7f020081;
+    public static final int drawerArrowStyle=0x7f02007e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int dropDownListViewStyle=0x7f020082;
+    public static final int dropDownListViewStyle=0x7f02007f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1047,14 +1008,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int dropdownListPreferredItemHeight=0x7f020083;
+    public static final int dropdownListPreferredItemHeight=0x7f020080;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int editTextBackground=0x7f020084;
+    public static final int editTextBackground=0x7f020081;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1064,14 +1025,14 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int editTextColor=0x7f020085;
+    public static final int editTextColor=0x7f020082;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int editTextStyle=0x7f020086;
+    public static final int editTextStyle=0x7f020083;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1079,38 +1040,38 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int elevation=0x7f020087;
+    public static final int elevation=0x7f020084;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int expandActivityOverflowButtonDrawable=0x7f020088;
+    public static final int expandActivityOverflowButtonDrawable=0x7f020085;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int font=0x7f020089;
+    public static final int font=0x7f020086;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontFamily=0x7f02008a;
+    public static final int fontFamily=0x7f020087;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderAuthority=0x7f02008b;
+    public static final int fontProviderAuthority=0x7f020088;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int fontProviderCerts=0x7f02008c;
+    public static final int fontProviderCerts=0x7f020089;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1122,7 +1083,7 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontProviderFetchStrategy=0x7f02008d;
+    public static final int fontProviderFetchStrategy=0x7f02008a;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
@@ -1134,17 +1095,17 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      */
-    public static final int fontProviderFetchTimeout=0x7f02008e;
+    public static final int fontProviderFetchTimeout=0x7f02008b;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderPackage=0x7f02008f;
+    public static final int fontProviderPackage=0x7f02008c;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int fontProviderQuery=0x7f020090;
+    public static final int fontProviderQuery=0x7f02008d;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1156,11 +1117,11 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int fontStyle=0x7f020091;
+    public static final int fontStyle=0x7f02008e;
     /**
      * <p>May be an integer value, such as "<code>100</code>".
      */
-    public static final int fontWeight=0x7f020092;
+    public static final int fontWeight=0x7f02008f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1168,14 +1129,14 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int gapBetweenBars=0x7f020093;
+    public static final int gapBetweenBars=0x7f020090;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int goIcon=0x7f020094;
+    public static final int goIcon=0x7f020091;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1183,39 +1144,39 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int height=0x7f020095;
+    public static final int height=0x7f020092;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int hideOnContentScroll=0x7f020096;
+    public static final int hideOnContentScroll=0x7f020093;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeAsUpIndicator=0x7f020097;
+    public static final int homeAsUpIndicator=0x7f020094;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int homeLayout=0x7f020098;
+    public static final int homeLayout=0x7f020095;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int icon=0x7f020099;
+    public static final int icon=0x7f020096;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int iconTint=0x7f02009a;
+    public static final int iconTint=0x7f020097;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1231,53 +1192,36 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int iconTintMode=0x7f02009b;
+    public static final int iconTintMode=0x7f020098;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int iconifiedByDefault=0x7f02009c;
-    /**
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     */
-    public static final int imageAspectRatio=0x7f02009d;
-    /**
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>adjust_height</td><td>2</td><td></td></tr>
-     * <tr><td>adjust_width</td><td>1</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * </table>
-     */
-    public static final int imageAspectRatioAdjust=0x7f02009e;
+    public static final int iconifiedByDefault=0x7f020099;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int imageButtonStyle=0x7f02009f;
+    public static final int imageButtonStyle=0x7f02009a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int indeterminateProgressStyle=0x7f0200a0;
+    public static final int indeterminateProgressStyle=0x7f02009b;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int initialActivityCount=0x7f0200a1;
+    public static final int initialActivityCount=0x7f02009c;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int isLightTheme=0x7f0200a2;
+    public static final int isLightTheme=0x7f02009d;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1285,56 +1229,56 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int itemPadding=0x7f0200a3;
+    public static final int itemPadding=0x7f02009e;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int layout=0x7f0200a4;
+    public static final int layout=0x7f02009f;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listChoiceBackgroundIndicator=0x7f0200a5;
+    public static final int listChoiceBackgroundIndicator=0x7f0200a0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listDividerAlertDialog=0x7f0200a6;
+    public static final int listDividerAlertDialog=0x7f0200a1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listItemLayout=0x7f0200a7;
+    public static final int listItemLayout=0x7f0200a2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listLayout=0x7f0200a8;
+    public static final int listLayout=0x7f0200a3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listMenuViewStyle=0x7f0200a9;
+    public static final int listMenuViewStyle=0x7f0200a4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int listPopupWindowStyle=0x7f0200aa;
+    public static final int listPopupWindowStyle=0x7f0200a5;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1342,7 +1286,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeight=0x7f0200ab;
+    public static final int listPreferredItemHeight=0x7f0200a6;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1350,7 +1294,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightLarge=0x7f0200ac;
+    public static final int listPreferredItemHeightLarge=0x7f0200a7;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1358,7 +1302,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemHeightSmall=0x7f0200ad;
+    public static final int listPreferredItemHeightSmall=0x7f0200a8;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1366,7 +1310,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingLeft=0x7f0200ae;
+    public static final int listPreferredItemPaddingLeft=0x7f0200a9;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1374,19 +1318,19 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int listPreferredItemPaddingRight=0x7f0200af;
+    public static final int listPreferredItemPaddingRight=0x7f0200aa;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int logo=0x7f0200b0;
+    public static final int logo=0x7f0200ab;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int logoDescription=0x7f0200b1;
+    public static final int logoDescription=0x7f0200ac;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1394,31 +1338,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int maxButtonHeight=0x7f0200b2;
+    public static final int maxButtonHeight=0x7f0200ad;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int measureWithLargestChild=0x7f0200b3;
+    public static final int measureWithLargestChild=0x7f0200ae;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int multiChoiceItemLayout=0x7f0200b4;
+    public static final int multiChoiceItemLayout=0x7f0200af;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int navigationContentDescription=0x7f0200b5;
+    public static final int navigationContentDescription=0x7f0200b0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int navigationIcon=0x7f0200b6;
+    public static final int navigationIcon=0x7f0200b1;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1431,7 +1375,7 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      */
-    public static final int navigationMode=0x7f0200b7;
+    public static final int navigationMode=0x7f0200b2;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1447,12 +1391,12 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      */
-    public static final int numericModifiers=0x7f0200b8;
+    public static final int numericModifiers=0x7f0200b3;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int overlapAnchor=0x7f0200b9;
+    public static final int overlapAnchor=0x7f0200b4;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1460,7 +1404,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingBottomNoButtons=0x7f0200ba;
+    public static final int paddingBottomNoButtons=0x7f0200b5;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1468,7 +1412,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingEnd=0x7f0200bb;
+    public static final int paddingEnd=0x7f0200b6;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1476,7 +1420,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingStart=0x7f0200bc;
+    public static final int paddingStart=0x7f0200b7;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1484,21 +1428,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int paddingTopNoTitle=0x7f0200bd;
+    public static final int paddingTopNoTitle=0x7f0200b8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int panelBackground=0x7f0200be;
+    public static final int panelBackground=0x7f0200b9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int panelMenuListTheme=0x7f0200bf;
+    public static final int panelMenuListTheme=0x7f0200ba;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1506,33 +1450,33 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int panelMenuListWidth=0x7f0200c0;
+    public static final int panelMenuListWidth=0x7f0200bb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupMenuStyle=0x7f0200c1;
+    public static final int popupMenuStyle=0x7f0200bc;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupTheme=0x7f0200c2;
+    public static final int popupTheme=0x7f0200bd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int popupWindowStyle=0x7f0200c3;
+    public static final int popupWindowStyle=0x7f0200be;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int preserveIconSpacing=0x7f0200c4;
+    public static final int preserveIconSpacing=0x7f0200bf;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1540,105 +1484,96 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int progressBarPadding=0x7f0200c5;
+    public static final int progressBarPadding=0x7f0200c0;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int progressBarStyle=0x7f0200c6;
+    public static final int progressBarStyle=0x7f0200c1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int queryBackground=0x7f0200c7;
+    public static final int queryBackground=0x7f0200c2;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int queryHint=0x7f0200c8;
+    public static final int queryHint=0x7f0200c3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int radioButtonStyle=0x7f0200c9;
+    public static final int radioButtonStyle=0x7f0200c4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyle=0x7f0200ca;
+    public static final int ratingBarStyle=0x7f0200c5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleIndicator=0x7f0200cb;
+    public static final int ratingBarStyleIndicator=0x7f0200c6;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int ratingBarStyleSmall=0x7f0200cc;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a string value, using '\\;' to escape characters such as
-     * '\\n' or '\\uxxxx' for a unicode character;
-     */
-    public static final int scopeUris=0x7f0200cd;
+    public static final int ratingBarStyleSmall=0x7f0200c7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchHintIcon=0x7f0200ce;
+    public static final int searchHintIcon=0x7f0200c8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchIcon=0x7f0200cf;
+    public static final int searchIcon=0x7f0200c9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int searchViewStyle=0x7f0200d0;
+    public static final int searchViewStyle=0x7f0200ca;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int seekBarStyle=0x7f0200d1;
+    public static final int seekBarStyle=0x7f0200cb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackground=0x7f0200d2;
+    public static final int selectableItemBackground=0x7f0200cc;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int selectableItemBackgroundBorderless=0x7f0200d3;
+    public static final int selectableItemBackgroundBorderless=0x7f0200cd;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1653,7 +1588,7 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      */
-    public static final int showAsAction=0x7f0200d4;
+    public static final int showAsAction=0x7f0200ce;
     /**
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -1667,106 +1602,106 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      */
-    public static final int showDividers=0x7f0200d5;
+    public static final int showDividers=0x7f0200cf;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showText=0x7f0200d6;
+    public static final int showText=0x7f0200d0;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int showTitle=0x7f0200d7;
+    public static final int showTitle=0x7f0200d1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int singleChoiceItemLayout=0x7f0200d8;
+    public static final int singleChoiceItemLayout=0x7f0200d2;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int spinBars=0x7f0200d9;
+    public static final int spinBars=0x7f0200d3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerDropDownItemStyle=0x7f0200da;
+    public static final int spinnerDropDownItemStyle=0x7f0200d4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int spinnerStyle=0x7f0200db;
+    public static final int spinnerStyle=0x7f0200d5;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int splitTrack=0x7f0200dc;
+    public static final int splitTrack=0x7f0200d6;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int srcCompat=0x7f0200dd;
+    public static final int srcCompat=0x7f0200d7;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int state_above_anchor=0x7f0200de;
+    public static final int state_above_anchor=0x7f0200d8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subMenuArrow=0x7f0200df;
+    public static final int subMenuArrow=0x7f0200d9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int submitBackground=0x7f0200e0;
+    public static final int submitBackground=0x7f0200da;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int subtitle=0x7f0200e1;
+    public static final int subtitle=0x7f0200db;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextAppearance=0x7f0200e2;
+    public static final int subtitleTextAppearance=0x7f0200dc;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int subtitleTextColor=0x7f0200e3;
+    public static final int subtitleTextColor=0x7f0200dd;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int subtitleTextStyle=0x7f0200e4;
+    public static final int subtitleTextStyle=0x7f0200de;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int suggestionRowLayout=0x7f0200e5;
+    public static final int suggestionRowLayout=0x7f0200df;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1774,7 +1709,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchMinWidth=0x7f0200e6;
+    public static final int switchMinWidth=0x7f0200e0;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1782,21 +1717,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int switchPadding=0x7f0200e7;
+    public static final int switchPadding=0x7f0200e1;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchStyle=0x7f0200e8;
+    public static final int switchStyle=0x7f0200e2;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int switchTextAppearance=0x7f0200e9;
+    public static final int switchTextAppearance=0x7f0200e3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1805,73 +1740,63 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int textAllCaps=0x7f0200ea;
+    public static final int textAllCaps=0x7f0200e4;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceLargePopupMenu=0x7f0200eb;
+    public static final int textAppearanceLargePopupMenu=0x7f0200e5;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItem=0x7f0200ec;
+    public static final int textAppearanceListItem=0x7f0200e6;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSecondary=0x7f0200ed;
+    public static final int textAppearanceListItemSecondary=0x7f0200e7;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceListItemSmall=0x7f0200ee;
+    public static final int textAppearanceListItemSmall=0x7f0200e8;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearancePopupMenuHeader=0x7f0200ef;
+    public static final int textAppearancePopupMenuHeader=0x7f0200e9;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultSubtitle=0x7f0200f0;
+    public static final int textAppearanceSearchResultSubtitle=0x7f0200ea;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSearchResultTitle=0x7f0200f1;
+    public static final int textAppearanceSearchResultTitle=0x7f0200eb;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int textAppearanceSmallPopupMenu=0x7f0200f2;
-    /**
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
-     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
-     * "<code>#<i>aarrggbb</i></code>".
-     */
-    public static final int textColorAlertDialogListItem=0x7f0200f3;
+    public static final int textAppearanceSmallPopupMenu=0x7f0200ec;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -1881,14 +1806,24 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int textColorSearchUrl=0x7f0200f4;
+    public static final int textColorAlertDialogListItem=0x7f0200ed;
+    /**
+     * <p>May be a reference to another resource, in the form
+     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
+     * attribute in the form
+     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
+     * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
+     * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
+     * "<code>#<i>aarrggbb</i></code>".
+     */
+    public static final int textColorSearchUrl=0x7f0200ee;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int theme=0x7f0200f5;
+    public static final int theme=0x7f0200ef;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1896,7 +1831,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thickness=0x7f0200f6;
+    public static final int thickness=0x7f0200f0;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1904,13 +1839,13 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int thumbTextPadding=0x7f0200f7;
+    public static final int thumbTextPadding=0x7f0200f1;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int thumbTint=0x7f0200f8;
+    public static final int thumbTint=0x7f0200f2;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1926,20 +1861,20 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int thumbTintMode=0x7f0200f9;
+    public static final int thumbTintMode=0x7f0200f3;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tickMark=0x7f0200fa;
+    public static final int tickMark=0x7f0200f4;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tickMarkTint=0x7f0200fb;
+    public static final int tickMarkTint=0x7f0200f5;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1955,13 +1890,13 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int tickMarkTintMode=0x7f0200fc;
+    public static final int tickMarkTintMode=0x7f0200f6;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tint=0x7f0200fd;
+    public static final int tint=0x7f0200f7;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -1977,12 +1912,12 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int tintMode=0x7f0200fe;
+    public static final int tintMode=0x7f0200f8;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int title=0x7f0200ff;
+    public static final int title=0x7f0200f9;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1990,7 +1925,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMargin=0x7f020100;
+    public static final int titleMargin=0x7f0200fa;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -1998,7 +1933,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginBottom=0x7f020101;
+    public static final int titleMarginBottom=0x7f0200fb;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2006,7 +1941,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginEnd=0x7f020102;
+    public static final int titleMarginEnd=0x7f0200fc;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2014,7 +1949,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginStart=0x7f020103;
+    public static final int titleMarginStart=0x7f0200fd;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2022,7 +1957,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMarginTop=0x7f020104;
+    public static final int titleMarginTop=0x7f0200fe;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2030,41 +1965,41 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
-    public static final int titleMargins=0x7f020105;
+    public static final int titleMargins=0x7f0200ff;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextAppearance=0x7f020106;
+    public static final int titleTextAppearance=0x7f020100;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int titleTextColor=0x7f020107;
+    public static final int titleTextColor=0x7f020101;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int titleTextStyle=0x7f020108;
+    public static final int titleTextStyle=0x7f020102;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarNavigationButtonStyle=0x7f020109;
+    public static final int toolbarNavigationButtonStyle=0x7f020103;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int toolbarStyle=0x7f02010a;
+    public static final int toolbarStyle=0x7f020104;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -2074,32 +2009,32 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int tooltipForegroundColor=0x7f02010b;
+    public static final int tooltipForegroundColor=0x7f020105;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int tooltipFrameBackground=0x7f02010c;
+    public static final int tooltipFrameBackground=0x7f020106;
     /**
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
-    public static final int tooltipText=0x7f02010d;
+    public static final int tooltipText=0x7f020107;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int track=0x7f02010e;
+    public static final int track=0x7f020108;
     /**
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
-    public static final int trackTint=0x7f02010f;
+    public static final int trackTint=0x7f020109;
     /**
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2115,29 +2050,29 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      */
-    public static final int trackTintMode=0x7f020110;
+    public static final int trackTintMode=0x7f02010a;
     /**
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
-    public static final int voiceIcon=0x7f020111;
+    public static final int voiceIcon=0x7f02010b;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBar=0x7f020112;
+    public static final int windowActionBar=0x7f02010c;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionBarOverlay=0x7f020113;
+    public static final int windowActionBarOverlay=0x7f02010d;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowActionModeOverlay=0x7f020114;
+    public static final int windowActionModeOverlay=0x7f02010e;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2149,7 +2084,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMajor=0x7f020115;
+    public static final int windowFixedHeightMajor=0x7f02010f;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2161,7 +2096,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedHeightMinor=0x7f020116;
+    public static final int windowFixedHeightMinor=0x7f020110;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2173,7 +2108,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMajor=0x7f020117;
+    public static final int windowFixedWidthMajor=0x7f020111;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2185,7 +2120,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowFixedWidthMinor=0x7f020118;
+    public static final int windowFixedWidthMinor=0x7f020112;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2197,7 +2132,7 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMajor=0x7f020119;
+    public static final int windowMinWidthMajor=0x7f020113;
     /**
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -2209,12 +2144,12 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      */
-    public static final int windowMinWidthMinor=0x7f02011a;
+    public static final int windowMinWidthMinor=0x7f020114;
     /**
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
-    public static final int windowNoTitle=0x7f02011b;
+    public static final int windowNoTitle=0x7f020115;
   }
   public static final class bool {
     public static final int abc_action_bar_embed_tabs=0x7f030000;
@@ -2270,81 +2205,66 @@ public final class R {
     public static final int com_facebook_blue=0x7f04002a;
     public static final int com_facebook_button_background_color=0x7f04002b;
     public static final int com_facebook_button_background_color_disabled=0x7f04002c;
-    public static final int com_facebook_button_background_color_focused=0x7f04002d;
-    public static final int com_facebook_button_background_color_focused_disabled=0x7f04002e;
-    public static final int com_facebook_button_background_color_pressed=0x7f04002f;
-    public static final int com_facebook_button_background_color_selected=0x7f040030;
-    public static final int com_facebook_button_border_color_focused=0x7f040031;
-    public static final int com_facebook_button_login_background_color=0x7f040032;
-    public static final int com_facebook_button_login_silver_background_color=0x7f040033;
-    public static final int com_facebook_button_login_silver_background_color_pressed=0x7f040034;
-    public static final int com_facebook_button_send_background_color=0x7f040035;
-    public static final int com_facebook_button_send_background_color_pressed=0x7f040036;
-    public static final int com_facebook_button_text_color=0x7f040037;
-    public static final int com_facebook_device_auth_text=0x7f040038;
-    public static final int com_facebook_likeboxcountview_border_color=0x7f040039;
-    public static final int com_facebook_likeboxcountview_text_color=0x7f04003a;
-    public static final int com_facebook_likeview_text_color=0x7f04003b;
-    public static final int com_facebook_messenger_blue=0x7f04003c;
-    public static final int com_facebook_send_button_text_color=0x7f04003d;
-    public static final int com_smart_login_code=0x7f04003e;
-    public static final int common_google_signin_btn_text_dark=0x7f04003f;
-    public static final int common_google_signin_btn_text_dark_default=0x7f040040;
-    public static final int common_google_signin_btn_text_dark_disabled=0x7f040041;
-    public static final int common_google_signin_btn_text_dark_focused=0x7f040042;
-    public static final int common_google_signin_btn_text_dark_pressed=0x7f040043;
-    public static final int common_google_signin_btn_text_light=0x7f040044;
-    public static final int common_google_signin_btn_text_light_default=0x7f040045;
-    public static final int common_google_signin_btn_text_light_disabled=0x7f040046;
-    public static final int common_google_signin_btn_text_light_focused=0x7f040047;
-    public static final int common_google_signin_btn_text_light_pressed=0x7f040048;
-    public static final int common_google_signin_btn_tint=0x7f040049;
-    public static final int dim_foreground_disabled_material_dark=0x7f04004a;
-    public static final int dim_foreground_disabled_material_light=0x7f04004b;
-    public static final int dim_foreground_material_dark=0x7f04004c;
-    public static final int dim_foreground_material_light=0x7f04004d;
-    public static final int error_color_material=0x7f04004e;
-    public static final int foreground_material_dark=0x7f04004f;
-    public static final int foreground_material_light=0x7f040050;
-    public static final int highlighted_text_material_dark=0x7f040051;
-    public static final int highlighted_text_material_light=0x7f040052;
-    public static final int material_blue_grey_800=0x7f040053;
-    public static final int material_blue_grey_900=0x7f040054;
-    public static final int material_blue_grey_950=0x7f040055;
-    public static final int material_deep_teal_200=0x7f040056;
-    public static final int material_deep_teal_500=0x7f040057;
-    public static final int material_grey_100=0x7f040058;
-    public static final int material_grey_300=0x7f040059;
-    public static final int material_grey_50=0x7f04005a;
-    public static final int material_grey_600=0x7f04005b;
-    public static final int material_grey_800=0x7f04005c;
-    public static final int material_grey_850=0x7f04005d;
-    public static final int material_grey_900=0x7f04005e;
-    public static final int notification_action_color_filter=0x7f04005f;
-    public static final int notification_icon_bg_color=0x7f040060;
-    public static final int notification_material_background_media_default_color=0x7f040061;
-    public static final int primary_dark_material_dark=0x7f040062;
-    public static final int primary_dark_material_light=0x7f040063;
-    public static final int primary_material_dark=0x7f040064;
-    public static final int primary_material_light=0x7f040065;
-    public static final int primary_text_default_material_dark=0x7f040066;
-    public static final int primary_text_default_material_light=0x7f040067;
-    public static final int primary_text_disabled_material_dark=0x7f040068;
-    public static final int primary_text_disabled_material_light=0x7f040069;
-    public static final int ripple_material_dark=0x7f04006a;
-    public static final int ripple_material_light=0x7f04006b;
-    public static final int secondary_text_default_material_dark=0x7f04006c;
-    public static final int secondary_text_default_material_light=0x7f04006d;
-    public static final int secondary_text_disabled_material_dark=0x7f04006e;
-    public static final int secondary_text_disabled_material_light=0x7f04006f;
-    public static final int switch_thumb_disabled_material_dark=0x7f040070;
-    public static final int switch_thumb_disabled_material_light=0x7f040071;
-    public static final int switch_thumb_material_dark=0x7f040072;
-    public static final int switch_thumb_material_light=0x7f040073;
-    public static final int switch_thumb_normal_material_dark=0x7f040074;
-    public static final int switch_thumb_normal_material_light=0x7f040075;
-    public static final int tooltip_background_dark=0x7f040076;
-    public static final int tooltip_background_light=0x7f040077;
+    public static final int com_facebook_button_background_color_pressed=0x7f04002d;
+    public static final int com_facebook_button_send_background_color=0x7f04002e;
+    public static final int com_facebook_button_send_background_color_pressed=0x7f04002f;
+    public static final int com_facebook_button_text_color=0x7f040030;
+    public static final int com_facebook_device_auth_text=0x7f040031;
+    public static final int com_facebook_likeboxcountview_border_color=0x7f040032;
+    public static final int com_facebook_likeboxcountview_text_color=0x7f040033;
+    public static final int com_facebook_likeview_text_color=0x7f040034;
+    public static final int com_facebook_messenger_blue=0x7f040035;
+    public static final int com_facebook_primary_button_disabled_text_color=0x7f040036;
+    public static final int com_facebook_primary_button_pressed_text_color=0x7f040037;
+    public static final int com_facebook_primary_button_text_color=0x7f040038;
+    public static final int com_facebook_send_button_text_color=0x7f040039;
+    public static final int com_smart_login_code=0x7f04003a;
+    public static final int dim_foreground_disabled_material_dark=0x7f04003b;
+    public static final int dim_foreground_disabled_material_light=0x7f04003c;
+    public static final int dim_foreground_material_dark=0x7f04003d;
+    public static final int dim_foreground_material_light=0x7f04003e;
+    public static final int error_color_material=0x7f04003f;
+    public static final int foreground_material_dark=0x7f040040;
+    public static final int foreground_material_light=0x7f040041;
+    public static final int highlighted_text_material_dark=0x7f040042;
+    public static final int highlighted_text_material_light=0x7f040043;
+    public static final int material_blue_grey_800=0x7f040044;
+    public static final int material_blue_grey_900=0x7f040045;
+    public static final int material_blue_grey_950=0x7f040046;
+    public static final int material_deep_teal_200=0x7f040047;
+    public static final int material_deep_teal_500=0x7f040048;
+    public static final int material_grey_100=0x7f040049;
+    public static final int material_grey_300=0x7f04004a;
+    public static final int material_grey_50=0x7f04004b;
+    public static final int material_grey_600=0x7f04004c;
+    public static final int material_grey_800=0x7f04004d;
+    public static final int material_grey_850=0x7f04004e;
+    public static final int material_grey_900=0x7f04004f;
+    public static final int notification_action_color_filter=0x7f040050;
+    public static final int notification_icon_bg_color=0x7f040051;
+    public static final int notification_material_background_media_default_color=0x7f040052;
+    public static final int primary_dark_material_dark=0x7f040053;
+    public static final int primary_dark_material_light=0x7f040054;
+    public static final int primary_material_dark=0x7f040055;
+    public static final int primary_material_light=0x7f040056;
+    public static final int primary_text_default_material_dark=0x7f040057;
+    public static final int primary_text_default_material_light=0x7f040058;
+    public static final int primary_text_disabled_material_dark=0x7f040059;
+    public static final int primary_text_disabled_material_light=0x7f04005a;
+    public static final int ripple_material_dark=0x7f04005b;
+    public static final int ripple_material_light=0x7f04005c;
+    public static final int secondary_text_default_material_dark=0x7f04005d;
+    public static final int secondary_text_default_material_light=0x7f04005e;
+    public static final int secondary_text_disabled_material_dark=0x7f04005f;
+    public static final int secondary_text_disabled_material_light=0x7f040060;
+    public static final int switch_thumb_disabled_material_dark=0x7f040061;
+    public static final int switch_thumb_disabled_material_light=0x7f040062;
+    public static final int switch_thumb_material_dark=0x7f040063;
+    public static final int switch_thumb_material_light=0x7f040064;
+    public static final int switch_thumb_normal_material_dark=0x7f040065;
+    public static final int switch_thumb_normal_material_light=0x7f040066;
+    public static final int tooltip_background_dark=0x7f040067;
+    public static final int tooltip_background_light=0x7f040068;
   }
   public static final class dimen {
     public static final int abc_action_bar_content_inset_material=0x7f050000;
@@ -2567,74 +2487,48 @@ public final class R {
     public static final int com_facebook_auth_dialog_header_background=0x7f060055;
     public static final int com_facebook_button_background=0x7f060056;
     public static final int com_facebook_button_icon=0x7f060057;
-    public static final int com_facebook_button_icon_blue=0x7f060058;
-    public static final int com_facebook_button_icon_white=0x7f060059;
-    public static final int com_facebook_button_like_background=0x7f06005a;
-    public static final int com_facebook_button_like_icon_selected=0x7f06005b;
-    public static final int com_facebook_button_login_background=0x7f06005c;
-    public static final int com_facebook_button_login_logo=0x7f06005d;
-    public static final int com_facebook_button_login_silver_background=0x7f06005e;
-    public static final int com_facebook_button_send_background=0x7f06005f;
-    public static final int com_facebook_button_send_icon_blue=0x7f060060;
-    public static final int com_facebook_button_send_icon_white=0x7f060061;
-    public static final int com_facebook_close=0x7f060062;
-    public static final int com_facebook_favicon_blue=0x7f060063;
-    public static final int com_facebook_profile_picture_blank_portrait=0x7f060064;
-    public static final int com_facebook_profile_picture_blank_square=0x7f060065;
-    public static final int com_facebook_send_button_icon=0x7f060066;
-    public static final int com_facebook_tooltip_black_background=0x7f060067;
-    public static final int com_facebook_tooltip_black_bottomnub=0x7f060068;
-    public static final int com_facebook_tooltip_black_topnub=0x7f060069;
-    public static final int com_facebook_tooltip_black_xout=0x7f06006a;
-    public static final int com_facebook_tooltip_blue_background=0x7f06006b;
-    public static final int com_facebook_tooltip_blue_bottomnub=0x7f06006c;
-    public static final int com_facebook_tooltip_blue_topnub=0x7f06006d;
-    public static final int com_facebook_tooltip_blue_xout=0x7f06006e;
-    public static final int common_full_open_on_phone=0x7f06006f;
-    public static final int common_google_signin_btn_icon_dark=0x7f060070;
-    public static final int common_google_signin_btn_icon_dark_focused=0x7f060071;
-    public static final int common_google_signin_btn_icon_dark_normal=0x7f060072;
-    public static final int common_google_signin_btn_icon_dark_normal_background=0x7f060073;
-    public static final int common_google_signin_btn_icon_disabled=0x7f060074;
-    public static final int common_google_signin_btn_icon_light=0x7f060075;
-    public static final int common_google_signin_btn_icon_light_focused=0x7f060076;
-    public static final int common_google_signin_btn_icon_light_normal=0x7f060077;
-    public static final int common_google_signin_btn_icon_light_normal_background=0x7f060078;
-    public static final int common_google_signin_btn_text_dark=0x7f060079;
-    public static final int common_google_signin_btn_text_dark_focused=0x7f06007a;
-    public static final int common_google_signin_btn_text_dark_normal=0x7f06007b;
-    public static final int common_google_signin_btn_text_dark_normal_background=0x7f06007c;
-    public static final int common_google_signin_btn_text_disabled=0x7f06007d;
-    public static final int common_google_signin_btn_text_light=0x7f06007e;
-    public static final int common_google_signin_btn_text_light_focused=0x7f06007f;
-    public static final int common_google_signin_btn_text_light_normal=0x7f060080;
-    public static final int common_google_signin_btn_text_light_normal_background=0x7f060081;
-    public static final int googleg_disabled_color_18=0x7f060082;
-    public static final int googleg_standard_color_18=0x7f060083;
-    public static final int messenger_bubble_large_blue=0x7f060084;
-    public static final int messenger_bubble_large_white=0x7f060085;
-    public static final int messenger_bubble_small_blue=0x7f060086;
-    public static final int messenger_bubble_small_white=0x7f060087;
-    public static final int messenger_button_blue_bg_round=0x7f060088;
-    public static final int messenger_button_blue_bg_selector=0x7f060089;
-    public static final int messenger_button_send_round_shadow=0x7f06008a;
-    public static final int messenger_button_white_bg_round=0x7f06008b;
-    public static final int messenger_button_white_bg_selector=0x7f06008c;
-    public static final int notification_action_background=0x7f06008d;
-    public static final int notification_bg=0x7f06008e;
-    public static final int notification_bg_low=0x7f06008f;
-    public static final int notification_bg_low_normal=0x7f060090;
-    public static final int notification_bg_low_pressed=0x7f060091;
-    public static final int notification_bg_normal=0x7f060092;
-    public static final int notification_bg_normal_pressed=0x7f060093;
-    public static final int notification_icon_background=0x7f060094;
-    public static final int notification_template_icon_bg=0x7f060095;
-    public static final int notification_template_icon_low_bg=0x7f060096;
-    public static final int notification_tile_bg=0x7f060097;
-    public static final int notify_panel_notification_icon_bg=0x7f060098;
-    public static final int screen=0x7f060099;
-    public static final int tooltip_frame_dark=0x7f06009a;
-    public static final int tooltip_frame_light=0x7f06009b;
+    public static final int com_facebook_button_like_background=0x7f060058;
+    public static final int com_facebook_button_like_icon_selected=0x7f060059;
+    public static final int com_facebook_button_send_background=0x7f06005a;
+    public static final int com_facebook_button_send_icon_blue=0x7f06005b;
+    public static final int com_facebook_button_send_icon_white=0x7f06005c;
+    public static final int com_facebook_close=0x7f06005d;
+    public static final int com_facebook_favicon_blue=0x7f06005e;
+    public static final int com_facebook_profile_picture_blank_portrait=0x7f06005f;
+    public static final int com_facebook_profile_picture_blank_square=0x7f060060;
+    public static final int com_facebook_send_button_icon=0x7f060061;
+    public static final int com_facebook_tooltip_black_background=0x7f060062;
+    public static final int com_facebook_tooltip_black_bottomnub=0x7f060063;
+    public static final int com_facebook_tooltip_black_topnub=0x7f060064;
+    public static final int com_facebook_tooltip_black_xout=0x7f060065;
+    public static final int com_facebook_tooltip_blue_background=0x7f060066;
+    public static final int com_facebook_tooltip_blue_bottomnub=0x7f060067;
+    public static final int com_facebook_tooltip_blue_topnub=0x7f060068;
+    public static final int com_facebook_tooltip_blue_xout=0x7f060069;
+    public static final int messenger_bubble_large_blue=0x7f06006a;
+    public static final int messenger_bubble_large_white=0x7f06006b;
+    public static final int messenger_bubble_small_blue=0x7f06006c;
+    public static final int messenger_bubble_small_white=0x7f06006d;
+    public static final int messenger_button_blue_bg_round=0x7f06006e;
+    public static final int messenger_button_blue_bg_selector=0x7f06006f;
+    public static final int messenger_button_send_round_shadow=0x7f060070;
+    public static final int messenger_button_white_bg_round=0x7f060071;
+    public static final int messenger_button_white_bg_selector=0x7f060072;
+    public static final int notification_action_background=0x7f060073;
+    public static final int notification_bg=0x7f060074;
+    public static final int notification_bg_low=0x7f060075;
+    public static final int notification_bg_low_normal=0x7f060076;
+    public static final int notification_bg_low_pressed=0x7f060077;
+    public static final int notification_bg_normal=0x7f060078;
+    public static final int notification_bg_normal_pressed=0x7f060079;
+    public static final int notification_icon_background=0x7f06007a;
+    public static final int notification_template_icon_bg=0x7f06007b;
+    public static final int notification_template_icon_low_bg=0x7f06007c;
+    public static final int notification_tile_bg=0x7f06007d;
+    public static final int notify_panel_notification_icon_bg=0x7f06007e;
+    public static final int screen=0x7f06007f;
+    public static final int tooltip_frame_dark=0x7f060080;
+    public static final int tooltip_frame_light=0x7f060081;
   }
   public static final class id {
     public static final int ALT=0x7f070000;
@@ -2664,145 +2558,137 @@ public final class R {
     public static final int actions=0x7f070018;
     public static final int activity_chooser_view_content=0x7f070019;
     public static final int add=0x7f07001a;
-    public static final int adjust_height=0x7f07001b;
-    public static final int adjust_width=0x7f07001c;
-    public static final int alertTitle=0x7f07001d;
-    public static final int always=0x7f07001e;
-    public static final int async=0x7f07001f;
-    public static final int auto=0x7f070020;
-    public static final int automatic=0x7f070021;
-    public static final int beginning=0x7f070022;
-    public static final int blocking=0x7f070023;
-    public static final int bottom=0x7f070024;
-    public static final int box_count=0x7f070025;
-    public static final int button=0x7f070026;
-    public static final int buttonPanel=0x7f070027;
-    public static final int cancel_action=0x7f070028;
-    public static final int cancel_button=0x7f070029;
-    public static final int center=0x7f07002a;
-    public static final int checkbox=0x7f07002b;
-    public static final int chronometer=0x7f07002c;
-    public static final int collapseActionView=0x7f07002d;
-    public static final int com_facebook_body_frame=0x7f07002e;
-    public static final int com_facebook_button_xout=0x7f07002f;
-    public static final int com_facebook_device_auth_instructions=0x7f070030;
-    public static final int com_facebook_fragment_container=0x7f070031;
-    public static final int com_facebook_login_fragment_progress_bar=0x7f070032;
-    public static final int com_facebook_smart_instructions_0=0x7f070033;
-    public static final int com_facebook_smart_instructions_or=0x7f070034;
-    public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f070035;
-    public static final int com_facebook_tooltip_bubble_view_text_body=0x7f070036;
-    public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f070037;
-    public static final int confirmation_code=0x7f070038;
-    public static final int contentPanel=0x7f070039;
-    public static final int custom=0x7f07003a;
-    public static final int customPanel=0x7f07003b;
-    public static final int dark=0x7f07003c;
-    public static final int decor_content_parent=0x7f07003d;
-    public static final int default_activity_button=0x7f07003e;
-    public static final int disableHome=0x7f07003f;
-    public static final int display_always=0x7f070040;
-    public static final int edit_query=0x7f070041;
-    public static final int end=0x7f070042;
-    public static final int end_padder=0x7f070043;
-    public static final int expand_activities_button=0x7f070044;
-    public static final int expanded_menu=0x7f070045;
-    public static final int forever=0x7f070046;
-    public static final int home=0x7f070047;
-    public static final int homeAsUp=0x7f070048;
-    public static final int icon=0x7f070049;
-    public static final int icon_group=0x7f07004a;
-    public static final int icon_only=0x7f07004b;
-    public static final int ifRoom=0x7f07004c;
-    public static final int image=0x7f07004d;
-    public static final int info=0x7f07004e;
-    public static final int inline=0x7f07004f;
-    public static final int italic=0x7f070050;
-    public static final int large=0x7f070051;
-    public static final int left=0x7f070052;
-    public static final int light=0x7f070053;
-    public static final int line1=0x7f070054;
-    public static final int line3=0x7f070055;
-    public static final int listMode=0x7f070056;
-    public static final int list_item=0x7f070057;
-    public static final int media_actions=0x7f070058;
-    public static final int message=0x7f070059;
-    public static final int messenger_send_button=0x7f07005a;
-    public static final int middle=0x7f07005b;
-    public static final int multiply=0x7f07005c;
-    public static final int never=0x7f07005d;
-    public static final int never_display=0x7f07005e;
-    public static final int none=0x7f07005f;
-    public static final int normal=0x7f070060;
-    public static final int notification_background=0x7f070061;
-    public static final int notification_main_column=0x7f070062;
-    public static final int notification_main_column_container=0x7f070063;
-    public static final int open_graph=0x7f070064;
-    public static final int page=0x7f070065;
-    public static final int parentPanel=0x7f070066;
-    public static final int progress_bar=0x7f070067;
-    public static final int progress_circular=0x7f070068;
-    public static final int progress_horizontal=0x7f070069;
-    public static final int radio=0x7f07006a;
-    public static final int right=0x7f07006b;
-    public static final int right_icon=0x7f07006c;
-    public static final int right_side=0x7f07006d;
-    public static final int screen=0x7f07006e;
-    public static final int scrollIndicatorDown=0x7f07006f;
-    public static final int scrollIndicatorUp=0x7f070070;
-    public static final int scrollView=0x7f070071;
-    public static final int search_badge=0x7f070072;
-    public static final int search_bar=0x7f070073;
-    public static final int search_button=0x7f070074;
-    public static final int search_close_btn=0x7f070075;
-    public static final int search_edit_frame=0x7f070076;
-    public static final int search_go_btn=0x7f070077;
-    public static final int search_mag_icon=0x7f070078;
-    public static final int search_plate=0x7f070079;
-    public static final int search_src_text=0x7f07007a;
-    public static final int search_voice_btn=0x7f07007b;
-    public static final int select_dialog_listview=0x7f07007c;
-    public static final int shortcut=0x7f07007d;
-    public static final int showCustom=0x7f07007e;
-    public static final int showHome=0x7f07007f;
-    public static final int showTitle=0x7f070080;
-    public static final int small=0x7f070081;
-    public static final int spacer=0x7f070082;
-    public static final int split_action_bar=0x7f070083;
-    public static final int src_atop=0x7f070084;
-    public static final int src_in=0x7f070085;
-    public static final int src_over=0x7f070086;
-    public static final int standard=0x7f070087;
-    public static final int status_bar_latest_event_content=0x7f070088;
-    public static final int submenuarrow=0x7f070089;
-    public static final int submit_area=0x7f07008a;
-    public static final int tabMode=0x7f07008b;
-    public static final int tag_transition_group=0x7f07008c;
-    public static final int text=0x7f07008d;
-    public static final int text2=0x7f07008e;
-    public static final int textSpacerNoButtons=0x7f07008f;
-    public static final int textSpacerNoTitle=0x7f070090;
-    public static final int time=0x7f070091;
-    public static final int title=0x7f070092;
-    public static final int titleDividerNoCustom=0x7f070093;
-    public static final int title_template=0x7f070094;
-    public static final int top=0x7f070095;
-    public static final int topPanel=0x7f070096;
-    public static final int uniform=0x7f070097;
-    public static final int unknown=0x7f070098;
-    public static final int up=0x7f070099;
-    public static final int useLogo=0x7f07009a;
-    public static final int wide=0x7f07009b;
-    public static final int withText=0x7f07009c;
-    public static final int wrap_content=0x7f07009d;
+    public static final int alertTitle=0x7f07001b;
+    public static final int always=0x7f07001c;
+    public static final int async=0x7f07001d;
+    public static final int automatic=0x7f07001e;
+    public static final int beginning=0x7f07001f;
+    public static final int blocking=0x7f070020;
+    public static final int bottom=0x7f070021;
+    public static final int box_count=0x7f070022;
+    public static final int button=0x7f070023;
+    public static final int buttonPanel=0x7f070024;
+    public static final int cancel_action=0x7f070025;
+    public static final int cancel_button=0x7f070026;
+    public static final int center=0x7f070027;
+    public static final int checkbox=0x7f070028;
+    public static final int chronometer=0x7f070029;
+    public static final int collapseActionView=0x7f07002a;
+    public static final int com_facebook_body_frame=0x7f07002b;
+    public static final int com_facebook_button_xout=0x7f07002c;
+    public static final int com_facebook_device_auth_instructions=0x7f07002d;
+    public static final int com_facebook_fragment_container=0x7f07002e;
+    public static final int com_facebook_login_fragment_progress_bar=0x7f07002f;
+    public static final int com_facebook_smart_instructions_0=0x7f070030;
+    public static final int com_facebook_smart_instructions_or=0x7f070031;
+    public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f070032;
+    public static final int com_facebook_tooltip_bubble_view_text_body=0x7f070033;
+    public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f070034;
+    public static final int confirmation_code=0x7f070035;
+    public static final int contentPanel=0x7f070036;
+    public static final int custom=0x7f070037;
+    public static final int customPanel=0x7f070038;
+    public static final int decor_content_parent=0x7f070039;
+    public static final int default_activity_button=0x7f07003a;
+    public static final int disableHome=0x7f07003b;
+    public static final int display_always=0x7f07003c;
+    public static final int edit_query=0x7f07003d;
+    public static final int end=0x7f07003e;
+    public static final int end_padder=0x7f07003f;
+    public static final int expand_activities_button=0x7f070040;
+    public static final int expanded_menu=0x7f070041;
+    public static final int forever=0x7f070042;
+    public static final int home=0x7f070043;
+    public static final int homeAsUp=0x7f070044;
+    public static final int icon=0x7f070045;
+    public static final int icon_group=0x7f070046;
+    public static final int ifRoom=0x7f070047;
+    public static final int image=0x7f070048;
+    public static final int info=0x7f070049;
+    public static final int inline=0x7f07004a;
+    public static final int italic=0x7f07004b;
+    public static final int large=0x7f07004c;
+    public static final int left=0x7f07004d;
+    public static final int line1=0x7f07004e;
+    public static final int line3=0x7f07004f;
+    public static final int listMode=0x7f070050;
+    public static final int list_item=0x7f070051;
+    public static final int media_actions=0x7f070052;
+    public static final int message=0x7f070053;
+    public static final int messenger_send_button=0x7f070054;
+    public static final int middle=0x7f070055;
+    public static final int multiply=0x7f070056;
+    public static final int never=0x7f070057;
+    public static final int never_display=0x7f070058;
+    public static final int none=0x7f070059;
+    public static final int normal=0x7f07005a;
+    public static final int notification_background=0x7f07005b;
+    public static final int notification_main_column=0x7f07005c;
+    public static final int notification_main_column_container=0x7f07005d;
+    public static final int open_graph=0x7f07005e;
+    public static final int page=0x7f07005f;
+    public static final int parentPanel=0x7f070060;
+    public static final int progress_bar=0x7f070061;
+    public static final int progress_circular=0x7f070062;
+    public static final int progress_horizontal=0x7f070063;
+    public static final int radio=0x7f070064;
+    public static final int right=0x7f070065;
+    public static final int right_icon=0x7f070066;
+    public static final int right_side=0x7f070067;
+    public static final int screen=0x7f070068;
+    public static final int scrollIndicatorDown=0x7f070069;
+    public static final int scrollIndicatorUp=0x7f07006a;
+    public static final int scrollView=0x7f07006b;
+    public static final int search_badge=0x7f07006c;
+    public static final int search_bar=0x7f07006d;
+    public static final int search_button=0x7f07006e;
+    public static final int search_close_btn=0x7f07006f;
+    public static final int search_edit_frame=0x7f070070;
+    public static final int search_go_btn=0x7f070071;
+    public static final int search_mag_icon=0x7f070072;
+    public static final int search_plate=0x7f070073;
+    public static final int search_src_text=0x7f070074;
+    public static final int search_voice_btn=0x7f070075;
+    public static final int select_dialog_listview=0x7f070076;
+    public static final int shortcut=0x7f070077;
+    public static final int showCustom=0x7f070078;
+    public static final int showHome=0x7f070079;
+    public static final int showTitle=0x7f07007a;
+    public static final int small=0x7f07007b;
+    public static final int spacer=0x7f07007c;
+    public static final int split_action_bar=0x7f07007d;
+    public static final int src_atop=0x7f07007e;
+    public static final int src_in=0x7f07007f;
+    public static final int src_over=0x7f070080;
+    public static final int standard=0x7f070081;
+    public static final int status_bar_latest_event_content=0x7f070082;
+    public static final int submenuarrow=0x7f070083;
+    public static final int submit_area=0x7f070084;
+    public static final int tabMode=0x7f070085;
+    public static final int tag_transition_group=0x7f070086;
+    public static final int text=0x7f070087;
+    public static final int text2=0x7f070088;
+    public static final int textSpacerNoButtons=0x7f070089;
+    public static final int textSpacerNoTitle=0x7f07008a;
+    public static final int time=0x7f07008b;
+    public static final int title=0x7f07008c;
+    public static final int titleDividerNoCustom=0x7f07008d;
+    public static final int title_template=0x7f07008e;
+    public static final int top=0x7f07008f;
+    public static final int topPanel=0x7f070090;
+    public static final int uniform=0x7f070091;
+    public static final int unknown=0x7f070092;
+    public static final int up=0x7f070093;
+    public static final int useLogo=0x7f070094;
+    public static final int withText=0x7f070095;
+    public static final int wrap_content=0x7f070096;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f080000;
     public static final int abc_config_activityShortDur=0x7f080001;
     public static final int cancel_button_image_alpha=0x7f080002;
     public static final int config_tooltipAnimTime=0x7f080003;
-    public static final int google_play_services_version=0x7f080004;
-    public static final int status_bar_notification_info_maxnum=0x7f080005;
+    public static final int status_bar_notification_info_maxnum=0x7f080004;
   }
   public static final class layout {
     public static final int abc_action_bar_title_item=0x7f090000;
@@ -2921,30 +2807,12 @@ public final class R {
     public static final int com_facebook_smart_login_confirmation_continue_as=0x7f0b0033;
     public static final int com_facebook_smart_login_confirmation_title=0x7f0b0034;
     public static final int com_facebook_tooltip_default=0x7f0b0035;
-    public static final int common_google_play_services_enable_button=0x7f0b0036;
-    public static final int common_google_play_services_enable_text=0x7f0b0037;
-    public static final int common_google_play_services_enable_title=0x7f0b0038;
-    public static final int common_google_play_services_install_button=0x7f0b0039;
-    public static final int common_google_play_services_install_text=0x7f0b003a;
-    public static final int common_google_play_services_install_title=0x7f0b003b;
-    public static final int common_google_play_services_notification_channel_name=0x7f0b003c;
-    public static final int common_google_play_services_notification_ticker=0x7f0b003d;
-    public static final int common_google_play_services_unknown_issue=0x7f0b003e;
-    public static final int common_google_play_services_unsupported_text=0x7f0b003f;
-    public static final int common_google_play_services_update_button=0x7f0b0040;
-    public static final int common_google_play_services_update_text=0x7f0b0041;
-    public static final int common_google_play_services_update_title=0x7f0b0042;
-    public static final int common_google_play_services_updating_text=0x7f0b0043;
-    public static final int common_google_play_services_wear_update_text=0x7f0b0044;
-    public static final int common_open_on_phone=0x7f0b0045;
-    public static final int common_signin_button_text=0x7f0b0046;
-    public static final int common_signin_button_text_long=0x7f0b0047;
-    public static final int fb_app_id=0x7f0b0048;
-    public static final int fb_app_name=0x7f0b0049;
-    public static final int launcher_name=0x7f0b004a;
-    public static final int messenger_send_button_text=0x7f0b004b;
-    public static final int search_menu_title=0x7f0b004c;
-    public static final int status_bar_notification_info_overflow=0x7f0b004d;
+    public static final int fb_app_id=0x7f0b0036;
+    public static final int fb_app_name=0x7f0b0037;
+    public static final int launcher_name=0x7f0b0038;
+    public static final int messenger_send_button_text=0x7f0b0039;
+    public static final int search_menu_title=0x7f0b003a;
+    public static final int status_bar_notification_info_overflow=0x7f0b003b;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0c0000;
@@ -3327,8 +3195,7 @@ public final class R {
     public static final int com_facebook_button_send=0x7f0c0179;
     public static final int com_facebook_button_share=0x7f0c017a;
     public static final int com_facebook_loginview_default_style=0x7f0c017b;
-    public static final int com_facebook_loginview_silver_style=0x7f0c017c;
-    public static final int tooltip_bubble_text=0x7f0c017d;
+    public static final int tooltip_bubble_text=0x7f0c017c;
   }
   public static final class styleable {
     /**
@@ -3338,35 +3205,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.tgm_ionic:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.tgm_ionic:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.tgm_ionic:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.tgm_ionic:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.tgm_ionic:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.tgm_ionic:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.tgm_ionic:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.tgm_ionic:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.tgm_ionic:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.tgm_ionic:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.tgm_ionic:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.tgm_ionic:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.tgm_ionic:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height com.tgm_ionic:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.tgm_ionic:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.tgm_ionic:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.tgm_ionic:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.tgm_ionic:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.tgm_ionic:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.tgm_ionic:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.tgm_ionic:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.tgm_ionic:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.tgm_ionic:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.tgm_ionic:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.tgm_ionic:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.tgm_ionic:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.tgm_ionic:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title com.tgm_ionic:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.tgm_ionic:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.piousbox.tgm:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.piousbox.tgm:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.piousbox.tgm:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.piousbox.tgm:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.piousbox.tgm:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.piousbox.tgm:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.piousbox.tgm:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.piousbox.tgm:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.piousbox.tgm:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.piousbox.tgm:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.piousbox.tgm:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.piousbox.tgm:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.piousbox.tgm:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.piousbox.tgm:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.piousbox.tgm:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.piousbox.tgm:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.piousbox.tgm:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.piousbox.tgm:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.piousbox.tgm:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.piousbox.tgm:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.piousbox.tgm:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.piousbox.tgm:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.piousbox.tgm:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.piousbox.tgm:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.piousbox.tgm:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.piousbox.tgm:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.piousbox.tgm:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.piousbox.tgm:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.piousbox.tgm:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -3399,17 +3266,17 @@ public final class R {
      * @see #ActionBar_titleTextStyle
      */
     public static final int[] ActionBar={
-        0x7f020031, 0x7f020032, 0x7f020033, 0x7f02006b, 
-        0x7f02006c, 0x7f02006d, 0x7f02006e, 0x7f02006f, 
-        0x7f020070, 0x7f020077, 0x7f02007b, 0x7f02007c, 
-        0x7f020087, 0x7f020095, 0x7f020096, 0x7f020097, 
-        0x7f020098, 0x7f020099, 0x7f0200a0, 0x7f0200a3, 
-        0x7f0200b0, 0x7f0200b7, 0x7f0200c2, 0x7f0200c5, 
-        0x7f0200c6, 0x7f0200e1, 0x7f0200e4, 0x7f0200ff, 
-        0x7f020108
+        0x7f020031, 0x7f020032, 0x7f020033, 0x7f020068, 
+        0x7f020069, 0x7f02006a, 0x7f02006b, 0x7f02006c, 
+        0x7f02006d, 0x7f020074, 0x7f020078, 0x7f020079, 
+        0x7f020084, 0x7f020092, 0x7f020093, 0x7f020094, 
+        0x7f020095, 0x7f020096, 0x7f02009b, 0x7f02009e, 
+        0x7f0200ab, 0x7f0200b2, 0x7f0200bd, 0x7f0200c0, 
+        0x7f0200c1, 0x7f0200db, 0x7f0200de, 0x7f0200f9, 
+        0x7f020102
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3417,11 +3284,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:background
+     * @attr name com.piousbox.tgm:background
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3432,11 +3299,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:backgroundSplit
+     * @attr name com.piousbox.tgm:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3447,11 +3314,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:backgroundStacked
+     * @attr name com.piousbox.tgm:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3460,11 +3327,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetEnd
+     * @attr name com.piousbox.tgm:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3473,11 +3340,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetEndWithActions
+     * @attr name com.piousbox.tgm:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3486,11 +3353,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetLeft
+     * @attr name com.piousbox.tgm:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3499,11 +3366,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetRight
+     * @attr name com.piousbox.tgm:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3512,11 +3379,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetStart
+     * @attr name com.piousbox.tgm:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3525,11 +3392,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetStartWithNavigation
+     * @attr name com.piousbox.tgm:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3537,11 +3404,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:customNavigationLayout
+     * @attr name com.piousbox.tgm:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -3559,11 +3426,11 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:displayOptions
+     * @attr name com.piousbox.tgm:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3571,11 +3438,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:divider
+     * @attr name com.piousbox.tgm:divider
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3584,11 +3451,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:elevation
+     * @attr name com.piousbox.tgm:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3597,21 +3464,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:height
+     * @attr name com.piousbox.tgm:height
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:hideOnContentScroll
+     * @attr name com.piousbox.tgm:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3619,11 +3486,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:homeAsUpIndicator
+     * @attr name com.piousbox.tgm:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3631,11 +3498,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:homeLayout
+     * @attr name com.piousbox.tgm:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3643,11 +3510,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:icon
+     * @attr name com.piousbox.tgm:icon
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3655,11 +3522,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:indeterminateProgressStyle
+     * @attr name com.piousbox.tgm:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3668,11 +3535,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:itemPadding
+     * @attr name com.piousbox.tgm:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3680,11 +3547,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:logo
+     * @attr name com.piousbox.tgm:logo
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -3698,11 +3565,11 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:navigationMode
+     * @attr name com.piousbox.tgm:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3710,11 +3577,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:popupTheme
+     * @attr name com.piousbox.tgm:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3723,11 +3590,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:progressBarPadding
+     * @attr name com.piousbox.tgm:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3735,21 +3602,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:progressBarStyle
+     * @attr name com.piousbox.tgm:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:subtitle
+     * @attr name com.piousbox.tgm:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3757,21 +3624,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:subtitleTextStyle
+     * @attr name com.piousbox.tgm:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:title
+     * @attr name com.piousbox.tgm:title
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3779,7 +3646,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:titleTextStyle
+     * @attr name com.piousbox.tgm:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -3861,12 +3728,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.tgm_ionic:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.tgm_ionic:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.tgm_ionic:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height com.tgm_ionic:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.tgm_ionic:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.tgm_ionic:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.piousbox.tgm:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.piousbox.tgm:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.piousbox.tgm:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.piousbox.tgm:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.piousbox.tgm:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.piousbox.tgm:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -3876,11 +3743,11 @@ public final class R {
      * @see #ActionMode_titleTextStyle
      */
     public static final int[] ActionMode={
-        0x7f020031, 0x7f020032, 0x7f02004e, 0x7f020095, 
-        0x7f0200e4, 0x7f020108
+        0x7f020031, 0x7f020032, 0x7f02004c, 0x7f020092, 
+        0x7f0200de, 0x7f020102
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3888,11 +3755,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:background
+     * @attr name com.piousbox.tgm:background
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3903,11 +3770,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:backgroundSplit
+     * @attr name com.piousbox.tgm:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3915,11 +3782,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:closeItemLayout
+     * @attr name com.piousbox.tgm:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -3928,11 +3795,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:height
+     * @attr name com.piousbox.tgm:height
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3940,11 +3807,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:subtitleTextStyle
+     * @attr name com.piousbox.tgm:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3952,7 +3819,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:titleTextStyle
+     * @attr name com.piousbox.tgm:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -3962,17 +3829,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.tgm_ionic:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.tgm_ionic:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.piousbox.tgm:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.piousbox.tgm:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
      */
     public static final int[] ActivityChooserView={
-        0x7f020088, 0x7f0200a1
+        0x7f020085, 0x7f02009c
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -3980,17 +3847,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:expandActivityOverflowButtonDrawable
+     * @attr name com.piousbox.tgm:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:initialActivityCount
+     * @attr name com.piousbox.tgm:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -4001,12 +3868,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.tgm_ionic:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout com.tgm_ionic:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout com.tgm_ionic:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.tgm_ionic:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle com.tgm_ionic:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.tgm_ionic:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.piousbox.tgm:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.piousbox.tgm:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.piousbox.tgm:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.piousbox.tgm:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.piousbox.tgm:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.piousbox.tgm:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonPanelSideLayout
@@ -4017,8 +3884,8 @@ public final class R {
      * @see #AlertDialog_singleChoiceItemLayout
      */
     public static final int[] AlertDialog={
-        0x010100f2, 0x7f02003e, 0x7f0200a7, 0x7f0200a8, 
-        0x7f0200b4, 0x7f0200d7, 0x7f0200d8
+        0x010100f2, 0x7f02003e, 0x7f0200a2, 0x7f0200a3, 
+        0x7f0200af, 0x7f0200d1, 0x7f0200d2
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#layout}
@@ -4033,7 +3900,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4041,11 +3908,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:buttonPanelSideLayout
+     * @attr name com.piousbox.tgm:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4053,11 +3920,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:listItemLayout
+     * @attr name com.piousbox.tgm:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4065,11 +3932,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:listLayout
+     * @attr name com.piousbox.tgm:listLayout
      */
     public static final int AlertDialog_listLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4077,21 +3944,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:multiChoiceItemLayout
+     * @attr name com.piousbox.tgm:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:showTitle
+     * @attr name com.piousbox.tgm:showTitle
      */
     public static final int AlertDialog_showTitle=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4099,7 +3966,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:singleChoiceItemLayout
+     * @attr name com.piousbox.tgm:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=6;
     /**
@@ -4110,9 +3977,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.tgm_ionic:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.tgm_ionic:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.tgm_ionic:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.piousbox.tgm:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.piousbox.tgm:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.piousbox.tgm:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -4120,7 +3987,7 @@ public final class R {
      * @see #AppCompatImageView_tintMode
      */
     public static final int[] AppCompatImageView={
-        0x01010119, 0x7f0200dd, 0x7f0200fd, 0x7f0200fe
+        0x01010119, 0x7f0200d7, 0x7f0200f7, 0x7f0200f8
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#src}
@@ -4138,7 +4005,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4146,22 +4013,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:srcCompat
+     * @attr name com.piousbox.tgm:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#tint}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:tint
+     * @attr name com.piousbox.tgm:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4178,7 +4045,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:tintMode
+     * @attr name com.piousbox.tgm:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -4189,9 +4056,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.tgm_ionic:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.tgm_ionic:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.tgm_ionic:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.piousbox.tgm:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.piousbox.tgm:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.piousbox.tgm:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -4199,7 +4066,7 @@ public final class R {
      * @see #AppCompatSeekBar_tickMarkTintMode
      */
     public static final int[] AppCompatSeekBar={
-        0x01010142, 0x7f0200fa, 0x7f0200fb, 0x7f0200fc
+        0x01010142, 0x7f0200f4, 0x7f0200f5, 0x7f0200f6
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#thumb}
@@ -4214,7 +4081,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4222,22 +4089,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:tickMark
+     * @attr name com.piousbox.tgm:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:tickMarkTint
+     * @attr name com.piousbox.tgm:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4254,7 +4121,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:tickMarkTintMode
+     * @attr name com.piousbox.tgm:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -4394,13 +4261,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.tgm_ionic:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.tgm_ionic:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.tgm_ionic:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.tgm_ionic:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.tgm_ionic:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.tgm_ionic:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.tgm_ionic:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.piousbox.tgm:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.piousbox.tgm:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.piousbox.tgm:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.piousbox.tgm:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.piousbox.tgm:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.piousbox.tgm:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.piousbox.tgm:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -4413,7 +4280,7 @@ public final class R {
      */
     public static final int[] AppCompatTextView={
         0x01010034, 0x7f02002c, 0x7f02002d, 0x7f02002e, 
-        0x7f02002f, 0x7f020030, 0x7f02008a, 0x7f0200ea
+        0x7f02002f, 0x7f020030, 0x7f020087, 0x7f0200e4
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
@@ -4428,7 +4295,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4437,11 +4304,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:autoSizeMaxTextSize
+     * @attr name com.piousbox.tgm:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4450,11 +4317,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:autoSizeMinTextSize
+     * @attr name com.piousbox.tgm:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4462,11 +4329,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:autoSizePresetSizes
+     * @attr name com.piousbox.tgm:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4475,11 +4342,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:autoSizeStepGranularity
+     * @attr name com.piousbox.tgm:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -4492,21 +4359,21 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:autoSizeTextType
+     * @attr name com.piousbox.tgm:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:fontFamily
+     * @attr name com.piousbox.tgm:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4516,7 +4383,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:textAllCaps
+     * @attr name com.piousbox.tgm:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=7;
     /**
@@ -4528,123 +4395,123 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.tgm_ionic:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.tgm_ionic:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.tgm_ionic:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.tgm_ionic:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.tgm_ionic:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.tgm_ionic:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.tgm_ionic:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.tgm_ionic:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.tgm_ionic:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.tgm_ionic:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.tgm_ionic:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.tgm_ionic:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.tgm_ionic:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.tgm_ionic:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.tgm_ionic:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.tgm_ionic:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.tgm_ionic:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.tgm_ionic:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.tgm_ionic:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.tgm_ionic:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.tgm_ionic:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.tgm_ionic:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.tgm_ionic:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.tgm_ionic:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.tgm_ionic:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.tgm_ionic:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.tgm_ionic:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.tgm_ionic:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.tgm_ionic:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.tgm_ionic:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.tgm_ionic:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.tgm_ionic:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.tgm_ionic:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.tgm_ionic:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.tgm_ionic:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.tgm_ionic:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.tgm_ionic:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.tgm_ionic:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.tgm_ionic:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.tgm_ionic:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.tgm_ionic:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.tgm_ionic:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.tgm_ionic:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.tgm_ionic:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.tgm_ionic:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.tgm_ionic:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.tgm_ionic:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.tgm_ionic:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.tgm_ionic:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.tgm_ionic:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.tgm_ionic:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.tgm_ionic:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.tgm_ionic:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.tgm_ionic:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.tgm_ionic:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.tgm_ionic:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.tgm_ionic:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.tgm_ionic:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.tgm_ionic:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.tgm_ionic:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.tgm_ionic:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.tgm_ionic:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.tgm_ionic:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.tgm_ionic:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.tgm_ionic:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.tgm_ionic:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.tgm_ionic:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.tgm_ionic:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.tgm_ionic:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.tgm_ionic:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.tgm_ionic:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.tgm_ionic:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.tgm_ionic:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.tgm_ionic:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.tgm_ionic:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.tgm_ionic:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.tgm_ionic:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.tgm_ionic:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.tgm_ionic:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.tgm_ionic:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.tgm_ionic:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.tgm_ionic:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.tgm_ionic:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.tgm_ionic:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.tgm_ionic:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.tgm_ionic:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.tgm_ionic:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.tgm_ionic:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.tgm_ionic:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.tgm_ionic:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.tgm_ionic:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.tgm_ionic:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.tgm_ionic:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.tgm_ionic:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.tgm_ionic:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.tgm_ionic:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.tgm_ionic:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.tgm_ionic:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.tgm_ionic:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.tgm_ionic:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.tgm_ionic:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.tgm_ionic:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.tgm_ionic:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.tgm_ionic:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.tgm_ionic:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.tgm_ionic:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.tgm_ionic:tooltipFrameBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.tgm_ionic:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.tgm_ionic:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.tgm_ionic:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.tgm_ionic:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.tgm_ionic:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.tgm_ionic:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.tgm_ionic:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.tgm_ionic:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.tgm_ionic:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.tgm_ionic:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.piousbox.tgm:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.piousbox.tgm:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.piousbox.tgm:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.piousbox.tgm:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.piousbox.tgm:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.piousbox.tgm:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.piousbox.tgm:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.piousbox.tgm:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.piousbox.tgm:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.piousbox.tgm:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.piousbox.tgm:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.piousbox.tgm:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.piousbox.tgm:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.piousbox.tgm:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.piousbox.tgm:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.piousbox.tgm:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.piousbox.tgm:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.piousbox.tgm:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.piousbox.tgm:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.piousbox.tgm:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.piousbox.tgm:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.piousbox.tgm:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.piousbox.tgm:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.piousbox.tgm:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.piousbox.tgm:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.piousbox.tgm:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.piousbox.tgm:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.piousbox.tgm:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.piousbox.tgm:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.piousbox.tgm:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.piousbox.tgm:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.piousbox.tgm:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.piousbox.tgm:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.piousbox.tgm:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.piousbox.tgm:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.piousbox.tgm:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.piousbox.tgm:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.piousbox.tgm:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.piousbox.tgm:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.piousbox.tgm:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.piousbox.tgm:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.piousbox.tgm:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.piousbox.tgm:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.piousbox.tgm:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.piousbox.tgm:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.piousbox.tgm:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.piousbox.tgm:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.piousbox.tgm:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.piousbox.tgm:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.piousbox.tgm:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.piousbox.tgm:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.piousbox.tgm:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.piousbox.tgm:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.piousbox.tgm:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.piousbox.tgm:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.piousbox.tgm:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.piousbox.tgm:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.piousbox.tgm:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.piousbox.tgm:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.piousbox.tgm:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.piousbox.tgm:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.piousbox.tgm:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.piousbox.tgm:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.piousbox.tgm:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.piousbox.tgm:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.piousbox.tgm:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.piousbox.tgm:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.piousbox.tgm:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.piousbox.tgm:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.piousbox.tgm:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.piousbox.tgm:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.piousbox.tgm:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.piousbox.tgm:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.piousbox.tgm:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.piousbox.tgm:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.piousbox.tgm:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.piousbox.tgm:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.piousbox.tgm:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.piousbox.tgm:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.piousbox.tgm:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.piousbox.tgm:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.piousbox.tgm:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.piousbox.tgm:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.piousbox.tgm:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.piousbox.tgm:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.piousbox.tgm:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.piousbox.tgm:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.piousbox.tgm:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.piousbox.tgm:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.piousbox.tgm:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.piousbox.tgm:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.piousbox.tgm:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.piousbox.tgm:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.piousbox.tgm:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.piousbox.tgm:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.piousbox.tgm:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.piousbox.tgm:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.piousbox.tgm:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.piousbox.tgm:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.piousbox.tgm:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.piousbox.tgm:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.piousbox.tgm:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.piousbox.tgm:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.piousbox.tgm:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.piousbox.tgm:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.piousbox.tgm:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.piousbox.tgm:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.piousbox.tgm:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.piousbox.tgm:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.piousbox.tgm:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.piousbox.tgm:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.piousbox.tgm:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.piousbox.tgm:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.piousbox.tgm:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.piousbox.tgm:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.piousbox.tgm:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.piousbox.tgm:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -4778,25 +4645,25 @@ public final class R {
         0x7f020021, 0x7f020022, 0x7f020023, 0x7f020024, 
         0x7f020025, 0x7f02002b, 0x7f020037, 0x7f020038, 
         0x7f020039, 0x7f02003a, 0x7f02003b, 0x7f02003c, 
-        0x7f020040, 0x7f020041, 0x7f02004a, 0x7f02004b, 
-        0x7f020052, 0x7f020053, 0x7f020054, 0x7f020055, 
-        0x7f020056, 0x7f020057, 0x7f020058, 0x7f020059, 
-        0x7f02005a, 0x7f02005c, 0x7f020076, 0x7f020079, 
-        0x7f02007a, 0x7f02007d, 0x7f02007f, 0x7f020082, 
-        0x7f020083, 0x7f020084, 0x7f020085, 0x7f020086, 
-        0x7f020097, 0x7f02009f, 0x7f0200a5, 0x7f0200a6, 
-        0x7f0200a9, 0x7f0200aa, 0x7f0200ab, 0x7f0200ac, 
-        0x7f0200ad, 0x7f0200ae, 0x7f0200af, 0x7f0200be, 
-        0x7f0200bf, 0x7f0200c0, 0x7f0200c1, 0x7f0200c3, 
-        0x7f0200c9, 0x7f0200ca, 0x7f0200cb, 0x7f0200cc, 
-        0x7f0200d0, 0x7f0200d1, 0x7f0200d2, 0x7f0200d3, 
-        0x7f0200da, 0x7f0200db, 0x7f0200e8, 0x7f0200eb, 
-        0x7f0200ec, 0x7f0200ed, 0x7f0200ee, 0x7f0200ef, 
-        0x7f0200f0, 0x7f0200f1, 0x7f0200f2, 0x7f0200f3, 
-        0x7f0200f4, 0x7f020109, 0x7f02010a, 0x7f02010b, 
-        0x7f02010c, 0x7f020112, 0x7f020113, 0x7f020114, 
-        0x7f020115, 0x7f020116, 0x7f020117, 0x7f020118, 
-        0x7f020119, 0x7f02011a, 0x7f02011b
+        0x7f02003f, 0x7f020040, 0x7f020049, 0x7f02004a, 
+        0x7f020050, 0x7f020051, 0x7f020052, 0x7f020053, 
+        0x7f020054, 0x7f020055, 0x7f020056, 0x7f020057, 
+        0x7f020058, 0x7f020059, 0x7f020073, 0x7f020076, 
+        0x7f020077, 0x7f02007a, 0x7f02007c, 0x7f02007f, 
+        0x7f020080, 0x7f020081, 0x7f020082, 0x7f020083, 
+        0x7f020094, 0x7f02009a, 0x7f0200a0, 0x7f0200a1, 
+        0x7f0200a4, 0x7f0200a5, 0x7f0200a6, 0x7f0200a7, 
+        0x7f0200a8, 0x7f0200a9, 0x7f0200aa, 0x7f0200b9, 
+        0x7f0200ba, 0x7f0200bb, 0x7f0200bc, 0x7f0200be, 
+        0x7f0200c4, 0x7f0200c5, 0x7f0200c6, 0x7f0200c7, 
+        0x7f0200ca, 0x7f0200cb, 0x7f0200cc, 0x7f0200cd, 
+        0x7f0200d4, 0x7f0200d5, 0x7f0200e2, 0x7f0200e5, 
+        0x7f0200e6, 0x7f0200e7, 0x7f0200e8, 0x7f0200e9, 
+        0x7f0200ea, 0x7f0200eb, 0x7f0200ec, 0x7f0200ed, 
+        0x7f0200ee, 0x7f020103, 0x7f020104, 0x7f020105, 
+        0x7f020106, 0x7f02010c, 0x7f02010d, 0x7f02010e, 
+        0x7f02010f, 0x7f020110, 0x7f020111, 0x7f020112, 
+        0x7f020113, 0x7f020114, 0x7f020115
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowIsFloating}
@@ -4821,7 +4688,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4829,11 +4696,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionBarDivider
+     * @attr name com.piousbox.tgm:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4841,11 +4708,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionBarItemBackground
+     * @attr name com.piousbox.tgm:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4853,11 +4720,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionBarPopupTheme
+     * @attr name com.piousbox.tgm:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -4874,11 +4741,11 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:actionBarSize
+     * @attr name com.piousbox.tgm:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4886,11 +4753,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionBarSplitStyle
+     * @attr name com.piousbox.tgm:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4898,11 +4765,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionBarStyle
+     * @attr name com.piousbox.tgm:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4910,11 +4777,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionBarTabBarStyle
+     * @attr name com.piousbox.tgm:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4922,11 +4789,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionBarTabStyle
+     * @attr name com.piousbox.tgm:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4934,11 +4801,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionBarTabTextStyle
+     * @attr name com.piousbox.tgm:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4946,11 +4813,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionBarTheme
+     * @attr name com.piousbox.tgm:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4958,11 +4825,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionBarWidgetTheme
+     * @attr name com.piousbox.tgm:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4970,11 +4837,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionButtonStyle
+     * @attr name com.piousbox.tgm:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4982,11 +4849,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionDropDownStyle
+     * @attr name com.piousbox.tgm:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -4994,11 +4861,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionMenuTextAppearance
+     * @attr name com.piousbox.tgm:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5009,11 +4876,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:actionMenuTextColor
+     * @attr name com.piousbox.tgm:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5021,11 +4888,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeBackground
+     * @attr name com.piousbox.tgm:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5033,11 +4900,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeCloseButtonStyle
+     * @attr name com.piousbox.tgm:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5045,11 +4912,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeCloseDrawable
+     * @attr name com.piousbox.tgm:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5057,11 +4924,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeCopyDrawable
+     * @attr name com.piousbox.tgm:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5069,11 +4936,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeCutDrawable
+     * @attr name com.piousbox.tgm:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5081,11 +4948,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeFindDrawable
+     * @attr name com.piousbox.tgm:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5093,11 +4960,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModePasteDrawable
+     * @attr name com.piousbox.tgm:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5105,11 +4972,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModePopupWindowStyle
+     * @attr name com.piousbox.tgm:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5117,11 +4984,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeSelectAllDrawable
+     * @attr name com.piousbox.tgm:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5129,11 +4996,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeShareDrawable
+     * @attr name com.piousbox.tgm:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5141,11 +5008,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeSplitBackground
+     * @attr name com.piousbox.tgm:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5153,11 +5020,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeStyle
+     * @attr name com.piousbox.tgm:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5165,11 +5032,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionModeWebSearchDrawable
+     * @attr name com.piousbox.tgm:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5177,11 +5044,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionOverflowButtonStyle
+     * @attr name com.piousbox.tgm:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5189,11 +5056,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionOverflowMenuStyle
+     * @attr name com.piousbox.tgm:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5201,11 +5068,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:activityChooserViewStyle
+     * @attr name com.piousbox.tgm:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5213,21 +5080,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:alertDialogButtonGroupStyle
+     * @attr name com.piousbox.tgm:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:alertDialogCenterButtons
+     * @attr name com.piousbox.tgm:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5235,11 +5102,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:alertDialogStyle
+     * @attr name com.piousbox.tgm:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5247,11 +5114,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:alertDialogTheme
+     * @attr name com.piousbox.tgm:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5259,11 +5126,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:autoCompleteTextViewStyle
+     * @attr name com.piousbox.tgm:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5271,11 +5138,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:borderlessButtonStyle
+     * @attr name com.piousbox.tgm:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5283,11 +5150,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:buttonBarButtonStyle
+     * @attr name com.piousbox.tgm:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5295,11 +5162,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:buttonBarNegativeButtonStyle
+     * @attr name com.piousbox.tgm:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5307,11 +5174,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:buttonBarNeutralButtonStyle
+     * @attr name com.piousbox.tgm:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5319,11 +5186,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:buttonBarPositiveButtonStyle
+     * @attr name com.piousbox.tgm:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5331,11 +5198,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:buttonBarStyle
+     * @attr name com.piousbox.tgm:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5343,11 +5210,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:buttonStyle
+     * @attr name com.piousbox.tgm:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5355,11 +5222,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:buttonStyleSmall
+     * @attr name com.piousbox.tgm:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5367,11 +5234,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:checkboxStyle
+     * @attr name com.piousbox.tgm:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5379,77 +5246,77 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:checkedTextViewStyle
+     * @attr name com.piousbox.tgm:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:colorAccent
+     * @attr name com.piousbox.tgm:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:colorBackgroundFloating
+     * @attr name com.piousbox.tgm:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:colorButtonNormal
+     * @attr name com.piousbox.tgm:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:colorControlActivated
+     * @attr name com.piousbox.tgm:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:colorControlHighlight
+     * @attr name com.piousbox.tgm:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:colorControlNormal
+     * @attr name com.piousbox.tgm:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5460,44 +5327,44 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:colorError
+     * @attr name com.piousbox.tgm:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:colorPrimary
+     * @attr name com.piousbox.tgm:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:colorPrimaryDark
+     * @attr name com.piousbox.tgm:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:colorSwitchThumbNormal
+     * @attr name com.piousbox.tgm:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5505,11 +5372,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:controlBackground
+     * @attr name com.piousbox.tgm:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5518,11 +5385,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:dialogPreferredPadding
+     * @attr name com.piousbox.tgm:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=59;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5530,11 +5397,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:dialogTheme
+     * @attr name com.piousbox.tgm:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=60;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5542,11 +5409,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:dividerHorizontal
+     * @attr name com.piousbox.tgm:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=61;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5554,11 +5421,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:dividerVertical
+     * @attr name com.piousbox.tgm:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=62;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5566,11 +5433,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:dropDownListViewStyle
+     * @attr name com.piousbox.tgm:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=63;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5579,11 +5446,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:dropdownListPreferredItemHeight
+     * @attr name com.piousbox.tgm:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=64;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5591,11 +5458,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:editTextBackground
+     * @attr name com.piousbox.tgm:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=65;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5606,11 +5473,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:editTextColor
+     * @attr name com.piousbox.tgm:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=66;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5618,11 +5485,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:editTextStyle
+     * @attr name com.piousbox.tgm:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=67;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5630,11 +5497,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:homeAsUpIndicator
+     * @attr name com.piousbox.tgm:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=68;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5642,11 +5509,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:imageButtonStyle
+     * @attr name com.piousbox.tgm:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=69;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5654,11 +5521,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:listChoiceBackgroundIndicator
+     * @attr name com.piousbox.tgm:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=70;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5666,11 +5533,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:listDividerAlertDialog
+     * @attr name com.piousbox.tgm:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=71;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5678,11 +5545,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:listMenuViewStyle
+     * @attr name com.piousbox.tgm:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=72;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5690,11 +5557,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:listPopupWindowStyle
+     * @attr name com.piousbox.tgm:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5703,11 +5570,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:listPreferredItemHeight
+     * @attr name com.piousbox.tgm:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=74;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5716,11 +5583,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:listPreferredItemHeightLarge
+     * @attr name com.piousbox.tgm:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=75;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5729,11 +5596,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:listPreferredItemHeightSmall
+     * @attr name com.piousbox.tgm:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=76;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5742,11 +5609,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:listPreferredItemPaddingLeft
+     * @attr name com.piousbox.tgm:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=77;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5755,11 +5622,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:listPreferredItemPaddingRight
+     * @attr name com.piousbox.tgm:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=78;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5767,11 +5634,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:panelBackground
+     * @attr name com.piousbox.tgm:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=79;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5779,11 +5646,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:panelMenuListTheme
+     * @attr name com.piousbox.tgm:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=80;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -5792,11 +5659,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:panelMenuListWidth
+     * @attr name com.piousbox.tgm:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=81;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5804,11 +5671,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:popupMenuStyle
+     * @attr name com.piousbox.tgm:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=82;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5816,11 +5683,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:popupWindowStyle
+     * @attr name com.piousbox.tgm:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5828,11 +5695,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:radioButtonStyle
+     * @attr name com.piousbox.tgm:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5840,11 +5707,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:ratingBarStyle
+     * @attr name com.piousbox.tgm:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5852,11 +5719,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:ratingBarStyleIndicator
+     * @attr name com.piousbox.tgm:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=86;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5864,11 +5731,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:ratingBarStyleSmall
+     * @attr name com.piousbox.tgm:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=87;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5876,11 +5743,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:searchViewStyle
+     * @attr name com.piousbox.tgm:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=88;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5888,11 +5755,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:seekBarStyle
+     * @attr name com.piousbox.tgm:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5900,11 +5767,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:selectableItemBackground
+     * @attr name com.piousbox.tgm:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=90;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5912,11 +5779,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:selectableItemBackgroundBorderless
+     * @attr name com.piousbox.tgm:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=91;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5924,11 +5791,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:spinnerDropDownItemStyle
+     * @attr name com.piousbox.tgm:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=92;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5936,11 +5803,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:spinnerStyle
+     * @attr name com.piousbox.tgm:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5948,11 +5815,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:switchStyle
+     * @attr name com.piousbox.tgm:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5960,11 +5827,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:textAppearanceLargePopupMenu
+     * @attr name com.piousbox.tgm:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=95;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5972,11 +5839,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:textAppearanceListItem
+     * @attr name com.piousbox.tgm:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=96;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5984,11 +5851,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:textAppearanceListItemSecondary
+     * @attr name com.piousbox.tgm:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=97;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -5996,11 +5863,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:textAppearanceListItemSmall
+     * @attr name com.piousbox.tgm:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=98;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6008,11 +5875,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:textAppearancePopupMenuHeader
+     * @attr name com.piousbox.tgm:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=99;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6020,11 +5887,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:textAppearanceSearchResultSubtitle
+     * @attr name com.piousbox.tgm:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=100;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6032,11 +5899,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:textAppearanceSearchResultTitle
+     * @attr name com.piousbox.tgm:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=101;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6044,11 +5911,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:textAppearanceSmallPopupMenu
+     * @attr name com.piousbox.tgm:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=102;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6059,11 +5926,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:textColorAlertDialogListItem
+     * @attr name com.piousbox.tgm:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=103;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6074,11 +5941,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:textColorSearchUrl
+     * @attr name com.piousbox.tgm:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=104;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6086,11 +5953,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:toolbarNavigationButtonStyle
+     * @attr name com.piousbox.tgm:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=105;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6098,11 +5965,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:toolbarStyle
+     * @attr name com.piousbox.tgm:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6113,11 +5980,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:tooltipForegroundColor
+     * @attr name com.piousbox.tgm:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=107;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6125,41 +5992,41 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:tooltipFrameBackground
+     * @attr name com.piousbox.tgm:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=108;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:windowActionBar
+     * @attr name com.piousbox.tgm:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=109;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:windowActionBarOverlay
+     * @attr name com.piousbox.tgm:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=110;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:windowActionModeOverlay
+     * @attr name com.piousbox.tgm:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=111;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6172,11 +6039,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tgm_ionic:windowFixedHeightMajor
+     * @attr name com.piousbox.tgm:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=112;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6189,11 +6056,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tgm_ionic:windowFixedHeightMinor
+     * @attr name com.piousbox.tgm:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=113;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6206,11 +6073,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tgm_ionic:windowFixedWidthMajor
+     * @attr name com.piousbox.tgm:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=114;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6223,11 +6090,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tgm_ionic:windowFixedWidthMinor
+     * @attr name com.piousbox.tgm:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=115;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6240,11 +6107,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tgm_ionic:windowMinWidthMajor
+     * @attr name com.piousbox.tgm:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=116;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6257,17 +6124,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.tgm_ionic:windowMinWidthMinor
+     * @attr name com.piousbox.tgm:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=117;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:windowNoTitle
+     * @attr name com.piousbox.tgm:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=118;
     /**
@@ -6277,7 +6144,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.tgm_ionic:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.piousbox.tgm:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -6285,13 +6152,13 @@ public final class R {
         0x7f020026
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:allowStacking
+     * @attr name com.piousbox.tgm:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -6303,17 +6170,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor com.tgm_ionic:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius com.tgm_ionic:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation com.tgm_ionic:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation com.tgm_ionic:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.tgm_ionic:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.tgm_ionic:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding com.tgm_ionic:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom com.tgm_ionic:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft com.tgm_ionic:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight com.tgm_ionic:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop com.tgm_ionic:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.piousbox.tgm:cardBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.piousbox.tgm:cardCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.piousbox.tgm:cardElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.piousbox.tgm:cardMaxElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.piousbox.tgm:cardPreventCornerOverlap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.piousbox.tgm:cardUseCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.piousbox.tgm:contentPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.piousbox.tgm:contentPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.piousbox.tgm:contentPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.piousbox.tgm:contentPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.piousbox.tgm:contentPaddingTop}</code></td><td></td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -6330,10 +6197,10 @@ public final class R {
      * @see #CardView_contentPaddingTop
      */
     public static final int[] CardView={
-        0x0101013f, 0x01010140, 0x7f020044, 0x7f020045, 
-        0x7f020046, 0x7f020047, 0x7f020048, 0x7f020049, 
-        0x7f020071, 0x7f020072, 0x7f020073, 0x7f020074, 
-        0x7f020075
+        0x0101013f, 0x01010140, 0x7f020043, 0x7f020044, 
+        0x7f020045, 0x7f020046, 0x7f020047, 0x7f020048, 
+        0x7f02006e, 0x7f02006f, 0x7f020070, 0x7f020071, 
+        0x7f020072
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
@@ -6362,18 +6229,18 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#cardBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#cardBackgroundColor}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:cardBackgroundColor
+     * @attr name com.piousbox.tgm:cardBackgroundColor
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#cardCornerRadius}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#cardCornerRadius}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6382,11 +6249,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:cardCornerRadius
+     * @attr name com.piousbox.tgm:cardCornerRadius
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#cardElevation}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#cardElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6395,11 +6262,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:cardElevation
+     * @attr name com.piousbox.tgm:cardElevation
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#cardMaxElevation}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#cardMaxElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6408,31 +6275,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:cardMaxElevation
+     * @attr name com.piousbox.tgm:cardMaxElevation
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#cardPreventCornerOverlap}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#cardPreventCornerOverlap}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:cardPreventCornerOverlap
+     * @attr name com.piousbox.tgm:cardPreventCornerOverlap
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#cardUseCompatPadding}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#cardUseCompatPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:cardUseCompatPadding
+     * @attr name com.piousbox.tgm:cardUseCompatPadding
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentPadding}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6441,11 +6308,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentPadding
+     * @attr name com.piousbox.tgm:contentPadding
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentPaddingBottom}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6454,11 +6321,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentPaddingBottom
+     * @attr name com.piousbox.tgm:contentPaddingBottom
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentPaddingLeft}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6467,11 +6334,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentPaddingLeft
+     * @attr name com.piousbox.tgm:contentPaddingLeft
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentPaddingRight}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentPaddingRight}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6480,11 +6347,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentPaddingRight
+     * @attr name com.piousbox.tgm:contentPaddingRight
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentPaddingTop}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentPaddingTop}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6493,7 +6360,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentPaddingTop
+     * @attr name com.piousbox.tgm:contentPaddingTop
      */
     public static final int CardView_contentPaddingTop=12;
     /**
@@ -6505,7 +6372,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.tgm_ionic:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.piousbox.tgm:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -6535,12 +6402,12 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.tgm_ionic:alpha
+     * @attr name com.piousbox.tgm:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -6551,15 +6418,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.tgm_ionic:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.tgm_ionic:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.piousbox.tgm:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.piousbox.tgm:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
      * @see #CompoundButton_buttonTintMode
      */
     public static final int[] CompoundButton={
-        0x01010107, 0x7f020042, 0x7f020043
+        0x01010107, 0x7f020041, 0x7f020042
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#button}
@@ -6574,18 +6441,18 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:buttonTint
+     * @attr name com.piousbox.tgm:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6602,7 +6469,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:buttonTintMode
+     * @attr name com.piousbox.tgm:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -6612,14 +6479,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.tgm_ionic:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.tgm_ionic:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.tgm_ionic:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.tgm_ionic:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.tgm_ionic:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.tgm_ionic:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.tgm_ionic:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.tgm_ionic:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.piousbox.tgm:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.piousbox.tgm:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.piousbox.tgm:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.piousbox.tgm:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.piousbox.tgm:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.piousbox.tgm:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.piousbox.tgm:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.piousbox.tgm:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -6631,11 +6498,11 @@ public final class R {
      * @see #DrawerArrowToggle_thickness
      */
     public static final int[] DrawerArrowToggle={
-        0x7f020029, 0x7f02002a, 0x7f020036, 0x7f020051, 
-        0x7f020080, 0x7f020093, 0x7f0200d9, 0x7f0200f6
+        0x7f020029, 0x7f02002a, 0x7f020036, 0x7f02004f, 
+        0x7f02007d, 0x7f020090, 0x7f0200d3, 0x7f0200f0
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6644,11 +6511,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:arrowHeadLength
+     * @attr name com.piousbox.tgm:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6657,11 +6524,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:arrowShaftLength
+     * @attr name com.piousbox.tgm:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6670,22 +6537,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:barLength
+     * @attr name com.piousbox.tgm:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#color}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:color
+     * @attr name com.piousbox.tgm:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6694,11 +6561,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:drawableSize
+     * @attr name com.piousbox.tgm:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6707,21 +6574,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:gapBetweenBars
+     * @attr name com.piousbox.tgm:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:spinBars
+     * @attr name com.piousbox.tgm:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6730,7 +6597,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:thickness
+     * @attr name com.piousbox.tgm:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -6740,12 +6607,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.tgm_ionic:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.tgm_ionic:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.tgm_ionic:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.tgm_ionic:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.tgm_ionic:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.tgm_ionic:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.piousbox.tgm:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.piousbox.tgm:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.piousbox.tgm:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.piousbox.tgm:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.piousbox.tgm:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.piousbox.tgm:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -6755,21 +6622,21 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
-        0x7f02008b, 0x7f02008c, 0x7f02008d, 0x7f02008e, 
-        0x7f02008f, 0x7f020090
+        0x7f020088, 0x7f020089, 0x7f02008a, 0x7f02008b, 
+        0x7f02008c, 0x7f02008d
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:fontProviderAuthority
+     * @attr name com.piousbox.tgm:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6777,11 +6644,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:fontProviderCerts
+     * @attr name com.piousbox.tgm:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6794,11 +6661,11 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:fontProviderFetchStrategy
+     * @attr name com.piousbox.tgm:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -6811,27 +6678,27 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:fontProviderFetchTimeout
+     * @attr name com.piousbox.tgm:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:fontProviderPackage
+     * @attr name com.piousbox.tgm:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:fontProviderQuery
+     * @attr name com.piousbox.tgm:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -6844,9 +6711,9 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_font android:font}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontWeight android:fontWeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.tgm_ionic:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.tgm_ionic:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.tgm_ionic:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.piousbox.tgm:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.piousbox.tgm:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.piousbox.tgm:fontWeight}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -6856,8 +6723,8 @@ public final class R {
      * @see #FontFamilyFont_fontWeight
      */
     public static final int[] FontFamilyFont={
-        0x01010532, 0x01010533, 0x0101053f, 0x7f020089, 
-        0x7f020091, 0x7f020092
+        0x01010532, 0x01010533, 0x0101053f, 0x7f020086, 
+        0x7f02008e, 0x7f02008f
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -6898,7 +6765,7 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#font}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6906,11 +6773,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:font
+     * @attr name com.piousbox.tgm:font
      */
     public static final int FontFamilyFont_font=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6923,16 +6790,16 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:fontStyle
+     * @attr name com.piousbox.tgm:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.tgm_ionic:fontWeight
+     * @attr name com.piousbox.tgm:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=5;
     /**
@@ -6947,10 +6814,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.tgm_ionic:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.tgm_ionic:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.tgm_ionic:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.tgm_ionic:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.piousbox.tgm:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.piousbox.tgm:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.piousbox.tgm:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.piousbox.tgm:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -6964,8 +6831,8 @@ public final class R {
      */
     public static final int[] LinearLayoutCompat={
         0x010100af, 0x010100c4, 0x01010126, 0x01010127, 
-        0x01010128, 0x7f02007c, 0x7f02007e, 0x7f0200b3, 
-        0x7f0200d5
+        0x01010128, 0x7f020079, 0x7f02007b, 0x7f0200ae, 
+        0x7f0200cf
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -7042,7 +6909,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7050,11 +6917,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:divider
+     * @attr name com.piousbox.tgm:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7063,21 +6930,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:dividerPadding
+     * @attr name com.piousbox.tgm:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:measureWithLargestChild
+     * @attr name com.piousbox.tgm:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7092,7 +6959,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:showDividers
+     * @attr name com.piousbox.tgm:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -7242,61 +7109,6 @@ public final class R {
      */
     public static final int ListPopupWindow_android_dropDownVerticalOffset=1;
     /**
-     * Attributes that can be used with a LoadingImageView.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #LoadingImageView_circleCrop com.tgm_ionic:circleCrop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatio com.tgm_ionic:imageAspectRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LoadingImageView_imageAspectRatioAdjust com.tgm_ionic:imageAspectRatioAdjust}</code></td><td></td></tr>
-     * </table>
-     * @see #LoadingImageView_circleCrop
-     * @see #LoadingImageView_imageAspectRatio
-     * @see #LoadingImageView_imageAspectRatioAdjust
-     */
-    public static final int[] LoadingImageView={
-        0x7f02004c, 0x7f02009d, 0x7f02009e
-      };
-    /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#circleCrop}
-     * attribute's value can be found in the {@link #LoadingImageView} array.
-     *
-     * <p>May be a boolean value, such as "<code>true</code>" or
-     * "<code>false</code>".
-     *
-     * @attr name com.tgm_ionic:circleCrop
-     */
-    public static final int LoadingImageView_circleCrop=0;
-    /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#imageAspectRatio}
-     * attribute's value can be found in the {@link #LoadingImageView} array.
-     *
-     * <p>May be a floating point value, such as "<code>1.2</code>".
-     *
-     * @attr name com.tgm_ionic:imageAspectRatio
-     */
-    public static final int LoadingImageView_imageAspectRatio=1;
-    /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#imageAspectRatioAdjust}
-     * attribute's value can be found in the {@link #LoadingImageView} array.
-     *
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>adjust_height</td><td>2</td><td></td></tr>
-     * <tr><td>adjust_width</td><td>1</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.tgm_ionic:imageAspectRatioAdjust
-     */
-    public static final int LoadingImageView_imageAspectRatioAdjust=2;
-    /**
      * Attributes that can be used with a MenuGroup.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -7419,16 +7231,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.tgm_ionic:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.tgm_ionic:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.tgm_ionic:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.tgm_ionic:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.tgm_ionic:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.tgm_ionic:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.tgm_ionic:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.tgm_ionic:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.tgm_ionic:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.tgm_ionic:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.piousbox.tgm:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.piousbox.tgm:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.piousbox.tgm:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.piousbox.tgm:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.piousbox.tgm:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.piousbox.tgm:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.piousbox.tgm:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.piousbox.tgm:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.piousbox.tgm:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.piousbox.tgm:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -7459,8 +7271,8 @@ public final class R {
         0x01010194, 0x010101de, 0x010101df, 0x010101e1, 
         0x010101e2, 0x010101e3, 0x010101e4, 0x010101e5, 
         0x0101026f, 0x7f02000d, 0x7f02001f, 0x7f020020, 
-        0x7f020028, 0x7f02006a, 0x7f02009a, 0x7f02009b, 
-        0x7f0200b8, 0x7f0200d4, 0x7f02010d
+        0x7f020028, 0x7f020067, 0x7f020097, 0x7f020098, 
+        0x7f0200b3, 0x7f0200ce, 0x7f020107
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#icon}
@@ -7605,7 +7417,7 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7613,31 +7425,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:actionLayout
+     * @attr name com.piousbox.tgm:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:actionProviderClass
+     * @attr name com.piousbox.tgm:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:actionViewClass
+     * @attr name com.piousbox.tgm:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7654,32 +7466,32 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:alphabeticModifiers
+     * @attr name com.piousbox.tgm:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:contentDescription
+     * @attr name com.piousbox.tgm:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:iconTint
+     * @attr name com.piousbox.tgm:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7696,11 +7508,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:iconTintMode
+     * @attr name com.piousbox.tgm:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7717,11 +7529,11 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:numericModifiers
+     * @attr name com.piousbox.tgm:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7737,17 +7549,17 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:showAsAction
+     * @attr name com.piousbox.tgm:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:tooltipText
+     * @attr name com.piousbox.tgm:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -7764,8 +7576,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.tgm_ionic:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.tgm_ionic:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.piousbox.tgm:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.piousbox.tgm:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -7779,8 +7591,8 @@ public final class R {
      */
     public static final int[] MenuView={
         0x010100ae, 0x0101012c, 0x0101012d, 0x0101012e, 
-        0x0101012f, 0x01010130, 0x01010131, 0x7f0200c4, 
-        0x7f0200df
+        0x0101012f, 0x01010130, 0x01010131, 0x7f0200bf, 
+        0x7f0200d9
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#windowAnimationStyle}
@@ -7870,17 +7682,17 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:preserveIconSpacing
+     * @attr name com.piousbox.tgm:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7888,7 +7700,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:subMenuArrow
+     * @attr name com.piousbox.tgm:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -7900,14 +7712,14 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.tgm_ionic:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.piousbox.tgm:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
      * @see #PopupWindow_overlapAnchor
      */
     public static final int[] PopupWindow={
-        0x01010176, 0x010102c9, 0x7f0200b9
+        0x01010176, 0x010102c9, 0x7f0200b4
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
@@ -7937,13 +7749,13 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:overlapAnchor
+     * @attr name com.piousbox.tgm:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -7953,21 +7765,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.tgm_ionic:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.piousbox.tgm:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
     public static final int[] PopupWindowBackgroundState={
-        0x7f0200de
+        0x7f0200d8
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:state_above_anchor
+     * @attr name com.piousbox.tgm:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -7977,17 +7789,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.tgm_ionic:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.tgm_ionic:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.piousbox.tgm:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.piousbox.tgm:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
      */
     public static final int[] RecycleListView={
-        0x7f0200ba, 0x7f0200bd
+        0x7f0200b5, 0x7f0200b8
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7996,11 +7808,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:paddingBottomNoButtons
+     * @attr name com.piousbox.tgm:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8009,7 +7821,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:paddingTopNoTitle
+     * @attr name com.piousbox.tgm:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -8023,19 +7835,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.tgm_ionic:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.tgm_ionic:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.tgm_ionic:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.tgm_ionic:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.tgm_ionic:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.tgm_ionic:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.tgm_ionic:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.tgm_ionic:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.tgm_ionic:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.tgm_ionic:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.tgm_ionic:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.tgm_ionic:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.tgm_ionic:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.piousbox.tgm:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.piousbox.tgm:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.piousbox.tgm:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.piousbox.tgm:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.piousbox.tgm:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.piousbox.tgm:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.piousbox.tgm:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.piousbox.tgm:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.piousbox.tgm:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.piousbox.tgm:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.piousbox.tgm:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.piousbox.tgm:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.piousbox.tgm:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -8057,10 +7869,10 @@ public final class R {
      */
     public static final int[] SearchView={
         0x010100da, 0x0101011f, 0x01010220, 0x01010264, 
-        0x7f02004d, 0x7f020069, 0x7f020078, 0x7f020094, 
-        0x7f02009c, 0x7f0200a4, 0x7f0200c7, 0x7f0200c8, 
-        0x7f0200ce, 0x7f0200cf, 0x7f0200e0, 0x7f0200e5, 
-        0x7f020111
+        0x7f02004b, 0x7f020066, 0x7f020075, 0x7f020091, 
+        0x7f020099, 0x7f02009f, 0x7f0200c2, 0x7f0200c3, 
+        0x7f0200c8, 0x7f0200c9, 0x7f0200da, 0x7f0200df, 
+        0x7f02010b
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#focusable}
@@ -8173,7 +7985,7 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8181,11 +7993,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:closeIcon
+     * @attr name com.piousbox.tgm:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8193,21 +8005,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:commitIcon
+     * @attr name com.piousbox.tgm:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:defaultQueryHint
+     * @attr name com.piousbox.tgm:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8215,21 +8027,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:goIcon
+     * @attr name com.piousbox.tgm:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:iconifiedByDefault
+     * @attr name com.piousbox.tgm:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#layout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8237,11 +8049,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:layout
+     * @attr name com.piousbox.tgm:layout
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8249,21 +8061,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:queryBackground
+     * @attr name com.piousbox.tgm:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:queryHint
+     * @attr name com.piousbox.tgm:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8271,11 +8083,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:searchHintIcon
+     * @attr name com.piousbox.tgm:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8283,11 +8095,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:searchIcon
+     * @attr name com.piousbox.tgm:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8295,11 +8107,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:submitBackground
+     * @attr name com.piousbox.tgm:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8307,11 +8119,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:suggestionRowLayout
+     * @attr name com.piousbox.tgm:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8319,85 +8131,9 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:voiceIcon
+     * @attr name com.piousbox.tgm:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
-    /**
-     * Attributes that can be used with a SignInButton.
-     * <p>Includes the following attributes:</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #SignInButton_buttonSize com.tgm_ionic:buttonSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SignInButton_colorScheme com.tgm_ionic:colorScheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SignInButton_scopeUris com.tgm_ionic:scopeUris}</code></td><td></td></tr>
-     * </table>
-     * @see #SignInButton_buttonSize
-     * @see #SignInButton_colorScheme
-     * @see #SignInButton_scopeUris
-     */
-    public static final int[] SignInButton={
-        0x7f02003f, 0x7f02005b, 0x7f0200cd
-      };
-    /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonSize}
-     * attribute's value can be found in the {@link #SignInButton} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>icon_only</td><td>2</td><td></td></tr>
-     * <tr><td>standard</td><td>0</td><td></td></tr>
-     * <tr><td>wide</td><td>1</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.tgm_ionic:buttonSize
-     */
-    public static final int SignInButton_buttonSize=0;
-    /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#colorScheme}
-     * attribute's value can be found in the {@link #SignInButton} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>Must be one of the following constant values.</p>
-     * <table>
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <colgroup align="left" />
-     * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>2</td><td></td></tr>
-     * <tr><td>dark</td><td>0</td><td></td></tr>
-     * <tr><td>light</td><td>1</td><td></td></tr>
-     * </table>
-     *
-     * @attr name com.tgm_ionic:colorScheme
-     */
-    public static final int SignInButton_colorScheme=1;
-    /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#scopeUris}
-     * attribute's value can be found in the {@link #SignInButton} array.
-     *
-     * <p>May be a reference to another resource, in the form
-     * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
-     * attribute in the form
-     * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
-     * <p>May be a string value, using '\\;' to escape characters such as
-     * '\\n' or '\\uxxxx' for a unicode character;
-     *
-     * @attr name com.tgm_ionic:scopeUris
-     */
-    public static final int SignInButton_scopeUris=2;
     /**
      * Attributes that can be used with a Spinner.
      * <p>Includes the following attributes:</p>
@@ -8409,7 +8145,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.tgm_ionic:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.piousbox.tgm:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -8419,7 +8155,7 @@ public final class R {
      */
     public static final int[] Spinner={
         0x010100b2, 0x01010176, 0x0101017b, 0x01010262, 
-        0x7f0200c2
+        0x7f0200bd
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#entries}
@@ -8484,7 +8220,7 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8492,7 +8228,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:popupTheme
+     * @attr name com.piousbox.tgm:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -8505,17 +8241,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.tgm_ionic:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.tgm_ionic:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.tgm_ionic:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.tgm_ionic:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.tgm_ionic:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.tgm_ionic:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.tgm_ionic:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.tgm_ionic:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.tgm_ionic:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.tgm_ionic:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.tgm_ionic:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.piousbox.tgm:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.piousbox.tgm:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.piousbox.tgm:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.piousbox.tgm:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.piousbox.tgm:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.piousbox.tgm:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.piousbox.tgm:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.piousbox.tgm:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.piousbox.tgm:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.piousbox.tgm:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.piousbox.tgm:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -8533,10 +8269,10 @@ public final class R {
      * @see #SwitchCompat_trackTintMode
      */
     public static final int[] SwitchCompat={
-        0x01010124, 0x01010125, 0x01010142, 0x7f0200d6, 
-        0x7f0200dc, 0x7f0200e6, 0x7f0200e7, 0x7f0200e9, 
-        0x7f0200f7, 0x7f0200f8, 0x7f0200f9, 0x7f02010e, 
-        0x7f02010f, 0x7f020110
+        0x01010124, 0x01010125, 0x01010142, 0x7f0200d0, 
+        0x7f0200d6, 0x7f0200e0, 0x7f0200e1, 0x7f0200e3, 
+        0x7f0200f1, 0x7f0200f2, 0x7f0200f3, 0x7f020108, 
+        0x7f020109, 0x7f02010a
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textOn}
@@ -8571,27 +8307,27 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#showText}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:showText
+     * @attr name com.piousbox.tgm:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:splitTrack
+     * @attr name com.piousbox.tgm:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8600,11 +8336,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:switchMinWidth
+     * @attr name com.piousbox.tgm:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8613,11 +8349,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:switchPadding
+     * @attr name com.piousbox.tgm:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8625,11 +8361,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:switchTextAppearance
+     * @attr name com.piousbox.tgm:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8638,22 +8374,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:thumbTextPadding
+     * @attr name com.piousbox.tgm:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:thumbTint
+     * @attr name com.piousbox.tgm:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8670,11 +8406,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:thumbTintMode
+     * @attr name com.piousbox.tgm:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#track}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8682,22 +8418,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:track
+     * @attr name com.piousbox.tgm:track
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:trackTint
+     * @attr name com.piousbox.tgm:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -8714,7 +8450,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:trackTintMode
+     * @attr name com.piousbox.tgm:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -8735,8 +8471,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.tgm_ionic:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.tgm_ionic:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.piousbox.tgm:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.piousbox.tgm:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -8755,8 +8491,8 @@ public final class R {
     public static final int[] TextAppearance={
         0x01010095, 0x01010096, 0x01010097, 0x01010098, 
         0x0101009a, 0x0101009b, 0x01010161, 0x01010162, 
-        0x01010163, 0x01010164, 0x010103ac, 0x7f02008a, 
-        0x7f0200ea
+        0x01010163, 0x01010164, 0x010103ac, 0x7f020087, 
+        0x7f0200e4
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#textSize}
@@ -8902,17 +8638,17 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:fontFamily
+     * @attr name com.piousbox.tgm:fontFamily
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8922,7 +8658,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:textAllCaps
+     * @attr name com.piousbox.tgm:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=12;
     /**
@@ -8934,33 +8670,33 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity com.tgm_ionic:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.tgm_ionic:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.tgm_ionic:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.tgm_ionic:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.tgm_ionic:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.tgm_ionic:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.tgm_ionic:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.tgm_ionic:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.tgm_ionic:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.tgm_ionic:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.tgm_ionic:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.tgm_ionic:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.tgm_ionic:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.tgm_ionic:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.tgm_ionic:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.tgm_ionic:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.tgm_ionic:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.tgm_ionic:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title com.tgm_ionic:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.tgm_ionic:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.tgm_ionic:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.tgm_ionic:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.tgm_ionic:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.tgm_ionic:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.tgm_ionic:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.tgm_ionic:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.tgm_ionic:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.piousbox.tgm:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.piousbox.tgm:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.piousbox.tgm:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.piousbox.tgm:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.piousbox.tgm:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.piousbox.tgm:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.piousbox.tgm:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.piousbox.tgm:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.piousbox.tgm:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.piousbox.tgm:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.piousbox.tgm:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.piousbox.tgm:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.piousbox.tgm:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.piousbox.tgm:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.piousbox.tgm:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.piousbox.tgm:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.piousbox.tgm:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.piousbox.tgm:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.piousbox.tgm:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.piousbox.tgm:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.piousbox.tgm:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.piousbox.tgm:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.piousbox.tgm:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.piousbox.tgm:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.piousbox.tgm:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.piousbox.tgm:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.piousbox.tgm:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -8993,14 +8729,14 @@ public final class R {
      * @see #Toolbar_titleTextColor
      */
     public static final int[] Toolbar={
-        0x010100af, 0x01010140, 0x7f02003d, 0x7f02004f, 
-        0x7f020050, 0x7f02006b, 0x7f02006c, 0x7f02006d, 
-        0x7f02006e, 0x7f02006f, 0x7f020070, 0x7f0200b0, 
-        0x7f0200b1, 0x7f0200b2, 0x7f0200b5, 0x7f0200b6, 
-        0x7f0200c2, 0x7f0200e1, 0x7f0200e2, 0x7f0200e3, 
-        0x7f0200ff, 0x7f020100, 0x7f020101, 0x7f020102, 
-        0x7f020103, 0x7f020104, 0x7f020105, 0x7f020106, 
-        0x7f020107
+        0x010100af, 0x01010140, 0x7f02003d, 0x7f02004d, 
+        0x7f02004e, 0x7f020068, 0x7f020069, 0x7f02006a, 
+        0x7f02006b, 0x7f02006c, 0x7f02006d, 0x7f0200ab, 
+        0x7f0200ac, 0x7f0200ad, 0x7f0200b0, 0x7f0200b1, 
+        0x7f0200bd, 0x7f0200db, 0x7f0200dc, 0x7f0200dd, 
+        0x7f0200f9, 0x7f0200fa, 0x7f0200fb, 0x7f0200fc, 
+        0x7f0200fd, 0x7f0200fe, 0x7f0200ff, 0x7f020100, 
+        0x7f020101
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#gravity}
@@ -9045,7 +8781,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -9058,21 +8794,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:buttonGravity
+     * @attr name com.piousbox.tgm:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:collapseContentDescription
+     * @attr name com.piousbox.tgm:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9080,11 +8816,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:collapseIcon
+     * @attr name com.piousbox.tgm:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9093,11 +8829,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetEnd
+     * @attr name com.piousbox.tgm:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9106,11 +8842,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetEndWithActions
+     * @attr name com.piousbox.tgm:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9119,11 +8855,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetLeft
+     * @attr name com.piousbox.tgm:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9132,11 +8868,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetRight
+     * @attr name com.piousbox.tgm:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9145,11 +8881,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetStart
+     * @attr name com.piousbox.tgm:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9158,11 +8894,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:contentInsetStartWithNavigation
+     * @attr name com.piousbox.tgm:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9170,21 +8906,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:logo
+     * @attr name com.piousbox.tgm:logo
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:logoDescription
+     * @attr name com.piousbox.tgm:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9193,21 +8929,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:maxButtonHeight
+     * @attr name com.piousbox.tgm:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:navigationContentDescription
+     * @attr name com.piousbox.tgm:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9215,11 +8951,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:navigationIcon
+     * @attr name com.piousbox.tgm:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9227,21 +8963,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:popupTheme
+     * @attr name com.piousbox.tgm:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:subtitle
+     * @attr name com.piousbox.tgm:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9249,32 +8985,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:subtitleTextAppearance
+     * @attr name com.piousbox.tgm:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:subtitleTextColor
+     * @attr name com.piousbox.tgm:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:title
+     * @attr name com.piousbox.tgm:title
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9283,11 +9019,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:titleMargin
+     * @attr name com.piousbox.tgm:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9296,11 +9032,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:titleMarginBottom
+     * @attr name com.piousbox.tgm:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9309,11 +9045,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:titleMarginEnd
+     * @attr name com.piousbox.tgm:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9322,11 +9058,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:titleMarginStart
+     * @attr name com.piousbox.tgm:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9335,11 +9071,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:titleMarginTop
+     * @attr name com.piousbox.tgm:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9348,11 +9084,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:titleMargins
+     * @attr name com.piousbox.tgm:titleMargins
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9360,18 +9096,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:titleTextAppearance
+     * @attr name com.piousbox.tgm:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:titleTextColor
+     * @attr name com.piousbox.tgm:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
     /**
@@ -9383,9 +9119,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.tgm_ionic:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.tgm_ionic:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme com.tgm_ionic:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.piousbox.tgm:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.piousbox.tgm:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme com.piousbox.tgm:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -9394,8 +9130,8 @@ public final class R {
      * @see #View_theme
      */
     public static final int[] View={
-        0x01010000, 0x010100da, 0x7f0200bb, 0x7f0200bc, 
-        0x7f0200f5
+        0x01010000, 0x010100da, 0x7f0200b6, 0x7f0200b7, 
+        0x7f0200ef
       };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#theme}
@@ -9428,7 +9164,7 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9437,11 +9173,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:paddingEnd
+     * @attr name com.piousbox.tgm:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9450,11 +9186,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.tgm_ionic:paddingStart
+     * @attr name com.piousbox.tgm:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#theme}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9462,7 +9198,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.tgm_ionic:theme
+     * @attr name com.piousbox.tgm:theme
      */
     public static final int View_theme=4;
     /**
@@ -9473,8 +9209,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.tgm_ionic:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.tgm_ionic:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.piousbox.tgm:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.piousbox.tgm:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -9499,18 +9235,18 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:backgroundTint
+     * @attr name com.piousbox.tgm:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9527,7 +9263,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:backgroundTintMode
+     * @attr name com.piousbox.tgm:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**
@@ -9591,12 +9327,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position com.tgm_ionic:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
-     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color com.tgm_ionic:com_facebook_foreground_color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment com.tgm_ionic:com_facebook_horizontal_alignment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id com.tgm_ionic:com_facebook_object_id}</code></td><td></td></tr>
-     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type com.tgm_ionic:com_facebook_object_type}</code></td><td></td></tr>
-     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_style com.tgm_ionic:com_facebook_style}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_auxiliary_view_position com.piousbox.tgm:com_facebook_auxiliary_view_position}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_foreground_color com.piousbox.tgm:com_facebook_foreground_color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_horizontal_alignment com.piousbox.tgm:com_facebook_horizontal_alignment}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_id com.piousbox.tgm:com_facebook_object_id}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_object_type com.piousbox.tgm:com_facebook_object_type}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_like_view_com_facebook_style com.piousbox.tgm:com_facebook_style}</code></td><td></td></tr>
      * </table>
      * @see #com_facebook_like_view_com_facebook_auxiliary_view_position
      * @see #com_facebook_like_view_com_facebook_foreground_color
@@ -9606,11 +9342,11 @@ public final class R {
      * @see #com_facebook_like_view_com_facebook_style
      */
     public static final int[] com_facebook_like_view={
-        0x7f02005d, 0x7f02005f, 0x7f020060, 0x7f020064, 
-        0x7f020065, 0x7f020067
+        0x7f02005a, 0x7f02005c, 0x7f02005d, 0x7f020061, 
+        0x7f020062, 0x7f020064
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_auxiliary_view_position}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_auxiliary_view_position}
      * attribute's value can be found in the {@link #com_facebook_like_view} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9624,22 +9360,22 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:com_facebook_auxiliary_view_position
+     * @attr name com.piousbox.tgm:com_facebook_auxiliary_view_position
      */
     public static final int com_facebook_like_view_com_facebook_auxiliary_view_position=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_foreground_color}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_foreground_color}
      * attribute's value can be found in the {@link #com_facebook_like_view} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.tgm_ionic:com_facebook_foreground_color
+     * @attr name com.piousbox.tgm:com_facebook_foreground_color
      */
     public static final int com_facebook_like_view_com_facebook_foreground_color=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_horizontal_alignment}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_horizontal_alignment}
      * attribute's value can be found in the {@link #com_facebook_like_view} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9653,21 +9389,21 @@ public final class R {
      * <tr><td>right</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:com_facebook_horizontal_alignment
+     * @attr name com.piousbox.tgm:com_facebook_horizontal_alignment
      */
     public static final int com_facebook_like_view_com_facebook_horizontal_alignment=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_object_id}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_object_id}
      * attribute's value can be found in the {@link #com_facebook_like_view} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:com_facebook_object_id
+     * @attr name com.piousbox.tgm:com_facebook_object_id
      */
     public static final int com_facebook_like_view_com_facebook_object_id=3;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_object_type}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_object_type}
      * attribute's value can be found in the {@link #com_facebook_like_view} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9681,11 +9417,11 @@ public final class R {
      * <tr><td>unknown</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:com_facebook_object_type
+     * @attr name com.piousbox.tgm:com_facebook_object_type
      */
     public static final int com_facebook_like_view_com_facebook_object_type=4;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_style}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_style}
      * attribute's value can be found in the {@link #com_facebook_like_view} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9699,7 +9435,7 @@ public final class R {
      * <tr><td>standard</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:com_facebook_style
+     * @attr name com.piousbox.tgm:com_facebook_style
      */
     public static final int com_facebook_like_view_com_facebook_style=5;
     /**
@@ -9709,10 +9445,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout com.tgm_ionic:com_facebook_confirm_logout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text com.tgm_ionic:com_facebook_login_text}</code></td><td></td></tr>
-     * <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text com.tgm_ionic:com_facebook_logout_text}</code></td><td></td></tr>
-     * <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode com.tgm_ionic:com_facebook_tooltip_mode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_login_view_com_facebook_confirm_logout com.piousbox.tgm:com_facebook_confirm_logout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_login_view_com_facebook_login_text com.piousbox.tgm:com_facebook_login_text}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_login_view_com_facebook_logout_text com.piousbox.tgm:com_facebook_logout_text}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_login_view_com_facebook_tooltip_mode com.piousbox.tgm:com_facebook_tooltip_mode}</code></td><td></td></tr>
      * </table>
      * @see #com_facebook_login_view_com_facebook_confirm_logout
      * @see #com_facebook_login_view_com_facebook_login_text
@@ -9720,40 +9456,40 @@ public final class R {
      * @see #com_facebook_login_view_com_facebook_tooltip_mode
      */
     public static final int[] com_facebook_login_view={
-        0x7f02005e, 0x7f020062, 0x7f020063, 0x7f020068
+        0x7f02005b, 0x7f02005f, 0x7f020060, 0x7f020065
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_confirm_logout}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_confirm_logout}
      * attribute's value can be found in the {@link #com_facebook_login_view} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:com_facebook_confirm_logout
+     * @attr name com.piousbox.tgm:com_facebook_confirm_logout
      */
     public static final int com_facebook_login_view_com_facebook_confirm_logout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_login_text}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_login_text}
      * attribute's value can be found in the {@link #com_facebook_login_view} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:com_facebook_login_text
+     * @attr name com.piousbox.tgm:com_facebook_login_text
      */
     public static final int com_facebook_login_view_com_facebook_login_text=1;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_logout_text}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_logout_text}
      * attribute's value can be found in the {@link #com_facebook_login_view} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.tgm_ionic:com_facebook_logout_text
+     * @attr name com.piousbox.tgm:com_facebook_logout_text
      */
     public static final int com_facebook_login_view_com_facebook_logout_text=2;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_tooltip_mode}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_tooltip_mode}
      * attribute's value can be found in the {@link #com_facebook_login_view} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9767,7 +9503,7 @@ public final class R {
      * <tr><td>never_display</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:com_facebook_tooltip_mode
+     * @attr name com.piousbox.tgm:com_facebook_tooltip_mode
      */
     public static final int com_facebook_login_view_com_facebook_tooltip_mode=3;
     /**
@@ -9777,27 +9513,27 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped com.tgm_ionic:com_facebook_is_cropped}</code></td><td></td></tr>
-     * <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size com.tgm_ionic:com_facebook_preset_size}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_is_cropped com.piousbox.tgm:com_facebook_is_cropped}</code></td><td></td></tr>
+     * <tr><td><code>{@link #com_facebook_profile_picture_view_com_facebook_preset_size com.piousbox.tgm:com_facebook_preset_size}</code></td><td></td></tr>
      * </table>
      * @see #com_facebook_profile_picture_view_com_facebook_is_cropped
      * @see #com_facebook_profile_picture_view_com_facebook_preset_size
      */
     public static final int[] com_facebook_profile_picture_view={
-        0x7f020061, 0x7f020066
+        0x7f02005e, 0x7f020063
       };
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_is_cropped}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_is_cropped}
      * attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.tgm_ionic:com_facebook_is_cropped
+     * @attr name com.piousbox.tgm:com_facebook_is_cropped
      */
     public static final int com_facebook_profile_picture_view_com_facebook_is_cropped=0;
     /**
-     * <p>This symbol is the offset where the {@link com.tgm_ionic.R.attr#com_facebook_preset_size}
+     * <p>This symbol is the offset where the {@link com.piousbox.tgm.R.attr#com_facebook_preset_size}
      * attribute's value can be found in the {@link #com_facebook_profile_picture_view} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9811,7 +9547,7 @@ public final class R {
      * <tr><td>small</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.tgm_ionic:com_facebook_preset_size
+     * @attr name com.piousbox.tgm:com_facebook_preset_size
      */
     public static final int com_facebook_profile_picture_view_com_facebook_preset_size=1;
   }

@@ -3,7 +3,7 @@
     <name>com.piousbox.tgm</name>
     <description>Piousbox travel guide and social network</description>
     <author email="piousbox@gmail.com" href="https://piousbox.com/">Piousbox</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://localhost.com:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -12,7 +12,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-navigation href="http://localhost.com:8100" sessionid="e5258234" />
-    <allow-navigation href="http://192.168.0.103:8100" sessionid="fedc897d" />
+    <allow-navigation href="http://192.168.0.103:8100" sessionid="8fe7987d" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="BackupWebStorage" value="none" />
