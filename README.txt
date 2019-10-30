@@ -41,13 +41,17 @@
 From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
 
  ic platform rm ios
- ic platform add ios@5.0.0
+ ic platform add ios # @^5.0.0
  ic plugin remove cordova-plugin-facebook4 --save
  ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="tgm.piousbox.com"
  # open xcode and sign the project for your team
  ic build ios -- --buildFlag="-UseModernBuildSystem=0"
 
-
+ ic prepare ios
+ ic run ios -l --address=0.0.0.0
+ pod install
+ 
+ npm install g cordova@9.0.0
 
 == Deploy browser ==
 From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
