@@ -18,7 +18,7 @@
  ic platform rm browser
  ic platform add browser
  ic build browser
- ic run browser --livereload --address localhost.com
+ ic run browser --livereload --address tgm.piousbox.com --port=8100
 
  ic platform rm android
  ic platform add android
@@ -47,12 +47,10 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
  # open xcode and sign the project for your team
  ic build ios -- --buildFlag="-UseModernBuildSystem=0"
 
- ic prepare ios
- ic run ios -l --address=0.0.0.0
- pod install
- 
- npm install g cordova@9.0.0
+ ic prepare ios # I need this to re-build!
 
+ ic run ios -l --address=0.0.0.0
+ 
 == Deploy browser ==
 From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
 
@@ -72,4 +70,14 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
 
 
 
- 
+-=----- 
+IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/tgm.piousbox.com/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/tgm.piousbox.com/privkey.pem
+   Your cert will expire on 2020-01-28. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot
+   again. To non-interactively renew *all* of your certificates, run
+   "certbot renew"
+   

@@ -16,6 +16,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppRouter } from './app-router';
 import { AppService } from './app-service'
 
+function logg(object, label='') {
+  console.log('+++ '+label)
+  console.log(JSON.stringify(object))
+}
 
 @Component({
   selector: 'app-root',
@@ -44,7 +48,7 @@ export class AppComponent implements OnInit {
     public loadingController: LoadingController,
   ) {
     // console.log('+++ app.component constructor');
-    // this.render = this.render.bind( this );
+    this.render = this.render.bind( this );
 
     this.initializeApp();
     this.env = environment;
@@ -52,7 +56,7 @@ export class AppComponent implements OnInit {
 
     this.platform.ready().then(() => {
       this.nativeStorage.getItem('current_user').then(data => {
-        console.log('+++ got 3 data:', data);
+        console.log('+++ got 3 data:', JSON.stringify(data));
 
         this.currentUser = data;
         this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
@@ -65,7 +69,7 @@ export class AppComponent implements OnInit {
               this.newsitems = data['newsitems'];
             }
           }, error => {
-            console.log('+++ error from m3:', error)
+            console.log('+++ error from m3 aa:', error)
           });
         } */
 
@@ -100,9 +104,14 @@ export class AppComponent implements OnInit {
 
   doFacebookLogin () {
     if (this.platform.is('cordova')) {
+      FB.init({ appId: '3016949928380365',
+        xfbml: true,
+        version: 'v2.8',
+      });
+
       this.fb.login(['public_profile', 'email']).then((res: any) => { // res: FacebookLoginResponse      
         const data = res.authResponse
-        console.log('+++ Logged into Facebook 2', data)
+        logg('+++ Logged into Facebook 22', data)
 
         this.currentUser = data;
         this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
@@ -122,7 +131,7 @@ export class AppComponent implements OnInit {
       console.log('+++ cordova not available, falling back on nothing!')
       this.fb.login(['public_profile', 'email']).then((res: any) => { 
         const data = res.authResponse
-        console.log('+++ Logged into Facebook 2', data)
+        logg('+++ Logged into Facebook 2', data)
       })
     }
   }
@@ -138,10 +147,12 @@ export class AppComponent implements OnInit {
     // this.fb.logout();
   }
 
-  ngOnInit () {}
+  ngOnInit () {
+    console.log('+++ app.component ngOnInit:', this)
+  }
 
   render () {
-    // console.log('+++ app.component render()');
+    console.log('+++ app.component render()', this);
     this.nativeStorage.getItem('current_user').then( data => {
       this.currentUser    = data;
       this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));

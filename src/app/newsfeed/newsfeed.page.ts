@@ -23,7 +23,7 @@ export class NewsfeedPage implements OnInit {
     private router: Router,
     public httpClient: HttpClient, 
   ) {
-    console.log('+++ newsfeed constructor');
+    // console.log('+++ newsfeed constructor');
     appService.setTitle('Newsfeed');
     this.mainTitle = 'Newsfeed';
 
@@ -39,7 +39,7 @@ export class NewsfeedPage implements OnInit {
             this.newsitems = data['newsitems'];
           }
         }, error => {
-          console.log('+++ error from m3:', error)
+          console.log('+++ error from m3 1-:', JSON.stringify(error))
         });
       }
     }, error => {
@@ -83,7 +83,7 @@ export class NewsfeedPage implements OnInit {
             this.newsitems = data['newsitems'];
           }
         }, error => {
-          console.log('+++ error from m3:', error)
+          console.log('+++ error from m3 -+-+:', error)
         });
       }
     }, error => {

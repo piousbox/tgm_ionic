@@ -16,6 +16,8 @@ import { environment } from '../../environments/environment';
 })
 export class AccountPage implements OnInit {
   currentUser: any = {};
+  env: any = {};
+  env2: any = {};
 
   constructor(
     private appService: AppService,
@@ -25,11 +27,16 @@ export class AccountPage implements OnInit {
     private router: Router,
   ) {
     console.log('+++ account constructor');
-    this.platform.ready().then(() => {
-      this.appService.setTitle('Account');
-    });
+    // this.env = environment;
+    // this.env2 = JSON.stringify({ 'a': 'b' });
 
-    this.nativeStorage.getItem('current_user').then(data => {
+    /* this.platform.ready().then(() => {
+      this.appService.setTitle('Account');
+    }); */
+
+    console.log('+++ account constructor 1');
+
+    /* this.nativeStorage.getItem('current_user').then(data => {
       console.log('+++ 1 data:', data)
 
       if ('facebook' == data.type) {
@@ -40,10 +47,10 @@ export class AccountPage implements OnInit {
 
           this.currentUser = data;
         }, error => {
-          console.log('+++ error from m3 a:', error)
+          console.log('+++ error from m3 a:', JSON.stringify(error))
         });
       }
-    })
+    }) */
 
     // This craps out in Jasmine
     /* router.events.subscribe(event => {
@@ -63,10 +70,10 @@ export class AccountPage implements OnInit {
   }
 
   ngOnInit() {
-    console.log('+++ account ngOnInit');
-    this.platform.ready().then(() => {
+    // console.log('+++ account ngOnInit');
+    /* this.platform.ready().then(() => {
       this.appService.setTitle('Account');
-    });
+    }); */
   }
 
 }
