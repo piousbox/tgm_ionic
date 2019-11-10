@@ -16,8 +16,6 @@ import { environment } from '../../environments/environment';
 })
 export class AccountPage implements OnInit {
   currentUser: any = {};
-  env: any = {};
-  env2: any = {};
 
   constructor(
     private appService: AppService,
@@ -26,9 +24,7 @@ export class AccountPage implements OnInit {
     private platform: Platform,
     private router: Router,
   ) {
-    console.log('+++ account constructor');
-    // this.env = environment;
-    // this.env2 = JSON.stringify({ 'a': 'b' });
+    console.log('+++ account constructor');    
 
     /* this.platform.ready().then(() => {
       this.appService.setTitle('Account');

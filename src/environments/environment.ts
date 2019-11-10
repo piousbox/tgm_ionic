@@ -6,3 +6,5 @@ export const environment = {
   accountPath: 'https://manager.piousbox.com/api/my/account',
   citiesPath: 'https://manager.piousbox.com/api/cities',
 };
+
+

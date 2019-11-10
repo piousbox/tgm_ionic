@@ -7,4 +7,5 @@ import { Component, OnInit } from '@angular/core';
 export class CitiesComponent2 implements OnInit {
   constructor(){}
   ngOnInit(){}
+  navigate(where){}
 }

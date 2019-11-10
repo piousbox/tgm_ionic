@@ -19,7 +19,9 @@
  ic platform add browser
  ic build browser
  ic run browser --livereload --address tgm.piousbox.com --port=8100
-
+ ng run app:ionic-cordova-serve:production --host=0.0.0.0 --port=8100 --platform=browser
+ ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8100 --platform=browser
+ 
  ic platform rm android
  ic platform add android
  # ic plugin remove cordova-plugin-googleplus

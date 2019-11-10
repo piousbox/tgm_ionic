@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { CitiesIndexPage } from './CitiesIndex.page';
 import { CitiesShowPage } from './CitiesShow.page';
+import { CitiesComponent2 } from './comp2';
 
 
 const routes: Routes = [
@@ -20,6 +21,6 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ CitiesIndexPage, CitiesShowPage ]
+  declarations: [ CitiesIndexPage, CitiesShowPage, CitiesComponent2 ]
 })
 export class CitiesModule {}

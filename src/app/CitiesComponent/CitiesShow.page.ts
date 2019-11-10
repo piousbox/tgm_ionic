@@ -12,6 +12,8 @@ import { environment } from '../../environments/environment';
   templateUrl: './CitiesShow.page.html',
 })
 export class CitiesShowPage implements OnInit {
+  cityName: any = '<No City>';
+
   constructor(
     private nativeStorage: NativeStorage,
     private appService: AppService,
@@ -25,4 +27,7 @@ export class CitiesShowPage implements OnInit {
   ngOnInit() {
     // this.cityName = this.route.snapshot.paramMap.get('city_name');
   }
+
+  navigate (where) {}
+
 }

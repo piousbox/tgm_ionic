@@ -65,7 +65,7 @@
         </ion-toolbar>
       </ion-header>
       <ion-content>
-        <ion-router-outlet></ion-router-outlet>
+        <ion-router-outlet [swipeGesture]="false"></ion-router-outlet>
       </ion-content>
     </ion-content>
   </div>
@@ -77,6 +77,7 @@
     <div id="mainFooterContent" >
       <ul>
         <li>0.1.0 :: {{ currentUserStr }}</li>
+        <li>Env :: {{ env }}</li>
       </ul>
     </div>
   </div>

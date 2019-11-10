@@ -16,6 +16,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppRouter } from './app-router';
 import { AppService } from './app-service'
 
+// prod/non-prod
+// const FB = { init: (a={}) => {} }
+
 function logg(object, label='') {
   console.log('+++ '+label)
   console.log(JSON.stringify(object))
@@ -27,8 +30,8 @@ function logg(object, label='') {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-
-  env: any = {};
+  
+  env: string = '<none>';
   currentUser: any = null;
   currentUserStr: string = '<none>';
   mainTitle: string = '';
@@ -47,19 +50,23 @@ export class AppComponent implements OnInit {
     public httpClient: HttpClient,
     public loadingController: LoadingController,
   ) {
-    // console.log('+++ app.component constructor');
+    // console.log('+++ app.component constructor', environment);
     this.render = this.render.bind( this );
 
     this.initializeApp();
-    this.env = environment;
+    
     this.mainTitle = this.appService.title;
-
+    this.env = JSON.stringify(environment);
+    
     this.platform.ready().then(() => {
       this.nativeStorage.getItem('current_user').then(data => {
         console.log('+++ got 3 data:', JSON.stringify(data));
 
         this.currentUser = data;
-        this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
+        if (data && Object.keys(data).length > 0) {
+          this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
+        }
+        
 
         /* if ('facebook' == data.type) {
           const params = new HttpParams().set('accessToken', data.accessToken)
@@ -104,10 +111,14 @@ export class AppComponent implements OnInit {
 
   doFacebookLogin () {
     if (this.platform.is('cordova')) {
-      FB.init({ appId: '3016949928380365',
-        xfbml: true,
-        version: 'v2.8',
-      });
+      /* try {
+        FB.init({ appId: '3016949928380365',
+          xfbml: true,
+          version: 'v2.8',
+        });
+      } catch (e) {
+        logg(e, '+++ no name FB:')
+      } */
 
       this.fb.login(['public_profile', 'email']).then((res: any) => { // res: FacebookLoginResponse      
         const data = res.authResponse

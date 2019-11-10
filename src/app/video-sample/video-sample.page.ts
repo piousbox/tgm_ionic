@@ -7,12 +7,15 @@ import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-m
   styleUrls: ['./video-sample.page.scss'],
 })
 export class VideoSamplePage implements OnInit {
+  env3: any = {};
 
   constructor(
     private streamingMedia: StreamingMedia,
   ) {
     // console.log('+++ video-sample constructor');
     
+    this.env3 = 'nv3';
+
     let options: StreamingVideoOptions = {
       successCallback: () => { console.log('Video played') },
       errorCallback: (e) => { console.log('Error streaming') },
