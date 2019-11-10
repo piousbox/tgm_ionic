@@ -56,7 +56,7 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
 
  ## ionic cordova prepare ios
  ./node_modules/.bin/ng run app:ionic-cordova-build:staging --platform=ios
- corvoda prepare ios
+ ./node_modules/.bin/cordova prepare ios
 
 == Deploy browser ==
 From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
