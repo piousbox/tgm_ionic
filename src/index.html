@@ -27,19 +27,21 @@
   </body>
 
   <script>
-    /* if (FB) {
+    if (FB) {
       FB.init({ appId: 3016949928380365,
         xfbml: true,
         version: 'v2.8',
       })
     } else {
       setTimeout(function() {
-        FB.init({ appId: 3016949928380365,
-          xfbml: true,
-          version: 'v2.8',
-        })
+        if (FB) {
+          FB.init({ appId: 3016949928380365,
+            xfbml: true,
+            version: 'v2.8',
+          })
+        }
       }, 3 * 1000)
-    } */
+    }
   </script>
 
 </html>
