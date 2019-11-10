@@ -16,11 +16,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppRouter } from './app-router';
 import { AppService } from './app-service'
 
-// prod/non-prod
+// prod only
 // const FB = { init: (a={}) => {} }
 
 function logg(object, label='') {
-  console.log('+++ '+label)
+  console.log(`+++ ${label}`)
   console.log(JSON.stringify(object))
 }
 
@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
     
     this.mainTitle = this.appService.title;
     this.env = JSON.stringify(environment);
-    
+
     this.platform.ready().then(() => {
       this.nativeStorage.getItem('current_user').then(data => {
         console.log('+++ got 3 data:', JSON.stringify(data));
@@ -110,41 +110,32 @@ export class AppComponent implements OnInit {
   }
 
   doFacebookLogin () {
-    if (this.platform.is('cordova')) {
-      /* try {
-        FB.init({ appId: '3016949928380365',
-          xfbml: true,
-          version: 'v2.8',
-        });
-      } catch (e) {
-        logg(e, '+++ no name FB:')
-      } */
-
-      this.fb.login(['public_profile', 'email']).then((res: any) => { // res: FacebookLoginResponse      
-        const data = res.authResponse
-        logg('+++ Logged into Facebook 22', data)
-
-        this.currentUser = data;
-        this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
-
-        this.nativeStorage.setItem('current_user', {
-          accessToken: data.accessToken,
-          signedRequest: data.signedRequest,
-          userID: data.userID,
-          type: 'facebook',
-        }).then(() => {
-          this.router.navigate([ AppRouter.rootPath ])
-        }, (error) => {
-          console.log('+++ error:', error)
-        })
-      }).then(this.render).catch(e => console.log('Error logging into Facebook', e));
-    } else {
-      console.log('+++ cordova not available, falling back on nothing!')
-      this.fb.login(['public_profile', 'email']).then((res: any) => { 
-        const data = res.authResponse
-        logg('+++ Logged into Facebook 2', data)
-      })
+    if (this.platform.is('pwa')) {
+      FB.init({ appId: environment.fb_app_id,
+        xfbml: true,
+        version: 'v2.8',
+      });
     }
+      
+    this.fb.login(['public_profile', 'email']).then((res: any) => { // res: FacebookLoginResponse      
+      const data = res.authResponse
+      logg('+++ Logged into Facebook 22', data)
+
+      this.currentUser = data;
+      this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
+
+      this.nativeStorage.setItem('current_user', {
+        accessToken: data.accessToken,
+        signedRequest: data.signedRequest,
+        userID: data.userID,
+        type: 'facebook',
+      }).then(() => {
+        this.router.navigate([ AppRouter.rootPath ])
+      }, (error) => {
+        console.log('+++ error:', error)
+      })
+    }).then(this.render).catch(e => console.log('Error logging into Facebook', e));
+    
   }
 
   doFacebookLogout () {
