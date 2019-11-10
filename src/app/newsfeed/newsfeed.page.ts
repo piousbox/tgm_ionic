@@ -23,14 +23,11 @@ export class NewsfeedPage implements OnInit {
     private router: Router,
     public httpClient: HttpClient, 
   ) {
-    // console.log('+++ newsfeed constructor');
     appService.setTitle('Newsfeed');
     this.mainTitle = 'Newsfeed';
 
     this.nativeStorage.getItem('current_user').then(data => {
       this.currentUser = data;
-      // console.log('+++ newsfeed currentUser:', data);
-
       if ('facebook' == data.type) {
         const params = new HttpParams().set('accessToken', data.accessToken)
         const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
@@ -58,38 +55,9 @@ export class NewsfeedPage implements OnInit {
     });
   }
 
-  ngOnInit() {
-    // console.log('+++ newsfeed ngOnInit');
+  ngOnInit() {}
 
-    /* this.platform.ready().then(() => {
-      this.appService.setTitle('Account');
-    }); */
-  }
-
-  ionViewDidLoad () {
-    //console.log('+++ newsfeed ionViewDidLoad');
-
-    /* this.nativeStorage.getItem('current_user').then(data => {
-      this.currentUser = data;
-      console.log('+++ newsfeed:', data);
-
-      if ('facebook' == data.type) {
-        const params = new HttpParams().set('accessToken', data.accessToken)
-        const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
-        answer.subscribe(data => {
-          console.log('+++ from m3: ', data);
-          
-          if (data['newsitems']) {
-            this.newsitems = data['newsitems'];
-          }
-        }, error => {
-          console.log('+++ error from m3 -+-+:', error)
-        });
-      }
-    }, error => {
-      console.log('+++ newsfeed doesnt have current_user:', error);
-    }); */
-  }
+  ionViewDidLoad () {}
 
 }
 
