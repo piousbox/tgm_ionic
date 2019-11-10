@@ -16,9 +16,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppRouter } from './app-router';
 import { AppService } from './app-service'
 
-// prod only
-// const FB = { init: (a={}) => {} }
-
 function logg(object, label='') {
   console.log(`+++ ${label}`)
   console.log(JSON.stringify(object))
@@ -36,6 +33,9 @@ export class AppComponent implements OnInit {
   currentUserStr: string = '<none>';
   mainTitle: string = '';
   mainFooterVisible: string = '';
+
+  platformList: string = '';
+  isApp: boolean = true;
 
   constructor(
     private appService: AppService,
@@ -56,7 +56,16 @@ export class AppComponent implements OnInit {
     this.initializeApp();
     
     this.mainTitle = this.appService.title;
-    this.env = JSON.stringify(environment);
+    this.env = JSON.stringify(environment.name);
+
+    let platforms = this.platform.platforms();
+    this.platformList = platforms.join(', ');
+
+    if(platforms.indexOf('mobileweb') != -1) {
+      this.isApp = false;
+    } else {
+      this.isApp = true;
+    }
 
     this.platform.ready().then(() => {
       this.nativeStorage.getItem('current_user').then(data => {
@@ -110,13 +119,6 @@ export class AppComponent implements OnInit {
   }
 
   doFacebookLogin () {
-    if (this.platform.is('pwa')) {
-      FB.init({ appId: environment.fb_app_id,
-        xfbml: true,
-        version: 'v2.8',
-      });
-    }
-      
     this.fb.login(['public_profile', 'email']).then((res: any) => { // res: FacebookLoginResponse      
       const data = res.authResponse
       logg('+++ Logged into Facebook 22', data)
