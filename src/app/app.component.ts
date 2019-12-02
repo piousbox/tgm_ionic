@@ -2,7 +2,7 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 
-import { MenuController } from '@ionic/angular';
+import { MenuController, ToastController, } from '@ionic/angular';
 import { Platform } from '@ionic/angular';
 import { LoadingController } from '@ionic/angular';
 
@@ -14,7 +14,8 @@ import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppRouter } from './app-router';
-import { AppService } from './app-service'
+import { AppService } from './app-service';
+import { C } from './const';
 
 function logg(object, label='') {
   console.log(`+++ ${label}`)
@@ -27,15 +28,19 @@ function logg(object, label='') {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  env: string = '<none>';
   currentUser: any = null;
   currentUserStr: string = '<none>';
-  mainTitle: string = '';
-  mainFooterVisible: string = '';
 
-  platformList: string = '';
+  env: string = '<none>';
+
   isApp: boolean = true;
 
+  mainTitle: string = '';
+  mainFooterVisible: string = '';
+  message: string;
+
+  platformList: string = '';
+  
   constructor(
     private appService: AppService,
     private fb: Facebook,
@@ -48,6 +53,7 @@ export class AppComponent implements OnInit {
     private statusBar: StatusBar,
     public httpClient: HttpClient,
     public loadingController: LoadingController,
+    public toastController: ToastController,
   ) {
     // console.log('+++ app.component constructor', environment);
     this.render = this.render.bind( this );
@@ -117,7 +123,7 @@ export class AppComponent implements OnInit {
     });
   }
 
-  doFacebookLogin () {
+  async doFacebookLogin () {
     this.fb.login(['public_profile', 'email']).then((res: any) => { // res: FacebookLoginResponse      
       const data = res.authResponse
       logg('+++ Logged into Facebook 22', data)
@@ -131,15 +137,20 @@ export class AppComponent implements OnInit {
         userID: data.userID,
         type: 'facebook',
       }).then(() => {
+        this.appService.changeMessage(C.didLogin);
         this.router.navigate([ AppRouter.rootPath ])
+
       }, (error) => {
         console.log('+++ error:', error)
       })
-    }).then(this.render).catch(e => console.log('Error logging into Facebook', e));
-    
+    }).then(this.render).catch( async e => {
+      console.log('Error logging into Facebook', e)
+      const toast = await this.toastController.create({ message: 'Could not login.', duration: 2000 });
+      toast.present();
+    });
   }
 
-  doFacebookLogout () {
+  async doFacebookLogout () {
     console.log('+++ logging out facebook...');
     // this.nativeStorage.remove('facebook_user');
     this.nativeStorage.remove('current_user');
@@ -148,10 +159,13 @@ export class AppComponent implements OnInit {
     this.render();
     // this.nativeStorage.clear();
     // this.fb.logout();
+    const toast = await this.toastController.create({ message: 'Logged out.', duration: 2000 });
+    toast.present();
   }
 
   ngOnInit () {
     console.log('+++ app.component ngOnInit:', this)
+    this.appService.currentMessage.subscribe(message => this.message = message)
   }
 
   render () {

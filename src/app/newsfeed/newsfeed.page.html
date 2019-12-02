@@ -1,5 +1,9 @@
 
-<div *ngIf="!newsitems" >No newsitems</div>
+<div *ngIf="newsitems.length == 0" >
+  <br /><br /><br />
+  <h1>&nbsp; &nbsp; &nbsp; Loading...</h1>
+  <br /><br /><br />
+</div>
 
 <ion-content *ngIf='newsitems' >
   <ion-list lines="none" >
