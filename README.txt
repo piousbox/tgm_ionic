@@ -74,9 +74,6 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
  ic platform add browser
  ic build browser
 
-
-
-
 -=----- 
 IMPORTANT NOTES:
  - Congratulations! Your certificate and chain have been saved at:
@@ -88,3 +85,7 @@ IMPORTANT NOTES:
    again. To non-interactively renew *all* of your certificates, run
    "certbot renew"
    
+ keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64
+
+nginx does not work, use apache locally
+

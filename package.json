@@ -24,6 +24,7 @@
         "@types/facebook-js-sdk": "^3.3.0",
         "com.moust.cordova.videoplayer": "https://github.com/moust/cordova-plugin-videoplayer.git",
         "cordova": "^9.0.0",
+        "cordova-android": "8.1.0",
         "cordova-browser": "6.0.0",
         "cordova-ios": "5.0.1",
         "cordova-plugin-device": "^2.0.2",
@@ -91,7 +92,8 @@
         },
         "platforms": [
             "ios",
-            "browser"
+            "browser",
+            "android"
         ]
     },
     "config": {
