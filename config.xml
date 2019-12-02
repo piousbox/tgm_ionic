@@ -100,5 +100,5 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <allow-navigation href="http://tgm.piousbox.com:8100" sessionid="3aba4f8a" />
-    <allow-navigation href="http://192.168.0.102:8100" sessionid="cbfc7797" />
+    <allow-navigation href="http://192.168.0.102:8100" sessionid="f51d55b6" />
 </widget>

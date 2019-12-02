@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 import { Router, NavigationEnd } from '@angular/router';
 
+import { ToastController } from '@ionic/angular';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
 import { AppService } from '../app-service';
@@ -22,6 +23,7 @@ export class NewsfeedPage implements OnInit {
     private appService: AppService,
     private router: Router,
     public httpClient: HttpClient, 
+    public toastController: ToastController,
   ) {
     appService.setTitle('Newsfeed');
     this.mainTitle = 'Newsfeed';
@@ -35,12 +37,22 @@ export class NewsfeedPage implements OnInit {
           if (data['newsitems']) {
             this.newsitems = data['newsitems'];
           }
-        }, error => {
+        }, async error => {
           console.log('+++ error from m3 1-:', JSON.stringify(error))
+          const toast = await this.toastController.create({
+            message: 'The token has expired? Please login.',
+            duration: 2000
+          });
+          toast.present();
         });
       }
-    }, error => {
+    }, async error => {
       console.log('+++ newsfeed doesnt have current_user:', error);
+      const toast = await this.toastController.create({
+        message: 'You are not logged in - please login.',
+        duration: 2000
+      });
+      toast.present();
     });
 
     router.events.subscribe(event => {

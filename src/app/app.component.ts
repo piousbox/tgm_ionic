@@ -27,7 +27,6 @@ function logg(object, label='') {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  
   env: string = '<none>';
   currentUser: any = null;
   currentUserStr: string = '<none>';
