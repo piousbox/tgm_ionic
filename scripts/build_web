@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ -z "${NODE_ENV}" ]]; then
+  echo "Please set NODE_ENV = [ production | staging | development ] before running this script."
+  exit 3
+fi
+eee="${NODE_ENV}"
+
+set -e
+
+ionic cordova build browser --configuration=$eee
+
+set +e
+echo 'build tgm_ionic browser ok'
