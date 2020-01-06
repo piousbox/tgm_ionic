@@ -6,3 +6,4 @@
 0.0.3 - video player with controls
 0.0.4 - better onInit
 0.1.0 - 20190929 let's go
+0.1.1 - 20200105 current for fiverr, github
