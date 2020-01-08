@@ -62,7 +62,7 @@ var NewsfeedPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div *ngIf=\"!newsitems\" >No newsitems</div>\n\n<ion-content *ngIf='newsitems' >\n  <ion-list lines=\"none\" >\n    <ion-item class='item-borderless' *ngFor=\"let n of newsitems\">\n\n      <div padding class='flex-scroll-container' *ngIf=\"n.photos\" >\n        <ion-list lines=\"none\" class='flex-scroll' >\n          <ion-card padding class='medium-cover'>\n            <p><ion-icon slot=\"start\" name='camera'></ion-icon> &nbsp; {{ n.name }} ({{ n.photos.length }})</p>\n            <p>{{ n.created_at }}</p>\n          </ion-card>\n          <ion-item class='flex-scroll-inner' *ngFor=\"let ph of n.photos\">\n\n            <ion-card padding class='medium-photo'>\n              <img [src]=\"ph.small_url\" />\n            </ion-card>\n\n          </ion-item>\n        </ion-list>\n      </div>\n\n      <div padding class='flex-scroll-container' *ngIf=\"n.item_type=='video'\" >\n        <ion-list lines=\"none\" class='flex-scroll' >\n          <ion-card padding class='medium-cover'>\n            <p><ion-icon slot=\"start\" name='videocam'></ion-icon> &nbsp; {{ n.name }}</p>\n            <p>{{ n.created_at }}</p>\n          </ion-card>\n          <ion-card padding class='medium-video'>\n            <video src=\"{{ n.url }}\" width=\"100%\" controls ></video>\n          </ion-card>\n        </ion-list>\n      </div>\n\n    </ion-item>\n  </ion-list>  \n</ion-content>\n"
+module.exports = "\n<div *ngIf=\"newsitems.length == 0\" >\n  <br /><br /><br />\n  <h1>&nbsp; &nbsp; &nbsp; Loading...</h1>\n  <br /><br /><br />\n</div>\n\n<ion-content *ngIf='newsitems' >\n  <ion-list lines=\"none\" >\n    <ion-item class='item-borderless' *ngFor=\"let n of newsitems\">\n\n      <div padding class='flex-scroll-container' *ngIf=\"n.photos\" >\n        <ion-list lines=\"none\" class='flex-scroll' >\n          <ion-card padding class='medium-cover'>\n            <p><ion-icon slot=\"start\" name='camera'></ion-icon> &nbsp; {{ n.name }} ({{ n.photos.length }})</p>\n            <p>{{ n.created_at }}</p>\n          </ion-card>\n          <ion-item class='flex-scroll-inner' *ngFor=\"let ph of n.photos\">\n\n            <ion-card padding class='medium-photo'>\n              <img [src]=\"ph.small_url\" />\n            </ion-card>\n\n          </ion-item>\n        </ion-list>\n      </div>\n\n      <div padding class='flex-scroll-container' *ngIf=\"n.item_type=='video'\" >\n        <ion-list lines=\"none\" class='flex-scroll' >\n          <ion-card padding class='medium-cover'>\n            <p><ion-icon slot=\"start\" name='videocam'></ion-icon> &nbsp; {{ n.name }}</p>\n            <p>{{ n.created_at }}</p>\n          </ion-card>\n          <ion-card padding class='medium-video'>\n            <video src=\"{{ n.url }}\" width=\"100%\" controls ></video>\n          </ion-card>\n        </ion-list>\n      </div>\n\n    </ion-item>\n  </ion-list>  \n</ion-content>\n"
 
 /***/ }),
 
@@ -94,6 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_native_storage_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/native-storage/ngx */ "./node_modules/@ionic-native/native-storage/ngx/index.js");
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../app-service */ "./src/app/app-service.ts");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../const */ "./src/app/const.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -145,11 +146,14 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
 var NewsfeedPage = /** @class */ (function () {
-    function NewsfeedPage(nativeStorage, appService, router, httpClient, toastController) {
+    function NewsfeedPage(appService, 
+    // private C: C,
+    nativeStorage, router, httpClient, toastController) {
         var _this = this;
-        this.nativeStorage = nativeStorage;
         this.appService = appService;
+        this.nativeStorage = nativeStorage;
         this.router = router;
         this.httpClient = httpClient;
         this.toastController = toastController;
@@ -213,16 +217,73 @@ var NewsfeedPage = /** @class */ (function () {
             // RoutesRecognized
         });
     }
-    NewsfeedPage.prototype.ngOnInit = function () { };
-    NewsfeedPage.prototype.ionViewDidLoad = function () { };
+    NewsfeedPage.prototype.ngOnInit = function () {
+        var _this = this;
+        this.appService.currentMessage.subscribe(function (message) {
+            console.log('+++ new message:', message);
+            if (message == _const__WEBPACK_IMPORTED_MODULE_7__["C"].didLogin) {
+                _this.render();
+            }
+        });
+    };
+    NewsfeedPage.prototype.render = function () {
+        var _this = this;
+        this.nativeStorage.getItem('current_user').then(function (data) {
+            _this.currentUser = data;
+            if ('facebook' == data.type) {
+                var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpParams"]().set('accessToken', data.accessToken);
+                var answer = _this.httpClient.get(_environments_environment__WEBPACK_IMPORTED_MODULE_6__["environment"].newsitemsPath, { params: params });
+                answer.subscribe(function (data) {
+                    if (data['newsitems']) {
+                        _this.newsitems = data['newsitems'];
+                    }
+                }, function (error) { return __awaiter(_this, void 0, void 0, function () {
+                    var toast;
+                    return __generator(this, function (_a) {
+                        switch (_a.label) {
+                            case 0:
+                                console.log('+++ error from m3 1-:', JSON.stringify(error));
+                                return [4 /*yield*/, this.toastController.create({
+                                        message: 'The token has expired? Please login.',
+                                        duration: 2000
+                                    })];
+                            case 1:
+                                toast = _a.sent();
+                                toast.present();
+                                return [2 /*return*/];
+                        }
+                    });
+                }); });
+            }
+        }, function (error) { return __awaiter(_this, void 0, void 0, function () {
+            var toast;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        console.log('+++ newsfeed doesnt have current_user:', error);
+                        return [4 /*yield*/, this.toastController.create({
+                                message: 'You are not logged in - please login.',
+                                duration: 2000
+                            })];
+                    case 1:
+                        toast = _a.sent();
+                        toast.present();
+                        return [2 /*return*/];
+                }
+            });
+        }); });
+    };
+    NewsfeedPage.prototype.ionViewDidLoad = function () {
+        console.log('+++ newsfeed ionViewDidLoad');
+    };
     NewsfeedPage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-newsfeed',
             template: __webpack_require__(/*! ./newsfeed.page.html */ "./src/app/newsfeed/newsfeed.page.html"),
             styles: [__webpack_require__(/*! ./newsfeed.page.scss */ "./src/app/newsfeed/newsfeed.page.scss")],
         }),
-        __metadata("design:paramtypes", [_ionic_native_native_storage_ngx__WEBPACK_IMPORTED_MODULE_4__["NativeStorage"],
-            _app_service__WEBPACK_IMPORTED_MODULE_5__["AppService"],
+        __metadata("design:paramtypes", [_app_service__WEBPACK_IMPORTED_MODULE_5__["AppService"],
+            _ionic_native_native_storage_ngx__WEBPACK_IMPORTED_MODULE_4__["NativeStorage"],
             _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ToastController"]])

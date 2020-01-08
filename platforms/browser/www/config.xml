@@ -3,7 +3,7 @@
     <name>tgm.piousbox.com</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework.com" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content src="index.html" />
+    <content original-src="index.html" src="http://tgm.mac:8100" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -12,7 +12,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-navigation href="http://tgm.piousbox.com:8100" sessionid="3aba4f8a" />
-    <allow-navigation href="http://192.168.0.102:8100" sessionid="f51d55b6" />
+    <allow-navigation href="http://tgm.mac:8100" sessionid="eb227e69" />
     <preference name="ScrollEnabled" value="false" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="BackupWebStorage" value="none" />

@@ -1617,7 +1617,7 @@ var AppRouter = /** @class */ (function () {
     function AppRouter() {
     }
     // static loginPath = 'login';
-    AppRouter.rootPath = 'home';
+    AppRouter.rootPath = 'newsfeed';
     return AppRouter;
 }());
 
@@ -1688,6 +1688,7 @@ var AppRoutingModule = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppService", function() { return AppService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1698,16 +1699,22 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var AppService = /** @class */ (function () {
     function AppService() {
         this.title = 'Initial Title';
+        this.messageSource = new rxjs__WEBPACK_IMPORTED_MODULE_1__["BehaviorSubject"]('default message');
+        this.currentMessage = this.messageSource.asObservable();
     }
-    AppService.prototype.getTitle = function () {
-        this.title = 'Some Title';
-    };
+    /* getTitle () {
+      this.title = 'Some Title';
+    } */
     AppService.prototype.setTitle = function (which) {
         console.log('+++ app-service setTitle:', which);
         this.title = which;
+    };
+    AppService.prototype.changeMessage = function (message) {
+        this.messageSource.next(message);
     };
     AppService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
@@ -1729,7 +1736,7 @@ var AppService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<ion-app >\n\n  <div *ngIf=\"!currentUser\" >\n    <div>no current_user</div>\n  </div>\n\n  <div >\n    <ion-menu>\n      <ion-header>\n        <ion-toolbar color=\"primary\">\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n\n      <ion-content>\n        <ion-list>\n          <ion-menu-toggle auto-hide=\"false\">\n            <ion-item button (click)=\"navigate('newsfeed')\" >\n              <ion-icon slot=\"start\" name='paper'></ion-icon>\n              <ion-label>\n                Newsfeed\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"navigate('account')\">\n              <ion-icon slot=\"start\" name='person'></ion-icon>\n              <ion-label>\n                Account\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"navigate('video-sample')\">\n              <ion-icon slot=\"start\" name='person'></ion-icon>\n              <ion-label>\n                Video sample\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"doFacebookLogin()\">\n              <ion-icon slot=\"start\" name='power'></ion-icon>\n              <ion-label>\n                Login\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"doFacebookLogout()\">\n              <ion-icon slot=\"start\" name='power'></ion-icon>\n              <ion-label>\n                Logout\n              </ion-label>\n            </ion-item>\n          </ion-menu-toggle>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n\n    <ion-content class=\"ion-page\" main>\n      <ion-header>\n        <ion-toolbar>\n          <ion-buttons slot=\"start\">\n            <ion-menu-toggle>\n              <ion-button>\n                <ion-icon slot=\"icon-only\" name=\"menu\"></ion-icon>\n              </ion-button>\n            </ion-menu-toggle>\n          </ion-buttons>\n          <ion-title>{{ mainTitle }}</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-router-outlet [swipeGesture]=\"false\"></ion-router-outlet>\n      </ion-content>\n    </ion-content>\n  </div>\n\n  <div id=\"mainFooterWrapper\" [class]=\"mainFooterVisible\" >\n    <div id='bugBtn' (click)=\"toggleMainFooter()\" >\n      <img src=\"assets/icons/bug.png\" />\n    </div>\n    <div id=\"mainFooterContent\" >\n      <ul>\n        <li>0.1.2b :: {{ currentUserStr }}</li>\n        <li>Env :: {{ env }}</li>\n        <li>Platformlist :: {{ platformList }}</li>\n      </ul>\n    </div>\n  </div>\n\n</ion-app>\n\n"
+module.exports = "\n<ion-app >\n\n  <div *ngIf=\"!currentUser\" >\n    <div>no current_user</div>\n  </div>\n\n  <div >\n    <ion-menu>\n      <ion-header>\n        <ion-toolbar color=\"primary\">\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n\n      <ion-content>\n        <ion-list>\n          <ion-menu-toggle auto-hide=\"false\">\n            <ion-item button (click)=\"navigate('newsfeed')\" >\n              <ion-icon slot=\"start\" name='paper'></ion-icon>\n              <ion-label>\n                Newsfeed\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"navigate('account')\">\n              <ion-icon slot=\"start\" name='person'></ion-icon>\n              <ion-label>\n                Account\n              </ion-label>\n            </ion-item>\n            <!-- <ion-item button (click)=\"navigate('video-sample')\">\n              <ion-icon slot=\"start\" name='person'></ion-icon>\n              <ion-label>\n                Video sample\n              </ion-label>\n            </ion-item> -->\n            <ion-item button (click)=\"doFacebookLogin()\">\n              <ion-icon slot=\"start\" name='power'></ion-icon>\n              <ion-label>\n                Login\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"doFacebookLogout()\">\n              <ion-icon slot=\"start\" name='power'></ion-icon>\n              <ion-label>\n                Logout\n              </ion-label>\n            </ion-item>\n          </ion-menu-toggle>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n\n    <ion-content class=\"ion-page\" main>\n      <ion-header>\n        <ion-toolbar>\n          <ion-buttons slot=\"start\">\n            <ion-menu-toggle>\n              <ion-button>\n                <ion-icon slot=\"icon-only\" name=\"menu\"></ion-icon>\n              </ion-button>\n            </ion-menu-toggle>\n          </ion-buttons>\n          <ion-title>{{ mainTitle }}</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-router-outlet [swipeGesture]=\"false\"></ion-router-outlet>\n      </ion-content>\n    </ion-content>\n  </div>\n\n  <div id=\"mainFooterWrapper\" [class]=\"mainFooterVisible\" >\n    <div id='bugBtn' (click)=\"toggleMainFooter()\" >\n      <img src=\"assets/icons/bug.png\" />\n    </div>\n    <div id=\"mainFooterContent\" >\n      <ul>\n        <li>0.1.2b :: {{ currentUserStr }}</li>\n        <li>Env :: {{ env }}</li>\n        <li>Platformlist :: {{ platformList }}</li>\n      </ul>\n    </div>\n  </div>\n\n</ion-app>\n\n"
 
 /***/ }),
 
@@ -1765,6 +1772,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
 /* harmony import */ var _app_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app-router */ "./src/app/app-router.ts");
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app-service */ "./src/app/app-service.ts");
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./const */ "./src/app/const.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1774,6 +1782,42 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
 
 
 
@@ -1793,7 +1837,7 @@ function logg(object, label) {
     console.log(JSON.stringify(object));
 }
 var AppComponent = /** @class */ (function () {
-    function AppComponent(appService, fb, menu, nativeStorage, ngZone, platform, router, splashScreen, statusBar, httpClient, loadingController) {
+    function AppComponent(appService, fb, menu, nativeStorage, ngZone, platform, router, splashScreen, statusBar, httpClient, loadingController, toastController) {
         var _this = this;
         this.appService = appService;
         this.fb = fb;
@@ -1806,13 +1850,14 @@ var AppComponent = /** @class */ (function () {
         this.statusBar = statusBar;
         this.httpClient = httpClient;
         this.loadingController = loadingController;
-        this.env = '<none>';
+        this.toastController = toastController;
         this.currentUser = null;
         this.currentUserStr = '<none>';
+        this.env = '<none>';
+        this.isApp = true;
         this.mainTitle = '';
         this.mainFooterVisible = '';
         this.platformList = '';
-        this.isApp = true;
         // console.log('+++ app.component constructor', environment);
         this.render = this.render.bind(this);
         this.initializeApp();
@@ -1872,36 +1917,68 @@ var AppComponent = /** @class */ (function () {
         });
     };
     AppComponent.prototype.doFacebookLogin = function () {
-        var _this = this;
-        this.fb.login(['public_profile', 'email']).then(function (res) {
-            var data = res.authResponse;
-            logg('+++ Logged into Facebook 22', data);
-            _this.currentUser = data;
-            _this.currentUserStr = JSON.stringify(Object.keys(data).map(function (k) { return k + "::" + data[k].toString().substring(0, 10); }));
-            _this.nativeStorage.setItem('current_user', {
-                accessToken: data.accessToken,
-                signedRequest: data.signedRequest,
-                userID: data.userID,
-                type: 'facebook',
-            }).then(function () {
-                _this.router.navigate([_app_router__WEBPACK_IMPORTED_MODULE_9__["AppRouter"].rootPath]);
-            }, function (error) {
-                console.log('+++ error:', error);
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                this.fb.login(['public_profile', 'email']).then(function (res) {
+                    var data = res.authResponse;
+                    logg('+++ Logged into Facebook 22', data);
+                    _this.currentUser = data;
+                    _this.currentUserStr = JSON.stringify(Object.keys(data).map(function (k) { return k + "::" + data[k].toString().substring(0, 10); }));
+                    _this.nativeStorage.setItem('current_user', {
+                        accessToken: data.accessToken,
+                        signedRequest: data.signedRequest,
+                        userID: data.userID,
+                        type: 'facebook',
+                    }).then(function () {
+                        _this.appService.changeMessage(_const__WEBPACK_IMPORTED_MODULE_11__["C"].didLogin);
+                        _this.router.navigate([_app_router__WEBPACK_IMPORTED_MODULE_9__["AppRouter"].rootPath]);
+                    }, function (error) {
+                        console.log('+++ error:', error);
+                    });
+                }).then(this.render).catch(function (e) { return __awaiter(_this, void 0, void 0, function () {
+                    var toast;
+                    return __generator(this, function (_a) {
+                        switch (_a.label) {
+                            case 0:
+                                console.log('Error logging into Facebook', e);
+                                return [4 /*yield*/, this.toastController.create({ message: 'Could not login.', duration: 2000 })];
+                            case 1:
+                                toast = _a.sent();
+                                toast.present();
+                                return [2 /*return*/];
+                        }
+                    });
+                }); });
+                return [2 /*return*/];
             });
-        }).then(this.render).catch(function (e) { return console.log('Error logging into Facebook', e); });
+        });
     };
     AppComponent.prototype.doFacebookLogout = function () {
-        console.log('+++ logging out facebook...');
-        // this.nativeStorage.remove('facebook_user');
-        this.nativeStorage.remove('current_user');
-        // this.currentUser = null;
-        // this.currentUserStr = null;
-        this.render();
-        // this.nativeStorage.clear();
-        // this.fb.logout();
+        return __awaiter(this, void 0, void 0, function () {
+            var toast;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        console.log('+++ logging out facebook...');
+                        // this.nativeStorage.remove('facebook_user');
+                        this.nativeStorage.remove('current_user');
+                        // this.currentUser = null;
+                        // this.currentUserStr = null;
+                        this.render();
+                        return [4 /*yield*/, this.toastController.create({ message: 'Logged out.', duration: 2000 })];
+                    case 1:
+                        toast = _a.sent();
+                        toast.present();
+                        return [2 /*return*/];
+                }
+            });
+        });
     };
     AppComponent.prototype.ngOnInit = function () {
+        var _this = this;
         console.log('+++ app.component ngOnInit:', this);
+        this.appService.currentMessage.subscribe(function (message) { return _this.message = message; });
     };
     AppComponent.prototype.render = function () {
         var _this = this;
@@ -1943,7 +2020,8 @@ var AppComponent = /** @class */ (function () {
             _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_4__["SplashScreen"],
             _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_6__["StatusBar"],
             _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"],
-            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"]])
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["LoadingController"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ToastController"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -2019,6 +2097,23 @@ var AppModule = /** @class */ (function () {
     return AppModule;
 }());
 
+
+
+/***/ }),
+
+/***/ "./src/app/const.ts":
+/*!**************************!*\
+  !*** ./src/app/const.ts ***!
+  \**************************/
+/*! exports provided: C */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return C; });
+var C = {
+    didLogin: '41-didLogin',
+};
 
 
 /***/ }),

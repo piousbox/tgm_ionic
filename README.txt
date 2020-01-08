@@ -18,7 +18,7 @@
  ic platform rm browser
  ic platform add browser
  ic build browser
- ic run browser --livereload --address tgm.piousbox.com --port=8100
+ ic run browser --livereload --address tgm.mac --port=8100
  ng run app:ionic-cordova-serve:production --host=0.0.0.0 --port=8100 --platform=browser
  ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8100 --platform=browser
  
