@@ -1544,6 +1544,10 @@ var map = {
 		"./src/app/account/account.module.ts",
 		"account-account-module"
 	],
+	"./homefeed/homefeed.module": [
+		"./src/app/homefeed/homefeed.module.ts",
+		"homefeed-homefeed-module"
+	],
 	"./main-navigator/main-navigator.module": [
 		"./src/app/main-navigator/main-navigator.module.ts",
 		"main-navigator-main-navigator-module"
@@ -1607,18 +1611,28 @@ module.exports = webpackAsyncContext;
 /*!*******************************!*\
   !*** ./src/app/app-router.ts ***!
   \*******************************/
-/*! exports provided: AppRouter */
+/*! exports provided: AppRouter, ApiRouter */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRouter", function() { return AppRouter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ApiRouter", function() { return ApiRouter; });
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+
 var AppRouter = /** @class */ (function () {
     function AppRouter() {
     }
-    // static loginPath = 'login';
+    AppRouter.homefeedPath = 'homefeed';
     AppRouter.rootPath = 'newsfeed';
     return AppRouter;
+}());
+
+var ApiRouter = /** @class */ (function () {
+    function ApiRouter() {
+    }
+    ApiRouter.homefeed = _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].api_domain + "/api/sites/view/piousbox.com.json";
+    return ApiRouter;
 }());
 
 
@@ -1648,8 +1662,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var routes = [
     { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' },
     // { path: 'login',  loadChildren: './login/login.module#LoginPageModule' },
+    { path: 'homefeed', loadChildren: './homefeed/homefeed.module#HomefeedPageModule' },
     { path: 'newsfeed', loadChildren: './newsfeed/newsfeed.module#NewsfeedPageModule' },
-    { path: 'newsfeed2', loadChildren: './newsfeed/newsfeed.module#NewsfeedPageModule' },
     { path: 'account', loadChildren: './account/account.module#AccountPageModule' },
     { path: 'pages/faq', loadChildren: './pages/faq/faq.module#FaqPageModule' },
     { path: 'contact', loadChildren: './pages/contact/contact.module#ContactPageModule' },
@@ -1736,7 +1750,7 @@ var AppService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<ion-app >\n\n  <div *ngIf=\"!currentUser\" >\n    <div>no current_user</div>\n  </div>\n\n  <div >\n    <ion-menu>\n      <ion-header>\n        <ion-toolbar color=\"primary\">\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n\n      <ion-content>\n        <ion-list>\n          <ion-menu-toggle auto-hide=\"false\">\n            <ion-item button (click)=\"navigate('newsfeed')\" >\n              <ion-icon slot=\"start\" name='paper'></ion-icon>\n              <ion-label>\n                Newsfeed\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"navigate('account')\">\n              <ion-icon slot=\"start\" name='person'></ion-icon>\n              <ion-label>\n                Account\n              </ion-label>\n            </ion-item>\n            <!-- <ion-item button (click)=\"navigate('video-sample')\">\n              <ion-icon slot=\"start\" name='person'></ion-icon>\n              <ion-label>\n                Video sample\n              </ion-label>\n            </ion-item> -->\n            <ion-item button (click)=\"doFacebookLogin()\">\n              <ion-icon slot=\"start\" name='power'></ion-icon>\n              <ion-label>\n                Login\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"doFacebookLogout()\">\n              <ion-icon slot=\"start\" name='power'></ion-icon>\n              <ion-label>\n                Logout\n              </ion-label>\n            </ion-item>\n          </ion-menu-toggle>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n\n    <ion-content class=\"ion-page\" main>\n      <ion-header>\n        <ion-toolbar>\n          <ion-buttons slot=\"start\">\n            <ion-menu-toggle>\n              <ion-button>\n                <ion-icon slot=\"icon-only\" name=\"menu\"></ion-icon>\n              </ion-button>\n            </ion-menu-toggle>\n          </ion-buttons>\n          <ion-title>{{ mainTitle }}</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-router-outlet [swipeGesture]=\"false\"></ion-router-outlet>\n      </ion-content>\n    </ion-content>\n  </div>\n\n  <div id=\"mainFooterWrapper\" [class]=\"mainFooterVisible\" >\n    <div id='bugBtn' (click)=\"toggleMainFooter()\" >\n      <img src=\"assets/icons/bug.png\" />\n    </div>\n    <div id=\"mainFooterContent\" >\n      <ul>\n        <li>0.1.2b :: {{ currentUserStr }}</li>\n        <li>Env :: {{ env }}</li>\n        <li>Platformlist :: {{ platformList }}</li>\n      </ul>\n    </div>\n  </div>\n\n</ion-app>\n\n"
+module.exports = "\n<ion-app >\n\n  <div *ngIf=\"!currentUser\" >\n    <div>no current_user</div>\n  </div>\n\n  <div >\n    <ion-menu>\n      <ion-header>\n        <ion-toolbar color=\"primary\">\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n\n      <ion-content>\n        <ion-list>\n          <ion-menu-toggle auto-hide=\"false\">\n            <ion-item button (click)=\"navigate('homefeed')\" >\n              <ion-icon slot=\"start\" name='paper'></ion-icon>\n              <ion-label>\n                Homefeed\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"navigate('newsfeed')\" >\n              <ion-icon slot=\"start\" name='paper'></ion-icon>\n              <ion-label>\n                Newsfeed\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"navigate('account')\">\n              <ion-icon slot=\"start\" name='person'></ion-icon>\n              <ion-label>\n                Account\n              </ion-label>\n            </ion-item>\n            <!-- <ion-item button (click)=\"navigate('video-sample')\">\n              <ion-icon slot=\"start\" name='person'></ion-icon>\n              <ion-label>\n                Video sample\n              </ion-label>\n            </ion-item> -->\n            <ion-item button (click)=\"doFacebookLogin()\">\n              <ion-icon slot=\"start\" name='power'></ion-icon>\n              <ion-label>\n                Login\n              </ion-label>\n            </ion-item>\n            <ion-item button (click)=\"doFacebookLogout()\">\n              <ion-icon slot=\"start\" name='power'></ion-icon>\n              <ion-label>\n                Logout\n              </ion-label>\n            </ion-item>\n          </ion-menu-toggle>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n\n    <ion-content class=\"ion-page\" main>\n      <ion-header>\n        <ion-toolbar>\n          <ion-buttons slot=\"start\">\n            <ion-menu-toggle>\n              <ion-button>\n                <ion-icon slot=\"icon-only\" name=\"menu\"></ion-icon>\n              </ion-button>\n            </ion-menu-toggle>\n          </ion-buttons>\n          <ion-title>{{ mainTitle }}</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-router-outlet [swipeGesture]=\"false\"></ion-router-outlet>\n      </ion-content>\n    </ion-content>\n  </div>\n\n  <div id=\"mainFooterWrapper\" [class]=\"mainFooterVisible\" >\n    <div id='bugBtn' (click)=\"toggleMainFooter()\" >\n      <img src=\"assets/icons/bug.png\" />\n    </div>\n    <div id=\"mainFooterContent\" >\n      <ul>\n        <li>0.1.2b :: {{ currentUserStr }}</li>\n        <li>Env :: {{ env }}</li>\n        <li>Platformlist :: {{ platformList }}</li>\n      </ul>\n    </div>\n  </div>\n\n</ion-app>\n\n"
 
 /***/ }),
 
@@ -2136,6 +2150,7 @@ var environment = {
     accountPath: 'https://manager.piousbox.com/api/my/account',
     citiesPath: 'https://manager.piousbox.com/api/cities',
     fb_app_id: '3016949928380365',
+    api_domain: 'http://localhost:3000',
 };
 
 

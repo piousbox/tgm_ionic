@@ -31,8 +31,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var routes = [
     {
         path: '',
-        component: _newsfeed_page__WEBPACK_IMPORTED_MODULE_5__["NewsfeedPage"]
-    }
+        component: _newsfeed_page__WEBPACK_IMPORTED_MODULE_5__["NewsfeedPage"],
+    },
 ];
 var NewsfeedPageModule = /** @class */ (function () {
     function NewsfeedPageModule() {
@@ -148,9 +148,7 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 var NewsfeedPage = /** @class */ (function () {
-    function NewsfeedPage(appService, 
-    // private C: C,
-    nativeStorage, router, httpClient, toastController) {
+    function NewsfeedPage(appService, nativeStorage, router, httpClient, toastController) {
         var _this = this;
         this.appService = appService;
         this.nativeStorage = nativeStorage;

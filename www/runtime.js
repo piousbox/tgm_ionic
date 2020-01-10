@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"common":"common","CitiesComponent-cities-module":"CitiesComponent-cities-module","account-account-module":"account-account-module","main-navigator-main-navigator-module":"main-navigator-main-navigator-module","main-navigator-page1-page1-module":"main-navigator-page1-page1-module","main-navigator-page3-page3-module":"main-navigator-page3-page3-module","newsfeed-newsfeed-module":"newsfeed-newsfeed-module","pages-contact-contact-module":"pages-contact-contact-module","pages-faq-faq-module":"pages-faq-faq-module","pages-home-home-module":"pages-home-home-module","pages-legal-legal-module":"pages-legal-legal-module","video-sample-video-sample-module":"video-sample-video-sample-module"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"common":"common","CitiesComponent-cities-module":"CitiesComponent-cities-module","account-account-module":"account-account-module","homefeed-homefeed-module":"homefeed-homefeed-module","main-navigator-main-navigator-module":"main-navigator-main-navigator-module","main-navigator-page1-page1-module":"main-navigator-page1-page1-module","main-navigator-page3-page3-module":"main-navigator-page3-page3-module","newsfeed-newsfeed-module":"newsfeed-newsfeed-module","pages-contact-contact-module":"pages-contact-contact-module","pages-faq-faq-module":"pages-faq-faq-module","pages-home-home-module":"pages-home-home-module","pages-legal-legal-module":"pages-legal-legal-module","video-sample-video-sample-module":"video-sample-video-sample-module"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
