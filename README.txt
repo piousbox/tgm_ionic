@@ -71,7 +71,7 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
 
  ic platform rm browser 
  ic platform add browser
- ic build browser
+ ic build browser --prod
 
 -=----- 
 IMPORTANT NOTES:
