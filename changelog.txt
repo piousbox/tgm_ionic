@@ -7,3 +7,4 @@
 0.0.4 - better onInit
 0.1.0 - 20190929 let's go
 0.1.1 - 20200105 current for fiverr, github
+0.1.2 - 20200109 let's wire homefeed, unrestricted

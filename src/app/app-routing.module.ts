@@ -6,8 +6,8 @@ const routes: Routes = [
 
   // { path: 'login',  loadChildren: './login/login.module#LoginPageModule' },
 
+  { path: 'homefeed',  loadChildren: './homefeed/homefeed.module#HomefeedPageModule' },
   { path: 'newsfeed',  loadChildren: './newsfeed/newsfeed.module#NewsfeedPageModule' },
-  { path: 'newsfeed2', loadChildren: './newsfeed/newsfeed.module#NewsfeedPageModule' },
   { path: 'account',   loadChildren: './account/account.module#AccountPageModule' },
 
   { path: 'pages/faq', loadChildren: './pages/faq/faq.module#FaqPageModule' },

@@ -14,6 +14,7 @@
  npm run test
  
 == Run ==
+ alias ic="ionic cordova "
 
  ic platform rm browser
  ic platform add browser
