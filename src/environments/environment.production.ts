@@ -9,5 +9,6 @@ export const environment = {
   accountPath: 'https://manager.piousbox.com/api/my/account',
 
   fb_app_id: '3016949928380365',
+  api_domain: 'https://manager.piousbox.com',
 };
 

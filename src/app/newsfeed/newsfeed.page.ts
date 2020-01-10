@@ -21,7 +21,6 @@ export class NewsfeedPage implements OnInit {
 
   constructor(
     private appService: AppService,
-    // private C: C,
     private nativeStorage: NativeStorage,
     private router: Router,
     public httpClient: HttpClient, 

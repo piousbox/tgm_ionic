@@ -7,6 +7,7 @@ export const environment = {
   citiesPath: 'https://manager.piousbox.com/api/cities',
 
   fb_app_id: '3016949928380365',
+  api_domain: 'http://localhost:3000',
 };
 
 

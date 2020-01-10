@@ -5,16 +5,18 @@ import { Router, NavigationEnd } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
+import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
+
 import { C } from '../const';
 
 @Component({
   selector: 'app-newsfeed',
   templateUrl: './homefeed.page.html',
+  styleUrls: ['./homefeed.page.scss'],
 })
 export class HomefeedPage implements OnInit {
-  currentUser: any = null;
   newsitems: any = [];
   mainTitle: string = '';
 
@@ -28,28 +30,15 @@ export class HomefeedPage implements OnInit {
     appService.setTitle('Homefeed');
     this.mainTitle = 'Homefeed';
 
-    this.nativeStorage.getItem('current_user').then(data => {
-      this.currentUser = data;
-      if ('facebook' == data.type) {
-        const params = new HttpParams().set('accessToken', data.accessToken)
-        const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
-        answer.subscribe(data => {
-          if (data['newsitems']) {
-            this.newsitems = data['newsitems'];
-          }
-        }, async error => {
-          console.log('+++ error from m3 1-:', JSON.stringify(error))
-          const toast = await this.toastController.create({
-            message: 'The token has expired? Please login.',
-            duration: 2000
-          });
-          toast.present();
-        });
+    const answer = this.httpClient.get(ApiRouter.homefeed)
+    answer.subscribe(data => {
+      if (data['newsitems']) {
+        this.newsitems = data['newsitems'];
       }
     }, async error => {
-      console.log('+++ newsfeed doesnt have current_user:', error);
+      console.log('+++ homefeed 1:', JSON.stringify(error))
       const toast = await this.toastController.create({
-        message: 'You are not logged in - please login.',
+        message: error,
         duration: 2000
       });
       toast.present();
@@ -72,29 +61,15 @@ export class HomefeedPage implements OnInit {
   }
 
   render () {
-    this.nativeStorage.getItem('current_user').then(data => {
-      this.currentUser = data;
-      if ('facebook' == data.type) {
-        const params = new HttpParams().set('accessToken', data.accessToken)
-        const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
-        answer.subscribe(data => {
-          if (data['newsitems']) {
-            this.newsitems = data['newsitems'];
-          }
-        }, async error => {
-          console.log('+++ error from m3 1-:', JSON.stringify(error))
-          const toast = await this.toastController.create({
-            message: 'The token has expired? Please login.',
-            duration: 2000
-          });
-          toast.present();
-        });
+    const answer = this.httpClient.get(ApiRouter.homefeed)
+    answer.subscribe(data => {
+      if (data['newsitems']) {
+        this.newsitems = data['newsitems'];
       }
     }, async error => {
-      console.log('+++ newsfeed doesnt have current_user:', error);
+      console.log('+++ error from m3 -2:', JSON.stringify(error))
       const toast = await this.toastController.create({
-        message: 'You are not logged in - please login.',
-        duration: 2000
+        message: error, duration: 2000
       });
       toast.present();
     });
