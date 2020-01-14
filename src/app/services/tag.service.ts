@@ -9,7 +9,6 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class TagService {
-
   private _url = configuration.api || '';
   constructor(private _http: HttpClient) { }
 
