@@ -22,7 +22,13 @@ export class CityService {
 
   getCities( ids: string[]): Observable<City[]> {
     if (ids.length === 0) return of([]);
-    return this._http.get(`${this._url}/cities.json`).pipe( map( (results: any[]) => results.map( js => City.fromJson(js))))
+    const s = new Set(ids);
+    return this._http.get(`${this._url}/cities.json`).pipe( map( (results: any[]) => 
+      results.map( js => City.fromJson(js)).filter( city => s.has(city.id))))
+  }
+
+  getAllCities(): Observable<City[]> {
+    return this._http.get(`${this._url}/cities.json`).pipe( map( (results: any[]) => results.map( obj => City.fromJson(obj))))
   }
 
 }
