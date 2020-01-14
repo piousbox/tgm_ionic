@@ -1,7 +1,20 @@
 
-== Develop ==
+= Setup =
 
- https://s3.amazonaws.com/tgm-videos/MVI_0061_out.webm
+Add tgm.mac as a domain in your hosts file, on Windows XP it is this file: c:\WINDOWS\system32\drivers\etc\hosts
+
+ 127.0.0.1 tgm.mac
+ ::1 tgm.mac
+
+Both lines, the ipv4 and ipv6 definitions. should be added.
+
+Run the application:
+
+ ionic cordova run browser --livereload --address tgm.mac --ssl --port 8100
+
+Then go to https://tgm.mac:8100 and click "login" in the sidemenu, you shuold be able to see a text gallery in the newsfeed.
+
+== Develop ==
 
  router - update version? 7.2.14
 
@@ -19,9 +32,9 @@
  ic platform rm browser
  ic platform add browser
  ic build browser
- ic run browser --livereload --address tgm.mac --port=8100
- ng run app:ionic-cordova-serve:production --host=0.0.0.0 --port=8100 --platform=browser
- ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8100 --platform=browser
+ ic run browser --livereload --address tgm.mac --ssl --port 8100
+ # ng run app:ionic-cordova-serve:production --host=0.0.0.0 --port=8100 --platform=browser
+ # ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8100 --platform=browser
  
  ic platform rm android
  ic platform add android
@@ -37,9 +50,6 @@
  adb logcat
  chrome://inspect/#devices
  
- ic run ios
- ic run browser --livereload
- 
 == Build iOS ==
 From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
 
@@ -53,7 +63,6 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
 
  ic run ios -l --address=0.0.0.0
  ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8101 --platform=ios
-
 
  ## ionic cordova prepare ios
  ./node_modules/.bin/ng run app:ionic-cordova-build:staging --platform=ios
@@ -73,18 +82,6 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
  ic platform add browser
  ic build browser --prod
 
--=----- 
-IMPORTANT NOTES:
- - Congratulations! Your certificate and chain have been saved at:
-   /etc/letsencrypt/live/tgm.piousbox.com/fullchain.pem
-   Your key file has been saved at:
-   /etc/letsencrypt/live/tgm.piousbox.com/privkey.pem
-   Your cert will expire on 2020-01-28. To obtain a new or tweaked
-   version of this certificate in the future, simply run certbot
-   again. To non-interactively renew *all* of your certificates, run
-   "certbot renew"
-   
- keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore | openssl sha1 -binary | openssl base64
 
-nginx does not work, use apache locally
+
 
