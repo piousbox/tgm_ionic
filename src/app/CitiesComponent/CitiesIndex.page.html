@@ -3,7 +3,7 @@
   Cities index
   <ul>
     <li *ngFor="let city of cities">
-      <ion-item button (click)="navigate('/en/cities/travel-to/Chicago')">
+      <ion-item button (click)="navigate('/en/cities/travel-to/' + city.id)">
       <ion-icon slot="start" name='person'></ion-icon><ion-label>{{city.name}}</ion-label></ion-item>
     </li>
   </ul>
