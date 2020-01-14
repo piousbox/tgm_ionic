@@ -6,8 +6,6 @@ import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
-import { CityService } from '../services/city.service';
-import { City } from '../classes/city';
 
 @Component({
   selector: 'app-cities-show',
@@ -15,7 +13,6 @@ import { City } from '../classes/city';
 })
 export class CitiesShowPage implements OnInit {
   cityName: any = '<No City>';
-  cities: City[];
 
   constructor(
     private nativeStorage: NativeStorage,
@@ -23,10 +20,7 @@ export class CitiesShowPage implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     public httpClient: HttpClient,
-    private _cityService: CityService
-  ) {
-    this._cityService.getAllCities().subscribe( cities => this.cities = cities)
-  }
+  ) { }
   
   ngOnInit() {
     // this.cityName = this.route.snapshot.paramMap.get('city_name');
