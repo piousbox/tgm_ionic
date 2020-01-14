@@ -1,8 +1,6 @@
 
 == Develop ==
 
- https://s3.amazonaws.com/tgm-videos/MVI_0061_out.webm
-
  router - update version? 7.2.14
 
 == Todo ==
