@@ -1,4 +1,15 @@
 
+= Setup =
+
+Here are setup instructions:
+* download apache from https://www.apachelounge.com/download/ and install it
+* Add tgm.mac as a domain in your hosts file, on Windows XP it is this file: c:\WINDOWS\system32\drivers\etc\hosts
+ 127.0.0.1 tgm.mac
+* The ssl certificate and key are generated and available at etc/tgm.mac.crt, etc/tgm.mac.key .
+* use this as an example virtual site definition, proxying to port 8100. You can change the location of the certificate/key, and save your own virtual site definition in this repo so you don't lose it.
+ https://github.com/piousbox/tgm_ionic/blob/0.1.1/etc/httpd/sites-enabled/ssl-tgm-ionic-2.conf 
+* run the application on port 8100.
+
 == Develop ==
 
  https://s3.amazonaws.com/tgm-videos/MVI_0061_out.webm
