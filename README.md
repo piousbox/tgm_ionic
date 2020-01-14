@@ -1,4 +1,4 @@
-# Setup
+
 = Setup =
 
 Add tgm.mac as a domain in your hosts file, on Windows XP it is this file: c:\WINDOWS\system32\drivers\etc\hosts
