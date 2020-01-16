@@ -6,7 +6,7 @@ export class City {
     cityName: string = "";
     x: number = null;
     y: number = null;
-    photoPath: string = "";
+    photo: string = "";
 
     static fromJson(obj: object): City {
         const city = new City;
@@ -15,7 +15,7 @@ export class City {
         city.cityName = obj['cityname'] || "";
         city.x = obj['x'] || null;
         city.y = obj['y'] || null;
-        city.photoPath = obj['photo'] || "";
+        city.photo = obj['photo'] || "";
         return city;
     }
 
@@ -26,7 +26,7 @@ export class City {
             cityname: this.cityName || '',
             x: this.x || null,
             y: this.y || null,
-            photo: this.photoPath || ''
+            photo: this.photo || ''
         }
     }
 }

@@ -3,13 +3,13 @@ import { City } from '../classes/city';
 import { HttpClient } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { configuration } from '../configuration';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CityService {
-  private _url = configuration.api || '';
+  private _url = environment.api;
 
   constructor(private _http: HttpClient) { }
 
@@ -18,13 +18,6 @@ export class CityService {
     return this._http.get(`${this._url}/cities.json`).pipe(map( (results: any[]) => {
       return results.filter( obj => City.fromJson(obj).id === id)[0] || null
     }))
-  }
-
-  getCities( ids: string[]): Observable<City[]> {
-    if (ids.length === 0) return of([]);
-    const s = new Set(ids);
-    return this._http.get(`${this._url}/cities.json`).pipe( map( (results: any[]) => 
-      results.map( js => City.fromJson(js)).filter( city => s.has(city.id))))
   }
 
   getAllCities(): Observable<City[]> {
