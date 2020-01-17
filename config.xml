@@ -100,5 +100,5 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^4.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <allow-navigation href="http://tgm.piousbox.com:8100" sessionid="3aba4f8a" />
-    <allow-navigation href="https://tgm.mac:8100" sessionid="c23b5496" />
+    <allow-navigation href="https://tgm.mac:8100" sessionid="97a8f356" />
 </widget>

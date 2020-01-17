@@ -27,7 +27,7 @@ export class CitiesIndexPage implements OnInit {
         this.cities = data;
       }
     }, async error => {
-      console.log('+++ citiesindex 1:', JSON.stringify(error))
+      console.log('+++ citiesindex 1:', error)
       const toast = await this.toastController.create({
         message: error,
         duration: 2000
@@ -36,31 +36,12 @@ export class CitiesIndexPage implements OnInit {
     });
   }
     
-render(){
-    const answer = this.httpClient.get(ApiRouter.citiesindex)
-    answer.subscribe(data => {
-      if (data['newsitems']) {
-        this.cities = data['newsitems'];
-      }
-    }, async error => {
-      console.log('+++ citiesindex 1:', JSON.stringify(error))
-      const toast = await this.toastController.create({
-        message: error,
-        duration: 2000
-      });
-      toast.present();
-    });
-}    
+  
   navigate(where) {
     this.router.navigate([where]);
   }
     
   ngOnInit() {
-      this.appService.currentMessage.subscribe( message => {
-      console.log('+++ new message:', message)
-      if (message == C.didLogin) {
-        this.render();
-      }
-    });
+    
   }
 }
