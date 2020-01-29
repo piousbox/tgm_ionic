@@ -6,6 +6,8 @@ import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
+import { CityService } from '../services/city.service';
+import { City } from '../classes/city';
 
 
 @Component({
@@ -13,7 +15,9 @@ import { environment } from '../../environments/environment';
   templateUrl: './CitiesIndex.page.html',
 })
 export class CitiesIndexPage implements OnInit {
-    cities: any = [];
+
+  cities: City[];
+
   constructor(
     private nativeStorage: NativeStorage,
     private appService: AppService,
