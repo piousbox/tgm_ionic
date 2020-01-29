@@ -33,8 +33,8 @@ Then go to https://tgm.mac:8100 and click "login" in the sidemenu, you shuold be
  ic platform add browser
  ic build browser
  ic run browser --livereload --address tgm.mac --ssl --port 8100
- # ng run app:ionic-cordova-serve:production --host=0.0.0.0 --port=8100 --platform=browser
- # ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8100 --platform=browser
+ ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=tgm.mac --port=8100 --ssl --platform=browser
+ ./node_modules/.bin/ng run app:ionic-cordova-serve:development --host=tgm.mac --port=8100 --ssl --platform=browser
  
  ic platform rm android
  ic platform add android
