@@ -13,7 +13,7 @@ import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
-import { AppRouter } from './app-router';
+import { ApiRouter, AppRouter } from './app-router';
 import { AppService } from './app-service';
 import { C } from './const';
 
@@ -55,7 +55,6 @@ export class AppComponent implements OnInit {
     public loadingController: LoadingController,
     public toastController: ToastController,
   ) {
-    // console.log('+++ app.component constructor', environment);
     this.render = this.render.bind( this );
 
     this.initializeApp();
@@ -74,31 +73,14 @@ export class AppComponent implements OnInit {
 
     this.platform.ready().then(() => {
       this.nativeStorage.getItem('current_user').then(data => {
-        console.log('+++ got 3 data:', JSON.stringify(data));
-
         this.currentUser = data;
         if (data && Object.keys(data).length > 0) {
           this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
         }
-        
-
-        /* if ('facebook' == data.type) {
-          const params = new HttpParams().set('accessToken', data.accessToken)
-          const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
-          answer.subscribe(data => {
-            if (data['newsitems']) {
-              this.newsitems = data['newsitems'];
-            }
-          }, error => {
-            console.log('+++ error from m3 aa:', error)
-          });
-        } */
-
       }, error => {
         console.log('+++ newsfeed doesnt have current_user:', error);
       });
     }); 
-
   }
 
   navigate(where) {
@@ -124,30 +106,29 @@ export class AppComponent implements OnInit {
   }
 
   async doFacebookLogin () {
-    this.fb.login(['public_profile', 'email']).then((res: any) => { // res: FacebookLoginResponse      
+    const data = await this.fb.login(['public_profile', 'email']).then(async (res: any) => { // res: FacebookLoginResponse      
       const data = res.authResponse
-      logg('+++ Logged into Facebook 22', data)
-
+      // console.log('+++ Did login to facebook:', data)
       this.currentUser = data;
       this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
-
-      this.nativeStorage.setItem('current_user', {
-        accessToken: data.accessToken,
-        signedRequest: data.signedRequest,
-        userID: data.userID,
-        type: 'facebook',
-      }).then(() => {
-        this.appService.changeMessage(C.didLogin);
-        this.router.navigate([ AppRouter.rootPath ])
-
-      }, (error) => {
-        console.log('+++ error:', error)
-      })
-    }).then(this.render).catch( async e => {
-      console.log('Error logging into Facebook', e)
-      const toast = await this.toastController.create({ message: 'Could not login.', duration: 2000 });
-      toast.present();
+      return data;
     });
+    const answer = await this.httpClient.get(ApiRouter.longTermToken({ shortTermToken: data.accessToken })).toPromise();
+    const thisCurrentUser = {
+      accessToken: data.accessToken,
+      signedRequest: data.signedRequest,
+      longTermToken: answer['long_term_token'],
+      userID: data.userID,
+      type: 'facebook',
+    };
+    // console.log('+++ thisCurrentUser:', thisCurrentUser);
+    this.nativeStorage.setItem('current_user', thisCurrentUser).then(() => {
+      this.appService.changeMessage(C.didLogin);
+      this.router.navigate([ AppRouter.rootPath ])
+    }, (error) => {
+      console.log('+++ error:', error)
+    });
+    this.render();
   }
 
   async doFacebookLogout () {
