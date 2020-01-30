@@ -9,7 +9,7 @@ export const environment = {
 
   fb_app_id: '3016949928380365',
   api_domain: 'http://localhost:3000',
-  api: "https://manager.piousbox.com/api/"
+
 };
 
 

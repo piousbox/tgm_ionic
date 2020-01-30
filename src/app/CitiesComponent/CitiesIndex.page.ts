@@ -7,8 +7,6 @@ import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 import { CityService } from '../services/city.service';
-import { City } from '../classes/city';
-
 
 @Component({
   selector: 'app-cities-index',
@@ -16,7 +14,7 @@ import { City } from '../classes/city';
 })
 export class CitiesIndexPage implements OnInit {
 
-  cities: City[];
+  cities: any = [];
 
   constructor(
     private nativeStorage: NativeStorage,
@@ -40,12 +38,10 @@ export class CitiesIndexPage implements OnInit {
     });
   }
     
-  
   navigate(where) {
     this.router.navigate([where]);
   }
     
   ngOnInit() {
-    
   }
 }
