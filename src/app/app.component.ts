@@ -128,10 +128,7 @@ export class AppComponent implements OnInit {
     }, (error) => {
       console.log('+++ error:', error)
     });
-    (new Promise()).then(this.render).catch( async e => {
-      const toast = await this.toastController.create({ message: 'Could not login.', duration: 2000 });
-      toast.present();
-    });
+    this.render();
   }
 
   async doFacebookLogout () {

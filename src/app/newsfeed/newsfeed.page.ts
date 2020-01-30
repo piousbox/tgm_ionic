@@ -32,10 +32,11 @@ export class NewsfeedPage implements OnInit {
     this.nativeStorage.getItem('current_user').then(async data => {
       this.currentUser = data;
       if ('facebook' == data.type) {
+        let params = new HttpParams();
         if (data.longTermToken) {
-          const params = new HttpParams().set('accessToken', data.longTermToken)
+          params = new HttpParams().set('accessToken', data.longTermToken);
         } else if (data.accessToken) {
-          const params = new HttpParams().set('accessToken', data.accessToken)
+          params = new HttpParams().set('accessToken', data.accessToken);
         } else {
           throw 'neither longTermToken nor accessToken';
         }
