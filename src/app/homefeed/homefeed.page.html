@@ -6,7 +6,7 @@
 </div>
 
 <ion-content *ngIf='newsitems' >
-  <ion-list lines="none" >
+  <ion-list lines="none" class="newsfeed-list" >
     <ion-item class='item-borderless' *ngFor="let n of newsitems">
 
       <div padding class='flex-scroll-container' *ngIf="n.photos" >
@@ -18,7 +18,7 @@
           <ion-item class='flex-scroll-inner' *ngFor="let ph of n.photos">
 
             <ion-card padding class='medium-photo'>
-              <img [src]="ph.small_url" />
+              <img [src]="ph.original_url" />
             </ion-card>
 
           </ion-item>
@@ -33,6 +33,15 @@
           </ion-card>
           <ion-card padding class='medium-video'>
             <video src="{{ n.url }}" width="100%" controls ></video>
+          </ion-card>
+        </ion-list>
+      </div>
+
+      <div padding class='flex-scroll-container' *ngIf="n.item_type=='report'" >
+        <ion-list lines="none" class='flex-scroll' >
+          <ion-card padding class='medium-cover'>
+            <p><ion-icon slot="start" name='today' ></ion-icon> &nbsp; {{ n.name }}</p>
+            <p>{{ n.created_at }}</p>
           </ion-card>
         </ion-list>
       </div>

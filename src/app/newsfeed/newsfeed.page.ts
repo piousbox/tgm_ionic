@@ -40,7 +40,7 @@ export class NewsfeedPage implements OnInit {
         } else {
           throw 'neither longTermToken nor accessToken';
         }
-        const answer = await this.httpClient.get(environment.newsitemsPath, { params: params }).toPromise();
+        const answer = await this.httpClient.get(ApiRouter.newsitemsPath, { params: params }).toPromise();
         this.newsitems = answer['newsitems'];
       } else {
         throw "Only fb login is supported (missing)";

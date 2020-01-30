@@ -18,6 +18,19 @@ Then go to https://tgm.mac:8100 and click "login" in the sidemenu, you shuold be
 
  router - update version? 7.2.14
 
+=== Environment ===
+We're using environment `development` if you have backend running on localhost:3001.
+
+```
+./node_modules/.bin/ng run app:ionic-cordova-serve:development --host=tgm.mac --port=8100 --ssl --platform=browser
+```
+
+Otherwise, the environment is `staging` - that's your local environment, connected to a remote backend.
+
+```
+./node_modules/.bin/ng run app:ionic-cordova-serve:staging     --host=tgm.mac --port=8100 --ssl --platform=browser
+```
+
 == Todo ==
 
 * lets deploy on iOS
@@ -33,7 +46,7 @@ Then go to https://tgm.mac:8100 and click "login" in the sidemenu, you shuold be
  ic platform add browser
  ic build browser
  ic run browser --livereload --address tgm.mac --ssl --port 8100
- ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=tgm.mac --port=8100 --ssl --platform=browser
+ ./node_modules/.bin/ng run app:ionic-cordova-serve:staging     --host=tgm.mac --port=8100 --ssl --platform=browser
  ./node_modules/.bin/ng run app:ionic-cordova-serve:development --host=tgm.mac --port=8100 --ssl --platform=browser
  
  ic platform rm android

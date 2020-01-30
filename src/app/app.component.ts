@@ -108,7 +108,6 @@ export class AppComponent implements OnInit {
   async doFacebookLogin () {
     const data = await this.fb.login(['public_profile', 'email']).then(async (res: any) => { // res: FacebookLoginResponse      
       const data = res.authResponse
-      // console.log('+++ Did login to facebook:', data)
       this.currentUser = data;
       this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
       return data;
@@ -121,14 +120,13 @@ export class AppComponent implements OnInit {
       userID: data.userID,
       type: 'facebook',
     };
-    // console.log('+++ thisCurrentUser:', thisCurrentUser);
-    this.nativeStorage.setItem('current_user', thisCurrentUser).then(() => {
+    this.nativeStorage.setItem('current_user', JSON.stringify(thisCurrentUser)).then(() => {
       this.appService.changeMessage(C.didLogin);
       this.router.navigate([ AppRouter.rootPath ])
     }, (error) => {
       console.log('+++ error:', error)
     });
-    this.render();
+    // this.render();
   }
 
   async doFacebookLogout () {
@@ -150,8 +148,11 @@ export class AppComponent implements OnInit {
   }
 
   render () {
-    console.log('+++ app.component render()', this);
-    this.nativeStorage.getItem('current_user').then( data => {
+    logg('app.component#render');
+
+    this.mainTitle = this.appService.title;
+
+    this.nativeStorage.getItem('current_user').then(data => {
       this.currentUser    = data;
       this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
     }, err => { 

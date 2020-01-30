@@ -9,7 +9,7 @@ import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 
-import { C } from '../const';
+import { C, logg } from '../const';
 
 @Component({
   selector: 'app-newsfeed',
@@ -18,7 +18,7 @@ import { C } from '../const';
 })
 export class HomefeedPage implements OnInit {
   newsitems: any = [];
-  mainTitle: string = '';
+  mainTitle: string = 'Home';
 
   constructor(
     private appService: AppService,
@@ -27,8 +27,8 @@ export class HomefeedPage implements OnInit {
     public httpClient: HttpClient, 
     public toastController: ToastController,
   ) {
-    appService.setTitle('Homefeed');
-    this.mainTitle = 'Homefeed';
+    logg('homefeed#constructor');
+    appService.setTitle(this.mainTitle);
 
     const answer = this.httpClient.get(ApiRouter.homefeed)
     answer.subscribe(data => {
@@ -53,7 +53,6 @@ export class HomefeedPage implements OnInit {
 
   ngOnInit () {
     this.appService.currentMessage.subscribe( message => {
-      console.log('+++ new message:', message)
       if (message == C.didLogin) {
         this.render();
       }
@@ -63,6 +62,7 @@ export class HomefeedPage implements OnInit {
   render () {
     const answer = this.httpClient.get(ApiRouter.homefeed)
     answer.subscribe(data => {
+      logg(answer, 'answer');
       if (data['newsitems']) {
         this.newsitems = data['newsitems'];
       }
@@ -73,10 +73,6 @@ export class HomefeedPage implements OnInit {
       });
       toast.present();
     });
-  }
-
-  ionViewDidLoad () {
-    console.log('+++ homefeed ionViewDidLoad');
   }
 
 }
