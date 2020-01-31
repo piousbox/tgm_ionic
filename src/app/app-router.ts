@@ -2,7 +2,7 @@ import { environment } from '../environments/environment';
 
 export class AppRouter {
   static homefeedPath = 'homefeed';
-  // static rootPath = 'homefeed';
+  static rootPath = 'homefeed';
   static reportPath = '/en/reports/show/:reportname';
   static reportLink = (r) => `/en/reports/show/${r}`;
 }
