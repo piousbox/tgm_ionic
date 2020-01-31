@@ -85,7 +85,7 @@ export class AppComponent implements OnInit {
 
   navigate(where) {
     this.ngZone.run(() => {
-      // console.log('+++ navigating:', where);
+      console.log('+++ navigating:', where);
 
       if ('string' === typeof where) {
         this.mainTitle = where;
@@ -107,10 +107,13 @@ export class AppComponent implements OnInit {
   initializeApp() {
     this.platform.ready().then(() => {
       this.nativeStorage.getItem('current_user').then( data => {
-        this.router.navigate([ AppRouter.rootPath ]);
-        this.splashScreen.hide();
+        console.log('+++ no navigating here!');
+        
+        // this.router.navigate([ AppRouter.rootPath ]);
+        // this.splashScreen.hide();
       }, err => {
         // this.router.navigate([ AppRouter.loginPath ]);
+        console.log('+++ impermissible error!');
         this.router.navigate([ AppRouter.rootPath ]);
         this.splashScreen.hide();
       })

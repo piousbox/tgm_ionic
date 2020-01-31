@@ -18,6 +18,8 @@ Then go to https://tgm.mac:8100 and click "login" in the sidemenu, you shuold be
 
  router - update version? 7.2.14
 
+ ionic g page pages/dashboard
+ 
 === Environment ===
 We're using environment `development` if you have backend running on localhost:3001.
 
