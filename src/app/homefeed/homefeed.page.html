@@ -5,51 +5,50 @@
   <br /><br /><br />
 </div>
 
-<ion-content *ngIf='newsitems' >
-  <ion-list lines="none" class="newsfeed-list" >
-    <ion-item class='item-borderless' *ngFor="let n of newsitems">
+<div class='container'>
+  <div class="a-1" *ngFor="let n of newsitems">
 
-      <div padding class='flex-scroll-container' *ngIf="n.item_type=='gallery'" >
-        <ion-list lines="none" class='flex-scroll' >
-          <ion-card padding class='medium-cover'>
-            <p><ion-icon slot="start" name='camera'></ion-icon> &nbsp; {{ n.name }} ({{ n.photos.length }})</p>
-            <p>{{ n.created_at }}</p>
-          </ion-card>
-          <ion-item class='flex-scroll-inner' *ngFor="let ph of n.photos">
-
-            <ion-card padding class='medium-photo'>
-              <img [src]="ph.original_url" />
-            </ion-card>
-
-          </ion-item>
-        </ion-list>
+    <div class='row' *ngIf="n.item_type=='gallery'" >
+      <div class='title-card'>
+        <div class='title-card-inner'>
+          <h1><ion-icon slot="start" name='camera'></ion-icon> &nbsp; {{ n.name }} ({{ n.photos.length }})</h1>
+          <p>{{ n.created_at.substring(0,10) }}</p>
+        </div>
       </div>
-
-      <div padding class='flex-scroll-container' *ngIf="n.item_type=='video'" >
-        <ion-list lines="none" class='flex-scroll' >
-          <ion-card padding class='medium-cover'>
-            <p [routerLink]="['/report']" >
-              <ion-icon slot="start" name='videocam'></ion-icon> &nbsp; 
-              <ion-button  >{{ n.name }}</ion-button>
-            </p>
-            <p>{{ n.created_at }}</p>
-          </ion-card>
-          <ion-card padding class='medium-video'>
-            <video src="{{ n.url }}" width="100%" controls ></video>
-          </ion-card>
-        </ion-list>
+      <div class='card' *ngFor="let ph of n.photos | slice:0:3">
+        <div class='card-inner'>
+          <div class='img'
+            [ngStyle]="{ background: '#cccccc url('+ph.large_url+')', 
+              'background-repeat': 'no-repeat', 'background-position': 'center',
+              'background-size': 'contain' }" 
+          >&nbsp;</div>
+        </div>
       </div>
+    </div>
 
-      <div padding class='flex-scroll-container' *ngIf="n.item_type=='report'" >
-        <ion-list lines="none" class='flex-scroll' >
-          <ion-card padding class='medium-cover'>
-            <a [routerLink]="['/en/reports/show/'+n.reportname]" ><ion-icon slot="start" name='today' ></ion-icon> &nbsp; {{ n.name }}</a>
-            <p>{{ n.created_at.substring(0,10) }}</p>
-
-          </ion-card>
-        </ion-list>
+    <div class='row-newsitems-video' *ngIf="n.item_type=='video'" >
+      <div class='title-card'>
+        <div class='title-card-inner'>
+          <h1><ion-icon slot="start" name='videocam'></ion-icon> &nbsp; {{ n.name }}</h1>
+          <p><i>{{ n.created_at.substring(0,10) }}</i></p>
+        </div>
       </div>
+      <div class='card'>
+        <div class='card-inner'>
+          <!-- <video src="{{ n.url }}" width="100%" controls ></video> -->
+        </div>
+      </div>
+    </div>
 
-    </ion-item>
-  </ion-list>  
-</ion-content>
+    <div class='row' *ngIf="n.item_type=='report'" >
+      <div class='title-card'>
+        <div class='title-card-inner'>
+          <h1><ion-icon slot="start" name='today' ></ion-icon> &nbsp; <a [routerLink]="['/en/reports/show/'+n.reportname]" >{{ n.name }}</a></h1>
+          <p>{{ n.created_at.substring(0,10) }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

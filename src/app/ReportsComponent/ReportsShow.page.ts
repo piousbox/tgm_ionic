@@ -11,6 +11,7 @@ import { C, logg } from '../const';
 
 @Component({
   selector: 'app-reports-show',
+  styleUrls: ['./ReportsShow.page.scss'],
   templateUrl: './ReportsShow.page.html',
 })
 export class ReportsShowPage implements OnInit {
