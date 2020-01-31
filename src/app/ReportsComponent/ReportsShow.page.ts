@@ -4,7 +4,7 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
-import { AppRouter, ApiRouter, navigate } from '../app-router';
+import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 import { C, logg } from '../const';
@@ -16,7 +16,7 @@ import { C, logg } from '../const';
 export class ReportsShowPage implements OnInit {
   report: any = {};
 
-  async constructor(
+  constructor(
     private nativeStorage: NativeStorage,
     private appService: AppService,
     private route: ActivatedRoute,
@@ -34,7 +34,7 @@ export class ReportsShowPage implements OnInit {
       let p2 = new HttpParams().set('accessToken', data.longTermToken);
       const answer = await this.httpClient.get(ApiRouter.report({ reportname: reportname }), { params: p2 }).toPromise();
       logg(answer, 'answer');
-      this.report = answer.report;
+      this.report = answer['report'];
     });
   }
   

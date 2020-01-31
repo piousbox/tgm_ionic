@@ -5,7 +5,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
-import { AppRouter, ApiRouter, navigate } from '../app-router';
+import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 import { C } from '../const';
@@ -41,7 +41,7 @@ export class NewsfeedPage implements OnInit {
         } else {
           throw 'neither longTermToken nor accessToken';
         }
-        const answer = await this.httpClient.get(ApiRouter.newsitemsPath, { params: params }).toPromise();
+        const answer = await this.httpClient.get(ApiRouter.newsitems, { params: params }).toPromise();
         this.newsitems = answer['newsitems'];
       } else {
         throw "Only fb login is supported (missing)";
@@ -76,7 +76,7 @@ export class NewsfeedPage implements OnInit {
       this.currentUser = data;
       if ('facebook' == data.type) {
         const params = new HttpParams().set('accessToken', data.accessToken)
-        const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
+        const answer = this.httpClient.get(ApiRouter.newsitems, { params: params })
         answer.subscribe(data => {
           if (data['newsitems']) {
             this.newsitems = data['newsitems'];

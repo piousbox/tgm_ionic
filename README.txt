@@ -45,10 +45,15 @@ Otherwise, the environment is `staging` - that's your local environment, connect
  ic platform rm browser
  ic platform add browser
  ic build browser
+
  ic run browser --livereload --address tgm.mac --ssl --port 8100
+ # frontend devs should do this:
  ./node_modules/.bin/ng run app:ionic-cordova-serve:staging     --host=tgm.mac --port=8100 --ssl --platform=browser
+ # backend devs should do this:
  ./node_modules/.bin/ng run app:ionic-cordova-serve:development --host=tgm.mac --port=8100 --ssl --platform=browser
- 
+ # do this if you are front/back and have local apache proxy:
+ ./node_modules/.bin/ng run app:ionic-cordova-serve:development --host=0.0.0.0 --port=8100 --platform=browser
+
  ic platform rm android
  ic platform add android
  # ic plugin remove cordova-plugin-googleplus

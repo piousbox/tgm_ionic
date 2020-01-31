@@ -98,7 +98,6 @@ export class AppComponent implements OnInit {
           here = '/reports';
           break;
         } default: {
-          raise "this is not allowed in navigation";
         } }
         this.router.navigate([here]);
       }
