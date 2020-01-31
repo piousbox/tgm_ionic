@@ -85,9 +85,23 @@ export class AppComponent implements OnInit {
 
   navigate(where) {
     this.ngZone.run(() => {
-      console.log('+++ navigating:', where);
-      this.mainTitle = where;
-      this.router.navigate([where]);
+      // console.log('+++ navigating:', where);
+
+      if ('string' === typeof where) {
+        this.mainTitle = where;
+        this.router.navigate([where]);
+      } else if ('object' === typeof where) {
+        this.mainTitle = where['kind'];
+        let here = '';
+        switch (where['kind']) {
+        case 'report': {
+          here = '/reports';
+          break;
+        } default: {
+          raise "this is not allowed in navigation";
+        } }
+        this.router.navigate([here]);
+      }
     })
   }
 

@@ -5,7 +5,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
-import { AppRouter, ApiRouter } from '../app-router';
+import { AppRouter, ApiRouter, navigate } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 
@@ -30,7 +30,7 @@ export class HomefeedPage implements OnInit {
     logg('homefeed#constructor');
     appService.setTitle(this.mainTitle);
 
-    const answer = this.httpClient.get(ApiRouter.homefeed)
+    const answer = this.httpClient.get(ApiRouter.homefeed);
     answer.subscribe(data => {
       if (data['newsitems']) {
         this.newsitems = data['newsitems'];

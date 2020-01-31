@@ -9,7 +9,7 @@
   <ion-list lines="none" class="newsfeed-list" >
     <ion-item class='item-borderless' *ngFor="let n of newsitems">
 
-      <div padding class='flex-scroll-container' *ngIf="n.photos" >
+      <div padding class='flex-scroll-container' *ngIf="n.item_type=='gallery'" >
         <ion-list lines="none" class='flex-scroll' >
           <ion-card padding class='medium-cover'>
             <p><ion-icon slot="start" name='camera'></ion-icon> &nbsp; {{ n.name }} ({{ n.photos.length }})</p>
@@ -28,7 +28,10 @@
       <div padding class='flex-scroll-container' *ngIf="n.item_type=='video'" >
         <ion-list lines="none" class='flex-scroll' >
           <ion-card padding class='medium-cover'>
-            <p><ion-icon slot="start" name='videocam'></ion-icon> &nbsp; {{ n.name }}</p>
+            <p [routerLink]="['/report']" >
+              <ion-icon slot="start" name='videocam'></ion-icon> &nbsp; 
+              <ion-button  >{{ n.name }}</ion-button>
+            </p>
             <p>{{ n.created_at }}</p>
           </ion-card>
           <ion-card padding class='medium-video'>
@@ -40,8 +43,9 @@
       <div padding class='flex-scroll-container' *ngIf="n.item_type=='report'" >
         <ion-list lines="none" class='flex-scroll' >
           <ion-card padding class='medium-cover'>
-            <p><ion-icon slot="start" name='today' ></ion-icon> &nbsp; {{ n.name }}</p>
-            <p>{{ n.created_at }}</p>
+            <a [routerLink]="['/en/reports/show/'+n.reportname]" ><ion-icon slot="start" name='today' ></ion-icon> &nbsp; {{ n.name }}</a>
+            <p>{{ n.created_at.substring(0,10) }}</p>
+
           </ion-card>
         </ion-list>
       </div>

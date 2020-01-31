@@ -5,6 +5,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
+import { AppRouter, ApiRouter, navigate } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 import { C } from '../const';

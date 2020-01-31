@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class AppService {
 
-  title: string = 'Initial Title';
+  title: string = 'homefeed';
 
   constructor() { }
 
