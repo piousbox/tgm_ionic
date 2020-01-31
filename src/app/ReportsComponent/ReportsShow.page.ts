@@ -35,7 +35,7 @@ export class ReportsShowPage implements OnInit {
       const answer = await this.httpClient.get(ApiRouter.report({ reportname: reportname }), { params: p2 }).toPromise();
       logg(answer, 'answer');
       this.report = answer['report'];
-    });
+    }).catch(e => logg(e, 'eee 1'));
   }
   
   ngOnInit() {

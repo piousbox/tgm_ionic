@@ -8,7 +8,7 @@ import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
-import { C } from '../const';
+import { C, logg } from '../const';
 
 @Component({
   selector: 'app-newsfeed',
@@ -27,10 +27,14 @@ export class NewsfeedPage implements OnInit {
     public httpClient: HttpClient, 
     public toastController: ToastController,
   ) {
+    logg('NewsfeedPage#constructor');
+
     appService.setTitle('Newsfeed');
     this.mainTitle = 'Newsfeed';
 
-    this.nativeStorage.getItem('current_user').then(async data => {
+    this.nativeStorage.getItem('current_user').then(r=>JSON.parse(r)).then(async data => {
+      logg(data, 'data 6');
+
       this.currentUser = data;
       if ('facebook' == data.type) {
         let params = new HttpParams();
@@ -72,7 +76,11 @@ export class NewsfeedPage implements OnInit {
   }
 
   render () {
-    this.nativeStorage.getItem('current_user').then(data => {
+    logg('newsfeed.page#render');
+
+    this.nativeStorage.getItem('current_user').then(a=>JSON.parse(a)).then(data => {
+      logg(data, 'current_user 5');
+
       this.currentUser = data;
       if ('facebook' == data.type) {
         const params = new HttpParams().set('accessToken', data.accessToken)

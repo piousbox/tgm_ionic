@@ -19,7 +19,7 @@ Then go to https://tgm.mac:8100 and click "login" in the sidemenu, you shuold be
  router - update version? 7.2.14
 
  ionic g page pages/dashboard
- 
+
 === Environment ===
 We're using environment `development` if you have backend running on localhost:3001.
 
@@ -33,10 +33,19 @@ Otherwise, the environment is `staging` - that's your local environment, connect
 ./node_modules/.bin/ng run app:ionic-cordova-serve:staging     --host=tgm.mac --port=8100 --ssl --platform=browser
 ```
 
-== Todo ==
+=== Todo ===
 
 * lets deploy on iOS
 * lets wire *all* photos to a gallery
+
+=== Debug ===
+```
+a = localStorage.getItem('current_user')
+a = localStorage.getItem('current_user_2')
+
+localStorage.removeItem('current_user')
+localStorage.removeItem('current_user_2')
+```
 
 == Test ==
  npm run test

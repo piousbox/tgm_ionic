@@ -62,12 +62,11 @@ export class HomefeedPage implements OnInit {
   render () {
     const answer = this.httpClient.get(ApiRouter.homefeed)
     answer.subscribe(data => {
-      logg(answer, 'answer');
       if (data['newsitems']) {
         this.newsitems = data['newsitems'];
       }
     }, async error => {
-      console.log('+++ error from m3 -2:', JSON.stringify(error))
+      logg(error, '+-2 error from m3:')
       const toast = await this.toastController.create({
         message: error, duration: 2000
       });
