@@ -6,16 +6,14 @@ import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
-import { CityService } from '../services/city.service';
+import { C } from '../const';
 
 @Component({
   selector: 'app-cities-index',
   templateUrl: './CitiesIndex.page.html',
 })
 export class CitiesIndexPage implements OnInit {
-
-  cities: any = [];
-
+    cities: any = [];
   constructor(
     private nativeStorage: NativeStorage,
     private appService: AppService,
@@ -29,7 +27,7 @@ export class CitiesIndexPage implements OnInit {
         this.cities = data;
       }
     }, async error => {
-      console.log('+++ citiesindex 1:', error)
+      console.log('+++ citiesindex 1:', JSON.stringify(error))
       const toast = await this.toastController.create({
         message: error,
         duration: 2000
@@ -38,10 +36,31 @@ export class CitiesIndexPage implements OnInit {
     });
   }
     
+render(){
+    const answer = this.httpClient.get(ApiRouter.citiesindex)
+    answer.subscribe(data => {
+      if (data['newsitems']) {
+        this.cities = data['newsitems'];
+      }
+    }, async error => {
+      console.log('+++ citiesindex 1:', JSON.stringify(error))
+      const toast = await this.toastController.create({
+        message: error,
+        duration: 2000
+      });
+      toast.present();
+    });
+}    
   navigate(where) {
     this.router.navigate([where]);
   }
     
   ngOnInit() {
+      this.appService.currentMessage.subscribe( message => {
+      console.log('+++ new message:', message)
+      if (message == C.didLogin) {
+        this.render();
+      }
+    });
   }
 }

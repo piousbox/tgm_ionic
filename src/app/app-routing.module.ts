@@ -3,18 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: 'account',   loadChildren: './account/account.module#AccountPageModule' },
-
   { path: 'contact', loadChildren: './pages/contact/contact.module#ContactPageModule' },
-
   { path: 'en/cities', loadChildren: './CitiesComponent/cities.module#CitiesModule' },
-  { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' },
-
   { path: 'home',  loadChildren: './pages/home/home.module#HomePageModule' },
-  { path: 'homefeed',  loadChildren: './homefeed/homefeed.module#HomefeedPageModule' },
 
+  { path: 'homefeed',  loadChildren: './homefeed/homefeed.module#HomefeedPageModule' },
+  { path: 'newsfeed',  loadChildren: './newsfeed/newsfeed.module#NewsfeedPageModule' },
   { path: 'legal', loadChildren: './pages/legal/legal.module#LegalPageModule' },
 
-  { path: 'newsfeed',  loadChildren: './newsfeed/newsfeed.module#NewsfeedPageModule' },
   { path: 'navigator', loadChildren: './main-navigator/main-navigator.module#MainNavigatorModule' },
   { path: 'navigator/:extra', loadChildren: './main-navigator/main-navigator.module#MainNavigatorModule' },
 

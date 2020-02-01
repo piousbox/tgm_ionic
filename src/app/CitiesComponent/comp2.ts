@@ -5,7 +5,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './CitiesIndex.page.html',
 })
 export class CitiesComponent2 implements OnInit {
-    cities: any = [];
   constructor(){}
   ngOnInit(){}
   navigate(where){}

@@ -2,7 +2,8 @@ import { HttpClient, HttpParams, } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-import { MenuController, ToastController } from '@ionic/angular';
+import { Platform } from '@ionic/angular';
+
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
 import { AppService } from '../app-service';
@@ -20,10 +21,44 @@ export class AccountPage implements OnInit {
     private appService: AppService,
     private httpClient: HttpClient, 
     private nativeStorage: NativeStorage,
+    private platform: Platform,
     private router: Router,
-    private toastController: ToastController,
   ) {
-    console.log('+++ account constructor');
+    console.log('+++ account constructor');    
+
+    /* this.platform.ready().then(() => {
+      this.appService.setTitle('Account');
+    }); */
+
+    console.log('+++ account constructor 1');
+
+    /* this.nativeStorage.getItem('current_user').then(data => {
+      console.log('+++ 1 data:', data)
+
+      if ('facebook' == data.type) {
+        const params = new HttpParams().set('accessToken', data.accessToken)
+        const answer = this.httpClient.get(environment.accountPath, { params: params })
+        answer.subscribe(data => {
+          console.log('+++ data:', data);
+
+          this.currentUser = data;
+        }, error => {
+          console.log('+++ error from m3 a:', JSON.stringify(error))
+        });
+      }
+    }) */
+
+    // This craps out in Jasmine
+    /* router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.ngOnInit();
+      }
+      // Instance of should be: 
+      // NavigationEnd
+      // NavigationCancel
+      // NavigationError
+      // RoutesRecognized
+    }); */
   }
 
   navigate(where) {
@@ -31,13 +66,10 @@ export class AccountPage implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  async doFacebookLogout () {
-    console.log('+++ logging out facebook...');
-    this.nativeStorage.remove('current_user');
-    const toast = await this.toastController.create({ message: 'Logged out.', duration: 2000 });
-    toast.present();
+    // console.log('+++ account ngOnInit');
+    /* this.platform.ready().then(() => {
+      this.appService.setTitle('Account');
+    }); */
   }
 
 }

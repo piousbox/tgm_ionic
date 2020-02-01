@@ -9,7 +9,7 @@ import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 
-import { C, logg } from '../const';
+import { C } from '../const';
 
 @Component({
   selector: 'app-newsfeed',
@@ -18,7 +18,7 @@ import { C, logg } from '../const';
 })
 export class HomefeedPage implements OnInit {
   newsitems: any = [];
-  mainTitle: string = 'Home';
+  mainTitle: string = '';
 
   constructor(
     private appService: AppService,
@@ -27,10 +27,10 @@ export class HomefeedPage implements OnInit {
     public httpClient: HttpClient, 
     public toastController: ToastController,
   ) {
-    logg('homefeed#constructor');
-    appService.setTitle(this.mainTitle);
+    appService.setTitle('Homefeed');
+    this.mainTitle = 'Homefeed';
 
-    const answer = this.httpClient.get(ApiRouter.homefeed);
+    const answer = this.httpClient.get(ApiRouter.homefeed)
     answer.subscribe(data => {
       if (data['newsitems']) {
         this.newsitems = data['newsitems'];
@@ -53,6 +53,7 @@ export class HomefeedPage implements OnInit {
 
   ngOnInit () {
     this.appService.currentMessage.subscribe( message => {
+      console.log('+++ new message:', message)
       if (message == C.didLogin) {
         this.render();
       }
@@ -66,12 +67,16 @@ export class HomefeedPage implements OnInit {
         this.newsitems = data['newsitems'];
       }
     }, async error => {
-      logg(error, '+-2 error from m3:')
+      console.log('+++ error from m3 -2:', JSON.stringify(error))
       const toast = await this.toastController.create({
         message: error, duration: 2000
       });
       toast.present();
     });
+  }
+
+  ionViewDidLoad () {
+    console.log('+++ homefeed ionViewDidLoad');
   }
 
 }
