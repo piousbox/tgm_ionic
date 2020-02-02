@@ -123,22 +123,8 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
  ic platform rm ios
  ic platform add ios
  ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="gameui.piousbox.com"
- ## then, sign  (xcode 11)
- ## then, `pod install`
- ## deployment target is ios 13.1
- ## drag CoreKit to xcode, build again
- ## run on iPhone 8 simulator - but it's ios 9, let's try hardware again
- ## `pod install` gives me a corrupted version (mismatch)
- ## does dragging the framework into xcode work? Nope
 
- ## opening xcode 10, xcodeproj
- ## building for hardware phone
- ## opening xcworkspace instead - build succeeded!
- ## I HAVE TO KILL DOCKER TO MAKE IT WORK?!
- ## xcode 11, emulator 12.4, runs.
- ## next, let's run it on hardware
- ## switched build target to 13.2
- # rm -rf ~/Library/Developer/Xcode/DerivedData
+
 
  ic run ios -l --address=0.0.0.0
  ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8101 --platform=ios

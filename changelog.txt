@@ -10,3 +10,5 @@
 0.1.2 - 20200109 let's wire homefeed, unrestricted
 0.1.3 - 20200130 Improved login flow, let's re-do scrolling of newsitems-gallery
 0.2.0 - 20200201 - let's build?
+0.2.1 - 20200202 - let's remove fb sdk from this
+

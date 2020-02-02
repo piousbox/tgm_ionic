@@ -9,7 +9,6 @@ import { LoadingController } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
@@ -29,7 +28,6 @@ export class AppComponent implements OnInit {
 
   constructor(
     private appService: AppService,
-    private fb: Facebook,
     private menu: MenuController,
     private nativeStorage: NativeStorage,
     private ngZone: NgZone,
@@ -87,12 +85,6 @@ export class AppComponent implements OnInit {
       })
       this.statusBar.styleDefault();
     }); */
-  }
-
-  async doFacebookLogin () {
-  }
-
-  async doFacebookLogout () {
   }
 
   ngOnInit () {
