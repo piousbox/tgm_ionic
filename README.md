@@ -108,23 +108,32 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
 From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
 
 <pre>
+ ic plugin remove cordova-plugin-facebook4 --save
  ic platform rm ios
  ic platform add ios # @^5.0.0
- ic plugin remove cordova-plugin-facebook4 --save
  ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="gameui.piousbox.com"
- ## open MyApp.xcworkspace in xcode and sign the project for your team
  ic build ios -- --buildFlag="-UseModernBuildSystem=0"
- ./node_modules/.bin/ng run app:ionic-cordova-build:staging --platform=ios
-
- ## Then run it from xcode
- ## I'm on xcode 11.3.1 (there are multiple versions installed on macpc)
+ # ./node_modules/.bin/ng run app:ionic-cordova-build:staging --platform=ios
+ ## building requires signing.
+ ## open MyApp.xcworkspace in xcode and sign the project for your team
+ ## trying xcode 10.3
+ ## version incompatibility. Trying xcode 11. Succeeded!
+ ## I guess I need xproj, not xcworkspace ?
 
  ic run ios -l --address=0.0.0.0
  ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8101 --platform=ios
 
- ## ionic cordova prepare ios
+ # ic prepare ios
  ./node_modules/.bin/ng run app:ionic-cordova-build:staging --platform=ios
  ./node_modules/.bin/cordova prepare ios
+</pre>
+
+Also:
+
+<pre>
+  cd platform/ios
+  sudo gem instal cocoapods
+  pod install 
 </pre>
 
 ## Build Android 
