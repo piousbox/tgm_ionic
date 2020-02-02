@@ -105,8 +105,6 @@ export class AppComponent implements OnInit {
 
   navigate(where) {
     this.ngZone.run(() => {
-      console.log('+++ navigating:', where);
-      this.mainTitle = where;
       this.router.navigate([where]);
     })
   }
