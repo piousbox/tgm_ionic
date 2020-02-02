@@ -41,46 +41,12 @@ export class AppComponent implements OnInit {
     public loadingController: LoadingController,
     public toastController: ToastController,
   ) {
-    // console.log('+++ app.component constructor', environment);
     this.render = this.render.bind( this );
-
     this.initializeApp();
-    
-    this.mainTitle = this.appService.title;
-    this.env = JSON.stringify(environment.name);
-
-    let platforms = this.platform.platforms();
-    this.platformList = platforms.join(', ');
-
-    if(platforms.indexOf('mobileweb') != -1) {
-      this.isApp = false;
-    } else {
-      this.isApp = true;
-    }
-
-    this.platform.ready().then(() => {
-      this.nativeStorage.getItem('current_user').then(data => {
-        console.log('+++ got 3 data:', JSON.stringify(data));
-
-        this.currentUser = data;
-        if (data && Object.keys(data).length > 0) {
-          this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
-        }
-      }, error => {
-        console.log('+++ newsfeed doesnt have current_user:', error);
-      });
-    }); 
   }
 
   collapseFooter() {
-    if (this.footerCollapsed) {
-      this.footerCollapsed = false;
-      // $(".mainfold-parent").removeClass('footer-collapsed');
-    } else {
-      this.footerCollapsed = true;
-      // $(".mainfold-parent").addClass('footer-collapsed');
-    }
-    logg(this.footerCollapsed, 'collapseFooter()');
+    this.footerCollapsed = this.footerCollapsed ? false : true;
   }
 
   collapseMain() {
@@ -110,7 +76,7 @@ export class AppComponent implements OnInit {
   }
 
   initializeApp() {
-    this.platform.ready().then(() => {
+    /* this.platform.ready().then(() => {
       this.nativeStorage.getItem('current_user').then( data => {
         this.router.navigate([ AppRouter.rootPath ]);
         this.splashScreen.hide();
@@ -120,58 +86,19 @@ export class AppComponent implements OnInit {
         this.splashScreen.hide();
       })
       this.statusBar.styleDefault();
-    });
+    }); */
   }
 
   async doFacebookLogin () {
-    this.fb.login(['public_profile', 'email']).then((res: any) => { // res: FacebookLoginResponse      
-      const data = res.authResponse
-      logg('+++ Logged into Facebook 22', data)
-
-      this.currentUser = data;
-      this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
-
-      this.nativeStorage.setItem('current_user', {
-        accessToken: data.accessToken,
-        signedRequest: data.signedRequest,
-        userID: data.userID,
-        type: 'facebook',
-      }).then(() => {
-        this.appService.changeMessage(C.didLogin);
-        this.router.navigate([ AppRouter.rootPath ])
-
-      }, (error) => {
-        console.log('+++ error:', error)
-      })
-    }).then(this.render).catch( async e => {
-      console.log('Error logging into Facebook', e)
-      const toast = await this.toastController.create({ message: 'Could not login.', duration: 2000 });
-      toast.present();
-    });
   }
 
   async doFacebookLogout () {
-    console.log('+++ logging out facebook...');
-    this.nativeStorage.remove('current_user');
-    this.render();
-    const toast = await this.toastController.create({ message: 'Logged out.', duration: 2000 });
-    toast.present();
   }
 
   ngOnInit () {
-    console.log('+++ app.component ngOnInit:', this)
-    this.appService.currentMessage.subscribe(message => this.message = message)
   }
 
   render () {
-    console.log('+++ app.component render()', this);
-    this.nativeStorage.getItem('current_user').then( data => {
-      this.currentUser    = data;
-      this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
-    }, err => { 
-      this.currentUser    = null;
-      this.currentUserStr = null;
-    }).catch( e => console.log('+++ render error:', e));
   }
 
   ionViewDidLoad () {
@@ -184,11 +111,6 @@ export class AppComponent implements OnInit {
 
   ionViewDidEnter () {
     console.log('+++ app.component ionViewDidEnter');
-  }
-
-  toggleMainFooter () {
-    // console.log('+++ toggle main footer');
-    this.mainFooterVisible = this.mainFooterVisible == '' ? 'main-footer-visible' : '';
   }
 
 }
