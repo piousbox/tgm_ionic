@@ -112,9 +112,12 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
  ic platform add ios # @^5.0.0
  ic plugin remove cordova-plugin-facebook4 --save
  ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="gameui.piousbox.com"
- # open xcode and sign the project for your team
+ ## open MyApp.xcworkspace in xcode and sign the project for your team
  ic build ios -- --buildFlag="-UseModernBuildSystem=0"
  ./node_modules/.bin/ng run app:ionic-cordova-build:staging --platform=ios
+
+ ## Then run it from xcode
+ ## I'm on xcode 11.3.1 (there are multiple versions installed on macpc)
 
  ic run ios -l --address=0.0.0.0
  ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8101 --platform=ios
