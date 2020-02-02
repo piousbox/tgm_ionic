@@ -1,56 +1,57 @@
 
-= Setup =
+# Setup 
 
 Add gameui.mac as a domain in your hosts file, on Windows XP it is this file: c:\WINDOWS\system32\drivers\etc\hosts
-
+```
  127.0.0.1 gameui.mac
  ::1 gameui.mac
-
+```
 Both lines, the ipv4 and ipv6 definitions. should be added.
 
 Run the application:
-
+```
  ionic cordova run browser --livereload --address gameui.mac --ssl --port 8200
-
+```
 Then go to https://gameui.mac:8200 and click "login" in the sidemenu, you shuold be able to see a text gallery in the newsfeed.
 
-== Develop ==
-
+## Develop 
+```
  router - update version? 7.2.14
 
  ionic g page pages/dashboard
-
-=== Environment ===
+```
+### Environment 
 We're using environment `development` if you have backend running on localhost:3001.
 
 ```
-./node_modules/.bin/ng run app:ionic-cordova-serve:development --host=gameui.mac --port=8200 --ssl --platform=browser
+ ./node_modules/.bin/ng run app:ionic-cordova-serve:development --host=gameui.mac --port=8200 --ssl --platform=browser
 ```
 
 Otherwise, the environment is `staging` - that's your local environment, connected to a remote backend.
 
 ```
-./node_modules/.bin/ng run app:ionic-cordova-serve:staging     --host=gameui.mac --port=8200 --ssl --platform=browser
+ ./node_modules/.bin/ng run app:ionic-cordova-serve:staging     --host=gameui.mac --port=8200 --ssl --platform=browser
 ```
 
-=== Todo ===
+### Todo 
 
 * lets deploy on iOS
 * lets wire *all* photos to a gallery
 
-=== Debug ===
+### Debug 
 ```
-a = localStorage.getItem('current_user')
-a = localStorage.getItem('current_user_2')
+  a = localStorage.getItem('current_user')
+  a = localStorage.getItem('current_user_2')
 
-localStorage.removeItem('current_user')
-localStorage.removeItem('current_user_2')
+  localStorage.removeItem('current_user')
+  localStorage.removeItem('current_user_2')
 ```
 
-== Test ==
+## Test 
  npm run test
  
-== Run ==
+## Run 
+<pre>
  alias ic="ionic cordova "
 
  ic platform rm browser
@@ -78,11 +79,12 @@ localStorage.removeItem('current_user_2')
  # ic run android -l -c -s --debug
  adb logcat
  chrome://inspect/#devices
- 
-== Build iOS ==
+</pre>
+
+## Build iOS 
 
 From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
-
+<pre>
  ic platform rm ios
  ic platform add ios # @^5.0.0
  ic plugin remove cordova-plugin-facebook4 --save
@@ -97,9 +99,9 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
  ## ionic cordova prepare ios
  ./node_modules/.bin/ng run app:ionic-cordova-build:staging --platform=ios
  ./node_modules/.bin/cordova prepare ios
-
-== Build Android ==
-
+</pre>
+## Build Android 
+<pre>
  ic platform rm android
  ic platform add android
  # ic plugin remove cordova-plugin-googleplus
@@ -114,11 +116,12 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
  # ic run android -l -c -s --debug
  adb logcat
  chrome://inspect/#devices
-
-== Deploy browser ==
+</pre>
+## Deploy browser 
 
 From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
 
+<pre>
  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt
  
  ic plugin remove cordova-plugin-facebook4 --save
@@ -129,7 +132,7 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
  ic platform rm browser 
  ic platform add browser
  ic build browser --prod
-
+</pre>
 
 
 
