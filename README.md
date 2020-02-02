@@ -110,7 +110,7 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
 <pre>
  ic plugin remove cordova-plugin-facebook4 --save
  ic platform rm ios
- ic platform add ios # @^5.0.0
+ ic platform add ios   # @^5.0.0
  ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="gameui.piousbox.com"
  ic build ios -- --buildFlag="-UseModernBuildSystem=0"
  # ./node_modules/.bin/ng run app:ionic-cordova-build:staging --platform=ios
@@ -119,6 +119,15 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
  ## trying xcode 10.3
  ## version incompatibility. Trying xcode 11. Succeeded!
  ## I guess I need xproj, not xcworkspace ?
+ ## From the beginning:
+ ic platform rm ios
+ ic platform add ios
+ ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="gameui.piousbox.com"
+ ## then, sign  (xcode 11)
+ ## then, `pod install`
+ ## deployment target is ios 13.1
+ ## drag CoreKit to xcode, build again
+ ## run on iPhone 8 simulator - but it's ios 9, let's try hardware again
 
  ic run ios -l --address=0.0.0.0
  ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8101 --platform=ios
