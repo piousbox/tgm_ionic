@@ -1,6 +1,6 @@
 
 <ion-app >
-  <div class="mainfold-parent">
+  <div class="mainfold-parent {{ this.footerCollapsed ? 'footer-collapsed' : '' }} ">
     <div class="mainfold-item main-header">Header</div>
     
     <div class="mainfold-item main-twofold">
@@ -40,7 +40,7 @@
     </div>
     
     <div class="mainfold-item main-footer">
-      <div class='footer-collapse'></div>
+      <div class='footer-collapse' (click)="collapseFooter()" ></div>
       <div class='main-footer-overlay'></div>
       <div class='main-footer-inner'>
         <div class='img img-avatar'></div>

@@ -15,12 +15,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppRouter } from './app-router';
 import { AppService } from './app-service';
-import { C } from './const';
-
-function logg(object, label='') {
-  console.log(`+++ ${label}`)
-  console.log(JSON.stringify(object))
-}
+import { C, logg } from './const';
 
 @Component({
   selector: 'app-root',
@@ -28,19 +23,10 @@ function logg(object, label='') {
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  currentUser: any = null;
-  currentUserStr: string = '<none>';
+  footerCollapsed:boolean = false;
+  halfCollapsed:string = "none"; // 'none', 'left', 'right'
+  collapseDirection:string = 'right'; // 'left' or 'right'
 
-  env: string = '<none>';
-
-  isApp: boolean = true;
-
-  mainTitle: string = '';
-  mainFooterVisible: string = '';
-  message: string;
-
-  platformList: string = '';
-  
   constructor(
     private appService: AppService,
     private fb: Facebook,
@@ -84,6 +70,37 @@ export class AppComponent implements OnInit {
         console.log('+++ newsfeed doesnt have current_user:', error);
       });
     }); 
+  }
+
+  collapseFooter() {
+    if (this.footerCollapsed) {
+      this.footerCollapsed = false;
+      // $(".mainfold-parent").removeClass('footer-collapsed');
+    } else {
+      this.footerCollapsed = true;
+      // $(".mainfold-parent").addClass('footer-collapsed');
+    }
+    logg(this.footerCollapsed, 'collapseFooter()');
+  }
+
+  collapseMain() {
+    if ('left' === this.halfCollapsed) {
+      this.halfCollapsed = 'none';
+      this.collapseDirection = 'right';
+      // $(".mainfold-parent").removeClass('left-collapsed');
+    } else if ('none' === this.halfCollapsed && 'right' === this.collapseDirection) {
+      this.halfCollapsed = 'right';
+      this.collapseDirection = 'left';
+      // $(".mainfold-parent").addClass('right-collapsed');
+    } else if ('right' === this.halfCollapsed) {
+      this.halfCollapsed = 'none';
+      this.collapseDirection = 'left';
+      // $(".mainfold-parent").removeClass('right-collapsed');
+    } else if ('none' === this.halfCollapsed && 'left' === this.collapseDirection) {
+      this.halfCollapsed = 'left';
+      this.collapseDirection = 'right';
+      // $(".mainfold-parent").addClass('left-collapsed');
+    }
   }
 
   navigate(where) {
