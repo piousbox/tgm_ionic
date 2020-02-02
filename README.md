@@ -128,6 +128,8 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
  ## deployment target is ios 13.1
  ## drag CoreKit to xcode, build again
  ## run on iPhone 8 simulator - but it's ios 9, let's try hardware again
+ ## `pod install` gives me a corrupted version (mismatch)
+ ## does dragging the framework into xcode work? Nope
 
  ic run ios -l --address=0.0.0.0
  ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8101 --platform=ios
