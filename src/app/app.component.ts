@@ -80,25 +80,10 @@ export class AppComponent implements OnInit {
         if (data && Object.keys(data).length > 0) {
           this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
         }
-        
-
-        /* if ('facebook' == data.type) {
-          const params = new HttpParams().set('accessToken', data.accessToken)
-          const answer = this.httpClient.get(environment.newsitemsPath, { params: params })
-          answer.subscribe(data => {
-            if (data['newsitems']) {
-              this.newsitems = data['newsitems'];
-            }
-          }, error => {
-            console.log('+++ error from m3 aa:', error)
-          });
-        } */
-
       }, error => {
         console.log('+++ newsfeed doesnt have current_user:', error);
       });
     }); 
-
   }
 
   navigate(where) {
@@ -152,13 +137,8 @@ export class AppComponent implements OnInit {
 
   async doFacebookLogout () {
     console.log('+++ logging out facebook...');
-    // this.nativeStorage.remove('facebook_user');
     this.nativeStorage.remove('current_user');
-    // this.currentUser = null;
-    // this.currentUserStr = null;
     this.render();
-    // this.nativeStorage.clear();
-    // this.fb.logout();
     const toast = await this.toastController.create({ message: 'Logged out.', duration: 2000 });
     toast.present();
   }
