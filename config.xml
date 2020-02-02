@@ -104,8 +104,4 @@
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
     <plugin name="com.moust.cordova.videoplayer" spec="~1.0.1" />
     <plugin name="cordova-plugin-streaming-media" spec="~2.2.0" />
-    <plugin name="cordova-plugin-facebook4" spec="~6.2.0">
-        <variable name="APP_ID" value="3016949928380365" />
-        <variable name="APP_NAME" value="tgm.piousbox.com" />
-    </plugin>
 </widget>

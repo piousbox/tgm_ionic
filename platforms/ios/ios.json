@@ -53,7 +53,7 @@
           ],
           "FacebookDisplayName": [
             {
-              "xml": "<string>tgm.piousbox.com</string>",
+              "xml": "<string>gameui.piousbox.com</string>",
               "count": 1
             }
           ],
@@ -94,7 +94,7 @@
     },
     "cordova-plugin-facebook4": {
       "APP_ID": "3016949928380365",
-      "APP_NAME": "tgm.piousbox.com",
+      "APP_NAME": "gameui.piousbox.com",
       "FACEBOOK_HYBRID_APP_EVENTS": "false",
       "FACEBOOK_ANDROID_SDK_VERSION": "5.5.2",
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
