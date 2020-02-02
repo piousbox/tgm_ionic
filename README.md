@@ -131,6 +131,15 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
  ## `pod install` gives me a corrupted version (mismatch)
  ## does dragging the framework into xcode work? Nope
 
+ ## opening xcode 10, xcodeproj
+ ## building for hardware phone
+ ## opening xcworkspace instead - build succeeded!
+ ## I HAVE TO KILL DOCKER TO MAKE IT WORK?!
+ ## xcode 11, emulator 12.4, runs.
+ ## next, let's run it on hardware
+ ## switched build target to 13.2
+ # rm -rf ~/Library/Developer/Xcode/DerivedData
+
  ic run ios -l --address=0.0.0.0
  ./node_modules/.bin/ng run app:ionic-cordova-serve:staging --host=0.0.0.0 --port=8101 --platform=ios
 

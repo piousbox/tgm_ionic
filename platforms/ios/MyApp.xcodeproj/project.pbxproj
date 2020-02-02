@@ -10,17 +10,18 @@
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
 		079D4689A7E14839A2594E50 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DFBF72614514E98BAD36B57 /* GCDWebServerConnection.m */; };
 		0A309B8287D64C579D5FB188 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DBEB9668E1440A9A483F7B4 /* GCDWebServerFileRequest.m */; };
+		0B282F4735821559731F8BD5 /* libPods-MyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A38532D4E0A97B9DD2B36047 /* libPods-MyApp.a */; };
 		0CAEDF4FBEA14205BCB6EAE9 /* CDVIonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 44304F581D334ADC89ACFDF6 /* CDVIonicKeyboard.m */; };
 		160541D5C370484FAA4ECFC9 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AD836796BD4A48AF82965E44 /* GCDWebServerDataRequest.m */; };
 		184C4AA1774F41AFA5C48EB9 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A24C4405ECB48B8BB18AB91 /* GCDWebServerStreamedResponse.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		2473D02F23E750540044352E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2473D02D23E750540044352E /* FBSDKCoreKit.framework */; };
 		24B857C363DF4B70ACA92477 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B30190EA6B8D45A08BBADB89 /* GCDWebServerMultiPartFormRequest.m */; };
-		24CD886123E7641400E23AAC /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CD885F23E7641400E23AAC /* FBSDKShareKit.framework */; };
+		24FC44AE23E76825001F34D0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CD885F23E7641400E23AAC /* FBSDKShareKit.framework */; };
+		24FC44B023E76826001F34D0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806B69138FB64794AC1EC45A /* MediaPlayer.framework */; };
+		24FC44B423E7682A001F34D0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BBA08BCD7B4D28BDA560D2 /* WebKit.framework */; };
 		2905E51125364841B895C7E5 /* PortraitVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA3CD8D7E149B2A41B52E3 /* PortraitVideo.m */; };
 		2A5AF485C2614FD684065F6F /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A9184A8D984623B7784C0E /* CDVWKWebViewEngine.m */; };
-		2D8E3ADE621A4E0CBC8A80DE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BBA08BCD7B4D28BDA560D2 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
@@ -32,10 +33,8 @@
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
 		6BDAADF6A9A94A5DAE528EE7 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 150ABD54E05C4BB49C35006E /* GCDWebServerRequest.m */; };
 		761B5262E68D4DA2A4ADFC39 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 39596DA7E1764B7B9DE4BAB5 /* GCDWebServerErrorResponse.m */; };
-		7D8EEA6053AF1F86A57AAFDC /* Pods_MyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EA26AC63F540926D663582 /* Pods_MyApp.framework */; };
 		806D9CD9323E43D783CF35DB /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 3226E45A15D14B6AB1B0F2E0 /* GCDWebServerFileResponse.m */; };
 		8F77B8BC6EBB4B769B17A49A /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C54FEEC5DE224A15A9244964 /* CDVDevice.m */; };
-		A07D2B46AFED4FF7BA351BD5 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806B69138FB64794AC1EC45A /* MediaPlayer.framework */; };
 		B7B8FE7D63EC46B98DEF049C /* CDVWKWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4CAB23107F4C93A95E4382 /* CDVWKWebViewUIDelegate.m */; };
 		C0EC4FF00DA74D7F96D36D1B /* StreamingMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E640B5A544F579C0670EF /* StreamingMedia.m */; };
 		C5274363AC0B4009935B0D6B /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9152D15D97422BAEA649DE /* CDVSplashScreen.m */; };
@@ -76,7 +75,6 @@
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MyApp/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		037FDF3B49B84ED09EACA2A7 /* CDVWKWebViewUIDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKWebViewUIDelegate.h; path = "cordova-plugin-ionic-webview/CDVWKWebViewUIDelegate.h"; sourceTree = "<group>"; };
-		04EA26AC63F540926D663582 /* Pods_MyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		085B2DBFC9E146CD8651AB93 /* CDVWKWebViewEngine.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKWebViewEngine.h; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.h"; sourceTree = "<group>"; };
 		0A24C4405ECB48B8BB18AB91 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerStreamedResponse.m; path = "cordova-plugin-ionic-webview/GCDWebServerStreamedResponse.m"; sourceTree = "<group>"; };
 		10FEB42EB9894889B21E3CAE /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = GCDWebServerMultiPartFormRequest.h; path = "cordova-plugin-ionic-webview/GCDWebServerMultiPartFormRequest.h"; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 		1D6058910D05DD3D006BFB54 /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B34C72C450449B92477AE1 /* NativeStorage.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = NativeStorage.m; path = "cordova-plugin-nativestorage/NativeStorage.m"; sourceTree = "<group>"; };
 		23F2ECEF730F41ABB1929676 /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
-		2473D02D23E750540044352E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		2473D03023E752010044352E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../../../Dropbox/lib/ionic/FacebookSDKs-iOS-4.40.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		24CD885F23E7641400E23AAC /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -132,6 +129,7 @@
 		9A8032FF75D646DE8663DC2F /* GCDWebServer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = GCDWebServer.h; path = "cordova-plugin-ionic-webview/GCDWebServer.h"; sourceTree = "<group>"; };
 		9DBEB9668E1440A9A483F7B4 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileRequest.m; path = "cordova-plugin-ionic-webview/GCDWebServerFileRequest.m"; sourceTree = "<group>"; };
 		A1A7211BA7504D53A001EF6C /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = GCDWebServerFileRequest.h; path = "cordova-plugin-ionic-webview/GCDWebServerFileRequest.h"; sourceTree = "<group>"; };
+		A38532D4E0A97B9DD2B36047 /* libPods-MyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A70D7C4537454C91928B3A5F /* FacebookConnectPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FacebookConnectPlugin.h; path = "cordova-plugin-facebook4/FacebookConnectPlugin.h"; sourceTree = "<group>"; };
 		A9C1CF1D07344BDB9F00D83C /* CDVStatusBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVStatusBar.h; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; };
 		AD836796BD4A48AF82965E44 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerDataRequest.m; path = "cordova-plugin-ionic-webview/GCDWebServerDataRequest.m"; sourceTree = "<group>"; };
@@ -166,13 +164,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24FC44B423E7682A001F34D0 /* WebKit.framework in Frameworks */,
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				2473D02F23E750540044352E /* FBSDKCoreKit.framework in Frameworks */,
-				7D8EEA6053AF1F86A57AAFDC /* Pods_MyApp.framework in Frameworks */,
-				24CD886123E7641400E23AAC /* FBSDKShareKit.framework in Frameworks */,
-				2D8E3ADE621A4E0CBC8A80DE /* WebKit.framework in Frameworks */,
+				24FC44B023E76826001F34D0 /* MediaPlayer.framework in Frameworks */,
+				24FC44AE23E76825001F34D0 /* FBSDKShareKit.framework in Frameworks */,
 				F89C000FED454153B5FB1BCD /* libz.tbd in Frameworks */,
-				A07D2B46AFED4FF7BA351BD5 /* MediaPlayer.framework in Frameworks */,
+				0B282F4735821559731F8BD5 /* libPods-MyApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +197,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+		29B97314FDCFA39411CA2CEA = {
 			isa = PBXGroup;
 			children = (
 				EB87FDF41871DAF40020F90C /* config.xml */,
@@ -246,11 +243,10 @@
 			children = (
 				24CD885F23E7641400E23AAC /* FBSDKShareKit.framework */,
 				2473D03023E752010044352E /* FBSDKLoginKit.framework */,
-				2473D02D23E750540044352E /* FBSDKCoreKit.framework */,
-				04EA26AC63F540926D663582 /* Pods_MyApp.framework */,
 				29BBA08BCD7B4D28BDA560D2 /* WebKit.framework */,
 				EABFFB7526124BCC8C4A3F02 /* libz.tbd */,
 				806B69138FB64794AC1EC45A /* MediaPlayer.framework */,
+				A38532D4E0A97B9DD2B36047 /* libPods-MyApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -368,7 +364,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
-				2917DEEC4548F0CB795B321D /* [CP] Embed Pods Frameworks */,
+				898F02E297780248E398DED1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -403,7 +399,7 @@
 				en,
 				Base,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			mainGroup = 29B97314FDCFA39411CA2CEA;
 			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
 			projectDirPath = "";
 			projectReferences = (
@@ -450,28 +446,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2917DEEC4548F0CB795B321D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		304B58A110DAC018002A0835 /* Copy www directory */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -485,6 +459,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$SRCROOT/MyApp/Scripts/copy-www-build-step.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		898F02E297780248E398DED1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyApp/Pods-MyApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB64027C8B4E972448DD1588 /* [CP] Check Pods Manifest.lock */ = {
@@ -582,7 +574,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "MyApp/MyApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piousbox.gameui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -609,7 +601,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "MyApp/MyApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piousbox.gameui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
