@@ -80,6 +80,7 @@ localStorage.removeItem('current_user_2')
  chrome://inspect/#devices
  
 == Build iOS ==
+
 From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
 
  ic platform rm ios
@@ -97,7 +98,25 @@ From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
  ./node_modules/.bin/ng run app:ionic-cordova-build:staging --platform=ios
  ./node_modules/.bin/cordova prepare ios
 
+== Build Android ==
+
+ ic platform rm android
+ ic platform add android
+ # ic plugin remove cordova-plugin-googleplus
+ # ic plugin add cordova-plugin-googleplus \
+ #  --variable REVERSED_CLIENT_ID=com.googleusercontent.apps.287149765762-ifnium31igm6gfp5cvgpgmvk2ron1p97 \
+ #  --variable WEB_APPLICATION_CLIENT_ID=287149765762-ifnium31igm6gfp5cvgpgmvk2ron1p97.apps.googleusercontent.com
+ 
+ ic build android --debug
+ ic build android --debug --env=staging
+ ic build android --debug --prod
+ ic run android --debug
+ # ic run android -l -c -s --debug
+ adb logcat
+ chrome://inspect/#devices
+
 == Deploy browser ==
+
 From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
 
  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/nginx-selfsigned.key -out /etc/ssl/certs/nginx-selfsigned.crt

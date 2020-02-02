@@ -7,14 +7,14 @@ import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
-import { C } from '../const';
+import { C, logg } from '../const';
 
 @Component({
-  selector: 'app-newsfeed',
-  templateUrl: './newsfeed.page.html',
-  styleUrls: ['./newsfeed.page.scss'],
+  selector: 'app-map',
+  templateUrl: './map.page.html',
+  styleUrls: ['./map.page.scss'],
 })
-export class NewsfeedPage implements OnInit {
+export class MapPage implements OnInit {
   currentUser: any = null;
   newsitems: any = [];
   mainTitle: string = '';
@@ -26,9 +26,6 @@ export class NewsfeedPage implements OnInit {
     public httpClient: HttpClient, 
     public toastController: ToastController,
   ) {
-    appService.setTitle('Newsfeed');
-    this.mainTitle = 'Newsfeed';
-
     this.nativeStorage.getItem('current_user').then(data => {
       this.currentUser = data;
       if ('facebook' == data.type) {
@@ -48,7 +45,7 @@ export class NewsfeedPage implements OnInit {
         });
       }
     }, async error => {
-      console.log('+++ newsfeed doesnt have current_user:', error);
+      console.log('+++ map doesnt have current_user:', error);
       const toast = await this.toastController.create({
         message: 'You are not logged in - please login.',
         duration: 2000
@@ -97,7 +94,7 @@ export class NewsfeedPage implements OnInit {
         });
       }
     }, async error => {
-      console.log('+++ newsfeed doesnt have current_user:', error);
+      console.log('+++ map doesnt have current_user:', error);
       const toast = await this.toastController.create({
         message: 'You are not logged in - please login.',
         duration: 2000
@@ -107,18 +104,7 @@ export class NewsfeedPage implements OnInit {
   }
 
   ionViewDidLoad () {
-    console.log('+++ newsfeed ionViewDidLoad');
+    console.log('+++ map ionViewDidLoad');
   }
 
 }
-
-
-/**
-  ionViewDidLoad
-  ionViewWillEnter
-  ionViewDidEnter
-  ionViewWillLeave
-  ionViewDidLeave
-  ionViewWillUnload
-  ionViewCanEnter
-*/
