@@ -17,6 +17,7 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		2473D02F23E750540044352E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2473D02D23E750540044352E /* FBSDKCoreKit.framework */; };
 		24B857C363DF4B70ACA92477 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B30190EA6B8D45A08BBADB89 /* GCDWebServerMultiPartFormRequest.m */; };
+		24CD886123E7641400E23AAC /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24CD885F23E7641400E23AAC /* FBSDKShareKit.framework */; };
 		2905E51125364841B895C7E5 /* PortraitVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = D6CA3CD8D7E149B2A41B52E3 /* PortraitVideo.m */; };
 		2A5AF485C2614FD684065F6F /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A9184A8D984623B7784C0E /* CDVWKWebViewEngine.m */; };
 		2D8E3ADE621A4E0CBC8A80DE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29BBA08BCD7B4D28BDA560D2 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -88,6 +89,7 @@
 		23F2ECEF730F41ABB1929676 /* CDVStatusBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVStatusBar.m; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; };
 		2473D02D23E750540044352E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		2473D03023E752010044352E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../../../Dropbox/lib/ionic/FacebookSDKs-iOS-4.40.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		24CD885F23E7641400E23AAC /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29BBA08BCD7B4D28BDA560D2 /* WebKit.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		29C3D5C261C84BD19799E8D3 /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				2473D02F23E750540044352E /* FBSDKCoreKit.framework in Frameworks */,
 				7D8EEA6053AF1F86A57AAFDC /* Pods_MyApp.framework in Frameworks */,
+				24CD886123E7641400E23AAC /* FBSDKShareKit.framework in Frameworks */,
 				2D8E3ADE621A4E0CBC8A80DE /* WebKit.framework in Frameworks */,
 				F89C000FED454153B5FB1BCD /* libz.tbd in Frameworks */,
 				A07D2B46AFED4FF7BA351BD5 /* MediaPlayer.framework in Frameworks */,
@@ -241,6 +244,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24CD885F23E7641400E23AAC /* FBSDKShareKit.framework */,
 				2473D03023E752010044352E /* FBSDKLoginKit.framework */,
 				2473D02D23E750540044352E /* FBSDKCoreKit.framework */,
 				04EA26AC63F540926D663582 /* Pods_MyApp.framework */,
@@ -578,7 +582,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "MyApp/MyApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piousbox.gameui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -605,7 +609,7 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "MyApp/MyApp-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.piousbox.gameui;
 				PRODUCT_NAME = "$(TARGET_NAME)";
