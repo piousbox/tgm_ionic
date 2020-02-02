@@ -39,7 +39,7 @@ Otherwise, the environment is `staging` - that's your local environment, connect
  ./node_modules/.bin/ng run app:ionic-cordova-serve:staging     --host=gameui.mac --port=8200 --ssl --platform=browser
 ```
 
-### Debug 
+### Debug browser
 ```
   a = localStorage.getItem('current_user')
 
