@@ -19,12 +19,17 @@ import { C, logg } from './const';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./mainfold.scss', './inventory.scss', './map.scss'],
 })
 export class AppComponent implements OnInit {
   footerCollapsed:boolean = false;
   halfCollapsed:string = "none"; // 'none', 'left', 'right'
   collapseDirection:string = 'right'; // 'left' or 'right'
+
+  thisMap:object = {};
+  zoomFactor:float = 1.0;
+  markers:array = [];
+  markerCo:object = {};
 
   constructor(
     private appService: AppService,
@@ -40,7 +45,21 @@ export class AppComponent implements OnInit {
     public toastController: ToastController,
   ) {
     this.render = this.render.bind( this );
-    this.initializeApp();
+    this.thisMap = { imgClass: 'img-world-1', w: 1200, h: 1200 };
+    this.markerCo = { top: 650, left: 210, w: 70, h: 90, img: '../assets/maps/v1/co.png', slug: 'map-colombia' };
+  }
+
+  zoomIn() {
+    this.zoomFactor = this.zoomFactor * 2;
+  }
+
+  zoomOut() {
+    this.zoomFactor = this.zoomFactor/2;
+  }
+
+  navigateToMap(slug) {
+    logg(slug, 'gotoMap()');
+    this.router.navigate([`/maps/${slug}`]);
   }
 
   collapseFooter() {
@@ -48,22 +67,18 @@ export class AppComponent implements OnInit {
   }
 
   collapseMain() {
-    if ('left' === this.halfCollapsed) {
-      this.halfCollapsed = 'none';
+    if ('left-collapsed' === this.halfCollapsed) {
+      this.halfCollapsed = 'none-collapsed';
       this.collapseDirection = 'right';
-      // $(".mainfold-parent").removeClass('left-collapsed');
-    } else if ('none' === this.halfCollapsed && 'right' === this.collapseDirection) {
-      this.halfCollapsed = 'right';
-      this.collapseDirection = 'left';
-      // $(".mainfold-parent").addClass('right-collapsed');
-    } else if ('right' === this.halfCollapsed) {
-      this.halfCollapsed = 'none';
-      this.collapseDirection = 'left';
-      // $(".mainfold-parent").removeClass('right-collapsed');
-    } else if ('none' === this.halfCollapsed && 'left' === this.collapseDirection) {
-      this.halfCollapsed = 'left';
-      this.collapseDirection = 'right';
-      // $(".mainfold-parent").addClass('left-collapsed');
+    } else if ('none-collapsed' === this.halfCollapsed && 'right' === this.collapseDirection) {
+      this.halfCollapsed = 'right-collapsed';
+      this.collapseDirection = 'left-collapsed';
+    } else if ('right-collapsed' === this.halfCollapsed) {
+      this.halfCollapsed = 'none-collapsed';
+      this.collapseDirection = 'left-collapsed';
+    } else if ('none-collapsed' === this.halfCollapsed && 'left' === this.collapseDirection) {
+      this.halfCollapsed = 'left-collapsed';
+      this.collapseDirection = 'right-collapsed';
     }
   }
 
@@ -73,21 +88,8 @@ export class AppComponent implements OnInit {
     })
   }
 
-  initializeApp() {
-    /* this.platform.ready().then(() => {
-      this.nativeStorage.getItem('current_user').then( data => {
-        this.router.navigate([ AppRouter.rootPath ]);
-        this.splashScreen.hide();
-      }, err => {
-        // this.router.navigate([ AppRouter.loginPath ]);
-        this.router.navigate([ AppRouter.rootPath ]);
-        this.splashScreen.hide();
-      })
-      this.statusBar.styleDefault();
-    }); */
-  }
-
   ngOnInit () {
+    // logg('AppComponent ngOnInit()');
   }
 
   render () {

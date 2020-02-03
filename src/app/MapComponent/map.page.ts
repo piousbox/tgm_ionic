@@ -22,9 +22,11 @@ export class MapPage implements OnInit {
     public httpClient: HttpClient, 
     public toastController: ToastController,
   ) {
+    logg('MapPage constructor()');
   }
 
   ngOnInit () {
+    logg('MapPage ngOnInit()');
   }
 
   render () {
