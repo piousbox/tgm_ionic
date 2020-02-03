@@ -11,4 +11,5 @@
 0.1.3 - 20200130 Improved login flow, let's re-do scrolling of newsitems-gallery
 0.2.0 - 20200201 - let's build?
 0.2.1 - 20200202 - let's remove fb sdk from this
+0.2.2 - 20200202 - one page renders, lets move things from app to mapComponent
 

@@ -27,8 +27,8 @@ export class AppComponent implements OnInit {
   collapseDirection:string = 'right'; // 'left' or 'right'
 
   thisMap:object = {};
-  zoomFactor:float = 1.0;
-  markers:array = [];
+  zoomFactor = 1.0;
+  markers = [];
   markerCo:object = {};
 
   constructor(
@@ -44,7 +44,6 @@ export class AppComponent implements OnInit {
     public loadingController: LoadingController,
     public toastController: ToastController,
   ) {
-    this.render = this.render.bind( this );
     this.thisMap = { imgClass: 'img-world-1', w: 1200, h: 1200 };
     this.markerCo = { top: 650, left: 210, w: 70, h: 90, img: '../assets/maps/v1/co.png', slug: 'map-colombia' };
   }
@@ -90,9 +89,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit () {
     // logg('AppComponent ngOnInit()');
-  }
-
-  render () {
   }
 
   ionViewDidLoad () {

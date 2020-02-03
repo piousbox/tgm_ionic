@@ -11,10 +11,6 @@ export class AppService {
 
   constructor() { }
 
-  /* getTitle () {
-    this.title = 'Some Title';
-  } */
-
   setTitle (which) {
     console.log('+++ app-service setTitle:', which);
     this.title = which;
