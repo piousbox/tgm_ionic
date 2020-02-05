@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'homefeed', pathMatch: 'full' },
   { path: 'account',   loadChildren: './account/account.module#AccountPageModule' },
 
   { path: 'contact', loadChildren: './pages/contact/contact.module#ContactPageModule' },

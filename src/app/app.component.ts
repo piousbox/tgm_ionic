@@ -106,7 +106,7 @@ export class AppComponent implements OnInit {
         this.splashScreen.hide();
       }, err => {
         logg('Not logged in');
-        this.router.navigate([ AppRouter.rootPath ]);
+        // this.router.navigate([ AppRouter.rootPath ]);
         this.splashScreen.hide();
       })
       this.statusBar.styleDefault();
