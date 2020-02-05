@@ -50,7 +50,7 @@ localStorage.removeItem('current_user_2')
 == Test ==
  npm run test
  
-== Run ==
+== Run Browser ==
  alias ic="ionic cordova "
 
  ic platform rm browser

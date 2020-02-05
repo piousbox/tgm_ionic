@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpParams, } from '@angular/common/http';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Router, NavigationEnd } from '@angular/router';
+
 
 import { ToastController } from '@ionic/angular';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
@@ -21,9 +23,10 @@ export class HomefeedPage implements OnInit {
   mainTitle: string = 'Home';
 
   constructor(
-    private appService: AppService,
-    private nativeStorage: NativeStorage,
-    private router: Router,
+    public appService: AppService,
+    public nativeStorage: NativeStorage,
+    public router: Router,
+    public sanitizer: DomSanitizer,
     public httpClient: HttpClient, 
     public toastController: ToastController,
   ) {
@@ -59,10 +62,19 @@ export class HomefeedPage implements OnInit {
     });
   }
 
+  youtubeUrl(n) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${n.youtube_id}`);
+  }
+
   render () {
     const answer = this.httpClient.get(ApiRouter.homefeed)
     answer.subscribe(data => {
       if (data['newsitems']) {
+        data['newsitems'].map(n => {
+          if (n['youtube_id']) {
+            n['youtube_url'] = `https://www.youtube.com/embed/#{n['youtube_id]}`
+          }
+        })
         this.newsitems = data['newsitems'];
       }
     }, async error => {

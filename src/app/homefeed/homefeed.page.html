@@ -35,6 +35,11 @@
       </div>
       <div class='card'>
         <div class='card-inner'>
+          <div *ngIf="n.youtube_id" >
+            <iframe width="560" height="315"
+              [src]="youtubeUrl(n)"
+              frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
           <!-- <video src="{{ n.url }}" width="100%" controls ></video> -->
         </div>
       </div>
