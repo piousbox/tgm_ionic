@@ -2,8 +2,7 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 
-import { MenuController, ToastController, } from '@ionic/angular';
-import { Platform } from '@ionic/angular';
+import { MenuController, Platform, ToastController, } from '@ionic/angular';
 import { LoadingController } from '@ionic/angular';
 
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -15,12 +14,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { ApiRouter, AppRouter } from './app-router';
 import { AppService } from './app-service';
-import { C } from './const';
-
-function logg(object, label='') {
-  console.log(`+++ ${label}`)
-  console.log(JSON.stringify(object))
-}
+import { C, logg } from './const';
 
 @Component({
   selector: 'app-root',
@@ -72,13 +66,13 @@ export class AppComponent implements OnInit {
     }
 
     this.platform.ready().then(() => {
-      this.nativeStorage.getItem('current_user').then(data => {
+      this.nativeStorage.getItem('current_user').then(a=>JSON.parse(a)).then(data => {
         this.currentUser = data;
         if (data && Object.keys(data).length > 0) {
           this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
         }
       }, error => {
-        console.log('+++ newsfeed doesnt have current_user:', error);
+        console.log('+++ app#constructor doesnt have current_user:', error);
       });
     }); 
   }
@@ -86,18 +80,32 @@ export class AppComponent implements OnInit {
   navigate(where) {
     this.ngZone.run(() => {
       console.log('+++ navigating:', where);
-      this.mainTitle = where;
-      this.router.navigate([where]);
+
+      if ('string' === typeof where) {
+        this.mainTitle = where;
+        this.router.navigate([where]);
+      } else if ('object' === typeof where) {
+        this.mainTitle = where['kind'];
+        let here = '';
+        switch (where['kind']) {
+        case 'report': {
+          here = '/reports';
+          break;
+        } default: {
+        } }
+        this.router.navigate([here]);
+      }
     })
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
       this.nativeStorage.getItem('current_user').then( data => {
-        this.router.navigate([ AppRouter.rootPath ]);
+        logg(data, 'no navigating here!');
+        // this.router.navigate([ AppRouter.rootPath ]);
         this.splashScreen.hide();
       }, err => {
-        // this.router.navigate([ AppRouter.loginPath ]);
+        logg('Not logged in');
         this.router.navigate([ AppRouter.rootPath ]);
         this.splashScreen.hide();
       })
@@ -107,8 +115,7 @@ export class AppComponent implements OnInit {
 
   async doFacebookLogin () {
     const data = await this.fb.login(['public_profile', 'email']).then(async (res: any) => { // res: FacebookLoginResponse      
-      const data = res.authResponse
-      // console.log('+++ Did login to facebook:', data)
+      const data = res.authResponse;
       this.currentUser = data;
       this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
       return data;
@@ -116,43 +123,36 @@ export class AppComponent implements OnInit {
     const answer = await this.httpClient.get(ApiRouter.longTermToken({ shortTermToken: data.accessToken })).toPromise();
     const thisCurrentUser = {
       accessToken: data.accessToken,
-      signedRequest: data.signedRequest,
       longTermToken: answer['long_term_token'],
       userID: data.userID,
       type: 'facebook',
     };
-    // console.log('+++ thisCurrentUser:', thisCurrentUser);
-    this.nativeStorage.setItem('current_user', thisCurrentUser).then(() => {
+    const thisCurrentUserStr = JSON.stringify(thisCurrentUser);
+    this.nativeStorage.setItem('current_user', thisCurrentUserStr).then(async () => {
+      logg(thisCurrentUserStr, 'set this guy!');
+
+      const result = await this.nativeStorage.getItem('current_user');
+      logg(JSON.parse(result), 'and out result');
+
       this.appService.changeMessage(C.didLogin);
       this.router.navigate([ AppRouter.rootPath ])
     }, (error) => {
       console.log('+++ error:', error)
     });
-    this.render();
-  }
-
-  async doFacebookLogout () {
-    console.log('+++ logging out facebook...');
-    // this.nativeStorage.remove('facebook_user');
-    this.nativeStorage.remove('current_user');
-    // this.currentUser = null;
-    // this.currentUserStr = null;
-    this.render();
-    // this.nativeStorage.clear();
-    // this.fb.logout();
-    const toast = await this.toastController.create({ message: 'Logged out.', duration: 2000 });
-    toast.present();
+    // this.render();
   }
 
   ngOnInit () {
-    console.log('+++ app.component ngOnInit:', this)
     this.appService.currentMessage.subscribe(message => this.message = message)
   }
 
   render () {
-    console.log('+++ app.component render()', this);
-    this.nativeStorage.getItem('current_user').then( data => {
-      this.currentUser    = data;
+    logg('app.component#render');
+
+    this.mainTitle = this.appService.title;
+
+    this.nativeStorage.getItem('current_user').then(data => {
+      this.currentUser    = JSON.parse(data);
       this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
     }, err => { 
       this.currentUser    = null;

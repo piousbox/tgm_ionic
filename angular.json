@@ -37,6 +37,17 @@
             "scripts": []
           },
           "configurations": {
+            "ci": {
+              "progress": false
+            },
+            "development": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ],
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -61,17 +72,6 @@
                 }
               ]
             },
-            "ci": {
-              "progress": false
-            },
-            "development": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.development.ts"
-                }
-              ],
-            },
             "staging": {
               "fileReplacements": [
                 {
@@ -88,6 +88,9 @@
             "browserTarget": "app:build"
           },
           "configurations": {
+            "development": {
+              "browserTarget": "app:build:development"
+            },
             "production": {
               "browserTarget": "app:build:production"
             },
@@ -147,6 +150,9 @@
             "browserTarget": "app:build"
           },
           "configurations": {
+            "development": {
+              "browserTarget": "app:build:development"
+            },
             "production": {
               "browserTarget": "app:build:production"
             },
@@ -162,6 +168,10 @@
             "devServerTarget": "app:serve"
           },
           "configurations": {
+            "development": {
+              "cordovaBuildTarget": "app:ionic-cordova-build:development",
+              "devServerTarget": "app:serve:development"
+            },
             "production": {
               "cordovaBuildTarget": "app:ionic-cordova-build:production",
               "devServerTarget": "app:serve:production"
