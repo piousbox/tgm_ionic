@@ -54,14 +54,24 @@
       <div class='footer-collapse' (click)="collapseFooter()" ></div>
       <div class='main-footer-overlay'></div>
       <div class='main-footer-inner'>
-        <div class='img img-avatar'></div>
-        
-        <div class='widget-stars'>
-          <div class='widget-stars-inner'>
-            <!-- <div class='count'>5</div> -->
-            <div class='img img-star' >5</div>
+
+        <div *ngIf="currentUser">
+          <div class='img img-avatar'  ></div>
+          <div class='widget-stars'>
+            <div class='widget-stars-inner'>
+              <!-- <div class='count'>5</div> -->
+              <div class='img img-star' >5</div>
+            </div>
           </div>
+          {{ currentUser }}
+          <br /><br />
+          {{ currentUserStr }}
         </div>
+
+        <div *ngIf="!currentUser" >
+          <div class='widget-login' (click)="doLogin()">Please Login</div>
+        </div>
+
 
       </div>
     </div>

@@ -108,10 +108,14 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
 From: https://github.com/jeduan/cordova-plugin-facebook4/tree/master/docs/ios
 
 <pre>
+
  ic plugin remove cordova-plugin-facebook4 --save
  ic platform rm ios
  ic platform add ios   # @^5.0.0
- ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="gameui.piousbox.com"
+ ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable 
+ ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="tgm.piousbox.com"
+
+ APP_NAME="gameui.piousbox.com"
  ic build ios -- --buildFlag="-UseModernBuildSystem=0"
  # ./node_modules/.bin/ng run app:ionic-cordova-build:staging --platform=ios
 
