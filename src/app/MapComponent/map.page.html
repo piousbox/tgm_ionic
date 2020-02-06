@@ -1,8 +1,13 @@
 
 <ion-content >
   <div class="mainfold-parent {{ this.footerCollapsed ? 'footer-collapsed' : '' }} {{ this.halfCollapsed }} ">
-    <div class="mainfold-item main-header" 
-      (click)="navigateToMap('map-world')">Header</div>
+    <div class="mainfold-item main-header">
+      <div (click)="navigateToMap('map-world')" >Header</div>
+      <div (click)="navigate('maps')" class='img img-swords' ></div>
+      <div (click)="navigate('en/cities')" class='img img-city' ></div>
+      <div (click)="navigate('homefeed')" class='img img-news' ></div>
+    </div>
+      
     
     <div class="mainfold-item main-twofold">
       <div class='main-twofold-inner'>

@@ -1,0 +1,16 @@
+
+<ion-content padding>
+  <ul>
+    <li><b>name:</b> {{ currentUser.name }}</li>
+    <li><b>email:</b> {{ currentUser.email }}</li>
+  </ul>
+
+  <ion-item *ngIf="currentUser" button (click)="doFacebookLogout()">
+    <ion-icon slot="start" name='power'></ion-icon>
+    <ion-label>
+      Logout
+    </ion-label>
+  </ion-item>
+</ion-content>
+
+

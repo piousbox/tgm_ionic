@@ -149,3 +149,32 @@ html, body {
   width: calc(100% - 2em);
 }
 
+/**
+ * header
+ */
+.main-header {
+  display: flex;
+}
+.main-header .img {
+  margin-left: 10px;
+
+  background-size: cover;
+  height: 30px;
+  width: 30px;
+}
+.img-swords {
+  background: url('../assets/64x64/swords.png');
+}
+.img-news {
+  background: url('../assets/64x64/news.png');
+}
+.img-city {
+  background: url('../assets/64x64/city.png');
+}
+
+
+
+
+
+
+
