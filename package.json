@@ -84,9 +84,7 @@
             "com.moust.cordova.videoplayer": {},
             "cordova-plugin-facebook4": {
                 "APP_ID": "3016949928380365",
-                "APP_NAME": "tgm.piousbox.com",
-                "FACEBOOK_HYBRID_APP_EVENTS": "false",
-                "FACEBOOK_ANDROID_SDK_VERSION": "5.5.2"
+                "APP_NAME": "tgm.piousbox.com"
             }
         },
         "platforms": [

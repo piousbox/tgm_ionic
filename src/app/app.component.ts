@@ -26,11 +26,6 @@ export class AppComponent implements OnInit {
   halfCollapsed:string = "none"; // 'none', 'left', 'right'
   collapseDirection:string = 'right'; // 'left' or 'right'
 
-  // thisMap:object = {};
-  // zoomFactor = 1.0;
-  // markers = [];
-  // markerCo:object = {};
-
   constructor(
     private appService: AppService,
     private menu: MenuController,
@@ -46,14 +41,6 @@ export class AppComponent implements OnInit {
   ) {
     // this.thisMap = { imgClass: 'img-world-1', w: 1200, h: 1200 };
     // this.markerCo = { top: 650, left: 210, w: 70, h: 90, img: '../assets/maps/v1/co.png', slug: 'map-colombia' };
-  }
-
-  zoomIn() {
-    this.zoomFactor = this.zoomFactor * 2;
-  }
-
-  zoomOut() {
-    this.zoomFactor = this.zoomFactor/2;
   }
 
   navigateToMap(slug) {

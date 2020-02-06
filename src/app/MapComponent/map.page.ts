@@ -13,7 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { environment } from '../../environments/environment';
 import { AppRoutingModule } from '../app-routing.module';
-import { AppRouter } from '../app-router';
+import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { C, logg } from '../const';
 
@@ -27,7 +27,8 @@ export class MapPage implements OnInit {
   halfCollapsed:string = "none"; // 'none', 'left', 'right'
   collapseDirection:string = 'right'; // 'left' or 'right'
   currentUser:any = {};
-  
+  currentUserStr:string = "";
+
   maps:object = {
     'map-world': { w: 1200, h: 1200, description: 'World', img: '../assets/maps/1200x1200/world-1.jpg',
       markers: [ 

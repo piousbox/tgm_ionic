@@ -4,6 +4,7 @@ import { RouteReuseStrategy } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { Facebook } from '@ionic-native/facebook/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
@@ -23,10 +24,11 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
   ],
   providers: [
-    StatusBar,
-    SplashScreen,
+    Facebook,
     GooglePlus,
     NativeStorage,
+    SplashScreen,
+    StatusBar,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

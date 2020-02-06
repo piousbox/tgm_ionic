@@ -12,4 +12,4 @@
 0.2.0 - 20200201 - let's build?
 0.2.1 - 20200202 - let's remove fb sdk from this
 0.2.2 - 20200202 - one page renders, lets move things from app to mapComponent
-
+        20200205 - removed platforms/ from the repo
