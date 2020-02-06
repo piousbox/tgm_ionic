@@ -3,9 +3,12 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { HttpClientModule } from '@angular/common/http';  
+import { Router } from '@angular/router';
+
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { Platform } from '@ionic/angular';
-import { Router } from '@angular/router';
+import { MenuController, ToastController } from '@ionic/angular';
+
 
 // @NgModule({})class NativeStorageMock {}
 
@@ -19,10 +22,13 @@ fdescribe('AccountPage', () => {
     TestBed.configureTestingModule({
       declarations: [ AccountPage ],
       imports: [
-        HttpClientTestingModule, 
+        HttpClientTestingModule,
       ],
-      providers: [ NativeStorage, Platform,
-        { provide: Router, useClass: class { navigate = jasmine.createSpy("navigate"); } }
+      providers: [ 
+        NativeStorage, 
+        Platform, 
+        { provide: Router, useClass: class { navigate = jasmine.createSpy("navigate"); } },
+        ToastController,
       ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();

@@ -1,7 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewsfeedPage } from './newsfeed.page';
+import { NewsfeedPage } from '../newsfeed/newsfeed.page';
 
 describe('NewsfeedPage', () => {
   let component: NewsfeedPage;
