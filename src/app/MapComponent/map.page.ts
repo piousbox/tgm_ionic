@@ -6,7 +6,7 @@ import { MenuController, ToastController, } from '@ionic/angular';
 import { Platform } from '@ionic/angular';
 import { LoadingController } from '@ionic/angular';
 
-import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
+// import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
@@ -45,7 +45,7 @@ export class MapPage implements OnInit {
 
   constructor(
     private appService: AppService,
-    private fb: Facebook,
+    // private fb: Facebook,
     private httpClient: HttpClient,
     private loadingController: LoadingController,    
     private menu: MenuController,
@@ -88,7 +88,7 @@ export class MapPage implements OnInit {
   }
 
   async doLogin () {
-    const data = await this.fb.login(['public_profile', 'email']).then(async (res: any) => { // res: FacebookLoginResponse      
+    /* const data = await this.fb.login(['public_profile', 'email']).then(async (res: any) => { // res: FacebookLoginResponse      
       const data = res.authResponse;
       this.currentUser = data;
       this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
@@ -113,7 +113,7 @@ export class MapPage implements OnInit {
     }, (error) => {
       console.log('+++ error:', error)
     });
-    // this.render();
+    // this.render(); */
   }
 
   navigate(where) {
