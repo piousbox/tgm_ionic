@@ -35,11 +35,16 @@
 }
 .zoom-control {
   position: absolute;
+  right: 1em;
+  top: 1em;
+
+  font-family: monospace;
+
   display: flex;
   flex-direction: column;
   height: 40px;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: space-around;
+  align-content: space-around;
   z-index: 2;
   background: white;
 }

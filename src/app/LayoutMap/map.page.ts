@@ -23,11 +23,13 @@ import { C, logg } from '../const';
   styleUrls: ['./mainfold.scss', './inventory.scss', './map.scss'],
 })
 export class MapPage implements OnInit {
-  footerCollapsed:boolean = false;
-  halfCollapsed:string = "none"; // 'none', 'left', 'right'
   collapseDirection:string = 'right'; // 'left' or 'right'
   currentUser:any = {};
   currentUserStr:string = "";
+  footerCollapsed:boolean = false;
+  halfCollapsed:string = "none-collapsed"; // 'none-collapsed', 'left-collapsed', 'right-collapsed'
+  headerCollapsed:boolean = true;
+  
 
   maps:object = {
     'map-world': { w: 1200, h: 1200, description: 'World', img: '../assets/maps/1200x1200/world-1.jpg',
@@ -61,29 +63,32 @@ export class MapPage implements OnInit {
     let slug = this.route.snapshot.paramMap.get('slug') || 'map-world';
     this.thisMap = this.maps[slug];
     this.markers = this.thisMap['markers'];
-
     this.setCurrentUser();
-
-    // logg(this.thisMap, 'thisMap 2');
   }
 
   collapseFooter() {
     this.footerCollapsed = this.footerCollapsed ? false : true;
   }
 
+  collapseHeader() {
+    this.headerCollapsed = this.headerCollapsed ? false : true;
+  }
+
   collapseMain() {
+    logg('collapseMain()');
+
     if ('left-collapsed' === this.halfCollapsed) {
       this.halfCollapsed = 'none-collapsed';
       this.collapseDirection = 'right';
     } else if ('none-collapsed' === this.halfCollapsed && 'right' === this.collapseDirection) {
       this.halfCollapsed = 'right-collapsed';
-      this.collapseDirection = 'left-collapsed';
+      this.collapseDirection = 'left';
     } else if ('right-collapsed' === this.halfCollapsed) {
       this.halfCollapsed = 'none-collapsed';
-      this.collapseDirection = 'left-collapsed';
+      this.collapseDirection = 'left';
     } else if ('none-collapsed' === this.halfCollapsed && 'left' === this.collapseDirection) {
       this.halfCollapsed = 'left-collapsed';
-      this.collapseDirection = 'right-collapsed';
+      this.collapseDirection = 'right';
     }
   }
 

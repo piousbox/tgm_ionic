@@ -49,6 +49,9 @@ html, body {
   align-content: stretch;
   */
 }
+.header-collapsed .main-twofold {
+  padding-top: 0;
+}
 .footer-collapsed .main-twofold {
   padding-bottom: 2em;
 }
@@ -103,6 +106,7 @@ html, body {
  */
 .main-collapse {
   position: absolute;
+  /* top: 2em; */
   background: url('../../assets/64x64/hamburger.png');
   width: 1em;
   height: 1em;
@@ -118,9 +122,9 @@ html, body {
 }
 
 .left-collapsed .main-left-inner { display: none; }
-.main-left-overlay {
-  display: none;
-}
+.left-collapsed .zoom-control { display: none; }
+.main-left-overlay { display: none; }
+
 .left-collapsed .main-left-overlay {
   display: block;
   background: #ededde;
@@ -152,6 +156,26 @@ html, body {
 /**
  * header
  */
+.header-collapsed .main-header {
+  display: none;
+}
+.header-control {
+  display: none;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  z-index: 2;
+}
+.header-collapsed .header-control {
+  display: block;
+}
+.header-control-inner {
+  background: white url('../../assets/64x64/hamburger.png');
+  background-size: cover;
+  width: 1em;
+  height: 1em;
+}
+
 .main-header {
   display: flex;
 }
