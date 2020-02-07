@@ -8,7 +8,6 @@ import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 import { C, logg } from '../const';
-import { LayoutSidemenu } from '../LayoutSidemenu/LayoutSidemenu';
 
 @Component({
   selector: 'app-reports-show',

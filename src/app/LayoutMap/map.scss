@@ -1,8 +1,4 @@
 
-
-/**
- * map
- */
 .main-map {
   background: #d2d2d2;
   height: 100%;
@@ -23,7 +19,7 @@
   transform: translate(-50%,-50%); */
 }
 .img-map-1 {
- background: url('../assets/maps/800x800/3.jpg');
+ background: url('../../assets/maps/800x800/3.jpg');
  width: 800px;
  height: 800px;
 }
@@ -33,7 +29,7 @@
   margin: auto;
 }
 .img-world-1 {
-  /* background: red url('../assets/maps/1200x1200/world-1.jpg'); */
+  /* background: red url('../../assets/maps/1200x1200/world-1.jpg'); */
   /* width: 600px;
   height: 600px; */
 }
@@ -60,7 +56,7 @@
   left: 240px;
   width: 64px;
   height: 64px;
-  background: url('../assets/64x64/marker.png');
+  background: url('../../assets/64x64/marker.png');
 }
 #markerCo {
   

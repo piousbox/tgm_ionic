@@ -10,6 +10,7 @@ import { LayoutSidemenu } from './LayoutSidemenu';
     CommonModule,
     IonicModule,
   ],
-  declarations: [LayoutSidemenu]
+  declarations: [ LayoutSidemenu ],
+  exports: [ LayoutSidemenu ],
 })
 export class LayoutSidemenuModule {}

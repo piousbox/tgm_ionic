@@ -23,7 +23,7 @@
 }
 .footer-collapse {
   position: absolute;
-  background: url('../assets/64x64/hamburger.png');
+  background: url('../../assets/64x64/hamburger.png');
   width: 1em;
   height: 1em;
   margin-top: -1em;
@@ -51,20 +51,20 @@
 .img-avatar {
   width: calc(100px - 1em - 2px);
   height: calc(100px - 1em - 2px);
-  background: url('../assets/100x100/avatar.png');
+  background: url('../../assets/100x100/avatar.png');
   background-size: cover;
 }
 /**
  * inventory
  */
 .img-gem {
-  background: url('../assets/256x256/gem.png');
+  background: url('../../assets/256x256/gem.png');
   background-size: cover;
   width: calc(100px - 4em);
   height: calc(100px - 4em);
 }
 .img-star {
-  background: url('../assets/256x256/star.png');
+  background: url('../../assets/256x256/star.png');
   background-size: cover;
   width: calc(100px - 4em);
   height: calc(100px - 4em);

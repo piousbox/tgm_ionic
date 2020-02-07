@@ -20,7 +20,7 @@ import { C, logg } from '../const';
 @Component({
   selector: 'app-map',
   templateUrl: 'map.page.html',
-  styleUrls: ['../mainfold.scss', '../inventory.scss', '../map.scss'],
+  styleUrls: ['./mainfold.scss', './inventory.scss', './map.scss'],
 })
 export class MapPage implements OnInit {
   footerCollapsed:boolean = false;

@@ -13,5 +13,8 @@
 0.2.1 - 20200202 - let's remove fb sdk from this
 0.2.2 - 20200202 - one page renders, lets move things from app to mapComponent
         20200205 - removed platforms/ from the repo
-				           moved tgm stuff in here; working on layout-sidemenu
+                   moved tgm stuff in here; working on layout-sidemenu
                    and tests run. Good job.
+        20200206 - let's wire basic payments. 
+                     Let's wire a backend first.
+0.2.3 - 20200206 - Let's wire layout to homefeed first.

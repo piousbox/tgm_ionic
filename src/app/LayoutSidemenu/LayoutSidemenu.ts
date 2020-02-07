@@ -4,19 +4,16 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'layout-sidemenu',
   templateUrl: 'LayoutSidemenu.html',
+  styleUrls: [],
 })
 export class LayoutSidemenu implements OnInit {
   currentUser:any = {};
   currentUserStr:string = '<none>';
-
   env:string = '<none>';
-
   isApp:boolean = true;
-
-  mainTitle:string = '';
   mainFooterVisible:string = '';
+  mainTitle:string = '';
   message:string;
-
   platformList:string = '';
 
   constructor(

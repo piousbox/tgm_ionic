@@ -4,18 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   { path: '', redirectTo: 'homefeed', pathMatch: 'full' },
   
-  { path: 'account',   loadChildren: './account/account.module#AccountPageModule' },
-
-  // { path: 'contact', loadChildren: './pages/contact/contact.module#ContactPageModule' },
+  { path: 'account',   loadChildren: './AccountComponent/account.module#AccountModule' },
 
   { path: 'en/cities', loadChildren: './CitiesComponent/cities.module#CitiesModule' },
   { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' },
 
   { path: 'homefeed',  loadChildren: './NewsfeedComponent/newsfeed.module#NewsfeedPageModule' },
 
-  // { path: 'legal', loadChildren: './pages/legal/legal.module#LegalPageModule' },
-
-  { path: 'maps', loadChildren: './MapComponent/map.module#MapModule' },
+  { path: 'maps', loadChildren: './LayoutMap/map.module#MapModule' },
 
   { path: 'newsfeed',  loadChildren: './NewsfeedComponent/newsfeed.module#NewsfeedPageModule' },
   /* { path: 'navigator', loadChildren: './main-navigator/main-navigator.module#MainNavigatorModule' },
@@ -23,9 +19,7 @@ const routes: Routes = [
 
   { path: 'page1', loadChildren: './main-navigator/page1/page1.module#Page1PageModule' },
   { path: 'page3', loadChildren: './main-navigator/page3/page3.module#Page3PageModule' },
-  { path: 'pages/faq', loadChildren: './pages/faq/faq.module#FaqPageModule' },
-
-  { path: 'video-sample', loadChildren: './video-sample/video-sample.module#VideoSamplePageModule' }, */
+  { path: 'pages/faq', loadChildren: './pages/faq/faq.module#FaqPageModule' }, */
   
 ];
 

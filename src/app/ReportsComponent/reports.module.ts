@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
+import { AppModule } from '../app.module';
 import { ReportsIndexPage } from './ReportsIndex.page';
 import { ReportsShowPage } from './ReportsShow.page';
 import { LayoutSidemenu } from '../LayoutSidemenu/LayoutSidemenu';
@@ -15,11 +16,12 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    // AppModule,
     CommonModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ ReportsIndexPage, ReportsShowPage, LayoutSidemenu ]
+  declarations: [ ReportsIndexPage, ReportsShowPage ]
 })
 export class ReportsModule {}
