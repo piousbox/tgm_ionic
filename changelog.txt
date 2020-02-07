@@ -15,6 +15,6 @@
         20200205 - removed platforms/ from the repo
                    moved tgm stuff in here; working on layout-sidemenu
                    and tests run. Good job.
-        20200206 - let's wire basic payments. 
-                     Let's wire a backend first.
 0.2.3 - 20200206 - Let's wire layout to homefeed first.
+                   let's wire basic payments. 
+                     Let's wire a backend first.

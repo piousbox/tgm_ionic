@@ -2,13 +2,13 @@
 <ion-app >
 
   <ion-menu swipeGesture="true" type="overlay" >
-    <ion-header>
+    <ion-header >
       <ion-toolbar color="primary">
         <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
 
-    <ion-content>
+    <ion-content >
       <ion-list>
         <ion-menu-toggle auto-hide="false">
           <ion-item button (click)="navigate('homefeed')" >
@@ -78,7 +78,6 @@
       <ng-content></ng-content>
     </ion-content>
   </ion-content>
-
 
   <div id="mainFooterWrapper" [class]="mainFooterVisible" >
     <div id='bugBtn' (click)="toggleMainFooter()" >
