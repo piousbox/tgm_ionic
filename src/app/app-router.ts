@@ -1,7 +1,7 @@
 import { environment } from '../environments/environment';
 
 export class AppRouter {
-  static rootPath = 'map';
+  static rootPath = '';
 }
 
 export class ApiRouter {
