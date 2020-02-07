@@ -1,6 +1,7 @@
 import { environment } from '../environments/environment';
 
 export class AppRouter {
+  static cityPath = (c) => `/en/cities/travel-to/${c.cityname}`;
   static rootPath = '';
 }
 

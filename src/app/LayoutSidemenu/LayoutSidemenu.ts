@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { AppRouter } from '../app-router';
+
 @Component({
   selector: 'layout-sidemenu',
   templateUrl: 'LayoutSidemenu.html',
@@ -15,10 +17,13 @@ export class LayoutSidemenu implements OnInit {
   mainTitle:string = '';
   message:string;
   platformList:string = '';
+  appRouter:any = null;
 
   constructor(
     private router: Router,
-  ) {}
+  ) {
+    
+  }
 
   ngOnInit() {}
 

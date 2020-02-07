@@ -4,16 +4,18 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
+import { AppRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 import { CityService } from '../services/city.service';
+import { LayoutSidemenu } from '../LayoutSidemenu/LayoutSidemenu';
+import { C, logg } from '../const';
 
 @Component({
   selector: 'app-cities-show',
   templateUrl: './CitiesShow.page.html',
 })
 export class CitiesShowPage implements OnInit {
-  private _id: any = null;
   city: any = {};
 
   constructor(
@@ -23,10 +25,13 @@ export class CitiesShowPage implements OnInit {
     private router: Router,
     public httpClient: HttpClient,
     private _cityService: CityService
-  ) { }
+  ) {
+    this.appRouter = AppRouter;
+    this.city = { cityname:  this.route.snapshot.paramMap.get('cityname') };
+  }
   
   ngOnInit() {
-    this._id = this.route.snapshot.paramMap.get('city_name');
+    
     // this._cityService.getCity(this._id).subscribe( city => this.city = city);
   }
 
