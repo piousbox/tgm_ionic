@@ -2,18 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'homefeed', pathMatch: 'full' },
+  { path: '', redirectTo: 'en', pathMatch: 'full' },
   
   { path: 'account',   loadChildren: './AccountComponent/account.module#AccountModule' },
 
+  { path: 'en',  loadChildren: './NewsfeedComponent/newsfeed.module#NewsfeedPageModule' },
   { path: 'en/cities', loadChildren: './CitiesComponent/cities.module#CitiesModule' },
   { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' },
 
-  { path: 'homefeed',  loadChildren: './NewsfeedComponent/newsfeed.module#NewsfeedPageModule' },
-
   { path: 'maps', loadChildren: './LayoutMap/map.module#MapModule' },
 
-  { path: 'newsfeed',  loadChildren: './NewsfeedComponent/newsfeed.module#NewsfeedPageModule' },
   /* { path: 'navigator', loadChildren: './main-navigator/main-navigator.module#MainNavigatorModule' },
   { path: 'navigator/:extra', loadChildren: './main-navigator/main-navigator.module#MainNavigatorModule' },
 

@@ -6,22 +6,23 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { AppModule } from '../app.module';
+import { HomefeedPage } from './homefeed.page';
 import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
 import { NewsfeedPage } from './newsfeed.page';
 
 const routes: Routes = [
-  { path: '', component: NewsfeedPage },
+  { path: '', component: HomefeedPage },
+  { path: 'newsfeed', component: NewsfeedPage },
 ];
 
 @NgModule({
   imports: [
-
     CommonModule,
     FormsModule,
     IonicModule,
     LayoutSidemenuModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ NewsfeedPage ],
+  declarations: [ HomefeedPage, NewsfeedPage ],
 })
 export class NewsfeedPageModule {}
