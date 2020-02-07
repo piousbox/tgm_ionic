@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { MapPage } from './map.page';
+import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
 
 const routes: Routes = [
   { path: '', component: MapPage },
@@ -16,6 +17,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    LayoutSidemenuModule,
     RouterModule.forChild(routes)
   ],
   declarations: [MapPage]

@@ -1,7 +1,11 @@
 import { environment } from '../environments/environment';
 
 export class AppRouter {
+  static citiesPath = "/en/cities";
   static cityPath = (c) => `/en/cities/travel-to/${c.cityname}`;
+  
+  static homefeedPath = 'en';
+  static newsfeedPath = 'en/news';
   static rootPath = '';
 }
 

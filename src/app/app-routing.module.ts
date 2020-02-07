@@ -8,7 +8,7 @@ const routes: Routes = [
 
   { path: 'en',  loadChildren: './NewsfeedComponent/newsfeed.module#NewsfeedPageModule' },
   { path: 'en/cities', loadChildren: './CitiesComponent/cities.module#CitiesModule' },
-  { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' },
+  { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' }, // @TODO: deprecated
 
   { path: 'maps', loadChildren: './LayoutMap/map.module#MapModule' },
 

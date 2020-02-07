@@ -9,8 +9,8 @@
       &nbsp; &nbsp;
       <div (click)="navigateToMap('map-world')" >Header</div>
       <div (click)="navigate('maps')" class='img img-swords' ></div>
-      <div (click)="navigate('en/cities')" class='img img-city' ></div>
-      <div (click)="navigate('homefeed')" class='img img-news' ></div>
+      <div (click)="navigate(appRouter.citiesPath)" class='img img-city' ></div>
+      <div (click)="navigate(appRouter.homefeedPath)" class='img img-news' ></div>
     </div>
     <div class='header-control'>
       <div class='header-control-inner' (click)="collapseHeader()"></div>

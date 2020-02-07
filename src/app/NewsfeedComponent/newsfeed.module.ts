@@ -12,7 +12,7 @@ import { NewsfeedPage } from './newsfeed.page';
 
 const routes: Routes = [
   { path: '', component: HomefeedPage },
-  { path: 'newsfeed', component: NewsfeedPage },
+  { path: 'news', component: NewsfeedPage },
 ];
 
 @NgModule({

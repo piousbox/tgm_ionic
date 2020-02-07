@@ -23,6 +23,7 @@ import { C, logg } from '../const';
   styleUrls: ['./mainfold.scss', './inventory.scss', './map.scss'],
 })
 export class MapPage implements OnInit {
+  appRouter:any;
   collapseDirection:string = 'right'; // 'left' or 'right'
   currentUser:any = {};
   currentUserStr:string = "";
@@ -64,6 +65,7 @@ export class MapPage implements OnInit {
     this.thisMap = this.maps[slug];
     this.markers = this.thisMap['markers'];
     this.setCurrentUser();
+    this.appRouter = AppRouter;
   }
 
   collapseFooter() {
