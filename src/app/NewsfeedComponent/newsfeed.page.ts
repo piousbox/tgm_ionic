@@ -16,9 +16,9 @@ import { C, logg } from '../const';
   styleUrls: ['./newsfeed.page.scss'],
 })
 export class NewsfeedPage implements OnInit {
-  currentUser: any = null;
-  newsitems: any = [];
-  mainTitle: string = '';
+  currentUser = false;
+  newsitems:any = [];
+  mainTitle:string = '';
 
   constructor(
     private appService: AppService,
@@ -28,25 +28,18 @@ export class NewsfeedPage implements OnInit {
     public toastController: ToastController,
   ) {
     logg('NewsfeedPage#constructor');
-    appService.setTitle('Newsfeed');
+    // appService.setTitle('Newsfeed');
 
-    router.events.subscribe(event => {
+    /* router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.ngOnInit();
       }
-    });
+    }); */
 
-    this.render();
+    // this.render();
   }
 
   ngOnInit () {}
-/*    this.appService.currentMessage.subscribe( message => {
-      console.log('+++ new message:', message)
-      if (message == C.didLogin) {
-        this.render();
-      }
-    });
-  } */
 
   render () {
     logg('newsfeed.page#render');
@@ -60,7 +53,7 @@ export class NewsfeedPage implements OnInit {
         logg(params, 'params');
 
         const answer = this.httpClient.get(ApiRouter.newsfeed, { params: params });
-        logg(answer, 'answer');
+        // logg(answer, 'answer');
 
         answer.subscribe(data => {
           if (data['newsitems']) {
@@ -83,10 +76,6 @@ export class NewsfeedPage implements OnInit {
       });
       toast.present();
     });
-  }
-
-  ionViewDidLoad () {
-    console.log('+++ newsfeed ionViewDidLoad');
   }
 
 }

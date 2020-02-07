@@ -18,3 +18,5 @@
 0.2.3 - 20200206 - Let's wire layout to homefeed first.
                    let's wire basic payments. 
                      Let's wire a backend first.
+			  20200207 - let's emit logout event properly
+

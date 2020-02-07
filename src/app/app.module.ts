@@ -10,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { GooglePlus } from '@ionic-native/google-plus/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
+import { ApiRouter, AppRouter } from './app-router';
 import { AccountModule } from './AccountComponent/account.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -33,6 +34,7 @@ import { ReportsModule } from './ReportsComponent/reports.module';
     LayoutSidemenuModule,
   ],
   providers: [
+    AppRouter,
     Facebook,
     GooglePlus,
     NativeStorage,

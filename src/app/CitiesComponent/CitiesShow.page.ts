@@ -17,21 +17,23 @@ import { C, logg } from '../const';
 })
 export class CitiesShowPage implements OnInit {
   city: any = {};
+  appRouter;
 
   constructor(
     private nativeStorage: NativeStorage,
+    
     private appService: AppService,
     private route: ActivatedRoute,
     private router: Router,
     public httpClient: HttpClient,
     private _cityService: CityService
   ) {
+    this.ngOnInit()
     this.appRouter = AppRouter;
-    this.city = { cityname:  this.route.snapshot.paramMap.get('cityname') };
   }
   
   ngOnInit() {
-    
+    this.city = { cityname:  this.route.snapshot.paramMap.get('cityname') };
     // this._cityService.getCity(this._id).subscribe( city => this.city = city);
   }
 
