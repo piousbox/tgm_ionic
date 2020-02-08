@@ -16,7 +16,6 @@ import { C, logg } from '../const';
   styleUrls: ['./newsfeed.page.scss'],
 })
 export class NewsfeedPage implements OnInit {
-
   currentUser = false;
   newsitems:Array<any> = [];
 
