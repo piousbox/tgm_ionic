@@ -25,6 +25,7 @@ import { C, logg } from '../const';
 })
 export class MapPage implements OnInit {
   appRouter:any;
+  cc_number = false;
   collapseDirection:string = 'right'; // 'left' or 'right'
   currentUser:any = {};
   currentUserStr:string = "";
@@ -60,7 +61,7 @@ export class MapPage implements OnInit {
     private router: Router,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private stripe: Stripe,
+    // private stripe: Stripe,
     private toastController: ToastController,
   ) {
     let slug = this.route.snapshot.paramMap.get('slug') || 'map-world';

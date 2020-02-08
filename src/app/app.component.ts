@@ -23,6 +23,18 @@ import { C, logg } from './const';
 })
 export class AppComponent implements OnInit {
   appRouter;
+  currentUser:any = false;
+  currentUserStr:string = "";
+  
+  env: string = '<none>';
+
+  isApp: boolean = true;
+
+  mainTitle: string = '';
+  mainFooterVisible: string = '';
+  message: string;
+
+  platformList: string = '';
 
   constructor(
     private appService: AppService,
@@ -41,6 +53,34 @@ export class AppComponent implements OnInit {
     this.appRouter = AppRouter;
   }
 
+  async doFacebookLogin () {
+    const data = await this.fb.login(['public_profile', 'email']).then(async (res: any) => { // res: FacebookLoginResponse      
+      const data = res.authResponse;
+      this.currentUser = data;
+      this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
+      return data;
+    });
+    const answer = await this.httpClient.get(ApiRouter.longTermToken({ shortTermToken: data.accessToken })).toPromise();
+    const thisCurrentUser = {
+      accessToken: data.accessToken,
+      longTermToken: answer['long_term_token'],
+      userID: data.userID,
+      type: 'facebook',
+    };
+    const thisCurrentUserStr = JSON.stringify(thisCurrentUser);
+    this.nativeStorage.setItem('current_user', thisCurrentUserStr).then(async () => {
+      logg(thisCurrentUserStr, 'set this guy!');
+
+      const result = await this.nativeStorage.getItem('current_user');
+      logg(JSON.parse(result), 'and out result');
+
+      this.appService.changeMessage(C.didLogin);
+      this.router.navigate([ AppRouter.rootPath ])
+    }, (error) => {
+      console.log('+++ error:', error)
+    });
+  }
+
   navigate(where) {
     this.ngZone.run(() => {
       this.router.navigate([where]);
@@ -49,6 +89,11 @@ export class AppComponent implements OnInit {
 
   ngOnInit () {
     // logg('AppComponent ngOnInit()');
+  }
+
+  toggleMainFooter () {
+    // console.log('+++ toggle main footer');
+    this.mainFooterVisible = this.mainFooterVisible == '' ? 'main-footer-visible' : '';
   }
 
 }
