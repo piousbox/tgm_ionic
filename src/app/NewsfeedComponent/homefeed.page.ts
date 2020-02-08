@@ -11,12 +11,12 @@ import { environment } from '../../environments/environment';
 import { C, logg } from '../const';
 
 @Component({
-  selector: 'app-newsfeed',
+  selector: 'homefeed',
   templateUrl: './newsfeed.page.html',
   styleUrls: ['./newsfeed.page.scss'],
 })
 export class HomefeedPage implements OnInit {
-  newsitems:array = [];
+  newsitems = [];
 
   constructor(
     private appService: AppService,
@@ -27,14 +27,12 @@ export class HomefeedPage implements OnInit {
   ) {
     // logg('HomefeedPage.constructor()');
     appService.setTitle('Homefeed!');
-    this.render();
+    this.ngOnInit();
   }
 
-  ngOnInit () {}
-
-  async render () {
+  async ngOnInit () {
     const answer = await this.httpClient.get(ApiRouter.homefeed).toPromise();
-    logg(answer, 'answer');
+    // logg(answer, 'answer');
     this.newsitems = answer['newsitems'];
   }
 

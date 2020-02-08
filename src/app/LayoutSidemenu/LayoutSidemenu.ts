@@ -24,7 +24,7 @@ export class LayoutSidemenu implements OnInit {
   mainTitle:string = '';
   message:string;
   platformList:string = '';
-  appRouter:any = null;
+  appRouter:any = AppRouter;
 
   constructor(
     private appService: AppService,
@@ -34,14 +34,16 @@ export class LayoutSidemenu implements OnInit {
     public httpClient: HttpClient, 
     public toastController: ToastController,
   ) {
-    this.appRouter = AppRouter;
+    logg('LayoutSidemenu constructor()');
+    // this.appRouter = AppRouter;
+    this.ngOnInit();
 
-    this.nativeStorage.getItem('current_user').then(r=>JSON.parse(r)).then(async data => {
-      logg(data, 'data 6');
-      this.currentUser = data;
-    }, async error => {
-      logg(error, 'error 665 no currentUser');
-    });
+    this.appService.currentMessage.subscribe(msg => {
+      if (msg != C.defaultMessage) {
+        logg(msg, 'LayoutSidemenu got currentMessage');
+        this.ngOnInit();
+      }
+    })
   }
 
   async doFacebookLogin () {
@@ -58,21 +60,26 @@ export class LayoutSidemenu implements OnInit {
       userID: data.userID,
       type: 'facebook',
     };
-    const thisCurrentUserStr = JSON.stringify(thisCurrentUser);
-    this.nativeStorage.setItem('current_user', thisCurrentUserStr).then(async () => {
-      logg(thisCurrentUserStr, 'set this guy!');
-
-      const result = await this.nativeStorage.getItem('current_user');
-      logg(JSON.parse(result), 'and out result');
-
+    this.nativeStorage.setItem('current_user', JSON.stringify(thisCurrentUser)).then(async () => {
       this.appService.changeMessage(C.didLogin);
-      this.router.navigate([ AppRouter.rootPath ])
+      this.appService.setCurrentUser(thisCurrentUser);
+      this.router.navigate([ AppRouter.rootPath ]);
     }, (error) => {
       console.log('+++ error:', error)
     });
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    logg('LayoutSidemenu ngOnInit()');
+
+    this.nativeStorage.getItem('current_user').then(r=>JSON.parse(r)).then(async data => {
+      // logg(data, 'data 6');
+      this.currentUser = data;
+    }, async error => {
+      this.currentUser = false;
+      // logg('no current_user');
+    });
+  }
 
   navigate(where) {
     if ('string' === typeof where) {

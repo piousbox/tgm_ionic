@@ -2,8 +2,9 @@
 <layout-sidemenu>
   <ion-content>
     <ul>
-      <li><b>name:</b> {{ currentUser.name }}</li>
-      <li><b>email:</b> {{ currentUser.email }}</li>
+      <li><b>name:</b> {{ currentUser['name'] }}</li>
+      <li><b>email:</b> {{ currentUser['email'] }}</li>
+      <li><b>id:</b> {{ currentUser['userID'] }}</li>
     </ul>
 
     <ion-item *ngIf="currentUser" button (click)="doFacebookLogout()">
@@ -12,5 +13,20 @@
         Logout
       </ion-label>
     </ion-item>
+
+    <!-- <ion-item *ngIf="!currentUser" button (click)="doFacebookLogin()">
+      <ion-icon slot="start" name='power'></ion-icon>
+      <ion-label>
+        Login
+      </ion-label>
+    </ion-item> -->
+
+    <ion-item *ngIf="currentUser" button (click)="payMicro()">
+      <ion-icon slot="start" name='power'></ion-icon>
+      <ion-label>
+        Pay $0.05
+      </ion-label>
+    </ion-item>
+
   </ion-content>
 </layout-sidemenu>
