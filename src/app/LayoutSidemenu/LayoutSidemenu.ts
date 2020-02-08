@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 import { Router, NavigationEnd } from '@angular/router';
 
-import { ToastController } from '@ionic/angular';
+import { ToastController, MenuController } from '@ionic/angular';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 
@@ -29,6 +29,7 @@ export class LayoutSidemenu implements OnInit {
   constructor(
     private appService: AppService,
     private fb: Facebook,
+    private menu: MenuController,
     private nativeStorage: NativeStorage,
     private router: Router,
     public httpClient: HttpClient, 
@@ -44,6 +45,13 @@ export class LayoutSidemenu implements OnInit {
         this.ngOnInit();
       }
     })
+  }
+
+  customOpen() {
+    // logg(this.menu.isActive(), 'active?');
+    // logg(this.menu.isOpen(), 'open?');
+    this.menu.toggle();
+    // logg(this.thisMenu.isOpen(), 'open?');
   }
 
   async doFacebookLogin () {

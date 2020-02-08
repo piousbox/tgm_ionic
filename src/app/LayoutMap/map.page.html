@@ -13,7 +13,10 @@
       <div (click)="navigate(appRouter.homefeedPath)" class='img img-news' ></div>
     </div>
     <div class='header-control'>
-      <div class='header-control-inner' (click)="collapseHeader()"></div>
+      <!-- <div class='header-control-inner' (click)="collapseHeader()"></div> -->
+      <ion-menu-toggle>
+        <div class='header-control-inner'></div>
+      </ion-menu-toggle>
     </div>
     
     <div class="mainfold-item main-twofold">

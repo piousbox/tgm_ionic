@@ -12,7 +12,7 @@ import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
-import { AppRouter } from './app-router';
+import { ApiRouter, AppRouter } from './app-router';
 import { AppService } from './app-service';
 import { C, logg } from './const';
 
@@ -22,6 +22,7 @@ import { C, logg } from './const';
   styleUrls: [ './footer.scss', ],
 })
 export class AppComponent implements OnInit {
+  appRouter;
 
   constructor(
     private appService: AppService,
@@ -37,6 +38,7 @@ export class AppComponent implements OnInit {
     public loadingController: LoadingController,
     public toastController: ToastController,
   ) {
+    this.appRouter = AppRouter;
   }
 
   navigate(where) {

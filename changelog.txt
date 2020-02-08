@@ -19,4 +19,4 @@
                    let's wire basic payments. 
                      Let's wire a backend first.
 			  20200207 - let's emit logout event properly
-
+0.2.4 - 20200207 - the icons show up again oh my goodness...
