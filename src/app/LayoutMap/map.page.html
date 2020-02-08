@@ -82,11 +82,16 @@
           <br /><br />
           {{ currentUserStr }}
         </div>
-
         <div *ngIf="!currentUser" >
           <div class='widget-login' (click)="doLogin()">Please Login</div>
         </div>
 
+        <div class='stripeWidget'>
+          <div id="stripeElements">
+            <ion-input [(ngModel)]="cc_number"></ion-input>
+          </div>
+          <div (click)="payMini()"><h1>Pay $1</h1></div>
+        </div>
 
       </div>
     </div>

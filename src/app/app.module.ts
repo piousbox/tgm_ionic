@@ -9,6 +9,7 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { GooglePlus } from '@ionic-native/google-plus/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
+import { Stripe } from '@ionic-native/stripe/ngx';
 
 import { ApiRouter, AppRouter } from './app-router';
 import { AccountModule } from './AccountComponent/account.module';
@@ -40,6 +41,7 @@ import { ReportsModule } from './ReportsComponent/reports.module';
     NativeStorage,
     SplashScreen,
     StatusBar,
+    Stripe,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent],

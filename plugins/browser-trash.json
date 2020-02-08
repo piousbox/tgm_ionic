@@ -1,0 +1,15 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-stripe": {
+      "PACKAGE_NAME": "com.piousbox.gameui"
+    }
+  },
+  "dependent_plugins": {}
+}

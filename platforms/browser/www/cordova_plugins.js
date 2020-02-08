@@ -91,6 +91,20 @@ module.exports = [
         "clobbers": [
             "streamingMedia"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-stripe/www/CordovaStripe.js",
+        "id": "cordova-plugin-stripe.stripe",
+        "pluginId": "cordova-plugin-stripe",
+        "clobbers": [
+            "cordova.plugins.stripe"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-stripe/src/browser/CordovaStripe.js",
+        "id": "cordova-plugin-stripe.CordovaStripe",
+        "pluginId": "cordova-plugin-stripe",
+        "runs": true
     }
 ];
 module.exports.metadata = 
@@ -105,7 +119,8 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-streaming-media": "2.2.0",
-    "cordova-plugin-whitelist": "1.3.3"
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-stripe": "1.5.3"
 }
 // BOTTOM OF METADATA
 });

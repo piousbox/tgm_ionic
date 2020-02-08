@@ -10,6 +10,7 @@ import { LoadingController } from '@ionic/angular';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Stripe } from '@ionic-native/stripe/ngx';
 
 import { environment } from '../../environments/environment';
 import { AppRoutingModule } from '../app-routing.module';
@@ -30,7 +31,7 @@ export class MapPage implements OnInit {
   footerCollapsed:boolean = false;
   halfCollapsed:string = "none-collapsed"; // 'none-collapsed', 'left-collapsed', 'right-collapsed'
   headerCollapsed:boolean = true;
-  
+  stripe;
 
   maps:object = {
     'map-world': { w: 1200, h: 1200, description: 'World', img: '../assets/maps/1200x1200/world-1.jpg',
@@ -59,6 +60,7 @@ export class MapPage implements OnInit {
     private router: Router,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
+    private stripe: Stripe,
     private toastController: ToastController,
   ) {
     let slug = this.route.snapshot.paramMap.get('slug') || 'map-world';
@@ -66,6 +68,7 @@ export class MapPage implements OnInit {
     this.markers = this.thisMap['markers'];
     this.setCurrentUser();
     this.appRouter = AppRouter;
+    this.stripe.setPublishableKey(environment.stripePublishableKey);
   }
 
   collapseFooter() {
@@ -94,39 +97,8 @@ export class MapPage implements OnInit {
     }
   }
 
-  async doLogin () {
-    /* const data = await this.fb.login(['public_profile', 'email']).then(async (res: any) => { // res: FacebookLoginResponse      
-      const data = res.authResponse;
-      this.currentUser = data;
-      this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
-      return data;
-    });
-    const answer = await this.httpClient.get(ApiRouter.longTermToken({ shortTermToken: data.accessToken })).toPromise();
-    const thisCurrentUser = {
-      accessToken: data.accessToken,
-      longTermToken: answer['long_term_token'],
-      userID: data.userID,
-      type: 'facebook',
-    };
-    const thisCurrentUserStr = JSON.stringify(thisCurrentUser);
-    this.nativeStorage.setItem('current_user', thisCurrentUserStr).then(async () => {
-      logg(thisCurrentUserStr, 'set this guy!');
-
-      const result = await this.nativeStorage.getItem('current_user');
-      logg(JSON.parse(result), 'and out result');
-
-      this.appService.changeMessage(C.didLogin);
-      this.router.navigate([ AppRouter.rootPath ])
-    }, (error) => {
-      console.log('+++ error:', error)
-    });
-    // this.render(); */
-  }
-
   navigate(where) {
-    // this.ngZone.run(() => {
-      this.router.navigate([where]);
-    // })
+    this.router.navigate([where]);
   }
 
   navigateToMap(slug = 'map-world') {
@@ -137,10 +109,23 @@ export class MapPage implements OnInit {
 
   ngOnInit () {}
 
+  payMini() {
+    logg(this.cc_number, 'cc_number')
+    let card = {
+      number: this.cc_number,
+      expMonth: 12,
+      expYear: 2020,
+      cvc: '220'
+    }
+    this.stripe.createCardToken(card)
+      .then(token => console.log(token.id))
+      .catch(error => console.error(error));
+  }
+
   setCurrentUser() {
     this.nativeStorage.getItem('current_user').then(u => JSON.parse(u)).then(data => {
       this.currentUser = data;
-      this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
+      // this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
     }).catch( e => {
       this.currentUser    = false;
       this.currentUserStr = "";

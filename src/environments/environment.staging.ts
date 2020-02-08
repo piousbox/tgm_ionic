@@ -7,5 +7,6 @@ export const environment = {
   name: 'staging',
   newsitemsPath: 'http://localhost:3001/api/my/newsitems',
   production: false,
+  stripePublishableKey: 'pk_test_UnB4uh0vErYIishvckNYtF4c',
 };
 

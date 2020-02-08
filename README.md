@@ -20,6 +20,8 @@ I had to also do this:
 <pre>
   sudo gem install cocoapods
 </pre>
+
+
 ## Develop 
 ```
  router - update version? 7.2.14
@@ -46,8 +48,10 @@ Otherwise, the environment is `staging` - that's your local environment, connect
   localStorage.removeItem('current_user')
 ```
 
+
 ## Test 
  npm run test
+
  
 ## Run browser
 <pre>
@@ -88,7 +92,6 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
  
  ic plugin remove cordova-plugin-facebook4 --save
  ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="tgm.piousbox.com"
-
  ic plugin remove cordova-plugin-googleplus --save
 
  ic platform rm browser 
