@@ -1,7 +1,6 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
-platform/*
 config.xml
 
 *~
@@ -34,7 +33,4 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 platforms/android/app/build/intermediates
 platforms/android/CordovaLib/build/intermediates
-
-resources
-platforms
 
