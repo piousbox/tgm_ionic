@@ -4,7 +4,7 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
-import { AppRouter } from '../app-router';
+import { ApiRouter, AppRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 import { CityService } from '../services/city.service';
@@ -16,8 +16,11 @@ import { C, logg } from '../const';
   templateUrl: './CitiesShow.page.html',
 })
 export class CitiesShowPage implements OnInit {
+  appRouter;
   city: any = {};
   appRouter;
+
+
 
   constructor(
     private nativeStorage: NativeStorage,
