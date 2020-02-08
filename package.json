@@ -98,13 +98,13 @@
     "ionic_webpack": "./webpack.config.js"
   },
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "test_temp": "ng test --help",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "browser_staging": "ng run app:ionic-cordova-serve:staging --host=gameui.mac --port=8200 --ssl --platform=browser"
+    "browser_staging": "ng run app:ionic-cordova-serve:staging --host=gameui.mac --port=8200 --ssl --platform=browser",
+    "ng": "ng"
   }
 }
