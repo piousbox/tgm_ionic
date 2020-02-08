@@ -25,7 +25,7 @@ import { C, logg } from '../const';
 })
 export class MapPage implements OnInit {
   appRouter:any;
-  cc_number:number;
+  cc_number;
   collapseDirection:string = 'right'; // 'left' or 'right'
   currentUser:any = {};
   currentUserStr:string = "";
