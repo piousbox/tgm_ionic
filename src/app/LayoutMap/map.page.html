@@ -70,27 +70,21 @@
       <div class='main-footer-overlay'></div>
       <div class='main-footer-inner'>
 
-        <div *ngIf="currentUser">
-          <div class='img img-avatar'  ></div>
-          <div class='widget-stars'>
-            <div class='widget-stars-inner'>
-              <!-- <div class='count'>5</div> -->
-              <div class='img img-star' >5</div>
-            </div>
+        <div class='img img-avatar' ></div>
+
+        <div class='widget-stars'>
+          <div class='widget-stars-inner'>
+            <!-- <div class='count'>5</div> -->
+            <div class='img img-star' >5</div>
           </div>
-          {{ currentUser }}
-          <br /><br />
-          {{ currentUserStr }}
-        </div>
-        <div *ngIf="!currentUser" >
-          <div class='widget-login' (click)="doLogin()">Please Login</div>
         </div>
 
         <div class='stripeWidget'>
           <div id="stripeElements">
-            <ion-input [(ngModel)]="cc_number"></ion-input>
+            <ion-label>cc number</ion-label>
+            <ion-input class="cc-number" [(ngModel)]="cc_number"></ion-input>
           </div>
-          <div (click)="payMini()"><h1>Pay $1</h1></div>
+          <div (click)="payMini()"><ion-button>Test Stripe</ion-button></div>
         </div>
 
       </div>

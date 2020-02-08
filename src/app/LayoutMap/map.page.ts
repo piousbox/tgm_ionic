@@ -25,14 +25,13 @@ import { C, logg } from '../const';
 })
 export class MapPage implements OnInit {
   appRouter:any;
-  cc_number = false;
+  cc_number:number;
   collapseDirection:string = 'right'; // 'left' or 'right'
   currentUser:any = {};
   currentUserStr:string = "";
   footerCollapsed:boolean = false;
   halfCollapsed:string = "none-collapsed"; // 'none-collapsed', 'left-collapsed', 'right-collapsed'
   headerCollapsed:boolean = true;
-  stripe;
 
   maps:object = {
     'map-world': { w: 1200, h: 1200, description: 'World', img: '../assets/maps/1200x1200/world-1.jpg',
@@ -61,7 +60,7 @@ export class MapPage implements OnInit {
     private router: Router,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    // private stripe: Stripe,
+    private stripe: Stripe,
     private toastController: ToastController,
   ) {
     let slug = this.route.snapshot.paramMap.get('slug') || 'map-world';
