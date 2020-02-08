@@ -1,19 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["common"],{
 
-/***/ "./node_modules/@ionic/core/dist/esm/es5/build/chunk-80f33f24.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@ionic/core/dist/esm/es5/build/chunk-80f33f24.js ***!
-  \***********************************************************************/
-/*! exports provided: a */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return sanitizeDOMString; });
-var sanitizeDOMString=function(e){try{if("string"!=typeof e||""===e)return e;var t=document.createDocumentFragment(),r=document.createElement("div");t.appendChild(r),r.innerHTML=e,blockedTags.forEach(function(e){for(var r=t.querySelectorAll(e),n=r.length-1;n>=0;n--){var i=r[n];i.parentNode?i.parentNode.removeChild(i):t.removeChild(i);for(var l=getElementChildren(i),a=0;a<l.length;a++)sanitizeElement(l[a])}});for(var n=getElementChildren(t),i=0;i<n.length;i++)sanitizeElement(n[i]);var l=document.createElement("div");l.appendChild(t);var a=l.querySelector("div");return null!==a?a.innerHTML:l.innerHTML}catch(e){return console.error(e),""}},sanitizeElement=function(e){if(!e.nodeType||1===e.nodeType){for(var t=e.attributes.length-1;t>=0;t--){var r=e.attributes[t],n=r.name;if(allowedAttributes.includes(n.toLowerCase())){var i=r.value;null!=i&&i.toLowerCase().includes("javascript:")&&e.removeAttribute(n)}else e.removeAttribute(n)}var l=getElementChildren(e);for(t=0;t<l.length;t++)sanitizeElement(l[t])}},getElementChildren=function(e){return null!=e.children?e.children:e.childNodes},allowedAttributes=["class","id","href","src"],blockedTags=["script","style","iframe","meta","link","object","embed"];
-
-/***/ }),
-
 /***/ "./node_modules/@ionic/core/dist/esm/es5/build/chunk-81780b86.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@ionic/core/dist/esm/es5/build/chunk-81780b86.js ***!

@@ -62,7 +62,7 @@ var AccountModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<layout-sidemenu>\n  <ion-content>\n    <ul>\n      <li><b>name:</b> {{ currentUser.name }}</li>\n      <li><b>email:</b> {{ currentUser.email }}</li>\n    </ul>\n\n    <ion-item *ngIf=\"currentUser\" button (click)=\"doFacebookLogout()\">\n      <ion-icon slot=\"start\" name='power'></ion-icon>\n      <ion-label>\n        Logout\n      </ion-label>\n    </ion-item>\n  </ion-content>\n</layout-sidemenu>\n"
+module.exports = "\n<layout-sidemenu>\n  <ion-content>\n    <ul>\n      <li><b>name:</b> {{ currentUser['name'] }}</li>\n      <li><b>email:</b> {{ currentUser['email'] }}</li>\n      <li><b>id:</b> {{ currentUser['userID'] }}</li>\n    </ul>\n\n    <ion-item *ngIf=\"currentUser\" button (click)=\"doFacebookLogout()\">\n      <ion-icon slot=\"start\" name='power'></ion-icon>\n      <ion-label>\n        Logout\n      </ion-label>\n    </ion-item>\n\n    <!-- <ion-item *ngIf=\"!currentUser\" button (click)=\"doFacebookLogin()\">\n      <ion-icon slot=\"start\" name='power'></ion-icon>\n      <ion-label>\n        Login\n      </ion-label>\n    </ion-item> -->\n\n    <ion-item *ngIf=\"currentUser\" button (click)=\"payMicro()\">\n      <ion-icon slot=\"start\" name='power'></ion-icon>\n      <ion-label>\n        Pay $0.05\n      </ion-label>\n    </ion-item>\n\n  </ion-content>\n</layout-sidemenu>\n"
 
 /***/ }),
 
@@ -93,6 +93,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var _ionic_native_native_storage_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/native-storage/ngx */ "./node_modules/@ionic-native/native-storage/ngx/index.js");
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../app-service */ "./src/app/app-service.ts");
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../const */ "./src/app/const.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -143,20 +144,29 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
 var AccountPage = /** @class */ (function () {
     function AccountPage(appService, httpClient, nativeStorage, router, toastController) {
+        var _this = this;
         this.appService = appService;
         this.httpClient = httpClient;
         this.nativeStorage = nativeStorage;
         this.router = router;
         this.toastController = toastController;
         this.currentUser = {};
-        console.log('+++ account constructor');
+        this.eventEmitter = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
+        Object(_const__WEBPACK_IMPORTED_MODULE_6__["logg"])('AccountPage constructor()');
+        this.appService.currentUser.subscribe(function (msg) {
+            Object(_const__WEBPACK_IMPORTED_MODULE_6__["logg"])(msg, 'AccountPage got currentUser');
+            _this.currentUser = msg;
+            _this.ngOnInit();
+        });
     }
     AccountPage.prototype.navigate = function (where) {
         this.router.navigate([where]);
     };
     AccountPage.prototype.ngOnInit = function () {
+        Object(_const__WEBPACK_IMPORTED_MODULE_6__["logg"])('AccountPage ngOnInit()');
     };
     AccountPage.prototype.doFacebookLogout = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -164,17 +174,25 @@ var AccountPage = /** @class */ (function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        console.log('+++ logging out facebook...');
                         this.nativeStorage.remove('current_user');
                         return [4 /*yield*/, this.toastController.create({ message: 'Logged out.', duration: 2000 })];
                     case 1:
                         toast = _a.sent();
                         toast.present();
+                        // this.eventEmitter.emit(C.didLogout);
+                        this.appService.changeMessage(_const__WEBPACK_IMPORTED_MODULE_6__["C"].didLogout);
                         return [2 /*return*/];
                 }
             });
         });
     };
+    AccountPage.prototype.payMicro = function () {
+        Object(_const__WEBPACK_IMPORTED_MODULE_6__["logg"])('AccountPage payMicro()');
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Output"])(),
+        __metadata("design:type", Object)
+    ], AccountPage.prototype, "eventEmitter", void 0);
     AccountPage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-account',

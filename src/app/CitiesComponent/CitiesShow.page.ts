@@ -18,17 +18,9 @@ import { C, logg } from '../const';
 export class CitiesShowPage implements OnInit {
   appRouter;
   city: any = {};
-  appRouter;
-
-
-
-
-
-
 
   constructor(
     private nativeStorage: NativeStorage,
-    
     private appService: AppService,
     private route: ActivatedRoute,
     private router: Router,

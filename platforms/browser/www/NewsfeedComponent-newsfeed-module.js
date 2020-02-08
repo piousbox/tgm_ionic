@@ -17,7 +17,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_native_storage_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/native-storage/ngx */ "./node_modules/@ionic-native/native-storage/ngx/index.js");
 /* harmony import */ var _app_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../app-router */ "./src/app/app-router.ts");
 /* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../app-service */ "./src/app/app-service.ts");
-/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../const */ "./src/app/const.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -69,7 +68,6 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
-
 var HomefeedPage = /** @class */ (function () {
     function HomefeedPage(appService, nativeStorage, router, httpClient, toastController) {
         this.appService = appService;
@@ -80,10 +78,9 @@ var HomefeedPage = /** @class */ (function () {
         this.newsitems = [];
         // logg('HomefeedPage.constructor()');
         appService.setTitle('Homefeed!');
-        this.render();
+        this.ngOnInit();
     }
-    HomefeedPage.prototype.ngOnInit = function () { };
-    HomefeedPage.prototype.render = function () {
+    HomefeedPage.prototype.ngOnInit = function () {
         return __awaiter(this, void 0, void 0, function () {
             var answer;
             return __generator(this, function (_a) {
@@ -91,7 +88,7 @@ var HomefeedPage = /** @class */ (function () {
                     case 0: return [4 /*yield*/, this.httpClient.get(_app_router__WEBPACK_IMPORTED_MODULE_5__["ApiRouter"].homefeed).toPromise()];
                     case 1:
                         answer = _a.sent();
-                        Object(_const__WEBPACK_IMPORTED_MODULE_7__["logg"])(answer, 'answer');
+                        // logg(answer, 'answer');
                         this.newsitems = answer['newsitems'];
                         return [2 /*return*/];
                 }
@@ -100,7 +97,7 @@ var HomefeedPage = /** @class */ (function () {
     };
     HomefeedPage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-            selector: 'app-newsfeed',
+            selector: 'homefeed',
             template: __webpack_require__(/*! ./newsfeed.page.html */ "./src/app/NewsfeedComponent/newsfeed.page.html"),
             styles: [__webpack_require__(/*! ./newsfeed.page.scss */ "./src/app/NewsfeedComponent/newsfeed.page.scss")],
         }),
@@ -269,31 +266,23 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 var NewsfeedPage = /** @class */ (function () {
     function NewsfeedPage(appService, nativeStorage, router, httpClient, toastController) {
-        var _this = this;
         this.appService = appService;
         this.nativeStorage = nativeStorage;
         this.router = router;
         this.httpClient = httpClient;
         this.toastController = toastController;
-        this.currentUser = null;
+        this.currentUser = false;
         this.newsitems = [];
         Object(_const__WEBPACK_IMPORTED_MODULE_7__["logg"])('NewsfeedPage#constructor');
-        appService.setTitle('Newsfeed');
-        router.events.subscribe(function (event) {
-            if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__["NavigationEnd"]) {
-                _this.ngOnInit();
-            }
-        });
-        this.render();
+        // appService.setTitle('Newsfeed');
+        /* router.events.subscribe(event => {
+          if (event instanceof NavigationEnd) {
+            this.ngOnInit();
+          }
+        }); */
+        // this.render();
     }
     NewsfeedPage.prototype.ngOnInit = function () { };
-    /*    this.appService.currentMessage.subscribe( message => {
-          console.log('+++ new message:', message)
-          if (message == C.didLogin) {
-            this.render();
-          }
-        });
-      } */
     NewsfeedPage.prototype.render = function () {
         var _this = this;
         Object(_const__WEBPACK_IMPORTED_MODULE_7__["logg"])('newsfeed.page#render');
@@ -304,7 +293,7 @@ var NewsfeedPage = /** @class */ (function () {
                 var params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpParams"]().set('accessToken', data.accessToken);
                 Object(_const__WEBPACK_IMPORTED_MODULE_7__["logg"])(params, 'params');
                 var answer = _this.httpClient.get(_app_router__WEBPACK_IMPORTED_MODULE_5__["ApiRouter"].newsfeed, { params: params });
-                Object(_const__WEBPACK_IMPORTED_MODULE_7__["logg"])(answer, 'answer');
+                // logg(answer, 'answer');
                 answer.subscribe(function (data) {
                     if (data['newsitems']) {
                         _this.newsitems = data['newsitems'];
@@ -344,9 +333,6 @@ var NewsfeedPage = /** @class */ (function () {
                 }
             });
         }); });
-    };
-    NewsfeedPage.prototype.ionViewDidLoad = function () {
-        console.log('+++ newsfeed ionViewDidLoad');
     };
     NewsfeedPage = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({

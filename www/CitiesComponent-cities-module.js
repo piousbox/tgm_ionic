@@ -190,10 +190,11 @@ var CitiesShowPage = /** @class */ (function () {
         this.httpClient = httpClient;
         this._cityService = _cityService;
         this.city = {};
+        this.ngOnInit();
         this.appRouter = _app_router__WEBPACK_IMPORTED_MODULE_4__["AppRouter"];
-        this.city = { cityname: this.route.snapshot.paramMap.get('cityname') };
     }
     CitiesShowPage.prototype.ngOnInit = function () {
+        this.city = { cityname: this.route.snapshot.paramMap.get('cityname') };
         // this._cityService.getCity(this._id).subscribe( city => this.city = city);
     };
     CitiesShowPage.prototype.navigate = function (where) { };
