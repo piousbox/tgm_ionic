@@ -93,6 +93,8 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
  ic plugin remove cordova-plugin-facebook4 --save
  ic plugin add cordova-plugin-facebook4 --variable APP_ID="3016949928380365" --variable APP_NAME="tgm.piousbox.com"
  ic plugin remove cordova-plugin-googleplus --save
+ ic plugin add cordova-plugin-device
+ ic plugin add cordova-plugin-stripe
 
  ic platform rm browser 
  ic platform add browser

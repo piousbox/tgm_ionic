@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-stripe": {
       "PACKAGE_NAME": "com.piousbox.gameui"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.piousbox.gameui"
     }
   },
   "dependent_plugins": {}
