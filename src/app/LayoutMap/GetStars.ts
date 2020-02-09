@@ -51,8 +51,10 @@ export class GetStars {
     }
     this.stripe.createCardToken(card).then(async token => {
       console.log(token.id);
+      const cu = await this.nativeStorage.getItem('current_user').then(u => JSON.parse(u));
+      logg(cu, 'cu');
       const answer = await this.httpClient.post(ApiRouter.getStars, { 
-        accessToken: this.currentUser.longTermToken, 
+        accessToken: cu.longTermToken, 
         amount: 101,
         stripeToken: token.id,
         kind: C.oneStar,
