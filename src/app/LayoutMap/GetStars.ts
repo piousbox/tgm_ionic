@@ -18,10 +18,11 @@ import { environment } from '../../environments/environment';
   styleUrls: [ './GetStars.scss' ],
 })
 export class GetStars {
-  ccNumber = '4242424242424242';
-  ccExpMonth = '11';
-  ccExpYear = '2021';
-  ccCvc = '212';
+  ccNumber:string = '4242424242424242';
+  ccExpMonth:number = 11;
+  ccExpYear:number = 2021;
+  ccCvc:string = '212';
+  currentUser:any = false;
 
   newNStars;
 

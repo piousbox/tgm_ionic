@@ -27,9 +27,9 @@ import { C, logg } from '../const';
 export class MapPage implements OnInit {
   appRouter:any;
   ccNumber;
-  ccExpMonth,
-  ccExpYear,
-  ccCvc,
+  ccExpMonth;
+  ccExpYear;
+  ccCvc;
   collapseDirection:string = 'right'; // 'left' or 'right'
   currentUser:any = {};
   currentUserStr:string = "";
@@ -78,7 +78,7 @@ export class MapPage implements OnInit {
 
     this.appService.nStars.subscribe(n => {
       logg('observed nstars');
-      this.nStars = n;
+      this.nStars = parseInt(n);
     });
   }
 
