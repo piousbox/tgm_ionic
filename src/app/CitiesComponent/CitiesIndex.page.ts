@@ -6,6 +6,8 @@ import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
+import { CityService } from '../services/city.service';
+import { City } from '../classes/city';
 
 
 @Component({
@@ -13,30 +15,22 @@ import { environment } from '../../environments/environment';
   templateUrl: './CitiesIndex.page.html',
 })
 export class CitiesIndexPage implements OnInit {
-    cities: any = [];
+
+
+  cities: City[];
+
+
   constructor(
     private nativeStorage: NativeStorage,
     private appService: AppService,
     private router: Router,
-    public httpClient: HttpClient, 
-    public toastController: ToastController,
+
+    public httpClient: HttpClient,
+    private _cityService: CityService
   ) {
-      const answer = this.httpClient.get(ApiRouter.citiesindex)
-    answer.subscribe(data => {
-      if (data) {
-        this.cities = data;
-      }
-    }, async error => {
-      console.log('+++ citiesindex 1:', error)
-      const toast = await this.toastController.create({
-        message: error,
-        duration: 2000
-      });
-      toast.present();
-    });
+    this._cityService.getAllCities().subscribe( cities => this.cities = cities)
   }
-    
-  
+
   navigate(where) {
     this.router.navigate([where]);
   }
