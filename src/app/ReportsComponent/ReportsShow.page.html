@@ -1,19 +1,39 @@
-
 <ion-content class='reports-show' >
 
   <ion-grid>
     <ion-row>
       <ion-col size-md="6" push-md="3" size-sm="12" >
         <ion-card padding >
-          <h1>{{ report.name }}</h1>
-          <p><i>{{ report.subtitle }}</i></p>
-          <div [innerHTML]=report.description ></div>
+          <ion-card-header>
+            <ion-text color="primary">
+              <h1>
+<!--              <ion-icon slot="start" name='today' ></ion-icon> &nbsp; -->
+                {{ report.name }}
+              </h1>
+            </ion-text>
+            <ion-card-subtitle>
+              {{ report.created_at }} &nbsp; {{report.username}}
+            </ion-card-subtitle>
+            <ion-text  >
+              <h6>{{ report.subhead }}</h6>
+            </ion-text>
+            <p>
+              <ion-chip>
+                <ion-label>Tag1</ion-label>
+              </ion-chip>
+              <ion-chip>
+                <ion-label>Tag2</ion-label>
+              </ion-chip>
+              <ion-chip>
+                <ion-label>Tag3</ion-label>
+              </ion-chip>
+            </p>
+          </ion-card-header>
+          <ion-card-content [innerHTML]=report.description style="text-align: justify; text-justify: inter-word;">
+          </ion-card-content>
         </ion-card>
       </ion-col>
     </ion-row>
   </ion-grid>
-
-  <br /><br /><br />
-  <br /><br /><br />
 
 </ion-content>

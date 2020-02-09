@@ -6,7 +6,7 @@
 </div>
 
 <div class='container'>
-  <div class="a-1" *ngFor="let n of newsitems">
+  <div  *ngFor="let n of newsitems">
 
     <div class='row' *ngIf="n.item_type=='gallery'" >
       <div class='title-card'>
@@ -45,14 +45,31 @@
       </div>
     </div>
 
-    <div class='row' *ngIf="n.item_type=='report'" >
+    <ion-row *ngIf="n.item_type=='report'" >
+      <ion-card>
+        <ion-card-header>
+          <ion-text color="primary">
+            <h1>
+<!--              <ion-icon slot="start" name='today' ></ion-icon> &nbsp; -->
+              <a [routerLink]="['/en/reports/show/'+n.reportname]" >{{ n.name }}</a>
+            </h1>
+          </ion-text>
+          <ion-card-subtitle>{{ n.created_at.substring(0,10) }} &nbsp; {{n.username}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          {{n.subhead}}
+        </ion-card-content>
+      </ion-card>    
+
+<!--
       <div class='title-card'>
         <div class='title-card-inner'>
           <h1><ion-icon slot="start" name='today' ></ion-icon> &nbsp; <a [routerLink]="['/en/reports/show/'+n.reportname]" >{{ n.name }}</a></h1>
           <p>{{ n.created_at.substring(0,10) }}</p>
         </div>
       </div>
-    </div>
+-->
+    </ion-row>
 
   </div>
 </div>
