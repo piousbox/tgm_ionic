@@ -20,3 +20,4 @@
 0.2.4 - 20200207 - the icons show up again oh my goodness...
                    resolved intermittent sidemenu issue
                    let's wire basic payments.
+        20200208 - how many stars do I have?

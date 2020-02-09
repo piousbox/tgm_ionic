@@ -2,16 +2,17 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 
-import { MenuController, ToastController, } from '@ionic/angular';
-import { Platform } from '@ionic/angular';
-import { LoadingController } from '@ionic/angular';
+import { 
+  LoadingController, MenuController, ModalController,
+  Platform, ToastController
+} from '@ionic/angular';
 
-// import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { Stripe } from '@ionic-native/stripe/ngx';
 
+import { GetStars } from './GetStars';
 import { environment } from '../../environments/environment';
 import { AppRoutingModule } from '../app-routing.module';
 import { AppRouter, ApiRouter } from '../app-router';
@@ -25,13 +26,17 @@ import { C, logg } from '../const';
 })
 export class MapPage implements OnInit {
   appRouter:any;
-  cc_number;
+  ccNumber;
+  ccExpMonth,
+  ccExpYear,
+  ccCvc,
   collapseDirection:string = 'right'; // 'left' or 'right'
   currentUser:any = {};
   currentUserStr:string = "";
   footerCollapsed:boolean = false;
   halfCollapsed:string = "none-collapsed"; // 'none-collapsed', 'left-collapsed', 'right-collapsed'
   headerCollapsed:boolean = true;
+  nStars:number = 0;
 
   maps:object = {
     'map-world': { w: 1200, h: 1200, description: 'World', img: '../assets/maps/1200x1200/world-1.jpg',
@@ -53,6 +58,7 @@ export class MapPage implements OnInit {
     private httpClient: HttpClient,
     private loadingController: LoadingController,    
     private menu: MenuController,
+    public modalController: ModalController,
     private nativeStorage: NativeStorage,
     private ngZone: NgZone,
     private platform: Platform,
@@ -69,6 +75,11 @@ export class MapPage implements OnInit {
     this.setCurrentUser();
     this.appRouter = AppRouter;
     this.stripe.setPublishableKey(environment.stripePublishableKey);
+
+    this.appService.nStars.subscribe(n => {
+      logg('observed nstars');
+      this.nStars = n;
+    });
   }
 
   collapseFooter() {
@@ -97,6 +108,15 @@ export class MapPage implements OnInit {
     }
   }
 
+  async getStars() {
+    // const current_user = await this.nativeStorage.getItem('current_user').then(a=>JSON.parse(a));
+    const params = new HttpParams().set('accessToken', this.currentUser.longTermToken);
+    const account = await this.httpClient.get(ApiRouter.account, { params: params }).toPromise();
+    this.nStars = account['n_stars'];
+    // logg(account, 'account');
+    // this.nStars = answer
+  }
+
   navigate(where) {
     this.router.navigate([where]);
   }
@@ -107,19 +127,9 @@ export class MapPage implements OnInit {
     this.markers = this.thisMap['markers'];
   }
 
-  ngOnInit () {}
-
-  payMini() {
-    logg(this.cc_number, 'cc_number')
-    let card = {
-      number: this.cc_number,
-      expMonth: 12,
-      expYear: 2020,
-      cvc: '220'
-    }
-    this.stripe.createCardToken(card)
-      .then(token => console.log(token.id))
-      .catch(error => console.error(error));
+  ngOnInit () {
+    logg('MapPage ngOnInit()');
+    this.getStars();
   }
 
   setCurrentUser() {
@@ -131,6 +141,13 @@ export class MapPage implements OnInit {
       this.currentUserStr = "";
       console.log('+++ currentUser() error:', e);
     });
+  }
+
+  async showGetStars() {
+    const modal = await this.modalController.create({
+      component: GetStars,
+    });
+    return await modal.present();
   }
 
   zoomIn() {

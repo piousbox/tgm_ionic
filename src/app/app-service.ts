@@ -9,11 +9,9 @@ import { C, logg } from './const';
 })
 export class AppService {
   
-
-  title:string = 'Initial Title';
-  
   constructor() {}
 
+  title:string = 'Initial Title';
   setTitle (which) {
     console.log('+++ app-service setTitle:', which);
     this.title = which;
@@ -28,6 +26,12 @@ export class AppService {
   setCurrentUser(msg) {
     logg(msg, 'setCurrentUser()');
     this.currentUserSource.next(msg);
+  }
+
+  private nStarsSource = new BehaviorSubject(C.nStars)
+  nStars = this.nStarsSource.asObservable();
+  setNStars(n) {
+    this.nStarsSource.next(n);
   }
   
 }

@@ -29,7 +29,6 @@ export class NewsfeedPage implements OnInit {
     public toastController: ToastController,
   ) {
     logg('NewsfeedPage#constructor');
-    // appService.setTitle('Newsfeed');
 
     /* router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
@@ -37,10 +36,11 @@ export class NewsfeedPage implements OnInit {
       }
     }); */
 
-    // this.render();
   }
 
-  ngOnInit () {}
+  ngOnInit () {
+    logg('NewsfeedPage ngOnInit()');
+  }
 
   render () {
     logg('newsfeed.page#render');

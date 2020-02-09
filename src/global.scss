@@ -9,3 +9,20 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+/**
+ * utils
+ */
+.center {
+  text-align: center;
+}
+
+/**
+ * modal
+ */
+ion-modal.show-modal {
+  div.modal-wrapper {
+    height: 70%;
+    width: 60%;
+  }
+}

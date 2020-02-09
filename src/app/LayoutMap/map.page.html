@@ -74,17 +74,9 @@
 
         <div class='widget-stars'>
           <div class='widget-stars-inner'>
-            <!-- <div class='count'>5</div> -->
-            <div class='img img-star' >5</div>
+            <div class='img img-star' >{{nStars}}</div>
+            <ion-button (click)="showGetStars()" >Get more stars</ion-button>
           </div>
-        </div>
-
-        <div class='stripeWidget'>
-          <div id="stripeElements">
-            <ion-label>cc number</ion-label>
-            <ion-input class="cc-number" [(ngModel)]="cc_number"></ion-input>
-          </div>
-          <div (click)="payMini()"><ion-button>Test Stripe</ion-button></div>
         </div>
 
       </div>

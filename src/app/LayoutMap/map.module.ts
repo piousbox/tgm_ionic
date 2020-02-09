@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MapPage } from './map.page';
 import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
+import { GetStars } from './GetStars';
 
 const routes: Routes = [
   { path: '', component: MapPage },
@@ -20,6 +21,7 @@ const routes: Routes = [
     LayoutSidemenuModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [MapPage]
+  declarations: [ MapPage, GetStars ],
+  entryComponents: [ GetStars ],
 })
 export class MapModule {}

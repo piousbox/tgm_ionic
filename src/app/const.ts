@@ -4,6 +4,11 @@ export const C = {
   defaultMessage: 'default message',
   didLogin: '41-didLogin',
   didLogout: '42-didLogout',
+
+  nStars: '421-nStars',
+  
+  oneStar: '43-oneStar',
+
 }
 
 export const logg = function (a, b='') {

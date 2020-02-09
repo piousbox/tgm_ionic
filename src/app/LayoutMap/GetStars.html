@@ -1,0 +1,25 @@
+
+<div padding >
+  <h1 class='center' >Get more stars!</h1>
+
+  <div class='stripeWidget'>
+    <div id="stripeElements">
+      <ion-label>cc number</ion-label>
+      <ion-input class="cc-number" [(ngModel)]="ccNumber"></ion-input>
+
+      <ion-label>exp month</ion-label>
+      <ion-input class="cc-number" [(ngModel)]="ccExpMonth"></ion-input>
+
+      <ion-label>exp year</ion-label>
+      <ion-input class="cc-number" [(ngModel)]="ccExpYear"></ion-input>
+
+      <ion-label>cvc</ion-label>
+      <ion-input class="cc-number" [(ngModel)]="ccCvc"></ion-input>
+
+    </div>
+    <div (click)="payMini()"><ion-button>Test Stripe</ion-button></div>
+  </div>
+
+  <ion-button (click)="close()">[X]</ion-button>
+  <div>{{newNStars}}</div>
+</div>
