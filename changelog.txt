@@ -21,3 +21,4 @@
                    resolved intermittent sidemenu issue
                    let's wire basic payments.
         20200208 - how many stars do I have?
+				           and more stripe
