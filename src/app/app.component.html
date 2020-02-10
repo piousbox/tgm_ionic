@@ -23,6 +23,12 @@
               My Newsfeed
             </ion-label>
           </ion-item>
+          <ion-item button (click)="navigate('maps/world')">
+            <ion-icon slot="start" name='bus'></ion-icon>
+            <ion-label>
+              World Map
+            </ion-label>
+          </ion-item>
           <ion-item button (click)="navigate(appRouter.citiesPath)">
             <ion-icon slot="start" name='bus'></ion-icon>
             <ion-label>
@@ -35,6 +41,13 @@
               Fighters Guild
             </ion-label>
           </ion-item>
+          
+          <ion-item button (click)="navigate('maps')">
+            <ion-icon slot="start" name='bus'></ion-icon>
+            <ion-label>
+              Shop
+            </ion-label>
+          </ion-item>
 
           <ion-item *ngIf="currentUser" button (click)="navigate('account')">
             <ion-icon slot="start" name='person'></ion-icon>
@@ -42,19 +55,13 @@
               My Account
             </ion-label>
           </ion-item>
-          <!-- <ion-item *ngIf="currentUser" button (click)="doFacebookLogout()">
+          <ion-item *ngIf="currentUser" button (click)="doFacebookLogout()">
             <ion-icon slot="start" name='power'></ion-icon>
             <ion-label>
               Logout
             </ion-label>
-          </ion-item> -->
-          <ion-item *ngIf="!currentUser" button (click)="doFacebookLogin()">
-            <ion-icon slot="start" name='power'></ion-icon>
-            <ion-label>
-              Login
-            </ion-label>
           </ion-item>
-          <ion-item button (click)="doFacebookLogin()">
+          <ion-item *ngIf="!currentUser" button (click)="doFacebookLogin()">
             <ion-icon slot="start" name='power'></ion-icon>
             <ion-label>
               Login

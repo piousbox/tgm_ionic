@@ -46,6 +46,15 @@ export class MapPage implements OnInit {
       ] },
     'map-colombia': { w: 500, h: 600, description: 'Colombia', img: '../assets/maps/500x600_colombia.png' },
     'map-chicago': { w: 630, h: 472, description: 'Chicago', img: '../assets/src/chicago.jpg' },
+    
+    'world': { w: 1600, h: 1000, description: 'World Map', 
+      img: 'https://ish-archive.s3.amazonaws.com/2020/202002/GameUI/assets/202002_world_map/1600x1000_world-map.jpg',
+      markers: [ 
+        { left: 353, top: 597, w: 65, h: 88, slug: 'map-colombia',
+          img: 'https://ish-archive.s3.amazonaws.com/2020/202002/GameUI/assets/202002_world_map/1600x1000_map_markers/1600x1000_co-marker.png' }, 
+        // { top: 475, left: 184, w: 64, h: 64, img: '../assets/64x64/marker-city.png', slug: 'map-chicago' },
+      ]
+    },
   };
   thisMap:object = {};
   zoomFactor = 1.0;
