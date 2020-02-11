@@ -23,6 +23,8 @@ import { C, logg } from './const';
 })
 export class AppComponent implements OnInit {
   appRouter;
+
+  C:any = C;
   currentUser:any = false;
   currentUserStr:string = "";
   

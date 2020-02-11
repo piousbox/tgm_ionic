@@ -33,17 +33,17 @@
               <div class='main-map-inner'>
 
                 <div class='img-bg' 
-                  [style.background-image]="'url('+thisMap['img']+')'" 
-                  [style.width]="thisMap['w'] * zoomFactor + 'px'" 
-                  [style.height]="thisMap['h'] * zoomFactor + 'px'"
+                  [style.background-image]="'url('+map['img_path']+')'" 
+                  [style.width]="map['w'] * zoomFactor + 'px'" 
+                  [style.height]="map['h'] * zoomFactor + 'px'"
                 >
 
-                  <div class='img-marker' *ngFor="let marker of markers"
+                  <div class='img-marker' *ngFor="let marker of map['markers']"
                     [style.width]="marker['w']*zoomFactor + 'px'"
                     [style.height]="marker['h']*zoomFactor + 'px'"
                     [style.top]="marker['top']*zoomFactor + 'px'"
                     [style.left]="marker['left']*zoomFactor + 'px'"
-                    [style.background-image]="'url('+marker['img']+')'"
+                    [style.background-image]="'url('+marker['img_path']+')'"
                     (click)="navigateToMap(marker['slug'])"
                   ></div>
 
@@ -58,7 +58,7 @@
           <div class='main-right-overlay'></div>
           <div class='main-right-inner'>
             <div class='main-text'>
-              {{ thisMap['description'] }}
+              {{ map['description'] }}
             </div>
           </div>
         </div>

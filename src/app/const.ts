@@ -9,6 +9,7 @@ export const C = {
   
   oneStar: '43-oneStar',
 
+  worldMapSlug: 'world-1',
 }
 
 export const logg = function (a, b='') {

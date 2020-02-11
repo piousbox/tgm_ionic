@@ -10,11 +10,12 @@ export class AppRouter {
 }
 
 export class ApiRouter {
-  static account = `${environment.api_domain}/api/my/account`;
-  static citiesindex = `${environment.api_domain}/api/cities.json`;
-  static getStars = `${environment.api_domain}/api/stars/buy`;
-  static homefeed = `${environment.api_domain}/api/sites/view/${environment.domain}`;
-  static longTermToken = (d) => `${environment.api_domain}/api/users/long_term_token.json?accessToken=${d.shortTermToken}`;
-  static newsfeed = `${environment.api_domain}/api/my/newsitems`;
-  static report = (r) => `${environment.api_domain}/api/reports/view/${r['reportname']}`;
+  static account                 = `${environment.api_domain}/api/my/account`;
+  static citiesindex             = `${environment.api_domain}/api/cities.json`;
+  static getStars                = `${environment.api_domain}/api/stars/buy`;
+  static homefeed                = `${environment.api_domain}/api/sites/view/${environment.domain}`;
+  static longTermToken = (d)    => `${environment.api_domain}/api/users/long_term_token.json?accessToken=${d.shortTermToken}`;
+  static map           = (slug) => `${environment.api_domain}/api/maps/view/${slug}`;
+  static newsfeed                = `${environment.api_domain}/api/my/newsitems`;
+  static report        = (r)    => `${environment.api_domain}/api/reports/view/${r['reportname']}`;
 };

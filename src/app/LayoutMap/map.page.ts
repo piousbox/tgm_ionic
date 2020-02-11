@@ -36,34 +36,15 @@ export class MapPage implements OnInit {
   footerCollapsed:boolean = false;
   halfCollapsed:string = "none-collapsed"; // 'none-collapsed', 'left-collapsed', 'right-collapsed'
   headerCollapsed:boolean = true;
+  map:any = false;
+  markers:any = [];
   nStars:number = 0;
-
-  maps:object = {
-    'map-world': { w: 1200, h: 1200, description: 'World', img: '../assets/maps/1200x1200/world-1.jpg',
-      markers: [ 
-        { top: 650, left: 210, w: 70, h: 90, img: '../assets/maps/v1/co.png', slug: 'map-colombia' }, 
-        { top: 475, left: 184, w: 64, h: 64, img: '../assets/64x64/marker-city.png', slug: 'map-chicago' },
-      ] },
-    'map-colombia': { w: 500, h: 600, description: 'Colombia', img: '../assets/maps/500x600_colombia.png' },
-    'map-chicago': { w: 630, h: 472, description: 'Chicago', img: '../assets/src/chicago.jpg' },
-    
-    'world': { w: 1600, h: 1000, description: 'World Map', 
-      img: 'https://ish-archive.s3.amazonaws.com/2020/202002/GameUI/assets/202002_world_map/1600x1000_world-map.jpg',
-      markers: [ 
-        { left: 353, top: 597, w: 65, h: 88, slug: 'map-colombia',
-          img: 'https://ish-archive.s3.amazonaws.com/2020/202002/GameUI/assets/202002_world_map/1600x1000_map_markers/1600x1000_co-marker.png' }, 
-        // { top: 475, left: 184, w: 64, h: 64, img: '../assets/64x64/marker-city.png', slug: 'map-chicago' },
-      ]
-    },
-  };
-  thisMap:object = {};
+  slug:string = '';
+  // stripe;
   zoomFactor = 1.0;
-  markers = [];
-  markerCo:object = {};
 
   constructor(
     private appService: AppService,
-    // private fb: Facebook,
     private httpClient: HttpClient,
     private loadingController: LoadingController,    
     private menu: MenuController,
@@ -78,16 +59,26 @@ export class MapPage implements OnInit {
     private stripe: Stripe,
     private toastController: ToastController,
   ) {
-    let slug = this.route.snapshot.paramMap.get('slug') || 'map-world';
-    this.thisMap = this.maps[slug];
-    this.markers = this.thisMap['markers'];
-    this.setCurrentUser();
+    logg('MapPage constructor()');
+
+    // this.setCurrentUser(); // @TODO: re-add
     this.appRouter = AppRouter;
-    this.stripe.setPublishableKey(environment.stripePublishableKey);
 
     this.appService.nStars.subscribe(n => {
       logg('observed nstars');
       this.nStars = parseInt(n);
+    });
+
+    this.platform.ready().then(() => {
+      logg(environment.stripePublishableKey, 'keyy');
+      logg(this.stripe, 'OG stripe?');
+      
+      this.stripe.setPublishableKey(environment.stripePublishableKey);
+      // this.getStars();
+      this.slug = this.route.snapshot.paramMap.get('slug') || C.worldMapSlug;
+      logg(this.slug, 'slugg');
+
+      this.ngOnInit();
     });
   }
 
@@ -118,6 +109,9 @@ export class MapPage implements OnInit {
   }
 
   async getStars() {
+    return false; // @TODO: do proper sequence of events here
+
+    logg('MapPage getStars()')
     // const current_user = await this.nativeStorage.getItem('current_user').then(a=>JSON.parse(a));
     const params = new HttpParams().set('accessToken', this.currentUser.longTermToken);
     const account = await this.httpClient.get(ApiRouter.account, { params: params }).toPromise();
@@ -132,16 +126,17 @@ export class MapPage implements OnInit {
 
   navigateToMap(slug = 'map-world') {
     this.router.navigate([`/maps/${slug}`]);
-    this.thisMap = this.maps[slug];
-    this.markers = this.thisMap['markers'];
   }
 
-  ngOnInit () {
-    logg('MapPage ngOnInit()');
-    this.getStars();
+  async ngOnInit () {
+    const path = ApiRouter.map(this.slug);
+    const answer = await this.httpClient.get(path).toPromise();
+    this.map = answer['map'];
   }
 
   setCurrentUser() {
+    logg('MapPage setCurrentUser()');
+
     this.nativeStorage.getItem('current_user').then(u => JSON.parse(u)).then(data => {
       this.currentUser = data;
       // this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
