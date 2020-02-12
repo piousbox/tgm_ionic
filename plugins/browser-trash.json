@@ -12,6 +12,9 @@
     },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.piousbox.gameui"
+    },
+    "phonegap-plugin-push": {
+      "PACKAGE_NAME": "com.piousbox.gameui"
     }
   },
   "dependent_plugins": {}

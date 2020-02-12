@@ -89,6 +89,14 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "cordova.plugins.stripe"
       ]
+    },
+    {
+      "id": "phonegap-plugin-push.PushNotification",
+      "file": "plugins/phonegap-plugin-push/www/push.js",
+      "pluginId": "phonegap-plugin-push",
+      "clobbers": [
+        "PushNotification"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -102,6 +110,9 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-streaming-media": "2.2.0",
     "cordova-plugin-whitelist": "1.3.3",
-    "cordova-plugin-stripe": "1.5.3"
+    "cordova-plugin-stripe": "1.5.3",
+    "cordova-support-google-services": "1.3.2",
+    "phonegap-plugin-multidex": "1.0.0",
+    "phonegap-plugin-push": "2.3.0"
   };
 });
