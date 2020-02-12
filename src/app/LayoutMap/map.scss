@@ -17,6 +17,7 @@
   /* position: relative;
   top: 50%; left: 50%;
   transform: translate(-50%,-50%); */
+
 }
 .img-map-1 {
  background: url('../../assets/maps/800x800/3.jpg');
@@ -49,6 +50,12 @@
   background: white;
 }
 
+.main-right-inner {
+  .descr {
+    padding: 0.5em 0 1em 0;
+  }
+}
+
 /**
  * markers 
  */
@@ -71,9 +78,17 @@
   flex-wrap: wrap;
 
   .item {
-    border: 1px solid green;
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 1em 1em 0;
+
+    .label {
+      text-align: center;
+    }
   }
 }
 

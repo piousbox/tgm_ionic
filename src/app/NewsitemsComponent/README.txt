@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+
+import { Component, Input, OnInit } from '@angular/core';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -11,15 +12,13 @@ import { environment } from '../../environments/environment';
 import { C, logg } from '../const';
 
 @Component({
-  selector: 'app-newsfeed',
-  templateUrl: './newsfeed.page.html',
-  styleUrls: ['./newsfeed.page.scss'],
+  selector: 'newsitems-list',
+  templateUrl: './newsitems-list.html',
+  styleUrls: ['./newsitems.scss'],
 })
-export class NewsfeedPage implements OnInit {
-
+export class NewsitemsList implements OnInit {
   currentUser = false;
-  newsitems:Array<any> = [];
-
+  @Input() newsitems:Array<any> = [];
 
   constructor(
     private appService: AppService,
@@ -28,22 +27,12 @@ export class NewsfeedPage implements OnInit {
     public httpClient: HttpClient, 
     public toastController: ToastController,
   ) {
-    logg('NewsfeedPage#constructor');
-
-    /* router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.ngOnInit();
-      }
-    }); */
-
+    logg('NewsitemsList constructor()');
+    this.ngOnInit();
   }
 
   ngOnInit () {
-    logg('NewsfeedPage ngOnInit()');
-  }
-
-  render () {
-    logg('newsfeed.page#render');
+    logg('NewsitemsList ngOnInit()');
 
     this.nativeStorage.getItem('current_user').then(a=>JSON.parse(a)).then(data => {
       logg(data, 'current_user 5');
@@ -80,4 +69,5 @@ export class NewsfeedPage implements OnInit {
   }
 
 }
+
 

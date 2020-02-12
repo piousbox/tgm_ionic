@@ -95,6 +95,7 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
  ic plugin remove cordova-plugin-googleplus --save
  ic plugin add cordova-plugin-device
  ic plugin add cordova-plugin-stripe
+ ic plugin add phonegap-plugin-push
 
  ic platform rm browser 
  ic platform add browser

@@ -6,11 +6,11 @@ import { IonicModule } from '@ionic/angular';
 import { LayoutSidemenu } from './LayoutSidemenu';
 
 @NgModule({
+  declarations: [ LayoutSidemenu ],
+  exports: [ LayoutSidemenu ],
   imports: [
     CommonModule,
     IonicModule,
   ],
-  declarations: [ LayoutSidemenu ],
-  exports: [ LayoutSidemenu ],
 })
 export class LayoutSidemenuModule {}

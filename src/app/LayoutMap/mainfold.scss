@@ -34,6 +34,8 @@ html, body {
 }
 .main-text {
   padding: .5em;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -113,6 +115,27 @@ html, body {
   margin-left: -1em;
   background-size: cover;
 }
+.main-collapse-left {
+  position: absolute;
+  bottom: 2em;
+  background: url('../../assets/16x16/arrow-left.png');
+  width: 1em;
+  height: 1em;
+  margin-left: -1em;
+  background-size: cover;
+}
+.main-collapse-right {
+  position: absolute;
+  bottom: 1em;
+  background: url('../../assets/16x16/arrow-right.png');
+  width: 1em;
+  height: 1em;
+  margin-left: -1em;
+  background-size: cover;
+}
+.main-collapse-right {
+}
+
 .left-collapsed .main-left {
   width: 1em;
 }

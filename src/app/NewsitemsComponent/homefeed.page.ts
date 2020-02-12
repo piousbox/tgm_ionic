@@ -13,7 +13,7 @@ import { C, logg } from '../const';
 @Component({
   selector: 'homefeed',
   templateUrl: './newsfeed.page.html',
-  styleUrls: ['./newsfeed.page.scss'],
+  styleUrls: ['./newsitems.scss'],
 })
 export class HomefeedPage implements OnInit {
   newsitems = [];

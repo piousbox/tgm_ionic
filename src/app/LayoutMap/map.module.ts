@@ -6,7 +6,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MapPage } from './map.page';
 import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
+import { NewsitemsModule } from '../NewsitemsComponent/Newsitems.module';
+// import { NewsitemsList } from '../NewsitemsComponent/newsitems.list';
 import { GetStars } from './GetStars';
+import { TestElem } from './map.page';
 
 const routes: Routes = [
   { path: '', component: MapPage },
@@ -19,9 +22,10 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     LayoutSidemenuModule,
+    NewsitemsModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [ MapPage, GetStars ],
+  declarations: [ GetStars, MapPage ],
   entryComponents: [ GetStars ],
 })
 export class MapModule {}

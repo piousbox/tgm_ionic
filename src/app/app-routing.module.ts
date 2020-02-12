@@ -6,7 +6,7 @@ const routes: Routes = [
   
   { path: 'account',   loadChildren: './AccountComponent/account.module#AccountModule' },
 
-  { path: 'en',  loadChildren: './NewsfeedComponent/newsfeed.module#NewsfeedPageModule' },
+  { path: 'en',  loadChildren: './NewsitemsComponent/Newsitems.module#NewsitemsModule' },
   { path: 'en/cities', loadChildren: './CitiesComponent/cities.module#CitiesModule' },
   { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' }, // @TODO: deprecated
 

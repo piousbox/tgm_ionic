@@ -62,13 +62,18 @@
           <div class='main-right-overlay'></div>
           <div class='main-right-inner'>
             <div class='main-text'>
-              {{ map['description'] }}
+              <div class='descr'>{{ map['description'] }}</div>
 
               <div class="markers-list">
-                <div class="item" *ngFor="let marker of map['markers']" >
-                  {{ marker.slug }}
+                <div class="item" *ngFor="let marker of map['markers']" 
+                  (click)="navigateToMap(marker['slug'])"
+                >
+                  <ion-img [src]="marker.title_img_path" alt='' ></ion-img>
+                  <span class='label'>{{ marker.name }}</span>
                 </div>
               </div>
+
+              <newsitems-list [newsitems]="map.newsitems" ></newsitems-list>
 
             </div>
           </div>

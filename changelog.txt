@@ -22,3 +22,4 @@
                    let's wire basic payments.
         20200208 - how many stars do I have?
 				           and more stripe
+0.2.5 - 20200211 - overhaul newsitems for maps

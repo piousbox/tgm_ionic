@@ -1,4 +1,4 @@
-import { Component, OnInit, NgZone } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 
@@ -19,6 +19,7 @@ import { AppRouter, ApiRouter } from '../app-router';
 import { AppService } from '../app-service';
 import { C, logg } from '../const';
 
+
 @Component({
   selector: 'app-map',
   templateUrl: 'map.page.html',
@@ -38,9 +39,9 @@ export class MapPage implements OnInit {
   headerCollapsed:boolean = true;
   map:any = false;
   markers:any = [];
+  newsitems:Array<any> = [];
   nStars:number = 0;
   slug:string = '';
-  // stripe;
   zoomFactor = 1.0;
 
   constructor(
@@ -50,7 +51,6 @@ export class MapPage implements OnInit {
     private menu: MenuController,
     public modalController: ModalController,
     private nativeStorage: NativeStorage,
-    private ngZone: NgZone,
     private platform: Platform,
     private route: ActivatedRoute,
     private router: Router,
@@ -91,8 +91,13 @@ export class MapPage implements OnInit {
   }
 
   collapseLeft() {
-    this.halfCollapsed = 'left-collapsed';
-    this.collapseDirection = 'right';
+    if ('none-collapsed' == this.halfCollapsed) {
+      this.halfCollapsed = 'left-collapsed';
+      this.collapseDirection = 'right';
+    } else {
+      this.halfCollapsed = 'none-collapsed';
+      this.collapseDirection = 'left';
+    }
   }
   collapseMain() {
     if ('left-collapsed' === this.halfCollapsed) {
@@ -110,8 +115,13 @@ export class MapPage implements OnInit {
     }
   }
   collapseRight() {
-    this.halfCollapsed = 'right-collapsed';
-    this.collapseDirection = 'left';
+    if ('none-collapsed' == this.halfCollapsed) {
+      this.halfCollapsed = 'right-collapsed';
+      this.collapseDirection = 'left';
+    } else {
+      this.halfCollapsed = 'none-collapsed';
+      this.collapseDirection = 'right';
+    }
   }
 
   async getStars() {
