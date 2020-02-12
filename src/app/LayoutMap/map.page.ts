@@ -90,9 +90,11 @@ export class MapPage implements OnInit {
     this.headerCollapsed = this.headerCollapsed ? false : true;
   }
 
+  collapseLeft() {
+    this.halfCollapsed = 'left-collapsed';
+    this.collapseDirection = 'right';
+  }
   collapseMain() {
-    logg('collapseMain()');
-
     if ('left-collapsed' === this.halfCollapsed) {
       this.halfCollapsed = 'none-collapsed';
       this.collapseDirection = 'right';
@@ -106,6 +108,10 @@ export class MapPage implements OnInit {
       this.halfCollapsed = 'left-collapsed';
       this.collapseDirection = 'right';
     }
+  }
+  collapseRight() {
+    this.halfCollapsed = 'right-collapsed';
+    this.collapseDirection = 'left';
   }
 
   async getStars() {

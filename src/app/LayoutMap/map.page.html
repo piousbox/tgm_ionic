@@ -1,5 +1,5 @@
 
-<ion-content >
+<ion-content class='' >
   <div class="mainfold-parent 
     {{ this.footerCollapsed ? 'footer-collapsed' : '' }} 
     {{ this.halfCollapsed }} 
@@ -41,8 +41,8 @@
                   <div class='img-marker' *ngFor="let marker of map['markers']"
                     [style.width]="marker['w']*zoomFactor + 'px'"
                     [style.height]="marker['h']*zoomFactor + 'px'"
-                    [style.top]="marker['top']*zoomFactor + 'px'"
-                    [style.left]="marker['left']*zoomFactor + 'px'"
+                    [style.left]="marker['x']*zoomFactor + 'px'"
+                    [style.top]="marker['y']*zoomFactor + 'px'"
                     [style.background-image]="'url('+marker['img_path']+')'"
                     (click)="navigateToMap(marker['slug'])"
                   ></div>
@@ -55,10 +55,21 @@
         </div>
         <div id='mainRight' class='main-right main-half' >
           <div class='main-collapse' (click)="collapseMain()" ></div>
+          <div class='main-collapse-2'>
+            <div class='main-collapse-left' (click)="collapseLeft()"></div>
+            <div class='main-collapse-right' (click)="collapseRight()"></div>
+          </div>
           <div class='main-right-overlay'></div>
           <div class='main-right-inner'>
             <div class='main-text'>
               {{ map['description'] }}
+
+              <div class="markers-list">
+                <div class="item" *ngFor="let marker of map['markers']" >
+                  {{ marker.slug }}
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

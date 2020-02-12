@@ -56,6 +56,9 @@
   position: absolute;
   background-size: cover;
 }
+.debug .img-marker {
+  border: 1px solid yellow;
+}
 #marker1 { 
   top: 200px;
   left: 240px;
@@ -63,7 +66,15 @@
   height: 64px;
   background: url('../../assets/64x64/marker.png');
 }
-#markerCo {
-  
+.markers-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    border: 1px solid green;
+    width: 100px;
+    height: 100px;
+  }
 }
+
 
