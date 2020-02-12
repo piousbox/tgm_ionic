@@ -37,11 +37,14 @@ export class MapPage implements OnInit {
   footerCollapsed:boolean = false;
   halfCollapsed:string = "none-collapsed"; // 'none-collapsed', 'left-collapsed', 'right-collapsed'
   headerCollapsed:boolean = true;
+  location:any = false;
+  location_slug:string = '';
   map:any = false;
+  map_slug:string = '';
+  marker_slug:string = '';
   markers:any = [];
   newsitems:Array<any> = [];
   nStars:number = 0;
-  slug:string = '';
   zoomFactor = 1.0;
 
   constructor(
@@ -49,7 +52,7 @@ export class MapPage implements OnInit {
     private httpClient: HttpClient,
     private loadingController: LoadingController,    
     private menu: MenuController,
-    public modalController: ModalController,
+    private modalController: ModalController,
     private nativeStorage: NativeStorage,
     private platform: Platform,
     private route: ActivatedRoute,
@@ -61,22 +64,20 @@ export class MapPage implements OnInit {
   ) {
     logg('MapPage constructor()');
 
-    // this.setCurrentUser(); // @TODO: re-add
+    this.setCurrentUser();
     this.appRouter = AppRouter;
 
     this.appService.nStars.subscribe(n => {
-      logg('observed nstars');
+      logg(n, 'observed nstars');
       this.nStars = parseInt(n);
     });
 
     this.platform.ready().then(() => {
-      logg(environment.stripePublishableKey, 'keyy');
-      logg(this.stripe, 'OG stripe?');
-      
       this.stripe.setPublishableKey(environment.stripePublishableKey);
-      // this.getStars();
-      this.slug = this.route.snapshot.paramMap.get('slug') || C.worldMapSlug;
-      logg(this.slug, 'slugg');
+      this.getStars();
+
+      this.map_slug      = this.route.snapshot.paramMap.get('map_slug') || C.worldMapSlug;
+      this.location_slug = this.route.snapshot.paramMap.get('location_slug') || '';
 
       this.ngOnInit();
     });
@@ -125,11 +126,9 @@ export class MapPage implements OnInit {
   }
 
   async getStars() {
-    return false; // @TODO: do proper sequence of events here
-
     logg('MapPage getStars()')
-    // const current_user = await this.nativeStorage.getItem('current_user').then(a=>JSON.parse(a));
-    const params = new HttpParams().set('accessToken', this.currentUser.longTermToken);
+    const cu = await this.nativeStorage.getItem('current_user').then(a=>JSON.parse(a));
+    const params = new HttpParams().set('accessToken', cu.longTermToken);
     const account = await this.httpClient.get(ApiRouter.account, { params: params }).toPromise();
     this.nStars = account['n_stars'];
     // logg(account, 'account');
@@ -139,15 +138,37 @@ export class MapPage implements OnInit {
   navigate(where) {
     this.router.navigate([where]);
   }
+  navigateToLocation(map_slug, location_slug) {
+    this.marker_slug = location_slug;
+    this.map_slug    = map_slug;
+    this.router.navigate([`/maps/${map_slug}/locations/${location_slug}`]);
+    this.ngOnInit();
+  }
+  navigateToLocation2(ms, m2s, tt) {
+    // logg([ms, m2s, tt], "navigateToLocation2()");
 
+    if (C.item_type_location == tt) { 
+      this.navigateToLocation(ms, m2s);
+    } else if (C.item_type_map == tt) { 
+      this.navigateToMap(m2s);
+    }
+  }
   navigateToMap(slug = 'map-world') {
     this.router.navigate([`/maps/${slug}`]);
   }
 
   async ngOnInit () {
-    const path = ApiRouter.map(this.slug);
-    const answer = await this.httpClient.get(path).toPromise();
-    this.map = answer['map'];
+    // logg([this.map_slug], 'MapPage ngOnInit()');
+
+    if (this.map_slug) {
+      const path = ApiRouter.map(this.map_slug);
+      const mapp = await this.httpClient.get(path).toPromise();
+      this.map = mapp['map'];
+    }
+    if (this.marker_slug) {
+      this.location = await this.httpClient.get(ApiRouter.marker(this.marker_slug)).toPromise();
+      logg(this.location, 'location!');
+    }
   }
 
   setCurrentUser() {
@@ -162,6 +183,7 @@ export class MapPage implements OnInit {
       console.log('+++ currentUser() error:', e);
     });
   }
+
 
   async showGetStars() {
     const modal = await this.modalController.create({

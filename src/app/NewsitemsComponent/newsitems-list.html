@@ -7,11 +7,21 @@
 
 <div class="a-1" *ngFor="let n of newsitems">
 
+  <!--
+    -- gallery
+  -->
   <div class='row' *ngIf="n.item_type=='gallery'" >
     <div class='title-card'>
       <div class='title-card-inner'>
-        <h1><ion-icon slot="start" name='camera'></ion-icon> &nbsp; {{ n.name }} ({{ n.photos.length }})</h1>
-        <p>{{ n.created_at.substring(0,10) }}</p>
+        <h1 (click)="showGallery(n.galleryname)" ><ion-icon slot="start" name='camera'></ion-icon> &nbsp; {{ n.name }} ({{ n.photos.length }})</h1>
+        
+        <div class='metaline' >
+          <div class='premium-tier' *ngIf="n.premium_tier && n.premium_tier > 0" >
+            <b>$ {{n.premium_tier}}</b>
+          </div>
+          {{n.created_at.substring(0,10)}}
+        </div>
+
       </div>
     </div>
     <div class='card' *ngFor="let ph of n.photos | slice:0:3">

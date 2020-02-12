@@ -5,6 +5,9 @@ export const C = {
   didLogin: '41-didLogin',
   didLogout: '42-didLogout',
 
+  item_type_location: 'gameui-location',
+  item_type_map: 'gameui-map',
+
   nStars: '421-nStars',
   
   oneStar: '43-oneStar',

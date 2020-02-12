@@ -1,5 +1,5 @@
 
-<ion-content class='' >
+<ion-content class='n-debug' >
   <div class="mainfold-parent 
     {{ this.footerCollapsed ? 'footer-collapsed' : '' }} 
     {{ this.halfCollapsed }} 
@@ -38,14 +38,25 @@
                   [style.height]="map['h'] * zoomFactor + 'px'"
                 >
 
-                  <div class='img-marker' *ngFor="let marker of map['markers']"
-                    [style.width]="marker['w']*zoomFactor + 'px'"
-                    [style.height]="marker['h']*zoomFactor + 'px'"
-                    [style.left]="marker['x']*zoomFactor + 'px'"
-                    [style.top]="marker['y']*zoomFactor + 'px'"
-                    [style.background-image]="'url('+marker['img_path']+')'"
-                    (click)="navigateToMap(marker['slug'])"
-                  ></div>
+                  <ng-container *ngFor="let marker of map['markers']" >
+
+                    <div class='img-marker' *ngIf="'gameui-map' == marker.item_type" 
+                      [style.width]="marker['w']*zoomFactor + 'px'"
+                      [style.height]="marker['h']*zoomFactor + 'px'"
+                      [style.left]="marker['x']*zoomFactor + 'px'"
+                      [style.top]="marker['y']*zoomFactor + 'px'"
+                      [style.background-image]="'url('+marker['img_path']+')'"
+                      (click)="navigateToMap(marker['slug'])" ></div>
+
+                    <div class='img-marker' *ngIf="'gameui-location' == marker.item_type" 
+                      [style.width]="marker['w']*zoomFactor + 'px'"
+                      [style.height]="marker['h']*zoomFactor + 'px'"
+                      [style.left]="marker['x']*zoomFactor + 'px'"
+                      [style.top]="marker['y']*zoomFactor + 'px'"
+                      [style.background-image]="'url('+marker['img_path']+')'"
+                      (click)="navigateToLocation(map['slug'], marker['slug'])" ></div>
+                  </ng-container>
+
 
                 </div>
 
@@ -53,6 +64,9 @@
             </div>
           </div>
         </div>
+        <!--
+          -- mainRight
+          -->
         <div id='mainRight' class='main-right main-half' >
           <div class='main-collapse' (click)="collapseMain()" ></div>
           <div class='main-collapse-2'>
@@ -61,21 +75,29 @@
           </div>
           <div class='main-right-overlay'></div>
           <div class='main-right-inner'>
-            <div class='main-text'>
+
+            <div class='main-text' *ngIf="!location" >
               <div class='descr'>{{ map['description'] }}</div>
 
-              <div class="markers-list">
-                <div class="item" *ngFor="let marker of map['markers']" 
-                  (click)="navigateToMap(marker['slug'])"
-                >
-                  <ion-img [src]="marker.title_img_path" alt='' ></ion-img>
-                  <span class='label'>{{ marker.name }}</span>
-                </div>
+              <div class="markers-list" >
+                
+                  <div class="item"
+                    *ngFor="let marker of map['markers']"
+                    (click)="navigateToLocation2(map.slug, marker.slug, marker.item_type)"
+                  >
+                    <ion-img [src]="marker.title_img_path" alt='' ></ion-img>
+                    <span class='label'>{{ marker.name }}</span>
+                  </div>
+                
               </div>
 
               <newsitems-list [newsitems]="map.newsitems" ></newsitems-list>
-
             </div>
+
+            <div class='main-text' *ngIf="location">
+              <div [innerHTML]=location.description ></div>
+            </div>
+
           </div>
         </div>
       </div>

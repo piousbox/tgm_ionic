@@ -16,6 +16,7 @@ export class ApiRouter {
   static homefeed                = `${environment.api_domain}/api/sites/view/${environment.domain}`;
   static longTermToken = (d)    => `${environment.api_domain}/api/users/long_term_token.json?accessToken=${d.shortTermToken}`;
   static map           = (slug) => `${environment.api_domain}/api/maps/view/${slug}`;
+  static marker        = (slug) => `${environment.api_domain}/api/markers/view/${slug}`;
   static newsfeed                = `${environment.api_domain}/api/my/newsitems`;
   static report        = (r)    => `${environment.api_domain}/api/reports/view/${r['reportname']}`;
 };

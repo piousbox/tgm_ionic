@@ -5,11 +5,12 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AppModule } from '../app.module';
 import { HomefeedPage } from './homefeed.page';
-import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
 import { NewsfeedPage } from './newsfeed.page';
 import { NewsitemsList } from './newsitems.list';
+import { AppModule } from '../app.module';
+import { GalleriesShow } from '../GalleriesComponent/GalleriesShow';
+import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
 
 const routes: Routes = [
   { path: '', component: HomefeedPage },
@@ -17,7 +18,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ HomefeedPage, NewsfeedPage, NewsitemsList, ],
+  declarations: [ GalleriesShow, HomefeedPage, NewsfeedPage, NewsitemsList, ],
+  entryComponents: [ GalleriesShow, ],
   exports: [ NewsitemsList ],
   imports: [
     CommonModule,

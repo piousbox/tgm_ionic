@@ -9,11 +9,11 @@ import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
 import { NewsitemsModule } from '../NewsitemsComponent/Newsitems.module';
 // import { NewsitemsList } from '../NewsitemsComponent/newsitems.list';
 import { GetStars } from './GetStars';
-import { TestElem } from './map.page';
 
 const routes: Routes = [
   { path: '', component: MapPage },
-  { path: ':slug', component: MapPage },
+  { path: ':map_slug/locations/:location_slug', component: MapPage },
+  { path: ':map_slug', component: MapPage },
 ];
 
 @NgModule({
