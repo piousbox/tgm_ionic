@@ -1,6 +1,9 @@
 
 <ion-content>
   <h1>Name: {{gallery.name}}</h1>
+  <div *ngIf="gallery.is_premium && !gallery.is_purchased" >
+    <ion-button (click)="purchase()" >Purchase</ion-button>
+  </div>
   <p>message: {{gallery.message}}</p>
   <p>description: {{gallery.description}}</p>
 

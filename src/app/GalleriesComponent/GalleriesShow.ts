@@ -27,15 +27,37 @@ export class GalleriesShow implements OnInit {
     private modalController: ModalController,
     private nativeStorage: NativeStorage,
   ) {
-    this.ngOnInit();
+    if (this.slug) {
+      this.ngOnInit();
+    }
   }
 
   async ngOnInit() {
-    logg(this.slug, 'GalleriesShow ngOnInit()');
+    logg(this.slug, 'GalleriesShow ngOnInit() slug');
     if (this.slug) {
-      const answer = await this.httpClient.get(ApiRouter.galleriesShow(this.slug)).toPromise();
+      let params = await this.nativeStorage.getItem('current_user').then(r => JSON.parse(r)
+        ).then( cu => {
+          return new HttpParams().set('accessToken', cu.longTermToken);
+        }).catch( e => {
+          return {};
+        });
+      const answer = await this.httpClient.get(ApiRouter.galleriesShow(this.slug), { params: params }).toPromise();
       this.gallery = answer['gallery'];
     }
   }
+
+  async purchase() {
+    let params = await this.nativeStorage.getItem('current_user').then(r => JSON.parse(r)
+      ).then( cu => {
+        return new HttpParams().set('accessToken', cu.longTermToken
+          ).set('className': 'Gallery').set('slug': this.slug);
+      }).catch( e => {
+        raise 'this cannot happen';
+        return {};
+      });
+    const answer = await this.httpClient.post(ApiRouter.doPurchase, params ).toPromise();
+    logg(answer, 'a12 - answer');
+  }
+
   
 }

@@ -45,6 +45,7 @@ export class MapPage implements OnInit {
   markers:any = [];
   newsitems:Array<any> = [];
   nStars:number = 0;
+  params:any = {};
   zoomFactor = 1.0;
 
   constructor(
@@ -125,10 +126,18 @@ export class MapPage implements OnInit {
   }
 
   async getStars() {
-    const cu = await this.nativeStorage.getItem('current_user').then(a=>JSON.parse(a));
-    const params = new HttpParams().set('accessToken', cu.longTermToken);
-    const account = await this.httpClient.get(ApiRouter.account, { params: params }).toPromise();
-    this.nStars = account['n_stars'];
+    const params = await this.nativeStorage.getItem('current_user'
+      ).then( a => JSON.parse(a)
+      ).then( cu => {
+        return new HttpParams().set('accessToken', cu.longTermToken);
+      }).catch( e => {
+        logg(e, '554 - not doing getStars() b/c no accessToken');
+        return false;
+      });
+    if (params) {
+      const account = await this.httpClient.get(ApiRouter.account, { params: params }).toPromise();
+      this.nStars = account['n_stars'];
+    }
   }
 
   navigate(where) {
@@ -155,28 +164,28 @@ export class MapPage implements OnInit {
 
   async ngOnInit () {
     // logg([this.map_slug], 'MapPage ngOnInit()');
+    await this.setCurrentUser();
 
     if (this.map_slug) {
       const path = ApiRouter.map(this.map_slug);
-      const mapp = await this.httpClient.get(path).toPromise();
+      const mapp = await this.httpClient.get(path, {params: this.params}).toPromise();
       this.map = mapp['map'];
     }
     if (this.marker_slug) {
-      this.location = await this.httpClient.get(ApiRouter.marker(this.marker_slug)).toPromise();
+      this.location = await this.httpClient.get(ApiRouter.marker(this.marker_slug), {params: this.params}).toPromise();
       logg(this.location, 'location!');
     }
   }
 
-  setCurrentUser() {
+  async setCurrentUser() {
     // logg('MapPage setCurrentUser()');
-
-    this.nativeStorage.getItem('current_user').then(u => JSON.parse(u)).then(data => {
+    const result = await this.nativeStorage.getItem('current_user').then(u => JSON.parse(u)).then(data => {
       this.currentUser = data;
+      this.params = { accessToken: data.longTermToken };
       // this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
     }).catch( e => {
       this.currentUser    = false;
       this.currentUserStr = "";
-      console.log('+++ currentUser() error:', e);
     });
   }
 

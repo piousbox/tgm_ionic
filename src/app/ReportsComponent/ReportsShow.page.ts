@@ -29,7 +29,7 @@ export class ReportsShowPage implements OnInit {
 
     let reportname = this.route.snapshot.params.reportname;
 
-    this.nativeStorage.getItem('current_user').then(async data => {
+    this.nativeStorage.getItem('current_user').then(r => JSON.parse(r)).then(async data => {
       // logg(data, 'data');
       let p2 = new HttpParams().set('accessToken', data.longTermToken);
       const answer = await this.httpClient.get(ApiRouter.report({ reportname: reportname }), { params: p2 }).toPromise();

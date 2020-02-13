@@ -17,7 +17,7 @@
         
         <div class='metaline' >
           <div class='premium-tier' *ngIf="n.premium_tier && n.premium_tier > 0" >
-            <b>$ {{n.premium_tier}}</b>
+            <b class="{{n.is_purchased ? 'purchased' : ''}}" >$ {{n.premium_tier}}</b>
           </div>
           {{n.created_at.substring(0,10)}}
         </div>
