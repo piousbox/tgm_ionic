@@ -27,6 +27,7 @@ import { C, logg } from '../const';
 })
 export class MapPage implements OnInit {
   appRouter:any;
+  C;
   ccNumber;
   ccExpMonth;
   ccExpYear;
@@ -38,10 +39,9 @@ export class MapPage implements OnInit {
   halfCollapsed:string = "none-collapsed"; // 'none-collapsed', 'left-collapsed', 'right-collapsed'
   headerCollapsed:boolean = true;
   location:any = false;
-  location_slug:string = '';
   map:any = false;
   map_slug:string = '';
-  marker_slug:string = '';
+  marker_slug:any = '';
   markers:any = [];
   newsitems:Array<any> = [];
   nStars:number = 0;
@@ -64,6 +64,7 @@ export class MapPage implements OnInit {
     private toastController: ToastController,
   ) {
     logg('MapPage constructor()');
+    this.C = C;
 
     this.setCurrentUser();
     this.appRouter = AppRouter;
@@ -75,10 +76,6 @@ export class MapPage implements OnInit {
     this.platform.ready().then(() => {
       this.stripe.setPublishableKey(environment.stripePublishableKey);
       this.getStars();
-
-      this.map_slug      = this.route.snapshot.paramMap.get('map_slug') || C.worldMapSlug;
-      this.location_slug = this.route.snapshot.paramMap.get('location_slug') || '';
-
       this.ngOnInit();
     });
   }
@@ -143,10 +140,10 @@ export class MapPage implements OnInit {
   navigate(where) {
     this.router.navigate([where]);
   }
-  navigateToLocation(map_slug, location_slug) {
-    this.marker_slug = location_slug;
+  navigateToLocation(map_slug, marker_slug) {
+    this.marker_slug = marker_slug;
     this.map_slug    = map_slug;
-    this.router.navigate([`/maps/${map_slug}/locations/${location_slug}`]);
+    this.router.navigate([`/maps/${map_slug}/markers/${marker_slug}`]);
     this.ngOnInit();
   }
   navigateToLocation2(ms, m2s, tt) {
@@ -160,11 +157,15 @@ export class MapPage implements OnInit {
   }
   navigateToMap(slug = 'map-world') {
     this.router.navigate([`/maps/${slug}`]);
+    this.ngOnInit();
   }
 
   async ngOnInit () {
-    // logg([this.map_slug], 'MapPage ngOnInit()');
+    logg([this.marker_slug], 'MapPage ngOnInit()');
     await this.setCurrentUser();
+
+    this.map_slug    = this.route.snapshot.paramMap.get('map_slug') || C.worldMapSlug;
+    this.marker_slug = this.route.snapshot.paramMap.get('marker_slug') || false;
 
     if (this.map_slug) {
       const path = ApiRouter.map(this.map_slug);

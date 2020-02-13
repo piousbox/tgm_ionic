@@ -40,7 +40,8 @@
 
                   <ng-container *ngFor="let marker of map['markers']" >
 
-                    <div class='img-marker' *ngIf="'gameui-map' == marker.item_type" 
+                    <div class="img-marker {{marker_slug==marker.slug ? 'is-selected' : ''}}" 
+                      *ngIf="C.item_type_map == marker.item_type" 
                       [style.width]="marker['w']*zoomFactor + 'px'"
                       [style.height]="marker['h']*zoomFactor + 'px'"
                       [style.left]="marker['x']*zoomFactor + 'px'"
@@ -48,7 +49,8 @@
                       [style.background-image]="'url('+marker['img_path']+')'"
                       (click)="navigateToMap(marker['slug'])" ></div>
 
-                    <div class='img-marker' *ngIf="'gameui-location' == marker.item_type" 
+                    <div class="img-marker {{marker_slug==marker.slug ? 'is-selected' : ''}}" 
+                      *ngIf="C.item_type_location == marker.item_type" 
                       [style.width]="marker['w']*zoomFactor + 'px'"
                       [style.height]="marker['h']*zoomFactor + 'px'"
                       [style.left]="marker['x']*zoomFactor + 'px'"
@@ -76,7 +78,13 @@
           <div class='main-right-overlay'></div>
           <div class='main-right-inner'>
 
-            <div class='main-text' *ngIf="!location" >
+            <div class='main-text' *ngIf="!this.location" >
+
+              <div class='breadcrumbs'>
+                <span (click)=navigateToMap(map.parent_slug) >{{map.parent_slug}}</span> &gt; 
+                <b>{{map.slug}}</b>
+              </div>
+
               <div class='descr'>{{ map['description'] }}</div>
 
               <div class="markers-list" >
@@ -94,7 +102,13 @@
               <newsitems-list [newsitems]="map.newsitems" ></newsitems-list>
             </div>
 
-            <div class='main-text' *ngIf="location">
+            <div class='main-text' *ngIf="this.location">
+              <div class='breadcrumbs'>
+                <span (click)=navigateToMap(map.parent_slug) >{{map.parent_slug}}</span> &gt; 
+                <span (click)=navigateToMap(map.slug)        >{{map.slug}}</span> &gt;
+                <b>{{this.location.slug}}</b>
+              </div>
+
               <div [innerHTML]=location.description ></div>
             </div>
 

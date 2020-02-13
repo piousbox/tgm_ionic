@@ -12,7 +12,7 @@ import { GetStars } from './GetStars';
 
 const routes: Routes = [
   { path: '', component: MapPage },
-  { path: ':map_slug/locations/:location_slug', component: MapPage },
+  { path: ':map_slug/markers/:marker_slug', component: MapPage },
   { path: ':map_slug', component: MapPage },
 ];
 
