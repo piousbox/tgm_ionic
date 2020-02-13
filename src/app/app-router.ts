@@ -12,6 +12,7 @@ export class AppRouter {
 export class ApiRouter {
   static account                 = `${environment.api_domain}/api/my/account`;
   static citiesindex             = `${environment.api_domain}/api/cities.json`;
+  static galleriesShow = (slug) => `${environment.api_domain}/api/galleries/view/${slug}`;
   static getStars                = `${environment.api_domain}/api/stars/buy`;
   static homefeed                = `${environment.api_domain}/api/sites/view/${environment.domain}`;
   static longTermToken = (d)    => `${environment.api_domain}/api/users/long_term_token.json?accessToken=${d.shortTermToken}`;

@@ -1,2 +1,12 @@
 
-<h1>Galleries-show (modal)</h1>
+<ion-content>
+  <h1>Name: {{gallery.name}}</h1>
+  <p>message: {{gallery.message}}</p>
+  <p>description: {{gallery.description}}</p>
+
+  <div class='card' *ngFor="let ph of gallery.photos">
+    <div class='card-inner'>
+      <ion-img [src]=ph.large_url ></ion-img>
+    </div>
+  </div>
+</ion-content>

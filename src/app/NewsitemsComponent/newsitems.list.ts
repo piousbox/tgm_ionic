@@ -44,6 +44,7 @@ export class NewsitemsList implements OnInit {
     logg(slug, 'showGallery()');
     const modal = await this.modalController.create({
       component: GalleriesShow,
+      componentProps: { slug: slug },
     });
     return await modal.present();
   }

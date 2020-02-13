@@ -68,7 +68,6 @@ export class MapPage implements OnInit {
     this.appRouter = AppRouter;
 
     this.appService.nStars.subscribe(n => {
-      logg(n, 'observed nstars');
       this.nStars = parseInt(n);
     });
 
@@ -126,13 +125,10 @@ export class MapPage implements OnInit {
   }
 
   async getStars() {
-    logg('MapPage getStars()')
     const cu = await this.nativeStorage.getItem('current_user').then(a=>JSON.parse(a));
     const params = new HttpParams().set('accessToken', cu.longTermToken);
     const account = await this.httpClient.get(ApiRouter.account, { params: params }).toPromise();
     this.nStars = account['n_stars'];
-    // logg(account, 'account');
-    // this.nStars = answer
   }
 
   navigate(where) {
@@ -172,7 +168,7 @@ export class MapPage implements OnInit {
   }
 
   setCurrentUser() {
-    logg('MapPage setCurrentUser()');
+    // logg('MapPage setCurrentUser()');
 
     this.nativeStorage.getItem('current_user').then(u => JSON.parse(u)).then(data => {
       this.currentUser = data;
