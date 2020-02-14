@@ -49,9 +49,13 @@
 }
 
 .img-avatar {
+  margin: auto 0 auto 1em;
+
   width: calc(100px - 1em - 2px);
-  height: calc(100px - 1em - 2px);
-  background: url('../../assets/100x100/avatar.png');
+  height: calc(100px - 1em - 2px - 1em); /* .5em on top, bottom */
+
+
+  background: url('../../assets/src/default-avatar.png');
   background-size: cover;
 }
 /**
@@ -68,6 +72,7 @@
   background-size: cover;
   width: calc(100px - 4em);
   height: calc(100px - 4em);
+  cursor: pointer;
 }
 
 .widget-stars {

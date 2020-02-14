@@ -117,6 +117,9 @@
       </div>
     </div>
     
+    <--
+     -- bottom panel
+   -->
     <div class="mainfold-item main-footer">
       <div class='footer-collapse' (click)="collapseFooter()" ></div>
       <div class='main-footer-overlay'></div>
@@ -126,8 +129,8 @@
 
         <div class='widget-stars'>
           <div class='widget-stars-inner'>
-            <div class='img img-star' >{{nStars}}</div>
-            <ion-button (click)="showGetStars()" >Get more stars</ion-button>
+            <div (click)="showGetStars()" class='img img-star' >{{nStars}}</div>
+            <!-- <ion-button (click)="showGetStars()" >Get more stars</ion-button> -->
           </div>
         </div>
 
