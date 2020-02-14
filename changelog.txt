@@ -23,3 +23,4 @@
         20200208 - how many stars do I have?
 				           and more stripe
 0.2.5 - 20200211 - overhaul newsitems for maps
+        20200213 - some meaningful tests in progress

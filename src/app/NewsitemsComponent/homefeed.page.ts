@@ -27,19 +27,15 @@ export class HomefeedPage implements OnInit {
     public toastController: ToastController,
   ) {
     // logg('HomefeedPage.constructor()');
-    appService.setTitle('Homefeed!');
+    // appService.setTitle('Homefeed!');
     this.ngOnInit();
   }
 
   async ngOnInit () {
     if (!this.hasCalled) {
       this.hasCalled = true;
-      // logg(this.newsitems, 'HomefeedPage ngOnInit()');
-      if (0 == this.newsitems.length) {
-        const answer = await this.httpClient.get(ApiRouter.homefeed).toPromise();
-        // logg(answer, 'answer');
-        this.newsitems = answer['newsitems'];
-      }
+      const answer = await this.httpClient.get(ApiRouter.homefeed).toPromise();
+      this.newsitems = answer['newsitems'];
     }
   }
 
