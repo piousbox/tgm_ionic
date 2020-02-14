@@ -17,6 +17,7 @@ import { C, logg } from '../const';
 })
 export class HomefeedPage implements OnInit {
   newsitems = [];
+  hasCalled = false;
 
   constructor(
     private appService: AppService,
@@ -31,9 +32,15 @@ export class HomefeedPage implements OnInit {
   }
 
   async ngOnInit () {
-    const answer = await this.httpClient.get(ApiRouter.homefeed).toPromise();
-    // logg(answer, 'answer');
-    this.newsitems = answer['newsitems'];
+    if (!this.hasCalled) {
+      this.hasCalled = true;
+      // logg(this.newsitems, 'HomefeedPage ngOnInit()');
+      if (0 == this.newsitems.length) {
+        const answer = await this.httpClient.get(ApiRouter.homefeed).toPromise();
+        // logg(answer, 'answer');
+        this.newsitems = answer['newsitems'];
+      }
+    }
   }
 
 }

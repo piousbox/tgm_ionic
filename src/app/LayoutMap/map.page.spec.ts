@@ -1,22 +1,21 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewsfeedPage } from '../newsfeed/newsfeed.page';
+import { MapPage } from './map.page';
 
-describe('NewsfeedPage', () => {
-  let component: NewsfeedPage;
-  let fixture: ComponentFixture<NewsfeedPage>;
+describe('MapPage', () => {
+  let component:MapPage;
+  let fixture:ComponentFixture<MapPage>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NewsfeedPage ],
+      declarations: [ MapPage ],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-    .compileComponents();
+    }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NewsfeedPage);
+    fixture = TestBed.createComponent(MapPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

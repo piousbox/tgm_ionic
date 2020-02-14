@@ -6,6 +6,7 @@ export class AppRouter {
   
   static homefeedPath = 'en';
   static newsfeedPath = 'en/news';
+  static tagsPath = 'en/tags';
   static rootPath = '';
 }
 

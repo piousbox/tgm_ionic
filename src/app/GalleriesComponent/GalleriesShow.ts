@@ -50,9 +50,9 @@ export class GalleriesShow implements OnInit {
     let params = await this.nativeStorage.getItem('current_user').then(r => JSON.parse(r)
       ).then( cu => {
         return new HttpParams().set('accessToken', cu.longTermToken
-          ).set('className': 'Gallery').set('slug': this.slug);
+          ).set('className', 'Gallery').set('slug', this.slug);
       }).catch( e => {
-        raise 'this cannot happen';
+        throw 'this cannot happen';
         return {};
       });
     const answer = await this.httpClient.post(ApiRouter.doPurchase, params ).toPromise();

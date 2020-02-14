@@ -45,7 +45,7 @@ export class MapPage implements OnInit {
   markers:any = [];
   newsitems:Array<any> = [];
   nStars:number = 0;
-  params:any = {};
+  params;
   zoomFactor = 1.0;
 
   constructor(
@@ -127,14 +127,12 @@ export class MapPage implements OnInit {
       ).then( a => JSON.parse(a)
       ).then( cu => {
         return new HttpParams().set('accessToken', cu.longTermToken);
+      }).then( async params => {
+        const account = await this.httpClient.get(ApiRouter.account, { params: params }).toPromise();
+        this.nStars = account['n_stars'];
       }).catch( e => {
-        logg(e, '554 - not doing getStars() b/c no accessToken');
-        return false;
+        logg(e, 'the - error');
       });
-    if (params) {
-      const account = await this.httpClient.get(ApiRouter.account, { params: params }).toPromise();
-      this.nStars = account['n_stars'];
-    }
   }
 
   navigate(where) {

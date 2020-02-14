@@ -14,7 +14,7 @@ import { MenuController, ToastController } from '@ionic/angular';
 
 import { AccountPage } from './account.page';
 
-fdescribe('AccountPage', () => {
+describe('AccountPage', () => {
   let component: AccountPage;
   let fixture: ComponentFixture<AccountPage>;
 
