@@ -35,8 +35,8 @@ export class MapPage implements OnInit {
   collapseDirection:string = 'right'; // 'left' or 'right'
   currentUser:any = {};
   currentUserStr:string = "";
-  footerCollapsed:boolean = false;
-  halfCollapsed:string = "none-collapsed"; // 'none-collapsed', 'left-collapsed', 'right-collapsed'
+  footerCollapsed:boolean = true;
+  halfCollapsed:string = "left-collapsed"; // 'none-collapsed', 'left-collapsed', 'right-collapsed'
   headerCollapsed:boolean = true;
   location:any = false;
   map:any = false;
