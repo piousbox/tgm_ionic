@@ -111,6 +111,27 @@ From: https://www.techrepublic.com/article/how-to-enable-ssl-on-nginx/
  ic platform add browser
  ic build browser --prod
 
+## Run Android
+<pre>
+ ic run android --debug
+ # ic run android -l -c -s --debug
+ adb logcat
+ chrome://inspect/#devices
+</pre>
 
+## Build Android
+
+<pre>
+ ic platform rm android
+ ic platform add android
+ # ic plugin remove cordova-plugin-googleplus
+ # ic plugin add cordova-plugin-googleplus \
+ #  --variable REVERSED_CLIENT_ID=com.googleusercontent.apps.287149765762-ifnium31igm6gfp5cvgpgmvk2ron1p97 \
+ #  --variable WEB_APPLICATION_CLIENT_ID=287149765762-ifnium31igm6gfp5cvgpgmvk2ron1p97.apps.googleusercontent.com
+
+ ic build android --debug
+ ic build android --debug --env=staging
+ ic build android --debug --prod
+</pre>
 
 
