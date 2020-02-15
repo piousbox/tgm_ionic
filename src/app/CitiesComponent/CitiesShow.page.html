@@ -1,4 +1,9 @@
 
-<div *ngIf="city != null">
-  City page! {{ city.name }}
-</div>
+<layout-sidemenu>
+  <ion-content padding >
+    <h1>City page! {{ city.name }}</h1>
+    <ul>
+      <li>{{ appRouter.cityPath(city) }}</li>
+    </ul>
+  </ion-content>
+</layout-sidemenu>

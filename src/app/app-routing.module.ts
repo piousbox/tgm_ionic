@@ -2,28 +2,23 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'homefeed', pathMatch: 'full' },
-  { path: 'account',   loadChildren: './account/account.module#AccountPageModule' },
+  { path: '', redirectTo: 'en', pathMatch: 'full' },
+  
+  { path: 'account',   loadChildren: './AccountComponent/account.module#AccountModule' },
 
-  { path: 'contact', loadChildren: './pages/contact/contact.module#ContactPageModule' },
-
+  { path: 'en',  loadChildren: './NewsitemsComponent/Newsitems.module#NewsitemsModule' },
   { path: 'en/cities', loadChildren: './CitiesComponent/cities.module#CitiesModule' },
-  { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' },
+  { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' }, // @TODO: deprecated
 
-  { path: 'home',  loadChildren: './pages/home/home.module#HomePageModule' },
-  { path: 'homefeed',  loadChildren: './homefeed/homefeed.module#HomefeedPageModule' },
+  { path: 'maps', loadChildren: './LayoutMap/map.module#MapModule' },
 
-  { path: 'legal', loadChildren: './pages/legal/legal.module#LegalPageModule' },
-
-  { path: 'newsfeed',  loadChildren: './newsfeed/newsfeed.module#NewsfeedPageModule' },
-  { path: 'navigator', loadChildren: './main-navigator/main-navigator.module#MainNavigatorModule' },
+  /* { path: 'navigator', loadChildren: './main-navigator/main-navigator.module#MainNavigatorModule' },
   { path: 'navigator/:extra', loadChildren: './main-navigator/main-navigator.module#MainNavigatorModule' },
 
   { path: 'page1', loadChildren: './main-navigator/page1/page1.module#Page1PageModule' },
   { path: 'page3', loadChildren: './main-navigator/page3/page3.module#Page3PageModule' },
-  { path: 'pages/faq', loadChildren: './pages/faq/faq.module#FaqPageModule' },
-
-  { path: 'video-sample', loadChildren: './video-sample/video-sample.module#VideoSamplePageModule' },
+  { path: 'pages/faq', loadChildren: './pages/faq/faq.module#FaqPageModule' }, */
+  
 ];
 
 @NgModule({

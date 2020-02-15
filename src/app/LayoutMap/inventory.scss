@@ -1,0 +1,97 @@
+
+/**
+ * footer
+ */
+.main-footer {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  padding: .5em;
+}
+.main-footer-inner {
+  border: 1px solid grey;  
+  height: 100%;
+  background: #ededde;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer-collapse {
+  position: absolute;
+  background: url('../../assets/64x64/hamburger.png');
+  width: 1em;
+  height: 1em;
+  margin-top: -1em;
+  background-size: cover;
+}
+
+.footer-collapsed .main-footer {
+  height: 2em;
+}
+.main-footer-overlay {
+  display: none;
+}
+.footer-collapsed .main-footer-inner {
+  /* padding: 0; */
+  height: 0;
+  display: none;
+}
+.footer-collapsed .main-footer-overlay {
+  display: block;
+  background: #ededde;
+  height: 1em;
+  border: 1px solid gray;
+}
+
+.img-avatar {
+  margin: auto 0 auto 1em;
+
+  width: calc(100px - 1em - 2px);
+  height: calc(100px - 1em - 2px - 1em); /* .5em on top, bottom */
+
+
+  background: url('../../assets/src/default-avatar.png');
+  background-size: cover;
+}
+/**
+ * inventory
+ */
+.img-gem {
+  background: url('../../assets/256x256/gem.png');
+  background-size: cover;
+  width: calc(100px - 4em);
+  height: calc(100px - 4em);
+}
+.img-star {
+  background: url('../../assets/256x256/star.png');
+  background-size: cover;
+  width: calc(100px - 4em);
+  height: calc(100px - 4em);
+  cursor: pointer;
+}
+
+.widget-stars {
+  line-height: calc(100px - 4em);
+  height: 100%;
+  
+  padding: 0 2em;
+  display: flex;
+}
+.widget-stars-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+.widget-stars .count {
+  line-height: calc(100px - 4em);
+  margin-right: 0.5em;
+}
+
+
+

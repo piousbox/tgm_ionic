@@ -1,0 +1,14 @@
+
+/**
+ * stripe widget
+ */
+.stripeWidget {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .cc-number {
+    border: 1px solid blue;
+  }
+}

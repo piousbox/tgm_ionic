@@ -2,9 +2,9 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 
-import { MenuController, Platform, ToastController, } from '@ionic/angular';
+import { MenuController, ToastController, } from '@ionic/angular';
+import { Platform } from '@ionic/angular';
 import { LoadingController } from '@ionic/angular';
-
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
@@ -19,12 +19,15 @@ import { C, logg } from './const';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['./app.component.scss'],
+  styleUrls: [ './footer.scss', ],
 })
 export class AppComponent implements OnInit {
-  currentUser: any = null;
-  currentUserStr: string = '<none>';
+  appRouter;
 
+  C:any = C;
+  currentUser:any = false;
+  currentUserStr:string = "";
+  
   env: string = '<none>';
 
   isApp: boolean = true;
@@ -34,7 +37,7 @@ export class AppComponent implements OnInit {
   message: string;
 
   platformList: string = '';
-  
+
   constructor(
     private appService: AppService,
     private fb: Facebook,
@@ -49,68 +52,7 @@ export class AppComponent implements OnInit {
     public loadingController: LoadingController,
     public toastController: ToastController,
   ) {
-    this.render = this.render.bind( this );
-
-    this.initializeApp();
-    
-    this.mainTitle = this.appService.title;
-    this.env = JSON.stringify(environment.name);
-
-    let platforms = this.platform.platforms();
-    this.platformList = platforms.join(', ');
-
-    if(platforms.indexOf('mobileweb') != -1) {
-      this.isApp = false;
-    } else {
-      this.isApp = true;
-    }
-
-    this.platform.ready().then(() => {
-      this.nativeStorage.getItem('current_user').then(a=>JSON.parse(a)).then(data => {
-        this.currentUser = data;
-        if (data && Object.keys(data).length > 0) {
-          this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
-        }
-      }, error => {
-        console.log('+++ app#constructor doesnt have current_user:', error);
-      });
-    }); 
-  }
-
-  navigate(where) {
-    this.ngZone.run(() => {
-      console.log('+++ navigating:', where);
-
-      if ('string' === typeof where) {
-        this.mainTitle = where;
-        this.router.navigate([where]);
-      } else if ('object' === typeof where) {
-        this.mainTitle = where['kind'];
-        let here = '';
-        switch (where['kind']) {
-        case 'report': {
-          here = '/reports';
-          break;
-        } default: {
-        } }
-        this.router.navigate([here]);
-      }
-    })
-  }
-
-  initializeApp() {
-    this.platform.ready().then(() => {
-      this.nativeStorage.getItem('current_user').then( data => {
-        logg(data, 'no navigating here!');
-        // this.router.navigate([ AppRouter.rootPath ]);
-        this.splashScreen.hide();
-      }, err => {
-        logg('Not logged in');
-        // this.router.navigate([ AppRouter.rootPath ]);
-        this.splashScreen.hide();
-      })
-      this.statusBar.styleDefault();
-    });
+    this.appRouter = AppRouter;
   }
 
   async doFacebookLogin () {
@@ -139,37 +81,16 @@ export class AppComponent implements OnInit {
     }, (error) => {
       console.log('+++ error:', error)
     });
-    // this.render();
+  }
+
+  navigate(where) {
+    this.ngZone.run(() => {
+      this.router.navigate([where]);
+    })
   }
 
   ngOnInit () {
-    this.appService.currentMessage.subscribe(message => this.message = message)
-  }
-
-  render () {
-    logg('app.component#render');
-
-    this.mainTitle = this.appService.title;
-
-    this.nativeStorage.getItem('current_user').then(data => {
-      this.currentUser    = JSON.parse(data);
-      this.currentUserStr = JSON.stringify(Object.keys(data).map( k => `${k}::${data[k].toString().substring(0,10)}` ));
-    }, err => { 
-      this.currentUser    = null;
-      this.currentUserStr = null;
-    }).catch( e => console.log('+++ render error:', e));
-  }
-
-  ionViewDidLoad () {
-    console.log('+++ app.component ionViewDidLoad');
-  }
-
-  ionViewWillEnter () {
-    console.log('+++ app.component ionViewWillEnter');
-  }
-
-  ionViewDidEnter () {
-    console.log('+++ app.component ionViewDidEnter');
+    // logg('AppComponent ngOnInit()');
   }
 
   toggleMainFooter () {

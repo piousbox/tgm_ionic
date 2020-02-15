@@ -8,6 +8,7 @@ import { AppService } from '../app-service';
 import { environment } from '../../environments/environment';
 import { C, logg } from '../const';
 
+
 @Component({
   selector: 'app-reports-index',
   templateUrl: './ReportsIndex.page.html',

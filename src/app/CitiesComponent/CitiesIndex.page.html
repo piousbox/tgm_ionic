@@ -1,11 +1,11 @@
 
-<div>
+<layout-sidemenu>
   <ion-content fullscreen>
     <h1>Cities index</h1>
     <ion-list>
-      <ion-item class='item-borderless' *ngFor="let city of cities" (click)="navigate('/en/cities/travel-to/' + city.id)"> 
+      <ion-item class='item-borderless' *ngFor="let city of cities" (click)="navigateToCity(city)"> 
         <div>{{ city.name }}</div>
       </ion-item>
     </ion-list>
   </ion-content>
-</div>
+</layout-sidemenu>

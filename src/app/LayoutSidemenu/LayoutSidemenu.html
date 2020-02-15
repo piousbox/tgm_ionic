@@ -1,0 +1,33 @@
+
+
+<ion-content class="ion-page" main>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-toggle>
+          <ion-button>
+            <ion-icon slot="icon-only" name="menu"></ion-icon>
+          </ion-button>
+        </ion-menu-toggle>
+      </ion-buttons>
+      <ion-title>{{ mainTitle }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <!-- <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-toggle>
+          <ion-button>
+            <ion-icon slot="icon-only" name="menu"></ion-icon>
+          </ion-button>
+        </ion-menu-toggle>
+      </ion-buttons>
+      <ion-title>{{ mainTitle }}</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  <ion-content>
+    <!-- <ion-router-outlet main [swipeGesture]="false"></ion-router-outlet> -->
+    <ng-content></ng-content>
+  </ion-content>
+</ion-content>

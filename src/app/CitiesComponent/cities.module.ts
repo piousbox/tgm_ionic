@@ -6,12 +6,11 @@ import { IonicModule } from '@ionic/angular';
 
 import { CitiesIndexPage } from './CitiesIndex.page';
 import { CitiesShowPage } from './CitiesShow.page';
-import { CitiesComponent2 } from './comp2';
-
+import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
 
 const routes: Routes = [
   { path: '', component: CitiesIndexPage, },
-  { path: 'travel-to/:city_name',     component: CitiesShowPage,  },
+  { path: 'travel-to/:cityname',     component: CitiesShowPage,  },
 ];
 
 @NgModule({
@@ -19,8 +18,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    LayoutSidemenuModule,
+    RouterModule.forChild(routes),
   ],
-  declarations: [ CitiesIndexPage, CitiesShowPage, CitiesComponent2 ]
+  declarations: [ CitiesIndexPage, CitiesShowPage, ]
 })
 export class CitiesModule {}

@@ -1,0 +1,140 @@
+
+<ion-content class='n-debug' >
+  <div class="mainfold-parent 
+    {{ this.footerCollapsed ? 'footer-collapsed' : '' }} 
+    {{ this.halfCollapsed }} 
+    {{ this.headerCollapsed ? 'header-collapsed' : '' }} ">
+    <div class="mainfold-item main-header">
+      <div (click)="collapseHeader()">[X]</div>
+      &nbsp; &nbsp;
+      <div (click)="navigateToMap('map-world')" >Header</div>
+      <div (click)="navigate('maps')" class='img img-swords' ></div>
+      <div (click)="navigate(appRouter.citiesPath)" class='img img-city' ></div>
+      <div (click)="navigate(appRouter.homefeedPath)" class='img img-news' ></div>
+    </div>
+    <div class='header-control'>
+      <!-- <div class='header-control-inner' (click)="collapseHeader()"></div> -->
+      <ion-menu-toggle>
+        <div class='header-control-inner'></div>
+      </ion-menu-toggle>
+    </div>
+    
+    <div class="mainfold-item main-twofold">
+      <div class='main-twofold-inner'>
+        <div id='mainLeft' class='main-left main-half' >
+          <div class='zoom-control'>
+            <div (click)="zoomIn()" class='in'>[+]</div>
+            <div (click)="zoomOut()" class='out'>[-]</div>
+          </div>
+          <div class='main-left-overlay'></div>
+          <div class='main-left-inner'>
+
+            <div class='main-map'>
+              <div class='main-map-inner'>
+
+                <div class='img-bg' 
+                  [style.background-image]="'url('+map['img_path']+')'" 
+                  [style.width]="map['w'] * zoomFactor + 'px'" 
+                  [style.height]="map['h'] * zoomFactor + 'px'"
+                >
+
+                  <ng-container *ngFor="let marker of map['markers']" >
+
+                    <div class="img-marker {{marker_slug==marker.slug ? 'is-selected' : ''}}" 
+                      *ngIf="C.item_type_map == marker.item_type" 
+                      [style.width]="marker['w']*zoomFactor + 'px'"
+                      [style.height]="marker['h']*zoomFactor + 'px'"
+                      [style.left]="marker['x']*zoomFactor + 'px'"
+                      [style.top]="marker['y']*zoomFactor + 'px'"
+                      [style.background-image]="'url('+marker['img_path']+')'"
+                      (click)="navigateToMap(marker['slug'])" ></div>
+
+                    <div class="img-marker {{marker_slug==marker.slug ? 'is-selected' : ''}}" 
+                      *ngIf="C.item_type_location == marker.item_type" 
+                      [style.width]="marker['w']*zoomFactor + 'px'"
+                      [style.height]="marker['h']*zoomFactor + 'px'"
+                      [style.left]="marker['x']*zoomFactor + 'px'"
+                      [style.top]="marker['y']*zoomFactor + 'px'"
+                      [style.background-image]="'url('+marker['img_path']+')'"
+                      (click)="navigateToLocation(map['slug'], marker['slug'])" ></div>
+                  </ng-container>
+
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+          -- mainRight
+          -->
+        <div id='mainRight' class='main-right main-half' >
+          <div class='main-collapse' (click)="collapseMain()" ></div>
+          <div class='main-collapse-2'>
+            <div class='main-collapse-left' (click)="collapseLeft()"></div>
+            <div class='main-collapse-right' (click)="collapseRight()"></div>
+          </div>
+          <div class='main-right-overlay'></div>
+          <div class='main-right-inner'>
+
+            <div class='main-text' *ngIf="!this.location" >
+
+              <div class='breadcrumbs'>
+                <span (click)=navigateToMap(map.parent_slug) >{{map.parent_slug}}</span> &gt; 
+                <b>{{map.slug}}</b>
+              </div>
+
+              <div class='descr'>{{ map['description'] }}</div>
+
+              <div class="markers-list" >
+                
+                  <div class="item"
+                    *ngFor="let marker of map['markers']"
+                    (click)="navigateToLocation2(map.slug, marker.slug, marker.item_type)"
+                  >
+                    <ion-img [src]="marker.title_img_path" alt='' ></ion-img>
+                    <span class='label'>{{ marker.name }}</span>
+                  </div>
+                
+              </div>
+
+              <newsitems-list [newsitems]="map.newsitems" ></newsitems-list>
+            </div>
+
+            <div class='main-text' *ngIf="this.location">
+              <div class='breadcrumbs'>
+                <span (click)=navigateToMap(map.parent_slug) >{{map.parent_slug}}</span> &gt; 
+                <span (click)=navigateToMap(map.slug)        >{{map.slug}}</span> &gt;
+                <b>{{this.location.slug}}</b>
+              </div>
+
+              <div [innerHTML]=location.description ></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--
+      -- bottom panel
+      -->
+    <div class="mainfold-item main-footer">
+      <div class='footer-collapse' (click)="collapseFooter()" ></div>
+      <div class='main-footer-overlay'></div>
+      <div class='main-footer-inner'>
+
+        <div class='img img-avatar' ></div>
+
+        <div class='widget-stars'>
+          <div class='widget-stars-inner'>
+            <div (click)="showGetStars()" class='img img-star' >{{nStars}}</div>
+            <!-- <ion-button (click)="showGetStars()" >Get more stars</ion-button> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</ion-content>
