@@ -98,6 +98,8 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
+apply from: "../cordova-support-google-services/starter-build.gradle"
+apply from: "../phonegap-plugin-multidex/starter-multidex.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
@@ -295,6 +297,10 @@ dependencies {
     implementation(project(path: ":CordovaLib"))
     implementation "com.facebook.android:facebook-android-sdk:5.5.2"
     implementation "com.android.support:support-annotations:27.+"
+    implementation "com.stripe:stripe-android:4.1.2"
+    implementation "com.android.support:support-v13:27.+"
+    implementation "me.leolin:ShortcutBadger:1.1.17@aar"
+    implementation "com.google.firebase:firebase-messaging:17.0.+"
     // SUB-PROJECT DEPENDENCIES END
 }
 
