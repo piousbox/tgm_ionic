@@ -305,19 +305,22 @@ MIT
 @angular/platform-browser
 MIT
 
-@ionic-native/native-storage
-MIT
-
-@angular/router
-MIT
-
 @ionic-native/splash-screen
+MIT
+
+@ionic-native/native-storage
 MIT
 
 @ionic-native/status-bar
 MIT
 
 @ionic-native/facebook
+MIT
+
+@ionic-native/stripe
+MIT
+
+@angular/router
 MIT
 
 @ionic-native/google-plus
@@ -351,7 +354,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
-
-@ionic-native/streaming-media
-MIT
