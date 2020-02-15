@@ -21,6 +21,8 @@ git push
 ## deploy
 ##
 # ssh do "cd /home/ubuntu/projects/tgm_ionic && git pull && sudo apachectl -k restart"
+cp platforms/android/app/build/outputs/apk/debug/app-debug.apk .
+cp platforms/android/app/build/outputs/apk/debug/app-debug.apk ~/Downloads
 
 set +ex
 echo 'build tgm_ionic android ok'
