@@ -53,6 +53,7 @@ export class AppComponent implements OnInit {
     public toastController: ToastController,
   ) {
     this.appRouter = AppRouter;
+    this.splashScreen.show();
   }
 
   async doFacebookLogin () {

@@ -1,5 +1,4 @@
-cordova.define("com.moust.cordova.videoplayer.VideoPlayer", function(require, exports, module) {
-var exec = require("cordova/exec");
+cordova.define("com.moust.cordova.videoplayer.VideoPlayer", function(require, exports, module) { var exec = require("cordova/exec");
 
 module.exports = {
 
