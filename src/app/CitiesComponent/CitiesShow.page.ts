@@ -14,10 +14,12 @@ import { C, logg } from '../const';
 @Component({
   selector: 'app-cities-show',
   templateUrl: './CitiesShow.page.html',
+  styleUrls: [ './cities.scss' ],
 })
 export class CitiesShowPage implements OnInit {
   appRouter;
   city: any = {};
+  slug;
 
   constructor(
     private nativeStorage: NativeStorage,
@@ -27,13 +29,14 @@ export class CitiesShowPage implements OnInit {
     public httpClient: HttpClient,
     private _cityService: CityService
   ) {
-    this.ngOnInit()
     this.appRouter = AppRouter;
+    this.slug = this.route.snapshot.paramMap.get('cityname');
+    this.ngOnInit();
   }
   
-  ngOnInit() {
-    this.city = { cityname:  this.route.snapshot.paramMap.get('cityname') };
-    // this._cityService.getCity(this._id).subscribe( city => this.city = city);
+  async ngOnInit() {
+    const answer = await this.httpClient.get(ApiRouter.city(this.slug)).toPromise();
+    this.city = answer['city'];
   }
 
   navigate (where) {}
