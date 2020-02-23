@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
   
   env: string = '<none>';
 
-  featuredOrBookmarked:list<any> = [ 
+  featuredOrBookmarked:Array<any> = [ 
     { slug: 'plane-1', name: 'Plane 1' },
     { slug: 'wasya-co-map', name: 'WasyaCo' },
     { slug: 'pi-liar-map', name: 'pi Liar' },
