@@ -30,6 +30,12 @@ export class AppComponent implements OnInit {
   
   env: string = '<none>';
 
+  featuredOrBookmarked:list<any> = [ 
+    { slug: 'plane-1', name: 'Plane 1' },
+    { slug: 'wasya-co-map', name: 'WasyaCo' },
+    { slug: 'pi-liar-map', name: 'pi Liar' },
+  ];
+
   isApp: boolean = true;
 
   mainTitle: string = '';
@@ -54,6 +60,8 @@ export class AppComponent implements OnInit {
   ) {
     this.appRouter = AppRouter;
     this.splashScreen.show();
+
+    logg(this.featuredOrBookmarked, 'featured');
   }
 
   async doFacebookLogin () {
