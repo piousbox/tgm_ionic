@@ -100,8 +100,12 @@ header h1 {
   justify-content: space-between;
 }
 
+.sectionTwo div.account-tabs{
+  text-align: center;
+}
+
 .sectionTwo img{
-  width : 80px;
+  width : 60px;
   height: 50px;
 
 
@@ -251,6 +255,9 @@ p.active{
   letter-spacing: 1.5px;
 }
 
+.account-tabs{
+  cursor: pointer;
+}
 
 @media(max-width : 370px){
   body{
