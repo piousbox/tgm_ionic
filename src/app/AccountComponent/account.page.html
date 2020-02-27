@@ -13,19 +13,25 @@
 
       <section class="sectionTwo">
         <div class="account-tabs" (click)="changeSection('reports-new')">
-          <img src="../../assets/accounts/Add News Report.svg" alt="Add Report" />
+
+          <img [src]="selectedSection=='reports-new' ? '../../assets/accounts/addReportSelected.png' : '../../assets/accounts/addReport.png'" alt="Add Report" />
           <p>Add Report</p>
           <span [ngClass]="{'activeSpan': selectedSection=='reports-new'}"></span>
+        
         </div>
         <div class="account-tabs" (click)="changeSection('galleries-new')">
-          <img src="../../assets/accounts/Add Gallery Icon.svg" alt="Add Image" />
+
+          <img [src]="selectedSection=='galleries-new' ? '../../assets/accounts/addGallerySelected.png' : '../../assets/accounts/addGallery.png'" alt="Add Image" />
           <p class="active">Add Gallery</p>
           <span [ngClass]="{'activeSpan': selectedSection=='galleries-new'}"></span>
+        
         </div>
         <div class="account-tabs" (click)="changeSection('videos-new')">
-          <img src="../../assets/accounts/Add Video Icon.svg" alt="Add Video" />
+        
+          <img [src]="selectedSection=='videos-new' ? '../../assets/accounts/addVideoSelected.png' : '../../assets/accounts/addVideo.png'" alt="Add Video" />
           <p>Add Video</p>
           <span [ngClass]="{'activeSpan': selectedSection=='videos-new'}"></span>
+        
         </div>
       </section>
 
