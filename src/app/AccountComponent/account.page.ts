@@ -16,6 +16,7 @@ import { environment } from '../../environments/environment';
 })
 export class AccountPage implements OnInit {
   currentUser: any = {};
+  selectedSection = "galleries-new";
   @Output() eventEmitter = new EventEmitter();
 
   constructor(
@@ -37,6 +38,11 @@ export class AccountPage implements OnInit {
 
   navigate(where) {
     this.router.navigate([where]);
+  }
+
+  changeSection(section){
+    console.log(section);
+    this.selectedSection = section; 
   }
 
   ngOnInit() {
