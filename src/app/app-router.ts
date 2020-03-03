@@ -1,4 +1,4 @@
-import { environment } from '../environments/environment';
+import { environment } from '../environments/environment.staging';
 
 export class AppRouter {
   static citiesPath = "/en/cities";

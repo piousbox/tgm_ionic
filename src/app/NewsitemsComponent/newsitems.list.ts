@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 import { Router, NavigationEnd } from '@angular/router';
 
-import { 
+import {
   LoadingController, MenuController, ModalController,
   Platform, ToastController
 } from '@ionic/angular';
@@ -20,21 +20,21 @@ import { GalleriesShow } from '../GalleriesComponent/GalleriesShow';
   styleUrls: ['./newsitems.scss'],
 })
 export class NewsitemsList implements OnInit {
-  @Input() newsitems:Array<any> = [];
+  @Input() newsitems: Array<any> = [];
 
   constructor(
     private appService: AppService,
     private modalController: ModalController,
     private nativeStorage: NativeStorage,
     private router: Router,
-    private httpClient: HttpClient, 
+    private httpClient: HttpClient,
     private toastController: ToastController,
   ) {
     // logg('NewsitemsList constructor()');
     this.ngOnInit();
   }
 
-  async ngOnInit () {
+  async ngOnInit() {
     // logg('NewsitemsList ngOnInit()');
     // const answer = await this.httpClient.get(ApiRouter.newsfeed, { params: params }).toPromise();
     // this.newsitems = data['newsitems'];
@@ -48,6 +48,35 @@ export class NewsitemsList implements OnInit {
     });
     return await modal.present();
   }
+
+  getBackground(premium) {
+    const background = "linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url('$url')";
+    let style = {};
+
+    switch (premium) {
+      case 1:
+        style["background-image"] = background.replace("$url", "../../assets/newsfeed/Sunglass-bg-2.png");
+        break;
+      case 2:
+        style["background-image"] = background.replace("$url", "../../assets/newsfeed/Lock Icon.png");
+        break;
+    }
+    return style;
+  }
+
+  // getMeta(url, callback) {
+  //   var img = new Image();
+  //   img.src = url;
+  //   img.addEventListener("load", function(){
+  //     callback(this.width, this.height);
+  //   })
+  // }
+
+  // gridImgStyle(url) {
+  //   this.getMeta(url, (width, height) => {
+  //     console.log(width, height);
+  //   })
+  // }
 
 }
 

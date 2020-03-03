@@ -2103,6 +2103,7 @@ var AppComponent = /** @class */ (function () {
         this.mainFooterVisible = '';
         this.platformList = '';
         this.appRouter = _app_router__WEBPACK_IMPORTED_MODULE_8__["AppRouter"];
+        this.splashScreen.show();
     }
     AppComponent.prototype.doFacebookLogin = function () {
         return __awaiter(this, void 0, void 0, function () {
