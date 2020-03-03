@@ -64,19 +64,5 @@ export class NewsitemsList implements OnInit {
     return style;
   }
 
-  // getMeta(url, callback) {
-  //   var img = new Image();
-  //   img.src = url;
-  //   img.addEventListener("load", function(){
-  //     callback(this.width, this.height);
-  //   })
-  // }
-
-  // gridImgStyle(url) {
-  //   this.getMeta(url, (width, height) => {
-  //     console.log(width, height);
-  //   })
-  // }
-
 }
 

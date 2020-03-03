@@ -110,7 +110,7 @@ div.container {
   flex-wrap: wrap;
   justify-content: center;
   overflow: hidden;
-  max-width: 768px;
+  max-width: 700px;
 }
 
 div.items {
@@ -119,7 +119,6 @@ div.items {
   flex-basis: 100%;
   padding: 15px;
   margin: 10px;
-  // background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../assets/newsfeed/Lock Icon.png');
   background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -127,10 +126,6 @@ div.items {
   img.image {
     max-width: 100%;
     border-radius: 8px;
-  }
-
-  .title{
-
   }
 
   .icon{
@@ -151,29 +146,34 @@ div.items {
     grid-template-columns: 25% 25% 25%;
 
     .grid-item{
-      position: relative;
-      padding-bottom: 50%;
-      overflow: hidden;
-      z-index: 10;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
       
-      div.number{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: #57535380;
-        font-size: 25px;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      .image-item{
+        position: relative;
+        padding-top: 100%;
+        overflow: hidden;
+        z-index: 10;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;  
+
+        div.number{
+          top: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: #57535380;
+          font-size: 25px;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        img{
+          position: absolute;
+        }
       }
 
-      img{
-        position: absolute;
-      }
     }
 
     .grid-item:first-of-type{
