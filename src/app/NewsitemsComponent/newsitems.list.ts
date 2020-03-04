@@ -49,7 +49,7 @@ export class NewsitemsList implements OnInit {
     return await modal.present();
   }
 
-  getBackground(premium) {
+  getBackgroundStyle(premium) {
     const background = "linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url('$url')";
     let style = {};
 
@@ -62,6 +62,18 @@ export class NewsitemsList implements OnInit {
         break;
     }
     return style;
+  }
+
+  getIconUrl(isPremium, premiumTier) {
+    if(!isPremium){
+      return "../../assets/newsfeed/Videos Icon.svg";
+    }
+    if(premiumTier === 1){
+      return "../../assets/newsfeed/Sunglass.png";
+    }
+    if(premiumTier === 2){
+      return "../../assets/newsfeed/Gem Premium.png";
+    }
   }
 
 }

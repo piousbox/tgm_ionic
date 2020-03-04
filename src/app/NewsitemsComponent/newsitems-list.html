@@ -5,7 +5,7 @@
 </div>
 
 <div class="container">
-  <div [ngStyle]="getBackground(n.premium_tier)" class='items' *ngFor="let n of newsitems">
+  <div [ngStyle]="getBackgroundStyle(n.premium_tier)" class='items' *ngFor="let n of newsitems">
 
     <!-- VIDEO ITEMS -->
     <div *ngIf="n.item_type=='video'">
@@ -21,11 +21,12 @@
       <div>
         <p class="title">
 
-          <img *ngIf="!n.is_premium" class="icon" src="../../assets/newsfeed/Videos Icon.svg" />
-          <img *ngIf="n.is_premium && n.premium_tier == 1" class="icon icon-sunglass"
-            src="../../assets/newsfeed/Sunglass.png" />
-          <img *ngIf="n.is_premium && n.premium_tier == 2" class="icon icon-gem"
-            src="../../assets/newsfeed/Gem Premium.png" />
+          <img class="icon" [ngClass]="{
+            'icon': true,
+            'icon-sunglass': n.premium_tier === 1,
+            'icon-gem': n.premium_tier === 2
+          }" 
+          [src]="getIconUrl(n.is_premium, n.premium_tier)" />
 
           <span class="title-heading">{{n.name}}</span>
         </p>
@@ -51,11 +52,12 @@
       <div>
         <p class="title">
 
-          <img *ngIf="!n.is_premium" class="icon" src="../../assets/newsfeed/Reports Icon.png" />
-          <img *ngIf="n.is_premium && n.premium_tier == 1" class="icon icon-sunglass"
-            src="../../assets/newsfeed/Sunglass.png" />
-          <img *ngIf="n.is_premium && n.premium_tier == 2" class="icon icon-gem"
-            src="../../assets/newsfeed/Gem Premium.png" />
+          <img class="icon" [ngClass]="{
+            'icon': true,
+            'icon-sunglass': n.premium_tier === 1,
+            'icon-gem': n.premium_tier === 2
+          }" 
+          [src]="getIconUrl(n.is_premium, n.premium_tier)" />
 
           <span class="title-heading">{{n.name}}</span>
         </p>
@@ -88,11 +90,12 @@
       <div>
         <p class="title">
 
-          <img *ngIf="!n.is_premium" class="icon" src="../../assets/newsfeed/Photos Icon.png" />
-          <img *ngIf="n.is_premium && n.premium_tier == 1" class="icon icon-sunglass"
-            src="../../assets/newsfeed/Sunglass.png" />
-          <img *ngIf="n.is_premium && n.premium_tier == 2" class="icon icon-gem"
-            src="../../assets/newsfeed/Gem Premium.png" />
+          <img class="icon" [ngClass]="{
+            'icon': true,
+            'icon-sunglass': n.premium_tier === 1,
+            'icon-gem': n.premium_tier === 2
+          }" 
+          [src]="getIconUrl(n.is_premium, n.premium_tier)" />
 
           <span class="title-heading">{{n.name}}</span>
         </p>
