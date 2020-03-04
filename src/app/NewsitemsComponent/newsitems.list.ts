@@ -64,9 +64,16 @@ export class NewsitemsList implements OnInit {
     return style;
   }
 
-  getIconUrl(isPremium, premiumTier) {
+  getIconUrl(isPremium, premiumTier, type) {
     if(!isPremium){
-      return "../../assets/newsfeed/Videos Icon.svg";
+      switch(type){
+        case "video":
+            return "../../assets/newsfeed/Videos Icon.svg";
+        case "report":
+            return "../../assets/newsfeed/Reports Icon.png";
+        case "gallery":
+            return "../../assets/newsfeed/Photos Icon.png";
+      }
     }
     if(premiumTier === 1){
       return "../../assets/newsfeed/Sunglass.png";

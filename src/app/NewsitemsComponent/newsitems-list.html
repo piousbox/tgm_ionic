@@ -21,12 +21,7 @@
       <div>
         <p class="title">
 
-          <img class="icon" [ngClass]="{
-            'icon': true,
-            'icon-sunglass': n.premium_tier === 1,
-            'icon-gem': n.premium_tier === 2
-          }" 
-          [src]="getIconUrl(n.is_premium, n.premium_tier)" />
+          <img class="icon" [src]="getIconUrl(n.is_premium, n.premium_tier, n.item_type)" />
 
           <span class="title-heading">{{n.name}}</span>
         </p>
@@ -52,12 +47,7 @@
       <div>
         <p class="title">
 
-          <img class="icon" [ngClass]="{
-            'icon': true,
-            'icon-sunglass': n.premium_tier === 1,
-            'icon-gem': n.premium_tier === 2
-          }" 
-          [src]="getIconUrl(n.is_premium, n.premium_tier)" />
+          <img class="icon" [src]="getIconUrl(n.is_premium, n.premium_tier, n.item_type)" />
 
           <span class="title-heading">{{n.name}}</span>
         </p>
@@ -90,12 +80,7 @@
       <div>
         <p class="title">
 
-          <img class="icon" [ngClass]="{
-            'icon': true,
-            'icon-sunglass': n.premium_tier === 1,
-            'icon-gem': n.premium_tier === 2
-          }" 
-          [src]="getIconUrl(n.is_premium, n.premium_tier)" />
+          <img class="icon" [src]="getIconUrl(n.is_premium, n.premium_tier, n.item_type)" />
 
           <span class="title-heading">{{n.name}}</span>
         </p>
