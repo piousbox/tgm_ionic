@@ -1,11 +1,15 @@
-
 <layout-sidemenu>
   <ion-content fullscreen>
     <h1>Cities index</h1>
     <ion-list>
-      <ion-item class='item-borderless' *ngFor="let city of cities" (click)="navigateToCity(city)"> 
-        <div>{{ city.name }}</div>
-      </ion-item>
+      <div style="display: flex;flex-wrap: wrap;">
+        <ion-item class='item-borderless' *ngFor="let city of cities" (click)="navigateToCity(city)">
+          <div style="position: releative;">
+            <img [src]="city.photo" />
+            <span style="position: absolute;bottom: 0;left: 50%;transform: translate(-50%,0);background: white;padding: 5px;">{{ city.name }}</span>
+          </div>
+        </ion-item>
+      </div>
     </ion-list>
   </ion-content>
 </layout-sidemenu>
