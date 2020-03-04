@@ -4,11 +4,12 @@
   <br /><br /><br />
 </div>
 
+<div class='wrapper'>
 <div class="container">
   <div [ngStyle]="getBackgroundStyle(n.premium_tier)" class='items' *ngFor="let n of newsitems">
 
     <!-- VIDEO ITEMS -->
-    <div *ngIf="n.item_type=='video'">
+    <div *ngIf="n.item_type=='video'" class='newsitems-video' >
 
       <div class="image-section">
         <video width="100%" height="auto" controls>
@@ -38,7 +39,7 @@
     </div>
 
     <!-- REPORT ITEMS -->
-    <div *ngIf="n.item_type=='report'">
+    <div *ngIf="n.item_type=='report'" class='newsitems-report' >
 
       <div class="image-section">
         <img class="image" src="{{n.photo_s169_url}}" />
@@ -65,7 +66,7 @@
     </div>
 
     <!-- GALLERY ITEMS -->
-    <div *ngIf="n.item_type=='gallery'">
+    <div *ngIf="n.item_type=='gallery'" class='newsitems-gallery' >
 
       <div class="image-section">
         <div class="gallery">
@@ -98,4 +99,5 @@
     </div>
 
   </div>
+</div>
 </div>

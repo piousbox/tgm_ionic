@@ -13,6 +13,7 @@ export class AppRouter {
 export class ApiRouter {
   static account                 = `${environment.api_domain}/api/my/account`;
   static citiesindex             = `${environment.api_domain}/api/cities.json`;
+  static city = (slug) => `${environment.api_domain}/api/cities/view/${slug}`;
   static doPurchase              = `${environment.api_domain}/api/do_purchase`;
   static galleriesShow = (slug) => `${environment.api_domain}/api/galleries/view/${slug}`;
   static getStars                = `${environment.api_domain}/api/stars/buy`;
