@@ -49,21 +49,6 @@ export class NewsitemsList implements OnInit {
     return await modal.present();
   }
 
-  getBackgroundStyle(premium) {
-    const background = "linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),url('$url')";
-    let style = {};
-
-    switch (premium) {
-      case 1:
-        style["background-image"] = background.replace("$url", "../../assets/newsfeed/Sunglass-bg-2.png");
-        break;
-      case 2:
-        style["background-image"] = background.replace("$url", "../../assets/newsfeed/Lock Icon.png");
-        break;
-    }
-    return style;
-  }
-
   getIconUrl(isPremium, premiumTier, type) {
     if(!isPremium){
       switch(type){
