@@ -43,12 +43,12 @@
         <div>
           <p class="title">
             <img class="icon" [src]="getIconUrl(n.is_premium, n.premium_tier, n.item_type)" />
-            <span class="title-heading">{{n.name}}</span>
+            <span class="title-heading" (click)="navigateToReport(n.reportname)">{{n.name}}</span>
           </p>
           <p class="info">
-            <span class="date"> {{n.created_at.substring(0,10)}} </span> by
-            <span class="user"> {{n.username}} </span> in
-            <span class="city"> {{n.cityname}} </span>
+            <span class="date">{{n.created_at.substring(0,10)}}</span>
+            <span *ngIf="n.username" > by {{n.username}}</span>
+            <span *ngIf="n.cityname" > in {{n.cityname}}</span>
             <span class="tags" *ngFor="let tag of n.tags">{{tag.name}}</span>
           </p>
           <p class="description">

@@ -49,6 +49,11 @@ export class NewsitemsList implements OnInit {
     return await modal.present();
   }
 
+  navigateToReport(slug) {
+    logg(slug, 'navigateToReport');
+    this.router.navigate([AppRouter.reportPath(slug)]);
+  }
+
   getIconUrl(isPremium, premiumTier, type) {
     if(!isPremium){
       switch(type){

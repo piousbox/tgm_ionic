@@ -39,6 +39,4 @@ export class CitiesShowPage implements OnInit {
     this.city = answer['city'];
   }
 
-  navigate (where) {}
-
 }

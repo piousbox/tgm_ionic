@@ -6,8 +6,12 @@ export class AppRouter {
   
   static homefeedPath = 'en';
   static newsfeedPath = 'en/news';
-  static tagsPath = 'en/tags';
+  
+  static reportsPath = 'en/reports';
+  static reportPath = (c) => `en/reports/show/${c}`;
   static rootPath = '';
+
+  static tagsPath = 'en/tags';
 }
 
 export class ApiRouter {
