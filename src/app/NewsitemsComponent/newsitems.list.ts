@@ -50,8 +50,11 @@ export class NewsitemsList implements OnInit {
   }
 
   navigateToReport(slug) {
-    logg(slug, 'navigateToReport');
     this.router.navigate([AppRouter.reportPath(slug)]);
+  }
+
+  navigateToVideo(slug) {
+    this.router.navigate([AppRouter.videoPath(slug)]);
   }
 
   getIconUrl(isPremium, premiumTier, type) {

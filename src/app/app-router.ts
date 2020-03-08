@@ -12,6 +12,9 @@ export class AppRouter {
   static rootPath = '';
 
   static tagsPath = 'en/tags';
+
+  static videosPath = '/en/videos';
+  static videoPath = (v) => `en/videos/show/#{v}`;
 }
 
 export class ApiRouter {

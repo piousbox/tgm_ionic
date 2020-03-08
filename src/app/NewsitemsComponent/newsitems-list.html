@@ -13,12 +13,10 @@
 
       <!-- VIDEO ITEMS -->
       <div *ngIf="n.item_type=='video'" class='newsitems-video'>
-        <div class="image-section">
-          <video width="100%" height="auto" controls>
-            <source src="{{n.url}}" type="video/mp4">
-          </video>
-          <!-- <ion-icon class="play-icon" slot="start" name="play-circle"></ion-icon>
-        <img class="image" src="{{n.photo_s169_url}}" /> -->
+        <div class="image-section" (click)="navigateToVideo(n.slug)" >
+          <!-- <video width="100%" height="auto" controls><source src="{{n.url}}" type="video/mp4"></video> -->
+          <ion-icon class="play-icon" slot="start" name="play-circle"></ion-icon>
+          <img class="image" src="{{n.photo_s169_url}}" />
         </div>
         <div>
           <p class="title">
@@ -46,10 +44,10 @@
             <span class="title-heading" (click)="navigateToReport(n.reportname)">{{n.name}}</span>
           </p>
           <p class="info">
-            <span class="date">{{n.created_at.substring(0,10)}}</span>
-            <span *ngIf="n.username" > by {{n.username}}</span>
-            <span *ngIf="n.cityname" > in {{n.cityname}}</span>
-            <span class="tags" *ngFor="let tag of n.tags">{{tag.name}}</span>
+            <span class="date"> {{n.created_at.substring(0,10)}} </span>
+            <span *ngIf="n.username" > by {{n.username}} </span>
+            <span *ngIf="n.cityname" > in {{n.cityname}} </span>
+            <span class="tags" *ngFor="let tag of n.tags"> {{tag.name}} </span>
           </p>
           <p class="description">
             {{n.description}}
