@@ -237,30 +237,6 @@ Apache-2.0
 @ionic/angular
 MIT
 
-@ionic-native/core
-MIT
-
-@angular/core
-MIT
-
-@ionic-native/native-storage
-MIT
-
-@angular/common
-MIT
-
-@ionic-native/facebook
-MIT
-
-@ionic-native/stripe
-MIT
-
-@angular/router
-MIT
-
-@angular/platform-browser
-MIT
-
 tslib
 Apache-2.0
 Apache License
@@ -320,16 +296,40 @@ If the Work includes a "NOTICE" text file as part of its distribution, then any 
 END OF TERMS AND CONDITIONS
 
 
-@ionic-native/status-bar
+@ionic-native/core
 MIT
 
-loader
+@angular/common
+MIT
+
+@angular/platform-browser
+MIT
 
 @ionic-native/splash-screen
 MIT
 
+@ionic-native/native-storage
+MIT
+
+@ionic-native/status-bar
+MIT
+
+@ionic-native/facebook
+MIT
+
+@ionic-native/stripe
+MIT
+
+@angular/router
+MIT
+
 @ionic-native/google-plus
 MIT
+
+@angular/core
+MIT
+
+loader
 
 zone.js
 MIT
