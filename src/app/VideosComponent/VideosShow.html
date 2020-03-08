@@ -1,0 +1,30 @@
+
+<layout-sidemenu>
+
+      <!-- VIDEO ITEMS -->
+      <div class='videos-show'>
+        <div class="image-section">
+          <video width="100%" height="auto" controls>
+            <source src="{{n.url}}" type="video/mp4">
+          </video>
+          <!-- <ion-icon class="play-icon" slot="start" name="play-circle"></ion-icon>
+        <img class="image" src="{{n.photo_s169_url}}" /> -->
+        </div>
+        <div>
+          <p class="title">
+            <img class="icon" [src]="getIconUrl(n.is_premium, n.premium_tier, n.item_type)" />
+            <span class="title-heading">{{n.name}}</span>
+          </p>
+          <p class="info">
+            <span class="date"> {{n.created_at.substring(0,10)}} </span> by
+            <span class="user"> {{n.username}} </span> in
+            <span class="city"> {{n.cityname}} </span>
+            <span class="tags" *ngFor="let tag of n.tags">{{tag.name}}</span>
+          </p>
+          <p class="description">
+            {{n.description}}
+          </p>
+        </div>
+      </div>
+
+</layout-sidemenu>

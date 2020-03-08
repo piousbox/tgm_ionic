@@ -13,3 +13,6 @@
 0.2.5 - 20200214 - this is picked up from gameui repo.
 0.2.6 - this is forced from gameui_ionic repo.
 0.2.7 - after copy-pasting only src/, let's reconfigure plugins and deploy
+0.2.8 - cities-index, by ab
+0.2.9 - linking newsitems to separate pages
+
