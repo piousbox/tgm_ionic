@@ -1,8 +1,8 @@
-import { environment } from '../environments/environment';
+import { environment } from '../environments/environment.staging';
 
 export class AppRouter {
   static citiesPath = "/en/cities";
-  static cityPath = (c) => `/en/cities/travel-to/${c.cityname}`;
+  static cityPath = (c) => `/en/cities/travel-to/${c.slug}`;
   
   static homefeedPath = 'en';
   static newsfeedPath = 'en/news';

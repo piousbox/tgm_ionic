@@ -1,7 +1,7 @@
-// COLORS
+// Colors Used in City Page
 $darkGrey: #605d5d;
 $lightGrey: #988b8b;
-$blueColor: #6aa3e9;
+$blue: #6aa3e9;
 
 h1.heading {
   text-align: center;
@@ -21,12 +21,12 @@ div.filter-section {
 
   .filter-input {
     width: 100%;
-    border: 2px solid $blueColor;
+    border: 2px solid $blue;
     border-radius: 2em;
     height: 2.5em;
     outline: none;
     padding: 1em 1em;
-    color: $blueColor;
+    color: $blue;
     background: white;
   }
 
@@ -35,7 +35,7 @@ div.filter-section {
     right: 1.3em;
     font-size: 1.5em;
     top: 0.3em;
-    color: $blueColor;
+    color: $blue;
   }
 }
 
@@ -44,7 +44,7 @@ div.bookmark-section {
   padding: 0 1em;
 
   .bookmark-text {
-    color: $blueColor;
+    color: $blue;
     padding: 1em;
   }
 }
@@ -57,7 +57,7 @@ div.container {
   .cities {
     margin: 0.5em;
     padding: 0.8em;
-    border: 1px solid $blueColor;
+    border: 1px solid $blue;
     border-radius: 0.4em;
     box-shadow: 1px 2px 8px 0px #d5cdcd;
     background: white;
@@ -100,7 +100,7 @@ div.container {
         right: 50%;
         transform: translate(50%);
         font-size: 1.6em;
-        color: $blueColor;
+        color: $blue;
       }
 
     }
@@ -175,7 +175,7 @@ div.container {
 }
 
 input:checked + .slider {
-  background-color: $blueColor;
+  background-color: $blue;
 }
 
 input:checked + .slider:before {
