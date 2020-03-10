@@ -2,12 +2,19 @@ import { environment } from '../environments/environment';
 
 export class AppRouter {
   static citiesPath = "/en/cities";
-  static cityPath = (c) => `/en/cities/travel-to/${c.cityname}`;
+  static cityPath = (c) => `/en/cities/travel-to/${c.slug}`;
   
   static homefeedPath = 'en';
   static newsfeedPath = 'en/news';
-  static tagsPath = 'en/tags';
+  
+  static reportsPath = 'en/reports';
+  static reportPath = (c) => `en/reports/show/${c}`;
   static rootPath = '';
+
+  static tagsPath = 'en/tags';
+
+  static videosPath = '/en/videos';
+  static videoPath = (v) => `en/videos/show/#{v}`;
 }
 
 export class ApiRouter {

@@ -118,6 +118,10 @@ div.items {
   transform: translate(-50%, -50%);
 }
 
+.premium-0 {
+  background: white;
+}
+
 .premium-1 {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url("../../assets/newsfeed/sunglass-background.png");
@@ -127,3 +131,4 @@ div.items {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url("../../assets/newsfeed/lock-background.png");
 }
+

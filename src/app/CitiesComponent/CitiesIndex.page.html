@@ -1,14 +1,51 @@
 <layout-sidemenu>
   <ion-content fullscreen>
-    <h1>Cities index</h1>
+    <h1 class="heading">Cities</h1>
     <ion-list>
-      <div style="display: flex;flex-wrap: wrap;">
-        <ion-item class='item-borderless' *ngFor="let city of cities" (click)="navigateToCity(city)">
-          <div style="position: releative;">
-            <img [src]="city.photo" />
-            <span style="position: absolute;bottom: 0;left: 50%;transform: translate(-50%,0);background: white;padding: 5px;">{{ city.name }}</span>
+      <div class="wrapper">
+
+        <div class="filter-section">
+          <input [(ngModel)]="filterValue" class="filter-input" (input)="filterHandler()" />
+          <ion-icon class="filter-icon" name="ios-funnel"></ion-icon>
+        </div>
+
+        <div class="bookmark-section">
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          <span class="bookmark-text">Show only bookmarked</span>
+        </div>
+
+        <div class="container">
+
+          <div class="cities" *ngFor="let city of filteredCities" (click)="navigateToCity(city)">
+            <div class="img-section">
+              <span class="bookmark" >
+                <ion-icon class="bookmark-icon" name="bookmark"></ion-icon>
+              </span>
+              <img class="city-img" [src]="city.photo" />
+              <span class="city-title">{{ city.name }}</span>
+            </div>
+
+            <div class="content-section">
+              <div class="content-item">
+                <ion-icon class="icon" name="paper"></ion-icon>
+                <span class="count">{{city.n_reports}}</span>
+              </div>
+              <div class="content-item">
+                <ion-icon class="icon" name="image"></ion-icon>
+                <span class="count">{{city.n_galleries}}</span>
+              </div>
+              <div class="content-item">
+                <ion-icon class="icon" name="videocam"></ion-icon>
+                <span class="count">{{city.n_videos}}</span>
+              </div>
+            </div>
+
           </div>
-        </ion-item>
+        </div>
+
       </div>
     </ion-list>
   </ion-content>
