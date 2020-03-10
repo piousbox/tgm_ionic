@@ -1,52 +1,92 @@
-
 <layout-sidemenu>
-  <ion-content >
-    <div class='container' >
-      <header>
-      </header>
+  <ion-content>
+    <div class='container'>
+      <header [ngStyle]="{ 'background-image' : getBackgroundImage(city.hero_img) }"></header>
 
       <section class="section-one">
-        <ion-icon name="location-outline" class="location"></ion-icon>
+        <ion-icon name="pin" class="location"></ion-icon>
         <h1>{{ city.name }}</h1>
         <div class="status">
           <div class="status-grid">
-            <img src="../../assets/Reports Icon.svg" alt="Reports"/>
-            <span class="numbers">138</span>
+            <ion-icon class="icon" name="paper"></ion-icon>
+            <span class="numbers">{{city.n_reports}}</span>
           </div>
           <div class="status-grid">
-            <img src="../../assets/Photos Icon.svg" alt="Photos"/>
-            <span class="numbers">26</span>
+            <ion-icon class="icon" name="image"></ion-icon>
+            <span class="numbers">{{city.n_galleries}}</span>
           </div>
           <div class="status-grid mid">
-            <img src="../../assets/Videos Icon.svg" alt="Videos"/>
-            <span class="numbers ">92</span>
+            <ion-icon class="icon" name="videocam"></ion-icon>
+            <span class="numbers ">{{city.n_videos}}</span>
           </div>
         </div>
+      </section>
 
+      <section class="tags-section">
+        <span class="btn delete-btn" (click)="deSelectAll()">
+          <ion-icon name="close"> </ion-icon> deselect all
+        </span>
+
+        <span class="btn" [ngClass]="{
+          'random': selectedTags.includes(tag.slug)
+        }" *ngFor="let tag of city.tags" (click)="tagSelection(tag)">{{tag.name}}</span>
 
       </section>
-      <section class="tags-container" >
-        <span class="btn delete-btn">X deselect all</span>
-        <span class="btn random">late bars</span>
-        <span class="btn random">tourist attractions</span>
-        <span class="btn">language cafe</span>
-        <span class="btn">art gallery</span>
-        <span class="btn random">best food</span>
-      </section>
+
       <section class="section-three">
-        <div>
-          <img src="../../assets/Newsfeed Icon.svg" alt="Newsfeed"/>
-          <p>Newsfeed</p>
 
+        <div class="menu-option" (click)="changeMenuHandler('newsfeed')">
+          <img src="../../assets/Newsfeed Icon.svg" alt="Newsfeed" />
+          <p>Newsfeed</p>
         </div>
-        <div>
-          <img src="../../assets/Events Icon.svg" alt="Events"/>
+
+        <div class="menu-option" (click)="changeMenuHandler('events')">
+          <img src="../../assets/Events Icon.svg" alt="Events" />
           <p>Events</p>
 
         </div>
-        <div>
-          <img src="../../assets/Venue Icon.svg" alt="Venues"/>
+
+        <div class="menu-option" (click)="changeMenuHandler('venues')">
+          <img src="../../assets/Venue Icon.svg" alt="Venues" />
           <p>Venues</p>
+        </div>
+
+        <div class="menu-option" (click)="changeMenuHandler('galleries')">
+          <img src="../../assets/Photos Icon.svg" alt="Galleries" />
+          <p>Galleries</p>
+        </div>
+
+        <div class="menu-option" (click)="changeMenuHandler('videos')">
+          <img src="../../assets/Videos Icon.svg" alt="Videos" />
+          <p>Videos</p>
+
+        </div>
+
+        <div class="menu-option" (click)="changeMenuHandler('reports')">
+          <img src="../../assets/Reports Icon.svg" alt="Reports" />
+          <p>Reports</p>
+        </div>
+
+      </section>
+
+      <section [ngSwitch]="selectedMenu">
+        <div *ngSwitchCase="'newsfeed'">
+          <newsitems-list [newsitems]=city.newsitems></newsitems-list>
+        </div>
+        <div *ngSwitchCase="'events'">
+          <p>Events</p>
+        </div>
+        <div *ngSwitchCase="'venues'">
+          <p>Venues</p>
+        </div>
+        <div *ngSwitchCase="'galleries'">
+          <p>Galleries</p>
+        </div>
+        <div *ngSwitchCase="'videos'">
+          <newsitems-list [newsitems]=videos></newsitems-list>
+        </div>
+        <div *ngSwitchCase="'reports'">
+          <newsitems-list [newsitems]=reports></newsitems-list>
         </div>
       </section>
 
