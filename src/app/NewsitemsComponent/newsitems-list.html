@@ -15,7 +15,7 @@
       <div *ngIf="n.item_type=='video'" class='newsitems-video'>
 
         <div class="image-section">
-          <video width="100%" height="auto" controls>
+          <video width="100%" preload="metadata" height="auto" controls>
             <source src="{{n.url}}" type="video/mp4">
           </video>
           <!-- <ion-icon class="play-icon" slot="start" name="play-circle"></ion-icon>
