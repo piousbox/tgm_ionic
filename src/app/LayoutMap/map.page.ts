@@ -169,6 +169,7 @@ export class MapPage implements OnInit {
       const path = ApiRouter.map(this.map_slug);
       const mapp = await this.httpClient.get(path, {params: this.params}).toPromise();
       this.map = mapp['map'];
+      console.log('+++ map:', this.map);
     }
     if (this.marker_slug) {
       this.location = await this.httpClient.get(ApiRouter.marker(this.marker_slug), {params: this.params}).toPromise();

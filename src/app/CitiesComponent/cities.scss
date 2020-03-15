@@ -25,10 +25,13 @@ body {
   font-size: 18px;
 }
 
-.container {
+.wrapper {
+  background-color: #f4f4f4; 
+}
+
+.cities-show {
   max-width: 44em;
   margin: auto;
-  background-color: #f4f4f4;
 }
 
 header {

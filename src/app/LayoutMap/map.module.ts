@@ -9,6 +9,7 @@ import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
 import { NewsitemsModule } from '../NewsitemsComponent/Newsitems.module';
 // import { NewsitemsList } from '../NewsitemsComponent/newsitems.list';
 import { GetStars } from './GetStars';
+import { SharedNewsitemsModule } from "../NewsitemsComponent/SharedNewsItems.module";
 
 const routes: Routes = [
   { path: '', component: MapPage },
@@ -22,7 +23,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     LayoutSidemenuModule,
-    NewsitemsModule,
+    SharedNewsitemsModule,
     RouterModule.forChild(routes)
   ],
   declarations: [ GetStars, MapPage ],
