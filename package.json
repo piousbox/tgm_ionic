@@ -116,7 +116,7 @@
         "test_temp": "ng test --help",
         "lint": "ng lint",
         "e2e": "ng e2e",
-        "browser_development": "ng run app:ionic-cordova-serve:development --host=tgm.mac --port=8100 --ssl --platform=browser",
+        "browser_development": "ng run app:ionic-cordova-serve:development --host=0.0.0.0 --port=8100 --ssl --platform=browser",
         "browser_staging": "ng run app:ionic-cordova-serve:staging --host=tgm.mac --port=8100 --ssl --platform=browser",
         "res": "ionic cordova resources --cordova-res",
         "ng": "ng"

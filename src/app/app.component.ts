@@ -59,9 +59,9 @@ export class AppComponent implements OnInit {
     public toastController: ToastController,
   ) {
     this.appRouter = AppRouter;
-    this.splashScreen.show();
+    // this.splashScreen.show();
 
-    logg(this.featuredOrBookmarked, 'featured');
+    // logg(this.featuredOrBookmarked, 'featured');
   }
 
   async doFacebookLogin () {
