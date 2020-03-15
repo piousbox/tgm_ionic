@@ -23,7 +23,7 @@
           </div>
         </section>
 
-        <section class="tags-section">
+        <section class="tags-section" *ngIf="city.tags.length > 0" >
           <span class="btn delete-btn" (click)="deSelectAll()">
             <ion-icon name="close"> </ion-icon> deselect all
           </span>
@@ -37,14 +37,7 @@
         <section class="section-three">
 
           <div class="menu-option" (click)="changeMenuHandler('newsfeed')">
-            <img src="../../assets/Newsfeed Icon.svg" alt="Newsfeed" />
-            <p>Newsfeed</p>
-          </div>
-
-          <div class="menu-option" (click)="changeMenuHandler('events')">
-            <img src="../../assets/Events Icon.svg" alt="Events" />
-            <p>Events</p>
-
+            <img src="../../assets/Newsfeed Icon.svg" alt="Newsfeed" /><p>Newsfeed</p>
           </div>
 
           <div class="menu-option" (click)="changeMenuHandler('venues')">
@@ -52,21 +45,21 @@
             <p>Venues</p>
           </div>
 
+          <!-- <div class="menu-option" (click)="changeMenuHandler('events')">
+            <img src="../../assets/Events Icon.svg" alt="Events" /><p>Events</p>
+          </div>
+
           <div class="menu-option" (click)="changeMenuHandler('galleries')">
-            <img src="../../assets/Photos Icon.svg" alt="Galleries" />
-            <p>Galleries</p>
+            <img src="../../assets/Photos Icon.svg" alt="Galleries" /><p>Galleries</p>
           </div>
 
           <div class="menu-option" (click)="changeMenuHandler('videos')">
-            <img src="../../assets/Videos Icon.svg" alt="Videos" />
-            <p>Videos</p>
-
+            <img src="../../assets/Videos Icon.svg" alt="Videos" /><p>Videos</p>
           </div>
 
           <div class="menu-option" (click)="changeMenuHandler('reports')">
-            <img src="../../assets/Reports Icon.svg" alt="Reports" />
-            <p>Reports</p>
-          </div>
+            <img src="../../assets/Reports Icon.svg" alt="Reports" /><p>Reports</p>
+          </div> -->
 
         </section>
 

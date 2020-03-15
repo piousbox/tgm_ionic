@@ -15,11 +15,9 @@
       <div *ngIf="n.item_type=='video'" class='newsitems-video'>
 
         <div class="image-section">
-          <video width="100%" preload="metadata" height="auto" controls>
-            <source src="{{n.url}}" type="video/mp4">
-          </video>
+          <video width="100%" preload="metadata" height="auto" controls><source src="{{n.url}}" type="video/mp4"></video>
           <!-- <ion-icon class="play-icon" slot="start" name="play-circle"></ion-icon>
-        <img class="image" src="{{n.photo_s169_url}}" /> -->
+            <img class="image" src="{{n.photo_s169_url}}" /> -->
         </div>
         <div>
           <p class="title">
@@ -63,7 +61,7 @@
         <div class="image-section">
           <div class="gallery">
             <div class="grid-item" *ngFor="let photo of (n.photos ? n.photos.slice(0,3):[]); let i = index">
-              <div class="image-item" [ngStyle]="{'background-image': 'url(' + photo.original_url + ')'}">
+              <div class="image-item" [ngStyle]="{'background-image': 'url(' + photo.large_url + ')'}">
                 <div *ngIf="n.photos.length > 3 && i==2" class="number">+{{ n.photos.length - 3 }}</div>
               </div>
             </div>
