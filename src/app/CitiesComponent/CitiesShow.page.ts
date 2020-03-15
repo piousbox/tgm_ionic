@@ -65,15 +65,10 @@ export class CitiesShowPage implements OnInit {
     } else {
       this.selectedTags.push(tag.slug);
     }
-
   }
 
   deSelectAll(){
     this.selectedTags = [];
-  }
-
-  getBackgroundImage(url) {
-    return `linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.4)), url("${url}")`;
   }
 
   changeMenuHandler(option) {

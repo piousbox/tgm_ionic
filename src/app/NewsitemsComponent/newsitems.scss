@@ -12,6 +12,18 @@ div.container {
   max-width: 44em;
 }
 
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero {
+  background: url('../hero.png');
+  width: 400px;
+  height: 180px;
+  background-size: cover;
+}
+
 div.items {
   /* border: 1px solid black; */
   box-shadow: -0.2em 0.3em 0.4em #bfb4b4;
@@ -131,4 +143,3 @@ div.items {
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
     url("../../assets/newsfeed/lock-background.png");
 }
-

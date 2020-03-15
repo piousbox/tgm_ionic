@@ -1,8 +1,12 @@
-<layout-sidemenu>
+<layout-fab>
   <ion-content>
     <div class='wrapper'>
       <div class='cities-show'>
-        <header [ngStyle]="{ 'background-image' : getBackgroundImage(city.hero_img) }"></header>
+
+        <header [ngStyle]="{ 
+          'background-image': 'url('+city.hero_img+'}',
+          'background-size': 'contain'
+        }"></header>
 
         <section class="section-one">
           <ion-icon name="pin" class="location"></ion-icon>
@@ -66,6 +70,7 @@
         <section [ngSwitch]="selectedMenu">
           <div *ngSwitchCase="'newsfeed'">
             <newsitems-list [newsitems]=city.newsitems></newsitems-list>
+            <br /><br /><br />
           </div>
           <div *ngSwitchCase="'events'">
             <p>Events</p>
@@ -86,4 +91,4 @@
       </div>
     </div>
   </ion-content>
-</layout-sidemenu>
+</layout-fab>

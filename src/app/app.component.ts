@@ -19,7 +19,7 @@ import { C, logg } from './const';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: [ './footer.scss', ],
+  styleUrls: [ './app.scss', './footer.scss', ],
 })
 export class AppComponent implements OnInit {
   appRouter;
