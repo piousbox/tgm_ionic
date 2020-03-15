@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { IonicModule } from '@ionic/angular';
 
+import { LayoutFab } from './LayoutFab';
 import { LayoutSidemenu } from './LayoutSidemenu';
 
 @NgModule({
-  declarations: [ LayoutSidemenu ],
-  exports: [ LayoutSidemenu ],
+  declarations: [ LayoutSidemenu, LayoutFab ],
+  exports: [ LayoutSidemenu, LayoutFab ],
   imports: [
     CommonModule,
     IonicModule,
