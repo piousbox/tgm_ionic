@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { CitiesIndexPage } from './CitiesIndex.page';
 import { CitiesShowPage } from './CitiesShow.page';
 
-import { SharedNewsitemsModule } from "../NewsitemsComponent/SharedNewsItems.module";
+import { NewsitemsModule } from "../NewsitemsComponent/Newsitems.module";
 
 const routes: Routes = [
   { path: '', component: CitiesIndexPage, },
@@ -15,7 +15,7 @@ const routes: Routes = [
   declarations: [ CitiesIndexPage, CitiesShowPage ],
   imports: [
     RouterModule.forChild(routes),
-    SharedNewsitemsModule,
+    NewsitemsModule,
   ]
 })
 export class CitiesModule {}

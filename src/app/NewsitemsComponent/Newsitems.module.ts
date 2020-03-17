@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
-import { HomefeedPage } from './homefeed.page';
-import { NewsfeedPage } from './newsfeed.page';
-import { SharedNewsitemsModule } from "./SharedNewsItems.module";
-import { AppModule } from '../app.module';
-import { GalleriesShow } from '../GalleriesComponent/GalleriesShow';
+import { IonicModule } from '@ionic/angular';
 
-const routes: Routes = [
-  { path: '', component: HomefeedPage },
-  { path: 'news', component: NewsfeedPage },
-];
+import { NewsitemsList } from './newsitems.list';
+import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
+
+import { SanitizeUrlPipe } from "../pipes/sanitizeUrl.pipe";
+import { TransformYoutubeUrlPipe } from "../pipes/transformYoutubeUrl.pipe";
 
 @NgModule({
-  declarations: [GalleriesShow, HomefeedPage, NewsfeedPage],
-  entryComponents: [GalleriesShow,],
-  imports: [
-    SharedNewsitemsModule,
-    RouterModule.forChild(routes)
-  ]
-})
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        LayoutSidemenuModule,
+    ],
+    declarations: [NewsitemsList, SanitizeUrlPipe, TransformYoutubeUrlPipe],
+    exports: [NewsitemsList, IonicModule, CommonModule, FormsModule, LayoutSidemenuModule]
+  })
 export class NewsitemsModule { }

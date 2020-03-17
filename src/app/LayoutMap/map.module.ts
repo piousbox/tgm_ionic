@@ -6,10 +6,9 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { MapPage } from './map.page';
 import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
-import { NewsitemsModule } from '../NewsitemsComponent/Newsitems.module';
 // import { NewsitemsList } from '../NewsitemsComponent/newsitems.list';
 import { GetStars } from './GetStars';
-import { SharedNewsitemsModule } from "../NewsitemsComponent/SharedNewsItems.module";
+import { NewsitemsModule } from "../NewsitemsComponent/Newsitems.module";
 
 const routes: Routes = [
   { path: '', component: MapPage },
@@ -23,7 +22,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     LayoutSidemenuModule,
-    SharedNewsitemsModule,
+    NewsitemsModule,
     RouterModule.forChild(routes)
   ],
   declarations: [ GetStars, MapPage ],
