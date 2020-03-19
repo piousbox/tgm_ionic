@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HttpClient, HttpParams, } from '@angular/common/http';
 import { Router, NavigationEnd } from '@angular/router';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 
 import {
   LoadingController, MenuController, ModalController,
@@ -29,6 +30,7 @@ export class NewsitemsList implements OnInit {
     private router: Router,
     private httpClient: HttpClient,
     private toastController: ToastController,
+    private splashScreen: SplashScreen,
   ) {
     // logg('NewsitemsList constructor()');
     this.ngOnInit();
@@ -38,6 +40,7 @@ export class NewsitemsList implements OnInit {
     // logg('NewsitemsList ngOnInit()');
     // const answer = await this.httpClient.get(ApiRouter.newsfeed, { params: params }).toPromise();
     // this.newsitems = data['newsitems'];
+    this.splashScreen.hide();
   }
 
   async showGallery(slug) {
