@@ -63,7 +63,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"common":"common","AccountComponent-account-module":"AccountComponent-account-module","CitiesComponent-cities-module":"CitiesComponent-cities-module","ReportsComponent-reports-module":"ReportsComponent-reports-module","default~LayoutMap-map-module~NewsitemsComponent-Newsitems-module":"default~LayoutMap-map-module~NewsitemsComponent-Newsitems-module","LayoutMap-map-module":"LayoutMap-map-module"}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"common":"common","AccountComponent-account-module":"AccountComponent-account-module","ReportsComponent-reports-module":"ReportsComponent-reports-module","VideosComponent-videos-module":"VideosComponent-videos-module","default~CitiesComponent-cities-module~LayoutMap-map-module~NewsitemsComponent-Homefeed-module":"default~CitiesComponent-cities-module~LayoutMap-map-module~NewsitemsComponent-Homefeed-module","CitiesComponent-cities-module":"CitiesComponent-cities-module","LayoutMap-map-module":"LayoutMap-map-module","NewsitemsComponent-Homefeed-module":"NewsitemsComponent-Homefeed-module"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
