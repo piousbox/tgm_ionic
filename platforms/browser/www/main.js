@@ -2332,7 +2332,7 @@ var AppComponent = /** @class */ (function () {
         this.mainFooterVisible = '';
         this.platformList = '';
         this.appRouter = _app_router__WEBPACK_IMPORTED_MODULE_8__["AppRouter"];
-        // this.splashScreen.show();
+        this.splashScreen.show();
         // logg(this.featuredOrBookmarked, 'featured');
     }
     AppComponent.prototype.doFacebookLogin = function () {
