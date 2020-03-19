@@ -11,6 +11,7 @@ fi
 set -e
 
 ionic cordova build browser --configuration=$eee
+echo "" >> README.md
 
 git add .
 git commit -m 'autobuild'
