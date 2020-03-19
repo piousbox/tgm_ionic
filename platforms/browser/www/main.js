@@ -1542,22 +1542,29 @@ var map = {
 	],
 	"./CitiesComponent/cities.module": [
 		"./src/app/CitiesComponent/cities.module.ts",
+		"default~CitiesComponent-cities-module~LayoutMap-map-module~NewsitemsComponent-Homefeed-module",
+		"common",
 		"CitiesComponent-cities-module"
 	],
 	"./LayoutMap/map.module": [
 		"./src/app/LayoutMap/map.module.ts",
-		"default~LayoutMap-map-module~NewsitemsComponent-Newsitems-module",
+		"default~CitiesComponent-cities-module~LayoutMap-map-module~NewsitemsComponent-Homefeed-module",
 		"common",
 		"LayoutMap-map-module"
 	],
-	"./NewsitemsComponent/Newsitems.module": [
-		"./src/app/NewsitemsComponent/Newsitems.module.ts",
-		"default~LayoutMap-map-module~NewsitemsComponent-Newsitems-module",
-		"common"
+	"./NewsitemsComponent/Homefeed.module": [
+		"./src/app/NewsitemsComponent/Homefeed.module.ts",
+		"default~CitiesComponent-cities-module~LayoutMap-map-module~NewsitemsComponent-Homefeed-module",
+		"common",
+		"NewsitemsComponent-Homefeed-module"
 	],
 	"./ReportsComponent/reports.module": [
 		"./src/app/ReportsComponent/reports.module.ts",
 		"ReportsComponent-reports-module"
+	],
+	"./VideosComponent/videos.module": [
+		"./src/app/VideosComponent/videos.module.ts",
+		"VideosComponent-videos-module"
 	]
 };
 function webpackAsyncContext(req) {
@@ -1579,6 +1586,215 @@ webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 };
 webpackAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 module.exports = webpackAsyncContext;
+
+/***/ }),
+
+/***/ "./src/app/LayoutSidemenu/LayoutFab.html":
+/*!***********************************************!*\
+  !*** ./src/app/LayoutSidemenu/LayoutFab.html ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n<ion-content class=\"ion-page\" main>\n  <ion-fab>\n  <ion-menu-toggle>\n    <ion-button>\n      <ion-icon slot=\"icon-only\" name=\"menu\"></ion-icon>\n    </ion-button>\n  </ion-menu-toggle>\n  </ion-fab>\n  \n  <ion-content>\n    <ng-content></ng-content>\n  </ion-content>\n</ion-content>\n"
+
+/***/ }),
+
+/***/ "./src/app/LayoutSidemenu/LayoutFab.ts":
+/*!*********************************************!*\
+  !*** ./src/app/LayoutSidemenu/LayoutFab.ts ***!
+  \*********************************************/
+/*! exports provided: LayoutFab */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LayoutFab", function() { return LayoutFab; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/index.js");
+/* harmony import */ var _ionic_native_native_storage_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/native-storage/ngx */ "./node_modules/@ionic-native/native-storage/ngx/index.js");
+/* harmony import */ var _ionic_native_facebook_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/facebook/ngx */ "./node_modules/@ionic-native/facebook/ngx/index.js");
+/* harmony import */ var _app_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../app-router */ "./src/app/app-router.ts");
+/* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../app-service */ "./src/app/app-service.ts");
+/* harmony import */ var _const__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../const */ "./src/app/const.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+
+
+
+
+var LayoutFab = /** @class */ (function () {
+    function LayoutFab(appService, fb, menu, nativeStorage, router, httpClient, toastController) {
+        var _this = this;
+        this.appService = appService;
+        this.fb = fb;
+        this.menu = menu;
+        this.nativeStorage = nativeStorage;
+        this.router = router;
+        this.httpClient = httpClient;
+        this.toastController = toastController;
+        this.currentUser = false;
+        this.currentUserStr = '<none>';
+        this.env = '<none>';
+        this.isApp = true;
+        this.mainFooterVisible = '';
+        this.mainTitle = '';
+        this.platformList = '';
+        this.appRouter = _app_router__WEBPACK_IMPORTED_MODULE_6__["AppRouter"];
+        this.ngOnInit();
+        this.appService.currentMessage.subscribe(function (msg) {
+            if (msg != _const__WEBPACK_IMPORTED_MODULE_8__["C"].defaultMessage) {
+                _this.ngOnInit();
+            }
+        });
+    }
+    LayoutFab.prototype.customOpen = function () {
+        // logg(this.menu.isActive(), 'active?');
+        // logg(this.menu.isOpen(), 'open?');
+        this.menu.toggle();
+        // logg(this.thisMenu.isOpen(), 'open?');
+    };
+    LayoutFab.prototype.doFacebookLogin = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var data, answer, thisCurrentUser;
+            var _this = this;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.fb.login(['public_profile', 'email']).then(function (res) { return __awaiter(_this, void 0, void 0, function () {
+                            var data;
+                            return __generator(this, function (_a) {
+                                data = res.authResponse;
+                                this.currentUser = data;
+                                this.currentUserStr = JSON.stringify(Object.keys(data).map(function (k) { return k + "::" + data[k].toString().substring(0, 10); }));
+                                return [2 /*return*/, data];
+                            });
+                        }); })];
+                    case 1:
+                        data = _a.sent();
+                        return [4 /*yield*/, this.httpClient.get(_app_router__WEBPACK_IMPORTED_MODULE_6__["ApiRouter"].longTermToken({ shortTermToken: data.accessToken })).toPromise()];
+                    case 2:
+                        answer = _a.sent();
+                        thisCurrentUser = {
+                            accessToken: data.accessToken,
+                            longTermToken: answer['long_term_token'],
+                            userID: data.userID,
+                            type: 'facebook',
+                        };
+                        this.nativeStorage.setItem('current_user', JSON.stringify(thisCurrentUser)).then(function () { return __awaiter(_this, void 0, void 0, function () {
+                            return __generator(this, function (_a) {
+                                this.appService.changeMessage(_const__WEBPACK_IMPORTED_MODULE_8__["C"].didLogin);
+                                this.appService.setCurrentUser(thisCurrentUser);
+                                this.router.navigate([_app_router__WEBPACK_IMPORTED_MODULE_6__["AppRouter"].rootPath]);
+                                return [2 /*return*/];
+                            });
+                        }); }, function (error) {
+                            console.log('+++ error:', error);
+                        });
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    LayoutFab.prototype.ngOnInit = function () {
+        var _this = this;
+        this.nativeStorage.getItem('current_user').then(function (r) { return JSON.parse(r); }).then(function (data) { return __awaiter(_this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                this.currentUser = data;
+                return [2 /*return*/];
+            });
+        }); }, function (error) { return __awaiter(_this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                this.currentUser = false;
+                return [2 /*return*/];
+            });
+        }); });
+    };
+    LayoutFab.prototype.navigate = function (where) {
+        if ('string' === typeof where) {
+            this.mainTitle = where;
+            this.router.navigate([where]);
+        }
+        else if ('object' === typeof where) {
+            this.mainTitle = where['kind'];
+            var here = '';
+            switch (where['kind']) {
+                case 'report': {
+                    here = '/reports';
+                    break;
+                }
+                default: {
+                }
+            }
+            this.router.navigate([here]);
+        }
+    };
+    LayoutFab = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'layout-fab',
+            template: __webpack_require__(/*! ./LayoutFab.html */ "./src/app/LayoutSidemenu/LayoutFab.html"),
+            styleUrls: [],
+        }),
+        __metadata("design:paramtypes", [_app_service__WEBPACK_IMPORTED_MODULE_7__["AppService"],
+            _ionic_native_facebook_ngx__WEBPACK_IMPORTED_MODULE_5__["Facebook"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["MenuController"],
+            _ionic_native_native_storage_ngx__WEBPACK_IMPORTED_MODULE_4__["NativeStorage"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["ToastController"]])
+    ], LayoutFab);
+    return LayoutFab;
+}());
+
+
 
 /***/ }),
 
@@ -1606,7 +1822,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/index.js");
-/* harmony import */ var _LayoutSidemenu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LayoutSidemenu */ "./src/app/LayoutSidemenu/LayoutSidemenu.ts");
+/* harmony import */ var _LayoutFab__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./LayoutFab */ "./src/app/LayoutSidemenu/LayoutFab.ts");
+/* harmony import */ var _LayoutSidemenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LayoutSidemenu */ "./src/app/LayoutSidemenu/LayoutSidemenu.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1617,13 +1834,14 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
 var LayoutSidemenuModule = /** @class */ (function () {
     function LayoutSidemenuModule() {
     }
     LayoutSidemenuModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
-            declarations: [_LayoutSidemenu__WEBPACK_IMPORTED_MODULE_3__["LayoutSidemenu"]],
-            exports: [_LayoutSidemenu__WEBPACK_IMPORTED_MODULE_3__["LayoutSidemenu"]],
+            declarations: [_LayoutSidemenu__WEBPACK_IMPORTED_MODULE_4__["LayoutSidemenu"], _LayoutFab__WEBPACK_IMPORTED_MODULE_3__["LayoutFab"]],
+            exports: [_LayoutSidemenu__WEBPACK_IMPORTED_MODULE_4__["LayoutSidemenu"], _LayoutFab__WEBPACK_IMPORTED_MODULE_3__["LayoutFab"]],
             imports: [
                 _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
                 _ionic_angular__WEBPACK_IMPORTED_MODULE_2__["IonicModule"],
@@ -1857,11 +2075,15 @@ var AppRouter = /** @class */ (function () {
     function AppRouter() {
     }
     AppRouter.citiesPath = "/en/cities";
-    AppRouter.cityPath = function (c) { return "/en/cities/travel-to/" + c.cityname; };
+    AppRouter.cityPath = function (c) { return "/en/cities/travel-to/" + c.slug; };
     AppRouter.homefeedPath = 'en';
     AppRouter.newsfeedPath = 'en/news';
-    AppRouter.tagsPath = 'en/tags';
+    AppRouter.reportsPath = 'en/reports';
+    AppRouter.reportPath = function (c) { return "en/reports/show/" + c; };
     AppRouter.rootPath = '';
+    AppRouter.tagsPath = 'en/tags';
+    AppRouter.videosPath = '/en/videos';
+    AppRouter.videoPath = function (v) { return "en/videos/show/#{v}"; };
     return AppRouter;
 }());
 
@@ -1870,6 +2092,7 @@ var ApiRouter = /** @class */ (function () {
     }
     ApiRouter.account = _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].api_domain + "/api/my/account";
     ApiRouter.citiesindex = _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].api_domain + "/api/cities.json";
+    ApiRouter.city = function (slug) { return _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].api_domain + "/api/cities/view/" + slug; };
     ApiRouter.doPurchase = _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].api_domain + "/api/do_purchase";
     ApiRouter.galleriesShow = function (slug) { return _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].api_domain + "/api/galleries/view/" + slug; };
     ApiRouter.getStars = _environments_environment__WEBPACK_IMPORTED_MODULE_0__["environment"].api_domain + "/api/stars/buy";
@@ -1910,9 +2133,10 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var routes = [
     { path: '', redirectTo: 'en', pathMatch: 'full' },
     { path: 'account', loadChildren: './AccountComponent/account.module#AccountModule' },
-    { path: 'en', loadChildren: './NewsitemsComponent/Newsitems.module#NewsitemsModule' },
+    { path: 'en', loadChildren: './NewsitemsComponent/Homefeed.module#HomefeedModule' },
     { path: 'en/cities', loadChildren: './CitiesComponent/cities.module#CitiesModule' },
     { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' },
+    { path: 'en/videos', loadChildren: './VideosComponent/videos.module#VideosModule' },
     { path: 'maps', loadChildren: './LayoutMap/map.module#MapModule' },
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -1998,7 +2222,7 @@ var AppService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<ion-app >\n\n  <ion-menu type=\"overlay\" side=\"start\" menuId=\"first\" >\n    <ion-header >\n      <ion-toolbar color=\"primary\">\n        <ion-title>Menu</ion-title>\n      </ion-toolbar>\n    </ion-header>\n\n    <ion-content >\n      <ion-list>\n        <ion-menu-toggle auto-hide=\"false\">\n          <ion-item button (click)=\"navigate(appRouter.homefeedPath)\" >\n            <ion-icon slot=\"start\" name='paper'></ion-icon>\n            <ion-label>\n              Homefeed\n            </ion-label>\n          </ion-item>\n          <ion-item button (click)=\"navigate(appRouter.newsfeedPath)\" *ngIf=\"currentUser\" >\n            <ion-icon slot=\"start\" name='paper'></ion-icon>\n            <ion-label>\n              My Newsfeed\n            </ion-label>\n          </ion-item>\n          <!-- <ion-item button (click)=\"navigate(appRouter.tagsPath)\" >\n            <ion-icon slot=\"start\" name='paper'></ion-icon>\n            <ion-label>\n              Tags\n            </ion-label>\n          </ion-item> -->\n          <ion-item button (click)=\"navigate('maps/' + C.worldMapSlug)\">\n            <ion-icon slot=\"start\" name='bus'></ion-icon>\n            <ion-label>\n              World Map\n            </ion-label>\n          </ion-item>\n          <ion-item button (click)=\"navigate(appRouter.citiesPath)\">\n            <ion-icon slot=\"start\" name='bus'></ion-icon>\n            <ion-label>\n              Cities\n            </ion-label>\n          </ion-item>\n          <ion-item button (click)=\"navigate('maps/fg')\">\n            <ion-icon slot=\"start\" name='bus'></ion-icon>\n            <ion-label>\n              Fighters Guild\n            </ion-label>\n          </ion-item>\n          \n          <!-- <ion-item button (click)=\"navigate('maps')\">\n            <ion-icon slot=\"start\" name='bus'></ion-icon>\n            <ion-label>\n              Shop\n            </ion-label>\n          </ion-item> -->\n\n          <ion-item button (click)=\"navigate('account')\">\n            <ion-icon slot=\"start\" name='person'></ion-icon>\n            <ion-label>\n              My Account\n            </ion-label>\n          </ion-item>\n          <ion-item *ngIf=\"currentUser\" button (click)=\"doFacebookLogout()\">\n            <ion-icon slot=\"start\" name='power'></ion-icon>\n            <ion-label>\n              Logout\n            </ion-label>\n          </ion-item>\n          <ion-item *ngIf=\"!currentUser\" button (click)=\"doFacebookLogin()\">\n            <ion-icon slot=\"start\" name='power'></ion-icon>\n            <ion-label>\n              Login\n            </ion-label>\n          </ion-item>\n          \n        </ion-menu-toggle>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n  <ion-content class=\"ion-page\" main>\n    \n    <ion-content>\n      <ion-router-outlet main [swipeGesture]=\"false\" ></ion-router-outlet>\n      <ng-content></ng-content>\n    </ion-content>\n  </ion-content>\n\n  <div id=\"mainFooterWrapper\" [class]=\"mainFooterVisible\" >\n    <div id='bugBtn' (click)=\"toggleMainFooter()\" >\n      <img src=\"assets/icons/bug.png\" />\n    </div>\n    <div id=\"mainFooterContent\" >\n      <ul>\n        <li>0.1.2c :: {{ currentUserStr }}</li>\n        <li>Env :: {{ env }}</li>\n        <li>Platformlist :: {{ platformList }}</li>\n      </ul>\n    </div>\n  </div>\n\n\n\n\n\n  \n</ion-app>\n"
+module.exports = "\n<ion-app >\n\n  <ion-menu type=\"overlay\" side=\"start\" menuId=\"first\" >\n    <ion-header >\n      <ion-toolbar color=\"primary\">\n        <ion-title>Menu</ion-title>\n      </ion-toolbar>\n    </ion-header>\n\n    <ion-content >\n      <ion-list>\n        <ion-menu-toggle auto-hide=\"false\">\n\n          <div class='hero-wrapper'><div class='hero' ></div></div>\n\n          <ion-item button (click)=\"navigate(appRouter.homefeedPath)\" >\n            <ion-icon slot=\"start\" name='paper'></ion-icon>\n            <ion-label>\n              Homefeed\n            </ion-label>\n          </ion-item>\n\n          <!-- <ion-item button (click)=\"navigate(appRouter.newsfeedPath)\" *ngIf=\"currentUser\" >\n            <ion-icon slot=\"start\" name='paper'></ion-icon>\n            <ion-label>\n              My Newsfeed\n            </ion-label>\n          </ion-item> -->\n\n          <!-- <ion-item button (click)=\"navigate(appRouter.tagsPath)\" >\n            <ion-icon slot=\"start\" name='paper'></ion-icon>\n            <ion-label>\n              Tags\n            </ion-label>\n          </ion-item> -->\n          \n          <ion-item button (click)=\"navigate('maps/' + C.worldMapSlug)\">\n            <ion-icon slot=\"start\" name='bus'></ion-icon>\n            <ion-label>\n              World Map\n            </ion-label>\n          </ion-item>\n\n          <!-- <ng-container *ngFor=\"let item of this.featuredOrBookmarked\" >\n            <ion-item button (click)=\"navigate('maps/' + item.slug)\">\n            <ion-icon slot=\"start\" name='bus'></ion-icon>\n            <ion-label>\n              {{ item.name }}\n            </ion-label>\n          </ion-item>\n          </ng-container> -->\n          \n          <ion-item button (click)=\"navigate(appRouter.citiesPath)\">\n            <ion-icon slot=\"start\" name='bus'></ion-icon>\n            <ion-label>\n              Cities\n            </ion-label>\n          </ion-item>\n\n          <!-- <ion-item button (click)=\"navigate('maps/fg')\">\n            <ion-icon slot=\"start\" name='bus'></ion-icon>\n            <ion-label>\n              Fighters Guild\n            </ion-label>\n          </ion-item> -->\n          \n          <!-- <ion-item button (click)=\"navigate('maps')\">\n            <ion-icon slot=\"start\" name='bus'></ion-icon>\n            <ion-label>\n              Shop\n            </ion-label>\n          </ion-item> -->\n\n          <ion-item button (click)=\"navigate('account')\">\n            <ion-icon slot=\"start\" name='person'></ion-icon>\n            <ion-label>\n              My Account\n            </ion-label>\n          </ion-item>\n\n          <ion-item *ngIf=\"currentUser\" button (click)=\"doFacebookLogout()\">\n            <ion-icon slot=\"start\" name='power'></ion-icon>\n            <ion-label>\n              Logout\n            </ion-label>\n          </ion-item>\n          \n          <ion-item *ngIf=\"!currentUser\" button (click)=\"doFacebookLogin()\">\n            <ion-icon slot=\"start\" name='power'></ion-icon>\n            <ion-label>\n              Login\n            </ion-label>\n          </ion-item>\n          \n        </ion-menu-toggle>\n      </ion-list>\n    </ion-content>\n  </ion-menu>\n\n  <ion-content class=\"ion-page\" main>\n    \n    <ion-content>\n      <ion-router-outlet main [swipeGesture]=\"false\" ></ion-router-outlet>\n      <ng-content></ng-content>\n    </ion-content>\n  </ion-content>\n\n  <div id=\"mainFooterWrapper\" [class]=\"mainFooterVisible\" >\n    <div id='bugBtn' (click)=\"toggleMainFooter()\" >\n      <img src=\"assets/icons/bug.png\" />\n    </div>\n    <div id=\"mainFooterContent\" >\n      <ul>\n        <li>0.1.2c :: {{ currentUserStr }}</li>\n        <li>Env :: {{ env }}</li>\n        <li>Platformlist :: {{ platformList }}</li>\n      </ul>\n    </div>\n  </div>\n\n\n\n\n\n  \n</ion-app>\n"
 
 /***/ }),
 
@@ -2098,12 +2322,18 @@ var AppComponent = /** @class */ (function () {
         this.currentUser = false;
         this.currentUserStr = "";
         this.env = '<none>';
+        this.featuredOrBookmarked = [
+            { slug: 'plane-1', name: 'Plane 1' },
+            { slug: 'wasya-co-map', name: 'WasyaCo' },
+            { slug: 'pi-liar-map', name: 'pi Liar' },
+        ];
         this.isApp = true;
         this.mainTitle = '';
         this.mainFooterVisible = '';
         this.platformList = '';
         this.appRouter = _app_router__WEBPACK_IMPORTED_MODULE_8__["AppRouter"];
-        this.splashScreen.show();
+        // this.splashScreen.show();
+        // logg(this.featuredOrBookmarked, 'featured');
     }
     AppComponent.prototype.doFacebookLogin = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -2172,7 +2402,7 @@ var AppComponent = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
-            styles: [__webpack_require__(/*! ./footer.scss */ "./src/app/footer.scss")],
+            styles: [__webpack_require__(/*! ./app.scss */ "./src/app/app.scss"), __webpack_require__(/*! ./footer.scss */ "./src/app/footer.scss")],
         }),
         __metadata("design:paramtypes", [_app_service__WEBPACK_IMPORTED_MODULE_9__["AppService"],
             _ionic_native_facebook_ngx__WEBPACK_IMPORTED_MODULE_7__["Facebook"],
@@ -2279,6 +2509,17 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/app.scss":
+/*!**************************!*\
+  !*** ./src/app/app.scss ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".hero-wrapper {\n  display: -webkit-box;\n  display: flex;\n  -webkit-box-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n          justify-content: center; }\n\n.hero {\n  background: url('hero.png');\n  width: 100%;\n  height: 130px;\n  background-size: contain;\n  background-repeat: no-repeat;\n  background-position: center center; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2FiaGF5L0Rlc2t0b3AvdGdtX2lvbmljL3NyYy9hcHAvYXBwLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFDRSxxQkFBYTtFQUFiLGNBQWE7RUFDYiwwQkFBbUI7VUFBbkIsb0JBQW1CO0VBQ25CLHlCQUF1QjtVQUF2Qix3QkFBdUIsRUFDeEI7O0FBQ0Q7RUFDRSw0QkFBNkI7RUFDN0IsWUFBVztFQUNYLGNBQWE7RUFDYix5QkFBd0I7RUFDeEIsNkJBQTRCO0VBQzVCLG1DQUFrQyxFQUNuQyIsImZpbGUiOiJzcmMvYXBwL2FwcC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG4uaGVyby13cmFwcGVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG4uaGVybyB7XG4gIGJhY2tncm91bmQ6IHVybCgnLi9oZXJvLnBuZycpO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMzBweDtcbiAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXIgY2VudGVyO1xufSJdfQ== */"
+
+/***/ }),
+
 /***/ "./src/app/const.ts":
 /*!**************************!*\
   !*** ./src/app/const.ts ***!
@@ -2325,7 +2566,7 @@ var logg = function (a, b) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/**\n * only footer below\n */\n#mainFooterWrapper {\n  position: absolute;\n  bottom: .2em;\n  width: 100%;\n  border: 2px solid black; }\n#mainFooterContent {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 10em;\n  overflow: auto;\n  background: yellow; }\n.main-footer-visible {\n  bottom: 9em !important; }\n#bugBtn {\n  width: 2em;\n  height: 2em;\n  position: absolute;\n  right: .6em;\n  top: -2em;\n  z-index: 10;\n  border: 2px solid black;\n  border-bottom: 0;\n  border-radius: .6em .6em 0 0;\n  background: yellow;\n  padding: .2em; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9waW91c2JveC9wcm9qZWN0cy9ub2RlLmpzL3RnbV9pb25pYy9zcmMvYXBwL2Zvb3Rlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBOztHQUVHO0FBRUg7RUFDRSxtQkFBa0I7RUFDbEIsYUFBWTtFQUNaLFlBQVc7RUFFWCx3QkFBdUIsRUFDeEI7QUFDRDtFQUNFLG1CQUFrQjtFQUNsQixPQUFNO0VBQ04sWUFBVztFQUNYLGFBQVk7RUFDWixlQUFjO0VBRWQsbUJBQWtCLEVBQ25CO0FBQ0Q7RUFDRSx1QkFBc0IsRUFDdkI7QUFFRDtFQUNFLFdBQVU7RUFDVixZQUFXO0VBQ1gsbUJBQWtCO0VBQ2xCLFlBQVc7RUFDWCxVQUFTO0VBQ1QsWUFBVztFQUVYLHdCQUF1QjtFQUN2QixpQkFBZ0I7RUFDaEIsNkJBQTRCO0VBRTVCLG1CQUFrQjtFQUNsQixjQUFhLEVBQ2QiLCJmaWxlIjoic3JjL2FwcC9mb290ZXIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLyoqXG4gKiBvbmx5IGZvb3RlciBiZWxvd1xuICovXG5cbiNtYWluRm9vdGVyV3JhcHBlciB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgYm90dG9tOiAuMmVtO1xuICB3aWR0aDogMTAwJTtcblxuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbn1cbiNtYWluRm9vdGVyQ29udGVudCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMGVtO1xuICBvdmVyZmxvdzogYXV0bztcblxuICBiYWNrZ3JvdW5kOiB5ZWxsb3c7XG59XG4ubWFpbi1mb290ZXItdmlzaWJsZSB7XG4gIGJvdHRvbTogOWVtICFpbXBvcnRhbnQ7XG59XG5cbiNidWdCdG4ge1xuICB3aWR0aDogMmVtO1xuICBoZWlnaHQ6IDJlbTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICByaWdodDogLjZlbTtcbiAgdG9wOiAtMmVtO1xuICB6LWluZGV4OiAxMDtcblxuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbiAgYm9yZGVyLWJvdHRvbTogMDtcbiAgYm9yZGVyLXJhZGl1czogLjZlbSAuNmVtIDAgMDtcblxuICBiYWNrZ3JvdW5kOiB5ZWxsb3c7XG4gIHBhZGRpbmc6IC4yZW07XG59XG4iXX0= */"
+module.exports = "/**\n * only footer below\n */\n#mainFooterWrapper {\n  position: absolute;\n  bottom: .2em;\n  width: 100%;\n  border: 2px solid black; }\n#mainFooterContent {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 10em;\n  overflow: auto;\n  background: yellow; }\n.main-footer-visible {\n  bottom: 9em !important; }\n#bugBtn {\n  width: 2em;\n  height: 2em;\n  position: absolute;\n  right: .6em;\n  top: -2em;\n  z-index: 10;\n  border: 2px solid black;\n  border-bottom: 0;\n  border-radius: .6em .6em 0 0;\n  background: yellow;\n  padding: .2em; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL2FiaGF5L0Rlc2t0b3AvdGdtX2lvbmljL3NyYy9hcHAvZm9vdGVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7O0dBRUc7QUFFSDtFQUNFLG1CQUFrQjtFQUNsQixhQUFZO0VBQ1osWUFBVztFQUVYLHdCQUF1QixFQUN4QjtBQUNEO0VBQ0UsbUJBQWtCO0VBQ2xCLE9BQU07RUFDTixZQUFXO0VBQ1gsYUFBWTtFQUNaLGVBQWM7RUFFZCxtQkFBa0IsRUFDbkI7QUFDRDtFQUNFLHVCQUFzQixFQUN2QjtBQUVEO0VBQ0UsV0FBVTtFQUNWLFlBQVc7RUFDWCxtQkFBa0I7RUFDbEIsWUFBVztFQUNYLFVBQVM7RUFDVCxZQUFXO0VBRVgsd0JBQXVCO0VBQ3ZCLGlCQUFnQjtFQUNoQiw2QkFBNEI7RUFFNUIsbUJBQWtCO0VBQ2xCLGNBQWEsRUFDZCIsImZpbGUiOiJzcmMvYXBwL2Zvb3Rlci5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG4vKipcbiAqIG9ubHkgZm9vdGVyIGJlbG93XG4gKi9cblxuI21haW5Gb290ZXJXcmFwcGVyIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBib3R0b206IC4yZW07XG4gIHdpZHRoOiAxMDAlO1xuXG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xufVxuI21haW5Gb290ZXJDb250ZW50IHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwZW07XG4gIG92ZXJmbG93OiBhdXRvO1xuXG4gIGJhY2tncm91bmQ6IHllbGxvdztcbn1cbi5tYWluLWZvb3Rlci12aXNpYmxlIHtcbiAgYm90dG9tOiA5ZW0gIWltcG9ydGFudDtcbn1cblxuI2J1Z0J0biB7XG4gIHdpZHRoOiAyZW07XG4gIGhlaWdodDogMmVtO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAuNmVtO1xuICB0b3A6IC0yZW07XG4gIHotaW5kZXg6IDEwO1xuXG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xuICBib3JkZXItYm90dG9tOiAwO1xuICBib3JkZXItcmFkaXVzOiAuNmVtIC42ZW0gMCAwO1xuXG4gIGJhY2tncm91bmQ6IHllbGxvdztcbiAgcGFkZGluZzogLjJlbTtcbn1cbiJdfQ== */"
 
 /***/ }),
 
@@ -2386,7 +2627,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/piousbox/projects/node.js/tgm_ionic/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/abhay/Desktop/tgm_ionic/src/main.ts */"./src/main.ts");
 
 
 /***/ })
