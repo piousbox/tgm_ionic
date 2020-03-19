@@ -14,9 +14,10 @@
     <div *ngIf="n.item_type=='video'" class='newsitems-video'>
 
       <div class="image-section">
-        <video width="100%" preload="metadata" height="auto" controls><source src="{{n.url}}" type="video/mp4"></video>
+        <video *ngIf="!n.youtube_id" width="100%" preload="metadata" height="auto" controls><source src="{{n.url}}" type="video/mp4"></video>
         <!-- <ion-icon class="play-icon" slot="start" name="play-circle"></ion-icon>
           <img class="image" src="{{n.photo_s169_url}}" /> -->
+        <iframe class="iframe" width="100%" height="315" *ngIf="n.youtube_id" [src]="n.youtube_id | transformYoutubeUrl | sanitizeUrl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
       <div>
         <p class="title">

@@ -6,7 +6,7 @@ const routes: Routes = [
   
   { path: 'account',   loadChildren: './AccountComponent/account.module#AccountModule' },
 
-  { path: 'en',         loadChildren: './NewsitemsComponent/Newsitems.module#NewsitemsModule' },
+  { path: 'en',         loadChildren: './NewsitemsComponent/Homefeed.module#HomefeedModule' },
   { path: 'en/cities',  loadChildren: './CitiesComponent/cities.module#CitiesModule' },
   { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' },
   { path: 'en/videos',  loadChildren: './VideosComponent/videos.module#VideosModule' },
