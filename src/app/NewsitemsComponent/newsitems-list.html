@@ -30,8 +30,7 @@
           <span class="city"> {{n.cityname}} </span>
           <span class="tags" *ngFor="let tag of n.tags">{{tag.name}}</span>
         </p>
-        <p class="description">
-          {{n.description}}
+        <p class="description" [innerHTML]="n.description">
         </p>
       </div>
     </div>
@@ -50,8 +49,7 @@
           <span *ngIf="n.cityname" > in {{n.cityname}} </span>
           <span class="tags" *ngFor="let tag of n.tags"> {{tag.name}} </span>
         </p>
-        <p class="description">
-          {{n.description}}
+        <p class="description" [innerHTML]="n.description">
         </p>
       </div>
     </div>
@@ -78,8 +76,7 @@
           <span class="city"> {{n.cityname}} </span>
           <span class="tags" *ngFor="let tag of n.tags">{{tag.name}}</span>
         </p>
-        <p class="description">
-          {{n.description}}
+        <p class="description" [innerHTML]="n.description">
         </p>
       </div>
     </div>
