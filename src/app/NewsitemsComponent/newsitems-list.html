@@ -55,7 +55,7 @@
     </div>
 
     <!-- GALLERY ITEMS -->
-    <div *ngIf="n.item_type=='gallery'" class='newsitems-gallery'>
+    <div *ngIf="n.item_type=='gallery'" (click)="navigateToGallery(n.galleryname)" class='newsitems-gallery'>
       <div class="image-section">
         <div class="gallery">
           <div class="grid-item" *ngFor="let photo of (n.photos ? n.photos.slice(0,3):[]); let i = index">

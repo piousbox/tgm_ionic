@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'en/cities',  loadChildren: './CitiesComponent/cities.module#CitiesModule' },
   { path: 'en/reports', loadChildren: './ReportsComponent/reports.module#ReportsModule' },
   { path: 'en/videos',  loadChildren: './VideosComponent/videos.module#VideosModule' },
+  { path: 'en/galleries', loadChildren: './GalleriesComponent/galleries.module#GalleriesModule' },
 
   { path: 'maps', loadChildren: './LayoutMap/map.module#MapModule' },
 

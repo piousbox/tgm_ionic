@@ -27,14 +27,14 @@
           </div>
         </section>
 
-        <section class="tags-section" *ngIf="city.tags.length > 0" >
+        <section class="tags-section" *ngIf="(city.tags|| []).length > 0" >
           <span class="btn delete-btn" (click)="deSelectAll()">
             <ion-icon name="close"> </ion-icon> deselect all
           </span>
 
           <span class="btn" [ngClass]="{
             'random': selectedTags.includes(tag.slug)
-          }" *ngFor="let tag of city.tags" (click)="tagSelection(tag)">{{tag.name}}</span>
+          }" *ngFor="let tag of (city.tags|| [])" (click)="tagSelection(tag)">{{tag.name}}</span>
 
         </section>
 

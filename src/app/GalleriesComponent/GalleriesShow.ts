@@ -15,18 +15,21 @@ import { environment } from '../../environments/environment';
 @Component({
   selector: 'galleries-show',
   templateUrl: 'GalleriesShow.html',
-  styleUrls: [],
+  styleUrls: ["./galleriesShow.scss"],
 })
 export class GalleriesShow implements OnInit {
   gallery:any = false;
-  @Input() slug:string;
+  slug:string;
 
   constructor(
     private appService: AppService,
     private httpClient: HttpClient,
+    private route: ActivatedRoute,
+    private router: Router,
     private modalController: ModalController,
     private nativeStorage: NativeStorage,
   ) {
+    this.slug = this.route.snapshot.paramMap.get('galleryname');
     if (this.slug) {
       this.ngOnInit();
     }
@@ -59,5 +62,8 @@ export class GalleriesShow implements OnInit {
     logg(answer, 'a12 - answer');
   }
 
+  navigateToCity(slug){
+    this.router.navigate([AppRouter.cityPath(slug)]);
+  }
   
 }

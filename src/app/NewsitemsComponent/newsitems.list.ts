@@ -52,6 +52,10 @@ export class NewsitemsList implements OnInit {
     return await modal.present();
   }
 
+  navigateToGallery(slug){
+    this.router.navigate([AppRouter.galleryPath(slug)]);
+  }
+
   navigateToReport(slug) {
     this.router.navigate([AppRouter.reportPath(slug)]);
   }

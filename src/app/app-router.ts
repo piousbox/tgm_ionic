@@ -13,6 +13,8 @@ export class AppRouter {
 
   static tagsPath = 'en/tags';
 
+  static galleryPath = (slug) => `en/galleries/show/${slug}`;
+
   static videosPath = '/en/videos';
   static videoPath = (v) => `en/videos/show/#{v}`;
 }

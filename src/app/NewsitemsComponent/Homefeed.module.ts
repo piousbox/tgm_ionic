@@ -13,8 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [GalleriesShow, HomefeedPage, NewsfeedPage],
-  entryComponents: [GalleriesShow,],
+  declarations: [HomefeedPage, NewsfeedPage],
   imports: [
     NewsitemsModule,
     RouterModule.forChild(routes)

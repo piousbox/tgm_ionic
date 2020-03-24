@@ -1,0 +1,53 @@
+.heading {
+  img {
+    width: 1.2em;
+  }
+  .title{
+    vertical-align: top;
+    padding: 0.5em;
+    color: #605d5d;
+  }
+}
+
+.gallery-section {
+  width: 44em;
+  margin: auto;
+}
+
+.gallery {
+  display: grid;
+  // grid-gap: 0.1em 0.2em;
+  grid-column-gap: 0.2em;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.info {
+  font-size: 0.8em;
+  .user {
+    color: #378ff9;
+    font-weight: 600;
+    font-style: italic;
+  }
+  .city {
+    color: #378ff9;
+    font-weight: 600;
+    font-style: italic;
+    cursor: pointer;
+  }
+  .tags {
+    border: 0.1em solid #378ff9;
+    border-radius: 1.5em;
+    padding: 0.5em 1em;
+    margin: 0px;
+    display: inline-block;
+    margin: 1em 1em 0 0;
+  }
+}
+
+.horizontal-img-section{
+  padding: 1em;
+}
+
+.vertical-img-section{
+  padding: 1em;
+}
