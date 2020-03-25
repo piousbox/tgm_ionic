@@ -5,21 +5,22 @@
   .title{
     vertical-align: top;
     padding: 0.5em;
-    color: #605d5d;
+    // color: black;
   }
 }
 
 .gallery-section {
   max-width: 44em;
   margin: auto;
-  padding: 0.5em;
+  padding: 1.5em;
 }
 
 .gallery {
   display: grid;
   // grid-gap: 0.1em 0.2em;
-  grid-column-gap: 0.2em;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 1.5em;
+  margin: 1em 0;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 
 .info {
@@ -45,10 +46,8 @@
   }
 }
 
-.horizontal-img-section{
-  padding: 1em;
-}
-
-.vertical-img-section{
-  padding: 1em;
+.full-img-section{
+  img{
+    margin-bottom: 1em;
+  }
 }

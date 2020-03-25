@@ -23,14 +23,9 @@
           </div>
         </div>
       </div>
-      <!-- Horizontal Image -->
-      <div class="horizontal-img-section">
-        <img [src]=gallery.photos[4].original_url />
-      </div>
-      <!-- Verticle Image -->
-      <div class="vertical-img-section">
-        <img [src]=gallery.photos[0].original_url />
+      <!-- Full Image Section -->
+      <div class="full-img-section">
+        <img *ngFor="let ph of gallery.photos" [src]=ph.original_url />
       </div>
     </div>
   </ion-content>
-</layout-fab>
