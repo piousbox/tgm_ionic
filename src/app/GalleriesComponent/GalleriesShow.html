@@ -1,34 +1,36 @@
-<ion-content>
-  <div class="gallery-section">
-    <h1 class="heading">
-      <img src="../../assets/newsfeed/Photos Icon.png" />
-      <span class="title">{{gallery.name}}</span>
-    </h1>
-    <p class="info">
-      <span class="date"> {{(gallery.created_at || "").substring(0,10)}} </span> by
-      <span class="user"> {{gallery.username}} </span> in
-      <span class="city" (click)="navigateToCity(gallery.city.slug)"> {{gallery.cityname}} </span>
-      <span class="tags" *ngFor="let tag of gallery.tags">{{tag.name}}</span>
-    </p>
-    <div *ngIf="gallery.is_premium && !gallery.is_purchased">
-      <ion-button (click)="purchase()">Purchase</ion-button>
-    </div>
-    <!-- <p>message: {{gallery.message}}</p>
+<layout-fab>
+  <ion-content>
+    <div class="gallery-section">
+      <h1 class="heading">
+        <img src="../../assets/newsfeed/Photos Icon.png" />
+        <span class="title">{{gallery.name}}</span>
+      </h1>
+      <p class="info">
+        <span class="date"> {{(gallery.created_at || "").substring(0,10)}} </span> by
+        <span class="user"> {{gallery.username}} </span> in
+        <span class="city" (click)="navigateToCity(gallery.city.slug)"> {{gallery.cityname}} </span>
+        <span class="tags" *ngFor="let tag of gallery.tags">{{tag.name}}</span>
+      </p>
+      <div *ngIf="gallery.is_premium && !gallery.is_purchased">
+        <ion-button (click)="purchase()">Purchase</ion-button>
+      </div>
+      <!-- <p>message: {{gallery.message}}</p>
         <p>description: {{gallery.description}}</p> -->
-    <div class="gallery">
-      <div class='card' *ngFor="let ph of gallery.photos">
-        <div class='card-inner'>
-          <ion-img [src]=ph.thumb_url></ion-img>
+      <div class="gallery">
+        <div class='card' *ngFor="let ph of gallery.photos">
+          <div class='card-inner'>
+            <ion-img [src]=ph.thumb_url></ion-img>
+          </div>
         </div>
       </div>
+      <!-- Horizontal Image -->
+      <div class="horizontal-img-section">
+        <img [src]=gallery.photos[4].original_url />
+      </div>
+      <!-- Verticle Image -->
+      <div class="vertical-img-section">
+        <img [src]=gallery.photos[0].original_url />
+      </div>
     </div>
-    <!-- Horizontal Image -->
-    <div class="horizontal-img-section">
-      <img [src]=gallery.photos[4].original_url />
-    </div>
-    <!-- Verticle Image -->
-    <div class="vertical-img-section">
-      <img [src]=gallery.photos[0].original_url />
-    </div>
-  </div>
-</ion-content>
+  </ion-content>
+</layout-fab>

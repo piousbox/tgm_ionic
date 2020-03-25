@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
+import { LayoutSidemenuModule } from "../LayoutSidemenu/LayoutSidemenu.module";
+
 import { GalleriesShow } from "./GalleriesShow";
 
 const routes: Routes = [
@@ -16,6 +18,7 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
+    LayoutSidemenuModule,
     RouterModule.forChild(routes),
   ]
 })
