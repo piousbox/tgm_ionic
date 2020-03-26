@@ -19,9 +19,7 @@ export class MetaLineComponent {
 
     constructor(
         private router: Router
-    ) {
-        console.log("mounting")
-    }
+    ) {}
 
     navigateToCity() {
         this.router.navigate([AppRouter.cityPath(this.city)]);
