@@ -5,7 +5,8 @@
         <img src="../../assets/newsfeed/Photos Icon.png" />
         <span class="title">{{gallery.name}}</span>
       </h1>
-      <metaline [created_at]="gallery.created_at" [username]="gallery.username" [city]="gallery.city || {}" [tags]="gallery.tags"></metaline>      
+      <metaline [created_at]="gallery.created_at" [username]="gallery.username" [city]="gallery.city || {}"
+        [tags]="gallery.tags"></metaline>
       <div *ngIf="gallery.is_premium && !gallery.is_purchased">
         <ion-button (click)="purchase()">Purchase</ion-button>
       </div>
@@ -24,3 +25,4 @@
       </div>
     </div>
   </ion-content>
+</layout-fab>
