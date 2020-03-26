@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { LayoutSidemenuModule } from "../LayoutSidemenu/LayoutSidemenu.module";
+import { MetalineModule } from "../MetalineComponent/metaline.module";
 
 import { GalleriesShow } from "./GalleriesShow";
 
@@ -19,6 +20,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     LayoutSidemenuModule,
+    MetalineModule,
     RouterModule.forChild(routes),
   ]
 })

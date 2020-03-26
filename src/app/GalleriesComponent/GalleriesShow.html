@@ -5,12 +5,7 @@
         <img src="../../assets/newsfeed/Photos Icon.png" />
         <span class="title">{{gallery.name}}</span>
       </h1>
-      <p class="info">
-        <span class="date"> {{(gallery.created_at || "").substring(0,10)}} </span> by
-        <span class="user"> {{gallery.username}} </span> in
-        <span class="city" (click)="navigateToCity(gallery.city.slug)"> {{gallery.cityname}} </span>
-        <span class="tags" *ngFor="let tag of gallery.tags">{{tag.name}}</span>
-      </p>
+      <metaline [created_at]="gallery.created_at" [username]="gallery.username" [city]="gallery.city || {}" [tags]="gallery.tags"></metaline>      
       <div *ngIf="gallery.is_premium && !gallery.is_purchased">
         <ion-button (click)="purchase()">Purchase</ion-button>
       </div>
@@ -25,7 +20,7 @@
       </div>
       <!-- Full Image Section -->
       <div class="full-img-section">
-        <img *ngFor="let ph of gallery.photos" [src]=ph.original_url />
+        <img *ngFor="let ph of gallery.photos" [src]=ph.large_url />
       </div>
     </div>
   </ion-content>

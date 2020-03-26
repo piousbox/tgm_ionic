@@ -14,22 +14,20 @@
     <div *ngIf="n.item_type=='video'" class='newsitems-video'>
 
       <div class="image-section">
-        <video *ngIf="!n.youtube_id" width="100%" preload="metadata" height="auto" controls><source src="{{n.url}}" type="video/mp4"></video>
+        <video *ngIf="!n.youtube_id" width="100%" preload="metadata" height="auto" controls>
+          <source src="{{n.url}}" type="video/mp4"></video>
         <!-- <ion-icon class="play-icon" slot="start" name="play-circle"></ion-icon>
           <img class="image" src="{{n.photo_s169_url}}" /> -->
-        <iframe class="iframe" width="100%" height="315" *ngIf="n.youtube_id" [src]="n.youtube_id | transformYoutubeUrl | sanitizeUrl" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="iframe" width="100%" height="315" *ngIf="n.youtube_id"
+          [src]="n.youtube_id | transformYoutubeUrl | sanitizeUrl" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe>
       </div>
       <div>
         <p class="title">
           <img class="icon" [src]="getIconUrl(n.is_premium, n.premium_tier, n.item_type)" />
           <span class="title-heading">{{n.name}}</span>
         </p>
-        <p class="info">
-          <span class="date"> {{n.created_at.substring(0,10)}} </span> by
-          <span class="user"> {{n.username}} </span> in
-          <span class="city"> {{n.cityname}} </span>
-          <span class="tags" *ngFor="let tag of n.tags">{{tag.name}}</span>
-        </p>
+        <metaline [created_at]="n.created_at" [username]="n.username" [city]="n.city || {}" [tags]="n.tags"></metaline>
         <p class="subhead" [innerHTML]="n.subhead">
         </p>
       </div>
@@ -43,19 +41,14 @@
           <img class="icon" [src]="getIconUrl(n.is_premium, n.premium_tier, n.item_type)" />
           <span class="title-heading" (click)="navigateToReport(n.reportname)">{{n.name}}</span>
         </p>
-        <p class="info">
-          <span class="date"> {{n.created_at.substring(0,10)}} </span>
-          <span *ngIf="n.username" > by {{n.username}} </span>
-          <span *ngIf="n.cityname" > in {{n.cityname}} </span>
-          <span class="tags" *ngFor="let tag of n.tags"> {{tag.name}} </span>
-        </p>
+        <metaline [created_at]="n.created_at" [username]="n.username" [city]="n.city || {}" [tags]="n.tags"></metaline>
         <p class="subhead" [innerHTML]="n.subhead">
         </p>
       </div>
     </div>
 
     <!-- GALLERY ITEMS -->
-    <div *ngIf="n.item_type=='gallery'" (click)="navigateToGallery(n.galleryname)" class='newsitems-gallery'>
+    <div *ngIf="n.item_type=='gallery'" class='newsitems-gallery'>
       <div class="image-section">
         <div class="gallery">
           <div class="grid-item" *ngFor="let photo of (n.photos ? n.photos.slice(0,3):[]); let i = index">
@@ -66,16 +59,11 @@
         </div>
       </div>
       <div>
-        <p class="title">
+        <p class="title routable" (click)="navigateToGallery(n.galleryname)">
           <img class="icon" [src]="getIconUrl(n.is_premium, n.premium_tier, n.item_type)" />
           <span class="title-heading">{{n.name}}</span>
         </p>
-        <p class="info">
-          <span class="date"> {{n.created_at.substring(0,10)}} </span> by
-          <span class="user"> {{n.username}} </span> in
-          <span class="city"> {{n.cityname}} </span>
-          <span class="tags" *ngFor="let tag of n.tags">{{tag.name}}</span>
-        </p>
+        <metaline [created_at]="n.created_at" [username]="n.username" [city]="n.city || {}" [tags]="n.tags"></metaline>
         <p class="subhead" [innerHTML]="n.subhead">
         </p>
       </div>

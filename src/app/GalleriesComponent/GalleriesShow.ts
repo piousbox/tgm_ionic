@@ -62,8 +62,5 @@ export class GalleriesShow implements OnInit {
     logg(answer, 'a12 - answer');
   }
 
-  navigateToCity(slug){
-    this.router.navigate([AppRouter.cityPath(slug)]);
-  }
   
 }

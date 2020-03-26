@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { NewsitemsList } from './newsitems.list';
 import { LayoutSidemenuModule } from '../LayoutSidemenu/LayoutSidemenu.module';
+import { MetalineModule } from "../MetalineComponent/metaline.module";
 
 import { SanitizeUrlPipe } from "../pipes/sanitizeUrl.pipe";
 import { TransformYoutubeUrlPipe } from "../pipes/transformYoutubeUrl.pipe";
@@ -16,6 +17,7 @@ import { TransformYoutubeUrlPipe } from "../pipes/transformYoutubeUrl.pipe";
         FormsModule,
         IonicModule,
         LayoutSidemenuModule,
+        MetalineModule
     ],
     declarations: [NewsitemsList, SanitizeUrlPipe, TransformYoutubeUrlPipe],
     exports: [NewsitemsList, IonicModule, CommonModule, FormsModule, LayoutSidemenuModule]

@@ -1,0 +1,6 @@
+<p class="info">
+    <span class="date"> {{(created_at || "").substring(0,10)}} </span> by
+    <span class="user"> {{username}} </span> in
+    <span class="city" (click)="navigateToCity()"> {{city.name}} </span>
+    <span class="tags" *ngFor="let tag of tags">{{tag.name}}</span>
+</p>

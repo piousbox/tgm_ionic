@@ -16,38 +16,23 @@
 }
 
 .gallery {
-  display: grid;
-  // grid-gap: 0.1em 0.2em;
+/**  display: grid;
+  grid-gap: 0.1em 0.2em;
   grid-gap: 1.5em;
-  margin: 1em 0;
   grid-template-columns: auto auto auto auto auto auto;
-}
+*/
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em 0;
 
-.info {
-  font-size: 0.8em;
-  .user {
-    color: #378ff9;
-    font-weight: 600;
-    font-style: italic;
-  }
-  .city {
-    color: #378ff9;
-    font-weight: 600;
-    font-style: italic;
-    cursor: pointer;
-  }
-  .tags {
-    border: 0.1em solid #378ff9;
-    border-radius: 1.5em;
-    padding: 0.5em 1em;
-    margin: 0px;
-    display: inline-block;
-    margin: 1em 1em 0 0;
+  .card{
+    margin: 0.1em 0.25em;
   }
 }
 
 .full-img-section{
   img{
     margin-bottom: 1em;
+    width: 100%;
   }
 }
