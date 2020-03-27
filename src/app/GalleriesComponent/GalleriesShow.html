@@ -1,28 +1,33 @@
 <layout-fab>
   <ion-content>
-    <div class="gallery-section">
-      <h1 class="heading">
-        <img src="../../assets/newsfeed/Photos Icon.png" />
-        <span class="title">{{gallery.name}}</span>
-      </h1>
-      <metaline [created_at]="gallery.created_at" [username]="gallery.username" [city]="gallery.city || {}"
-        [tags]="gallery.tags"></metaline>
-      <div *ngIf="gallery.is_premium && !gallery.is_purchased">
-        <ion-button (click)="purchase()">Purchase</ion-button>
-      </div>
-      <!-- <p>message: {{gallery.message}}</p>
-        <p>description: {{gallery.description}}</p> -->
-      <div class="gallery">
-        <div class='card' *ngFor="let ph of gallery.photos">
-          <div class='card-inner'>
-            <ion-img [src]=ph.thumb_url></ion-img>
+    <div class="GalleriesShow">
+      <div class='narrow'>
+        <h1 class="heading">
+          <img src="../../assets/newsfeed/Photos Icon.png" />
+          <span class="title">{{gallery.name}}</span>
+        </h1>
+        <metaline [created_at]="gallery.created_at" [username]="gallery.username" [city]="gallery.city || {}"
+          [tags]="gallery.tags"></metaline>
+        <div *ngIf="gallery.is_premium && !gallery.is_purchased">
+          <ion-button (click)="purchase()">Purchase</ion-button>
+        </div>
+        <div class="thumbs">
+          <div class='card' *ngFor="let ph of gallery.photos">
+            <div class='card-inner'>
+              <ion-img [src]=ph.thumb_url></ion-img>
+            </div>
           </div>
         </div>
       </div>
+      
       <!-- Full Image Section -->
       <div class="full-img-section">
-        <img *ngFor="let ph of gallery.photos" [src]=ph.large_url />
+        <div class='item' *ngFor="let ph of gallery.photos">
+          <img [src]=ph.large_url />
+        </div>
       </div>
     </div>
+
+    <br /><br /><br />
   </ion-content>
 </layout-fab>
