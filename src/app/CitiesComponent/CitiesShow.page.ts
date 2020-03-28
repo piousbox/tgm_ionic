@@ -24,6 +24,7 @@ export class CitiesShowPage implements OnInit {
   selectedMenu: string = "newsfeed";
   videos: any = [];
   reports: any = [];
+  venues: any = [];
 
   constructor(
     private nativeStorage: NativeStorage,
@@ -50,6 +51,8 @@ export class CitiesShowPage implements OnInit {
       item.item_type = "video";
       return item;
     });
+
+    this.venues = this.city.venues;
   }
 
   navigate(where) { }

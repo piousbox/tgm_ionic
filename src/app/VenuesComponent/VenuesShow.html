@@ -1,0 +1,27 @@
+<div>
+    <div class="filter-section">
+        <input [(ngModel)]="filterValue" class="filter-input" (input)="filterHandler()" />
+        <ion-icon class="filter-icon" name="ios-funnel"></ion-icon>
+    </div>
+</div>
+<div class="container">
+
+    <div class="venues" *ngFor="let venue of filteredVenues">
+        <div class="image-section">
+            <img [src]=venue.photo />
+        </div>
+        <div class="info-section">
+            <h4 class="title">{{venue.name}}</h4>
+            <div class="rating-section">
+                <rating [rate]=defaultRating></rating>
+                <span class="reviews">5 reviews</span>
+            </div>
+            <div class="tags-section">
+                <span class="tags" *ngFor="let tag of venue.tags">{{tag.name}}</span>
+            </div>
+            <p class="description">{{venue.description}}</p>
+        </div>
+        <img class="forward-arrow" src="../../assets/16x16/arrow-right.png" />
+    </div>
+
+</div>
