@@ -22,7 +22,6 @@ export class Rating implements OnInit {
     }
 
     setRatingArray() {
-        console.log(this.rate);
         let i = 0;
         while (this.rate > 0) {
             if (this.rate < 1) {
@@ -33,7 +32,6 @@ export class Rating implements OnInit {
             this.rate--;
             i++;
         }
-        console.log(this.rating);
     }
 
 }

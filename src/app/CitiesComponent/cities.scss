@@ -26,7 +26,7 @@ body {
 }
 
 .wrapper {
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
 }
 
 .cities-show {
@@ -188,6 +188,18 @@ header nav {
       font-weight: 600;
       font-size: 14px;
       padding: 5px 1px;
+      position: relative;
+    }
+
+    p.selected::after {
+      content: "";
+      background: #6a6666;
+      position: absolute;
+      bottom: 0px;
+      width: 30%;
+      height: 2px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 }

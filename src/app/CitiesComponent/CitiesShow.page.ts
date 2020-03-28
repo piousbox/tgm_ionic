@@ -3,6 +3,7 @@ import { HttpClient, HttpParams, } from '@angular/common/http';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 
 import { ApiRouter, AppRouter } from '../app-router';
 import { AppService } from '../app-service';
@@ -32,11 +33,12 @@ export class CitiesShowPage implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     public httpClient: HttpClient,
-    private _cityService: CityService
+    private _cityService: CityService,
+    private splashScreen: SplashScreen,
   ) {
+    this.splashScreen.hide();
     this.appRouter = AppRouter;
     this.slug = this.route.snapshot.paramMap.get('cityname');
-    this.ngOnInit();
   }
 
   async ngOnInit() {
