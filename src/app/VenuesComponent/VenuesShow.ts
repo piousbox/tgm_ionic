@@ -6,7 +6,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ["./VenuesShow.scss"],
 })
 export class VenuesShow implements OnInit{
-  @Input() venues: Array<any> = [];
+  private _venues: Array<any> = [];
+  @Input() set venues(value){
+    this._venues = value;
+    this.filteredVenues = value;
+  };
+
+  get venues(){
+    return this._venues;
+  }
+
   defaultRating: number = 3.5;
   filterValue: string = "";
   filteredVenues: Array<any> = [];

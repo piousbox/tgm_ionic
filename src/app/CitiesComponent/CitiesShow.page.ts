@@ -39,6 +39,7 @@ export class CitiesShowPage implements OnInit {
     this.splashScreen.hide();
     this.appRouter = AppRouter;
     this.slug = this.route.snapshot.paramMap.get('cityname');
+    this.selectedMenu = this.route.snapshot.paramMap.get('type');
   }
 
   async ngOnInit() {
@@ -77,7 +78,8 @@ export class CitiesShowPage implements OnInit {
   }
 
   changeMenuHandler(option) {
-    this.selectedMenu = option;
+    // this.selectedMenu = option;
+    this.router.navigate([AppRouter.cityPath(this.city, option)]);
   }
 
 }
