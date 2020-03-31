@@ -10,7 +10,7 @@ import { RatingModule } from "../RatingComponent/rating.module";
 
 const routes: Routes = [
   { path: '', component: CitiesIndexPage, },
-  { path: 'travel-to/:cityname',     component: CitiesShowPage,  },
+  { path: 'travel-to/:cityname/show/:type',     component: CitiesShowPage,  },
 ];
 
 @NgModule({

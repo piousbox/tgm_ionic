@@ -62,11 +62,16 @@ div.filter-section {
       }
 
       .description {
+        color: $darkGrey;
+        margin-bottom: 0;
+      }
+
+      .address{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
         color: $darkGrey;
-        margin-bottom: 0;
+        font-size: 14px;
       }
 
       .tags {

@@ -41,12 +41,13 @@
         <section class="section-three">
 
           <div class="menu-option" (click)="changeMenuHandler('newsfeed')">
-            <img src="../../assets/Newsfeed Icon.svg" alt="Newsfeed" /><p>Newsfeed</p>
+            <img src="../../assets/Newsfeed Icon.svg" alt="Newsfeed" />
+            <p [ngClass]="{ 'selected': selectedMenu === 'newsfeed' }">Newsfeed</p>
           </div>
 
           <div class="menu-option" (click)="changeMenuHandler('venues')">
             <img src="../../assets/Venue Icon.svg" alt="Venues" />
-            <p>Venues</p>
+            <p [ngClass]="{ 'selected': selectedMenu === 'venues' }">Venues</p>
           </div>
 
           <!-- <div class="menu-option" (click)="changeMenuHandler('events')">

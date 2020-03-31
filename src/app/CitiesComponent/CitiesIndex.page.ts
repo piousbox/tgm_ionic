@@ -47,7 +47,7 @@ export class CitiesIndexPage implements OnInit {
 
   navigateToCity(c) {
     // logg(c, 'c');
-    this.router.navigate([AppRouter.cityPath(c)]);
+    this.router.navigate([AppRouter.cityPath(c, "newsfeed")]);
   }
 
   ngOnInit() {

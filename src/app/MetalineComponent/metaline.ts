@@ -22,7 +22,7 @@ export class MetaLineComponent {
     ) {}
 
     navigateToCity() {
-        this.router.navigate([AppRouter.cityPath(this.city)]);
+        this.router.navigate([AppRouter.cityPath(this.city, "newsfeed")]);
     }
 
 }
