@@ -16,6 +16,7 @@ import { C, logg } from '../const';
   selector: 'app-cities-show',
   templateUrl: './CitiesShow.page.html',
   styleUrls: ['./cities.scss'],
+  providers: [CityService]
 })
 export class CitiesShowPage implements OnInit {
   appRouter;
@@ -23,9 +24,9 @@ export class CitiesShowPage implements OnInit {
   slug;
   selectedTags: any = [];
   selectedMenu: string = "newsfeed";
-  videos: any = [];
-  reports: any = [];
-  venues: any = [];
+  // videos: any = [];
+  // reports: any = [];
+  // venues: any = [];
 
   constructor(
     private nativeStorage: NativeStorage,
@@ -39,23 +40,12 @@ export class CitiesShowPage implements OnInit {
     this.splashScreen.hide();
     this.appRouter = AppRouter;
     this.slug = this.route.snapshot.paramMap.get('cityname');
-    this.selectedMenu = this.route.snapshot.paramMap.get('type');
   }
 
   async ngOnInit() {
     const answer = await this.httpClient.get(ApiRouter.city(this.slug)).toPromise();
     this.city = answer['city'];
-    this.reports = this.city.reports.map(item => {
-      item.item_type = "report";
-      return item;
-    });
-
-    this.videos = this.city.videos.map(item => {
-      item.item_type = "video";
-      return item;
-    });
-
-    this.venues = this.city.venues;
+    this.sendDataToChild();
   }
 
   navigate(where) { }
@@ -73,13 +63,28 @@ export class CitiesShowPage implements OnInit {
     }
   }
 
-  deSelectAll(){
+  deSelectAll() {
     this.selectedTags = [];
   }
 
   changeMenuHandler(option) {
-    // this.selectedMenu = option;
-    this.router.navigate([AppRouter.cityPath(this.city, option)]);
+    this.selectedMenu = option;
+    this.router.navigate([`/en/cities/travel-to/${this.slug}/show/${option}`]).then(() => {
+      this.sendDataToChild();
+    });
+  }
+
+  sendDataToChild() {
+    let data = {};
+    
+    switch (this.selectedMenu) {
+      case "newsfeed":
+        data = this.city.newsitems;
+        break;
+      case "venues":
+        data = this.city.venues;
+    }
+    this._cityService.citySubmenuData.next(data);
   }
 
 }
