@@ -68,7 +68,8 @@
 
         </section>
 
-        <section [ngSwitch]="selectedMenu">
+        <router-outlet></router-outlet>
+        <!-- <section [ngSwitch]="selectedMenu">
           <div *ngSwitchCase="'newsfeed'">
             <newsitems-list [newsitems]=city.newsitems></newsitems-list>
             <br /><br /><br />
@@ -88,7 +89,7 @@
           <div *ngSwitchCase="'reports'">
             <newsitems-list [newsitems]=reports></newsitems-list>
           </div>
-        </section>
+        </section> -->
       </div>
     </div>
   </ion-content>
